@@ -1,0 +1,974 @@
+[lang]
+Lang=Romanian (Românã)
+Ver=1
+# Autor: Sorin Cãlinicã
+# Orice eroare de traducere vã rog sã o semnalaþi la
+# scalinica@go.ro
+
+#Top level menus
+100=&Fiºier
+101=&Editare
+102=&Cãutare
+103=&Vizualizare
+104=&Proiect
+105=E&xecuþie
+106=&Instrumente
+107=Fe&reastrã
+108=&Ajutor
+109=&Depanare
+
+#File menu
+120=&Nou
+121=&Proiect...
+122=Fiºier &Sursã
+123=Fiºier de &Resurse
+124=ªa&blon...
+
+130=&Deschidere Proiect sau Fiºier...
+131=&Redeschidere
+132=&ªtergere Cronologie
+133=&Salvare
+134=Salvare &Ca...
+135=Sa&lvare totalã
+136=&Închidere
+137=Închidere Proiect
+138=Proprietãþi
+139=Salvare Proiect ca...
+
+140=&Export
+141=în &HTML
+142=în &RTF
+143=&Proiect în HTML
+
+149=&Import
+
+150=&Imprimare
+151=Configurare Imprimantã
+152=I&eºire
+
+#Edit menu
+160=&Anulare
+161=&Repetare
+162=&Tãiere
+163=&Copiere
+164=&Lipire
+165=&Selectare Totalã
+166=ªt&ergere
+167=&Inserare
+168=Acti&vare Marcaje
+169=&Poziþionare pe Marcaje
+170=Marcaj
+171=&Datã/Orã
+172=A&ntetul Comentariului
+#Due to exhausted numbers, the Edit menu continues at 380...
+
+#Search menu
+175=Cãutare...
+176=Cãu&tare în Fiºiere...
+177=Înlocuire...
+178=&Repetare Cãutare
+179=&Poziþionare pe linia...
+180=&Cãutare Incrementalã
+181=Po&ziþionare pe funcþia...
+
+#View menu
+182=Manager de Proiect Detaºabil
+183=Manager de Proiect
+184=Explorator de Clase
+185=&Explorator de Proiect/Clase
+186=&Barã de Stare
+187=&Ieºire Compilator
+188=&Mereu Vizibil
+189=&Doar când e necesar
+190=&Barele de Instrumente
+
+# Toolbar Captions
+191=Principalã
+192=Compilare ºi Execuþie
+193=Proiect
+194=Opþiuni
+195=Specialã
+196=Editare
+197=Cãutare
+
+#View menu (bis)
+198=Fereastrã &Raport Detaºabilã
+
+#Project menu
+200=Fiºier sursã &nou
+201=&Adãugare la proiect
+202=&Eliminare din proiect
+203=Editare &Fiºier de Resurse...
+204=&Opþiuni Proiect
+205=Editare Ma&kefile
+206=A&dãugare Fiºier de Resurse...
+207=Eli&minare Fiºier de Resurse...
+
+#Execute menu
+210=&Compilare
+211=&Execuþie
+212=C&ompilare ºi Execuþie
+213=&Reconstruire Totalã
+214=C&urãþare
+215=Rezultate Co&mpilare
+216=&Verificare Sintaxã
+217=Reiniþiali&zare Program
+218=Analizã Pro&fil
+219=Renunþare
+
+#Tool menu
+220=&Opþiuni Compilare
+221=Opþiuni &mediu de programare
+222=Opþiuni &Editare
+223=Configurare &Instrumente
+224=Configurare &Scurtãturi
+
+#Window menu
+230=&Mod Ecran Complet
+231=Î&napoi la Normal
+232=&Urmãtoarea
+233=&Anterioara
+234=În&chidere Totalã
+235=%s versiune %s Ecran Complet. Apãsaþi shift+F12 pentru activare/dezactivare Bare de Instrumente sau F12 pentru a trece în mod normal.
+236=Închidere totalã cu e&xcepþia acesteia
+237=&Listã...
+
+#Help menu
+240=&Despre Dev-C++...
+241=&Noi Versiuni/Pachete...
+242=C&onfigurare Meniu Ajutor...
+243=&Asistenþã în utilizarea Dev-C++
+
+#Debug Menu
+245=&Depanare
+246=Ac&tivare-Dezactivare Marcaj
+247=Pasul &Urmãtor
+248=&Continuã
+249=&Adãugare în Fereastra de Urmãrire
+250=&Vizionare Variabile
+251=Oprire Execuþie
+252=&Editare Fereastrã de Urmãrire
+253=Elimina&re din Fereastra de Urmãrire
+254=A&vansare
+255=E&xecuþie linii din dreptul cursorului
+256=&Vizualizare Fereastrã CPU
+257=A&taºare la procesul...
+258=&Modificare valoare 
+
+#context menus
+# project menu
+260=Fiºier Nou
+261=Adãugare Fiºier...
+262=Eliminare Fiºier...
+263=Opþiuni...
+264=Editare Fiºier de Resurse
+
+# unit menu
+270=Eliminare Fiºier
+271=Redenumire Fiºier
+272=Închidere
+273=Deschidere
+274=Deschidere Antet
+
+# class browser menu
+280=Salt la declaraþie
+281=Salt la implementare
+282=Clasã nouã
+283=Funcþie membrã nouã
+284=Variabilã nouã
+285=Mod de vizualizare...
+286=Toate fiºierele
+287=Fiºierul curent
+288=Adãugare dosar
+289=Eliminare dosar
+290=Redenumire dosar
+291=Nu puteþi crea mai mult de %d dosare într-un proiect...
+292=Utilizare culori
+293=Fiºiere Proiect
+294=Afiºare membri moºteniþi
+295=Deschidere cu... 
+
+#Message control
+# sheets
+300=Compilator
+301=Resurse
+302=Jurnal de compilare
+303=Cãutare în rezultate
+304=Închidere
+305=Depanare
+
+# pop menu
+310=ªt&ergere
+311=&Copiere
+312=&Ascundere
+313=&Deschidere
+
+# column headers
+# 320, 322, 323 not in inc file
+315=Linie
+316=Unitate
+317=Mesaj
+318=Argumente
+
+320=Linia gãsitã
+321=Coloanã
+322=Nume Variabilã
+323=Valoare
+324=Informaþie:
+325=Jurnal de compilare:
+326=Total Erori:
+327=Mãrime la Ieºire:
+
+# debug
+
+330=Variabile în Urmãrire
+331=Backtrace
+332=Iesire
+333=Trimitere comandã cãtre GDB :
+334=Trimitere
+
+# Specials toolbar items
+340=Nou
+341=Inserare
+342=Comutare
+343=Salt
+344=Fereastrã Proiect
+345=Fereastrã Depanare
+346=Fereastrã Raport
+
+#non-visible (open/save dialogs)
+350=Deschidere Fiºier
+351=Deschidere Unitate
+352=Export cãtre
+353=Salvare Fiºier
+354=Salvare Proiect
+355=Selectare Fiºier Ajutor
+
+357=Nouã Variabilã de Urmãrit
+358=Introduceþi Numele Variabilei:
+359=Modificare Variabilã Urmãritã
+360=Numele Noii Variabile:
+361=Modificare valoare
+362=Variabila de modificat:
+363=Noua valoare: 
+
+370=Proiect
+371=Clase
+
+#Edit menu (more options)
+380=Comentare
+381=Decomentare
+382=Indentare
+383=Deindentare
+384=Schimbare antet/sursã
+
+#Editor Options Dialog 400-499
+400=Opþiuni Editor
+401=General
+402=Afiºare
+403=Sintaxã
+404=Cod
+405=Întregire
+406=Explorare Clase
+
+#sub tabs
+410=Inserãri
+411=Sursã Implicitã
+
+# General Tab
+420=Opþiuni Editor:
+421=Auto Indentare
+422=Mod Inserare
+423=Utilizare Caracter Tab
+424=Tab-uri Inteligente
+425=Deindentare Backspace
+426=Reþinere Spaþii Suplimentare
+427=Anulare în Grup
+428=Tastã Home Avansatã
+429=Cursor Dupã EOF
+430=Cursor Dupã EOL
+431=Selectare Linie cu Dublu Clic
+432=Cãutare Text din dreptul Cursorului
+433=Bare de defilare dacã sunt necesare 
+434=Defilare pe Jumãtate de Paginã
+435=Sugestii la Defilare
+436=Evidenþiere Sintaxã
+437=Inserare Fiºiere Glisate
+438=Mãrime Tab:
+439=Margine Dreapta
+440=Vizibil
+441=Lungime
+442=Culoare
+443=Cursor
+444=Cursor de Inserare
+445=Cursor de Suprascriere
+446=Linie Verticalã
+447=Linie Orizontalã
+448=Jumãtate de Bloc
+449=Bloc
+450=Inserare Fiºiere Glisate
+451=Afiºare caractere de linie ascunse
+452=Afiºare indicii editare
+453=Evidenþiere acolade/paranteze pereche
+
+# through 459 for additions
+
+# Display Tab
+460=Caracter Editor:
+461=Caracter
+462=Mãrime
+463=Caracter Editor
+464=Margine
+465=Dimensionare Automatã
+466=Numere de Linie
+467=Afiºare Zero
+468=Începere cu Zero
+469=Utilizare Caractere Personalizate
+470=Margine Caracter
+
+# Syntax Tab
+471=Prim-plan
+472=Fond
+473=Stil
+474=Îngroºat
+475=Înclinat
+476=Subliniat
+477=Stabilire rapidã a culorilor
+478=Tip :
+479=Salvare parametri sintaxã preferatã
+419=Introduceþi numele noii sintaxe personalizate:
+
+# Code Tab
+480=Cod
+481=Text Meniu
+482=Secþiune
+483=Descriere
+484=Inserare Cod Implicit în Fiºierul Sursã Iniþial al unui Proiect Gol
+
+# Completion Tab
+485=Utilizare memorie tampon pentru întregire-cod
+486=Întregire-Cod
+487=Activare Întregire-Cod
+488=Întârziere (ms):
+489=Culoare fond:
+
+# Class browsing Tab
+490=Parametri Explorator de Clase
+491=Scanare fiºiere locale referite de cãtre #include's
+492=Exemplu:
+493=Opþiuni Motor
+494=Vzualizare opþiuni
+495=Activare Explorator de Clase
+496=Scanare fiºiere globale referite de cãtre #include's
+
+#New project form
+500=Proiect Nou
+501=Descriere:
+503=Nume:
+504=&C
+505=C&++
+506=Stabilire ca Limbaj I&mplicit
+507=Diverse
+508=Opþiuni Proiect:
+
+#Remove file form
+520=Eliminare din Proiect
+521=Selectare fiºier pentru a fi eliminat din proiect :
+
+#Goto line form
+525=Salt la inia ...
+526=Linie Nouã:
+
+#Tool config form
+530=Configurare Instrumente
+531=Instrumente Curente:
+
+#Edit Tool form
+535=Editare Instrument
+536=Titlu
+537=Program
+538=Director de Lucru
+539=Parametri
+540=Inserare Macro
+541=Macro Disponibile
+
+#Icon Library Form
+545=Biblioteca de Pictograme
+546=Utilizare Pictogramã Selectatã
+547=Explorare
+
+#Configure Shortcuts Form
+550=Configurare Scurtãturi
+551=Clic pe un element ºi efectuaþi scurtãtura doritã
+552=Indiciu: apãsþi "Escape" pentru a anula o scurtãturã...
+553=Intrare în meniu
+554=Scurtãturã asignatã
+555=Renunþare
+556=OK
+
+#Tool Menu Macros
+560=Returnare director implicit
+561=Returnare director de lucru dev-c++
+562=Returnare nume fiºier compilat
+563=Returnare cale cãtre proiectul curent sau fiºierul sursã
+564=Returnare nume al proiectului curent sau al fiºierului sursã
+565=Returnare nume proiect
+566=Returnare nume al fiºierului sursã curent
+567=Returnare cale cãtre fiºierul sursã curent
+568=Returnare listã separatã prin spaþii a fiºierului sursã din proiectul curent
+569=Returnare cuvânt din dreptul cursorului din editorul activ
+570=Returnare versiune dev-c++
+# -- TO 579
+
+#About form
+580=Despre Dev-C++ :)
+581=inseculous@users.sourceforge.net
+582=Licenþã Publicã Generalã GNU
+583=Informaþii de Contact
+584=Site Web Bloodshed Software:
+585=Site Web Complilator Mingw:
+586=Forumuri de discuþii Dev-C++:
+587=Lista de discuþii prin e-mail a utilizatorilor Dev-C++:
+588=e-mail Autori:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=A&ctualizare versiune
+
+#Code Inserts Entry Edit form
+600=Edit cod de inserare
+601=Adãugare cod de inserare
+602=Subtitlu al articolului de meniu
+603=Descriere Articol
+604=Secþiune de Meniu
+
+#Environment options form
+606=Fereastrã Progres Compilare 
+607=&Aratã pe durata compilãrii
+608=&Auto închidere dupã compilare
+609=Fãrã logo la pornire
+610=Opþiuni Mediu
+611=General
+612=Fiºiere && Directoare
+613=Deschidere Automatã
+614=Proiect Nou în C++ Implicit
+615=Afiºeazã Barele de Instrumente în Ecran Complet
+616=Creare Fiºiere de Siguranþã
+617=Minimalizare la Execuþie
+618=Stilul Dialogului Deschidere/Salvare
+619=Windows 2k (barã lateralã)
+620=Windows 9x
+621=Windows 3.1
+622=Limbã
+623=Etichete Fereastrã de mesaje:
+624=Maximum de Fiºiere în Meniul Redeschidere
+625=Directorul Implicit al Utilizatorului
+626=Directorul de Ieºire
+627=Calea cãtre Biblioteca de Pictograme
+628=Imagine Logo
+629=Selectare Director Utilizator Implicit
+630=Selectare Director de Ieºire Compilator Implicit
+631=Selectare Director Bibliotecã de Pictograme
+632=Toate Fiºierele Proiectului
+633=Numai Primul Fiºier al Proiectului
+634=Niciunul
+635=Afiºeazã Meniul în Modul Ecran Complet
+636=Dublu Clic pentru a deschide Managerul de Fiºiere ale Proiectului
+637=Calea cãtre Fiºierele de Limbã
+638=Temã:
+639=Interfaþã
+
+#Find Form
+640=Cãutare Text
+641=Cãutare
+642=Cãutare în Fiºiere
+643=&Textul de cãutat
+644=Opþiuni:
+645=&Cãutare Senzitivã
+646=&Doar Cuvinte Întregi
+647=Direcþie
+648=&Fiºierele din Proiect
+649=&Fiºierele Deschise
+650=Zonã
+651=&Global
+652=&Doar Selecþia
+653=Origine
+654=De la Cursor
+655=Întreaga zonã
+656=Direcþie
+657=În Jos
+658=În Sus
+
+#Replace form
+670=Înlocuire Text
+671=Textul de Cãutat:
+672=Înlocuire cu:
+673=Opþiuni:
+674=&Cãutare Senzitivã
+675=&Doar Cuvinte Întregi
+676=&Confirmare Înlocuire
+677=Direcþie:
+678=În Jos
+679=În Sus
+680=Zonã
+681=&Global
+682=&Doar Selecþia
+683=Origine:
+684=&De la Cursor
+685=&Întreaga zonã
+
+#Goto function form
+695=Cãutare:
+696=Tip
+697=Funcþie
+698=Linie
+
+#Compiler Options
+700=Opþiuni Compilator
+701=Compilator
+702=Directoare
+703=Generare Cod/Optimizãri
+704=Editor de Legãturi
+705=Programe
+
+710=Executabile
+711=Biblioteci
+712=Fiºiere C de Includere
+713=Fiºiere C++ de Includere
+720=Compilator C:
+721=Compilator C++:
+722=Compilator:
+725=Suport pentru toate programele C conforme standardului ANSI
+726=Încercare de suport pentru unele aspecte ale preprocesoarelor C tradiþionale
+727=Nu se afiºeazã mesajele de avertizare
+728=Nu au loc verificãrile de acces
+729=Acceptare $ în identificatori
+730=Utilizare metodã heuristicã pentru compilare mai rapidã
+731=Utilizare Cygwin în locul compilatorului Mingw
+732=Se adaugã urmãtoarele comenzi la apelul compilatorului:
+733=Întârziere
+734=Milisecunde întârziere dacã fiºierul Make are    probleme referitoare la datã.
+735=Afiºeazã câte o eroare pe linie
+
+740=Generare Cod:
+741=Optimizare:
+745=Activare tratare excepþii
+746=Se utilizeazã aceeaºi mãrime pentru tipurile "double" ºi "float"
+747=Introducere comentariu în codul de asamblare generat
+748=Optimizare
+749=Cea Mai Bunã Optimizare
+750=Executã o serie de optimizãri minore
+751=Generare fiºier Make:
+752=Utilizare generare de dependenþe rapidã dar imperfectã
+753=Profilare Cod:
+754=Generare informaþii de profilare pentru analizã
+755=Legare program în Objective C
+756=Generare informaþii de depanare
+757=Nu se utilizeazã sistemul standard de fiºiere sau biblioteci
+758=Nu se creeazã fereastrã consolã
+759=Se adaugã aceste comenzi la linia de comandã a editorului de legãturi
+760=&Nu are loc optimizarea
+761=Optimizare supli&mentarã
+
+770=Se pot schimba numele programelor utilizate în Dev-C++ (de exemplu atunci când utilizaþi compilatoare multi platformã) :
+771=Configurare set de compilatoare:
+772=Compilator nou
+773=Introduceþi numele noului compilator:
+774=Nu puteþi renunþa la unicul compilator rãmas!
+775=Sunteþi sigur cã vreþi sã ºtergeþi acest compilator?
+776=Redenumire compilator
+777=Introduceþi noul nume al compilatorului:
+778=Optimizãri Adiþionale
+
+#Help Editor Form
+780=Editor pentru Meniul de Ajutor
+781=Textul Meniului
+782=Fiºier de Ajutor
+783=Opþiuni pentru Meniul de Ajutor
+784=Pictogramã
+785=Secþiunea Meniului
+786=Secþiunea 1
+787=Secþiunea 2
+788=Meniu Derulant
+789=Acþiuni
+790=Cãutare cuvânt din dreptul cursorului în fiºierul de ajutor
+791=Asignare tasta F1
+
+#Print File Form
+800=Tipãrire Fiºier
+801=Parametri:
+802=Pagini:
+803=&Culori
+804=&Evidenþiere
+805=&Textul se încadreazã automat
+806=&Numer de Linie
+807=Tipãrire Numere de Linie
+808=Tipãrire Numere de Linie din Margine
+809=Numãr de Copii:
+810=Tipãrire doar Selecþie
+
+#Update Form
+820=Verificã existeþa unei noi versiuni a Dev-C++
+821=Acþiune:
+822=Rezultate:
+823=Versiune:
+824=Versiunea cerutã:
+825=Descriere:
+826=Site de descãrcare (dublu-clic pentru descãrcare):
+
+#AddToDo form
+830=Adãugare Element De-Fãcut...
+831=Descriere
+832=Prioritate
+833=Utilizator
+
+#ViewToDo form
+835=Listã De-Fãcut...
+836=Nume Fiºier
+837=Terminat
+838=Nu se afiºeazã acþiunile marcate ca fiind terminate
+839=Filtru:
+840=Toate Fiºierele (din proiect sau nu)
+841=Deschide doar fiºiere (din proiect sau nu)
+842=Toate fiºierele proiectului
+843=Deschide numai fiºiere proiect
+844=Fiºiere Non-proiect deschise
+845=Doar fiºierul curent
+
+#Import MSVC++ form
+850=Import proiect MS Visual C++
+851=Selectare fiºier proiect Visual C++
+852=Opþiuni de Import
+853=Configurare Import
+854=Nume fiºier proiect Dev-C++
+855=Fiºierul proiect MS Visual C++ a fost importat ºi convertit cu succes în proiect Dev-C++! Doriþi deschiderea lui?
+856=Nu se poate localiza destinaþia de configurare "%s" (probabil cã acesta este o eroare a Dev-C++)... 
+
+#Project Options form
+900=Opþiuni Proiect
+901=General
+902=Fiºiere/Directoare
+903=Nume:
+904=Pictogramã:
+905=Bibliotecã
+906=Explorare
+907=Tip:
+908=Interfaþã graficã Win32
+909=Consolã Win32
+910=Bibliotecã Staticã Win32
+911=Win32 DLL
+912=Compilare pentru C++
+913=Opþiuni Adiþionale pentru Linia de Comandã:
+914=Compilator:
+915=Opþiuni pentru Editorul de Legãturi/Biblioteci sau Fiºiere Obiect:
+916=Directoarele Bibliotecilor
+917=Fiºiere de Resurse
+918=Directorele fiºierelor de Includere
+919=Selectare Pictogramã
+920=Includere Fiºier Obiect
+921=Directoare Resurse
+922=Opþiuni Build
+923=Directoare
+989=Fiºier Make
+924=Directorul de Ieºire al &Executabilelor
+925=Directorul de Ieºire al Fiºierlor &Object
+926=&Suprascrie numele fiºierului de ieºire
+927=Adãugare Bibliotecã sau Obiect
+928=%d fiºiere [%d surse, %d antete, %d resurse]
+
+#New template form
+930=Nume:
+931=Descriere:
+932=Categorie:
+933=Nume proiect nou:
+934=Fiºiere în ºablon:
+935=Opþiuni suplimentare ale Compliatorului:
+936=Opþiuni suplimentare ale Editorului de Legãturi:
+937=Pictograme:
+938=Informaþii despre ºablon
+939=Fiºiere
+940=Opþiuni Suplimentare
+941=Pictogramã ªablon
+942=Pictogramã Proiect Nou
+943=Creare
+944=ªablon Nou dupã un Proiect Existent
+945=Foloseºte directoarele Include ale proiectului
+946=Foloseºte directoarele Library ale proiectului
+947=Foloseºte directoarele Resource ale proiectului
+
+#New variable/member forms
+950=Tipul returnat:
+951=Nume Variabilã:
+952=Implementare în:
+953=Modificator de Acces
+954=Creare funcþie membrã pentru a CITI din aceastã variabilã
+955=Creare funcþie membrã pentru a SCRIE în aceastã variabilã
+956=Nume:
+957=Comentarii
+958=Descriere:
+959=Stil:
+960=Creare
+961=Renunþare
+962=Clasã Necunoscutã...
+963=Nu se poate determina numele fiºierului pentru implementare...
+964=Nu se poate determina numãrul liniei pentru inserarea codului...
+965=Nume Membru:
+966=Argumente:
+967=Nume Clasã:
+968=Moºtenire din altã Clasã
+969=Moºtenire
+970=Moºtenire din clasa:
+971=Nume Fiºier Antet (.h):
+972=Nume Fiºier Implementare (.cpp):
+973=Nume Fiºier Antet (.h):
+974=Adãugarre la proiectul curent
+975=Atribute
+
+#File properties form
+980=Nume Fiºier
+981=În Proiect
+982=Total linii
+983=Numãr Actual de linii de cod
+984=Numãrul de linii de Comentariu
+985=Fiºiere Incluse
+986=Linii Vide
+987=Mãrime Fiºier
+988=Absolut
+990=Relativ
+991=Data ºi Ora Fiºierului
+992=Parametri Compilator
+
+#Profile analysis form
+995=Analizã Profil
+996=Ieºire Punctualã
+997=Apelare graficã
+
+#Global strings
+# messages
+1000=ªirul cãutat ''%s'' nu poate fi gãsit
+1001=Fiºierul %s nu poate fi deschis
+1002=Înlocuire aaceastã apariþie ''%s'?
+1003=Fiºierul: %s deja existã în %s
+1004=Sunteþi sigur cã vreþi sã închideþi %s
+1005=Salvare schimbãri în %s?
+1006=Închideþi %s ºi începeþi un nou proiect?
+1007=Redenumire ca:
+1008=Compilarea este în curs
+1009=Salvare schimbãri în %s?
+1010=Fiºierul deja existã, îl suprascrieþi?
+1011=Adãugare unitate nouã la proiectul curent?
+1012=Adãugare resursã nouã la proiectul curent?
+1013=Proiectul nu conþine informaþii de depanare, doriþi activarea depanãrii ºi reconstruirea proiectului ? 
+1014=Nu aþi activat profilarea ºi/sau informaþiile de depanare în Opþiunile Compilatorului. Doriþi activarea lor ºi reconstruirea proiectului ? 
+1015=Vã rog lansaþi proiectul în execuþie cel puþin o datã pentru a se genera informaþiile de profilare...
+1016=Introduceþi numele noului dosar:
+1017=Sunteþi sigur cã vreþi sã eliminaþi acest dosar?
+1018=Introduceþi noul nume al dosarului:
+1019=Fiºierul %s este marcat pentru citire. Doriþi marcarea lui pentru  ºi pentru scriere? Dacã nu, fiºierul nu va fi salvat...
+1020=A apãrut o eroare. Fiºierul %s nu a fost marcat pentru citire-scriere ºi nu a fost salvat...
+1021=A survenit o încãlcare a accesului la memorie (Eroare de Segmentare) în program. 
+1022=Fiºierul sursã este mai nou decât executable. Do you want to rebuild it ?
+1023=Selectaþi aplicaþia la care se va ataºa : 
+
+# errors
+1500=Nu se poate deschide fiºierul %s
+1501=Nu se poate salva fiºierul %s
+1502=Nu se poate redenumi fiºierul %s
+1503=Câmpul de cãutare nu poate fi gol
+1504=Proiectul nu este executabil
+1505=Proiectul nu este compilat
+1506=Fiºierul Sursã nu este compilat
+1507=Fiºierul Make nu poate fi gãsit.
+1508=Curãþare eºuatã
+1509=ªablonul nu poate fi plasat în proiect.
+1510=%s Resursa nu poate fi gãsitã: %s - %s
+1511=Fiºierul ªablon %s nu a fost gãsit.
+1512=Nici un ªablon nu a fost asignat.
+1513=Fiºierul %s nu afost gãsit.
+1514=Nici o Aplicaþie Gazdã nu a fost furnizatã. O puteþi specifica în meniul Execuþie, Parametri.
+1515=Aplicaþia Gazdã nu poate fi gãsitã ! O puteþi modifica în meniul Execuþie, Parametri.
+
+# misc
+2000=Fãrã Titlu
+2001=Doar Citire
+2002=Inserare
+2003=Suprascriere
+2004=Proiect%d
+2005=Vã rog, specificþi alt nume de fiºier.
+2006=%d Linii în fiºier
+2007=Redenumire fiºier
+2008=Executare %s
+2009=Execuþie terminatã
+2010=octeþi
+2011=Modificat
+2012=Eroare
+2013=Informaþie
+2014=Avertisment
+2015=Întrebare
+2016=Compilarea s-a terminat cu succes
+2017=Compilare întreruptã de cãtre utilizator
+
+# buttons
+2500=&Ok
+2501=&Renunþare
+2502=&Ajutor
+2503=&Implicit
+2504=&Da
+2505=&Nu
+2506=&Adãugare
+2507=&Editare
+2508=&Eliminare
+2509=ªterge&re
+2510=&Închidere
+2511=&Autori
+2512=&Cãutare
+2513=&Înlocuire
+2514=&ªtergere Invalid
+2515=Înlocuire &Totalã
+2516=Explorare
+2517=Eliminare
+2518=Redenumire
+2519=Import
+2520=Mod Fereastrã
+2521=ªtergere 
+
+# CPU Window
+2600=Fereastrã CPU
+2601=Cod de asamblare :
+2602=Funcþie :
+2603=Sintaxã cod de asamblare :
+2604=Regiºtri :
+
+# TipOfTheDay Window
+2700=Indiciul zilei
+2701=ªtiaþi cã...
+2702=...nu existã indicii?
+2703=Nu se afiºeazã indicii la pornire
+2704=Înainte
+2705=Înapoi
+
+# Environment Options (more)
+2800=Asocieri Fiºiere
+2801=Tipuri Fiºiere:
+2802=Bifaþi sau debifaþi tipurile de fiºiere ce vor fi deschise implicit de Dev-C++...
+2803=Suport pentru CVS
+2804=Program CVS
+2805=Nivel de Compresare
+2806=Se foloseºte SSH în loc de RSH
+2807=Directorul cu ªabloane
+2808=Selectare Director cu ªabloane
+2809=Utilizare Temã XP
+2810=Programe externe
+2811=Program externe
+2812=Extensie
+2813=Asocieri programe externe:
+2814=Afiºare variabilã sub mouse
+2815=Raportare erori de afiºare
+2816=  Exploratorul variabilelor de depanare
+2817=  Fiºier Alternativ de Configurare
+2818=Foloseºte acest fiºier alternativ de configurare
+2819=Aþi schimbat fiºierul de  configurare al aplicaþiei.<CR>Noul fiºier de configurare *nu* va fi folosit în sesiunea curentã. Toate modificãrile de configurare fãcute în aceastã sesiune, vor fi salvate în fiºierul de configurare deschis în mod *current*.<CR><CR>Este recomandabil sã restartaþi aplicaþia acum, pentru a începe sã folosiþi noul fiºier de configurare... 
+
+# Execute menu (more)
+2900=Parametri...
+2901=Compilare fiºier curent
+
+# Window list
+2910=Listã Ferestre
+2911=Selectare fereastrã de editat:
+
+# CVS Menu
+2990=Fiºier Curent...
+2991=Întregul Proiect...
+2992=Vã rog configuraþi suportul CVS în  "Instrumente / Opþiuni mediu de programare"...
+
+# CVS form
+3000=Opþiuni Import
+3001=Depozituni Globale
+3002=Opþiuni Globale
+3003=Opþiuni Verificare
+3004=Opþiuni Concluzii
+3005=Opþiuni Actualizare
+3006=Opþiuni Diferenþe
+3007=Opþiuni Jurnal
+3008=Ieºire CVS
+3009=Import
+3010=Verificare
+3011=Concluzii
+3012=Actualizare
+3013=Diferenþe
+3014=Jurnal
+3015=Director Import
+3016=Acþiune
+3017=Vânzãtor
+3018=Versiune
+3019=Mesaj Jurnal
+3020=Nume Module
+3021=Extensie
+3022=Verificare ca
+3023=Director de Verificare
+3024=Repetare ]n sub-directoare
+3025=Dezactivare opþiuni "supãrãtoare"
+3026=Creare directoare lipsã
+3027=Eliminare directoare goale
+3028=Renunþare la modificãrile locale
+3029=Datã anterioarã
+3030=Revizie/ramurã/marcaj
+3031=Dacã nu existã, obþineþi cel mai recent
+3032=Alte revizii
+3033=Executare comparare unificatã
+3034=Comparare fiºier local cu aceeaºi revizie/marcaj aflatã la distanþã
+3035=Comparare fiºier local cu altã revizie aflatã la distanþã
+3036=Comparare douã revizii aflate la distanþã
+3037=Data
+3038=Conectare ramurã implicitã
+3039=Afiºare doar nume RCS
+3040=Nu se tipãresc numele marcajelor
+3041=Filtru
+3042=Dupã revizie/marcaj
+3043=Dupã datã
+3044=Dupã Utilizator
+3045=Depozit
+3046=Detalii
+3047=Metodã Acces
+3048=Utilizator
+3049=Server
+3050=Director la Distanþã
+3051=Adãugare
+3052=Eliminare
+3053=Opþiuni Adãugare
+3054=Eliminare Opþiuni
+3055=ªtergere fiºier de pe disc...
+
+# Params form
+3100=Parametri
+3101=Parametri trimiºi programul dvs:
+3102=Aplicatie Gazdã:
+
+# Project options form (continued)
+3200=Fiºiere
+3201=Fiºiere Proiect:
+3202=Opþiuni Proiect:
+3203=Generare informaþii depanare
+3204=Generare informaþii profilare
+3205=NOTÃ: Aceºti parametri vor suprascrie Opþiunile globale ale Compilatorului afectând doar acest proiect.
+3206=Suport pentru Teme Windows XP
+3207=Opþiuni Fiºier:
+3208=Includere în compilare
+3209=Compilare fiºier pentru C++
+3210=Informaþii despre Versiune
+3211=Includere Informaþii despre Versiune în proiect
+3212=Detalii despre versiune
+3213=Majorã:
+3214=Minorã:
+3215=Release:
+3216=Build:
+3217=Limbaj:
+3218=Informaþii adiþionale:
+3219=Nu þine cont de comanda build
+3220=Fiºier Ieºire
+3221=Includere în editorul de legãturi
+3222=Prioritate Build:
+3223=Auto-incrementare numãr build, la compilare 

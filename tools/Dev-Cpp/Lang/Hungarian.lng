@@ -1,0 +1,1143 @@
+[lang]
+Lang=Hungarian
+Ver=1
+
+
+
+#Top level menus
+100=&Fájl
+101=&Szerkesztés
+102=&Keresés
+103=&Nézet
+104=&Projekt
+105=F&uttatás
+106=&Eszközök
+107=&Ablakok
+108=Se&gítség
+109=N&yomkövetés
+
+
+
+#File menu
+120=&Új
+121=&Projekt...
+122=&Forrás Fájl
+123=&Erõforrás Fájl
+124=&Sablon...
+130=&Projekt v. Fájl Megnyitása...
+131=&Korábbi Fájlok
+132=&Lista Törlése
+133=&Mentés
+134=M&entés Másként...
+135=M&indent Ment
+136=&Bezár
+137=Projekt Be&zárása
+138=Tulajdonságok
+139=Projekt Mentése Másként...
+140=&Export
+141=&HTML-be
+142=&RTF-be
+143=a &Projektet HTML-be
+149=&Import
+150=&Nyomtatás
+151=Nyomtatási Beállítások
+152=K&ilépés
+
+
+
+#Edit menu
+160=Még&se
+161=Mé&gis
+162=&Kivágás
+163=&Másolás
+164=&Beillesztés
+165=M&indet Kijelöl
+166=&Törlés
+167=B&eszúrás
+168=Könyvjelzõ Elhelyezése
+169=&Könyvjelzõre Ugrás
+170=Könyvjelzõ
+171=&Dátum/Idõ
+172=&Szöveges Fejléc
+
+
+
+#Due to exhausted numbers, the Edit menu continues at 380...
+
+
+
+#Search menu
+175=Keresés...
+176=&Keresés Fájlokban...
+177=Csere...
+178=&Tovább/Újra Keres
+179=&Sorra Ugrás...
+180=&Bõvített Keresés
+181=Függvényre Ugrás...
+
+
+
+#View menu
+182=Lebegõ Projekt Menedzser
+183=Projekt &Menedzserre Ugrás
+184=Osztály Listára Ugrás
+185=&Projekt/Osztály Lista
+186=&Státuszsor
+187=&Fordító Kimenete
+188=&Mindig Látható
+189=&Csak ha szükséges
+190=&Eszköszsorok
+
+
+
+# Toolbar Captions
+191=Fõ
+192=Fordítás/Futtatás
+193=Projekt
+194=Beállítások
+195=Speciális
+196=Szerkesztés
+197=Keresés
+198=Lebegõ fordítási folyamat ablak
+
+
+
+#Project menu
+200=&Új Fájl
+201=&Hozzáadás a Projekthez
+202=&Törlés a Projektbõl
+203=&Erõforrás Fájl Szerkesztése...
+204=Projekt &Beállítások
+205=&Makefile Szerkesztése
+206=E&rõforrás Fájl Hozzáadása...
+207=Erõ&forrás Fájl Törlése...
+
+
+
+#Execute menu
+210=&Fordítás
+211=F&uttatás
+212=F&ordítás && Futtatás
+213=&Mindent Újrafordít
+214=&Törlés/Tisztítás
+215=For&dítás Eredménye
+216=&Szintaktika Ellenõrzés
+217=&Program Leállítása
+218=P&rofil Elemzés
+219=Megszakítás
+
+
+
+#Tool menu
+220=&Fordító Beállításai
+221=&Környezeti Beállítások
+222=&Szerkesztõ Beállításai
+223=Eszközök Konfigurálása
+224=Gyorsbillentyûk Konfigurálása
+
+
+
+#Window menu
+230=&Teljesképernyõs Mód
+231=&Vissza a Normál Módhoz
+232=&Következõ
+233=&Elõzõ
+234=&Mindet Bezár
+235=%s-s verzió %s teljesképernyõs mód. shift+F12 lenyomásával az eszközsor megj. vagy F12-vel normál módbe visszatérhetsz.
+236=Mindet Bezár (kivéve az aktívat)
+237=&Lista...
+
+
+
+#Help menu
+240=&Dev-C++ Info...
+241=&Frissítések/Csomagok Keresése...
+242=Segítség Menü Testreszabása...
+243=&Tartalomjegyzék(Dev-C++)
+
+
+
+
+#Debug Menu
+245=&Nyomkövetés
+246=&Töréspont Elhelyezése
+247=&Léptetés
+248=&Folytatás
+249=&Megfigyelés Hozzáadása
+250=Vált&ozó Megfigyelése
+251=&Végrehajtás Megállítása
+252=M&egfigyelés Szerkesztése
+253=Me&gfigyelés Törlése
+254=Lé&ptetés (beugrással)
+255=Futtatás a Kurzorig
+256=&CPU Ablak
+257=F&olyamathoz rendelés...
+258=&Érték módosítása
+259=Mindet törli
+#context menus
+
+
+
+# project menu
+260=Új Fájl
+261=Fájl Hozzáadása...
+262=Fájl Törlése...
+263=Beállítások...
+264=Erõforrás Fájl Szerkesztése
+
+
+
+# file menu
+270=Fájl Törlése
+271=Fájl Átnevezése
+272=Bezárás
+273=Megnyitás
+274=Header Megnyitása
+
+
+
+# class browser menu
+280=Ugrás a Deklarációra
+281=Ugrás a Megvalósításra
+282=Új Osztály
+283=Új Tagfügvény
+284=Új Változó
+285=Nézet Mód...
+286=Minden Fájl
+287=Aktuális Fájl
+288=Könyvtár Hozzáadása
+289=Könyvtár Törlése
+290=Könyvtár Átnevezése
+291=Nem lehet több mint %d könyvtár egy projektben...
+292=Színek Használata
+293=Projekt Fájlok
+294=Örökölt Tagok Mutatása
+295=Megnyitás ezzel..
+
+
+
+#Message control
+
+
+
+# sheets
+300=Forditó üzenetei
+301=Erõforrások
+302=Fordító kimenete
+303=Keresés eredménye
+304=Bezár
+305=Nyomkövetés
+
+
+
+# pop menu
+310=&Töröl
+311=&Másol
+312=&Elrejt
+313=Me&gnyit
+
+
+
+# column headers
+# 320, 322, 323 not in inc file
+315=Sor
+316=Fájl
+317=Üzenet
+318=Argumentumok
+320=Keresett sor
+321=Betûtõl
+322=Változó neve
+323=Érték
+324=Információ
+325=Forditó kimenete
+326=Összes hiba:
+327=Kimenet mérete:
+
+
+
+# debug
+330=Megfigyelt változók
+331=Visszakeresés
+332=Kimenet
+333=Parancs a GDB-nek:
+334=Küldés
+
+
+
+# Specials toolbar items
+340=Új...
+341=Beilleszt
+342=Elhelyez
+343=Ugrás
+344=Projekt Ablak
+345=Nyomkövetõ Ablak
+346=Fordítási folyamat Ablak
+
+
+
+#non-visible (open/save dialogs)
+350=Fájl megnyitása
+351=Fájl megnyitása
+352=Exportálás
+353=Fájl mentése
+354=Projekt mentése
+355=Segítség fájl kiválasztása
+357=Új változó megfigyelés
+358=Változó neve:
+359=Változó megfigyelés módosítása
+360=Új változó neve:
+361=Érték módosítása
+362=Módosítandó változó:
+363=Új érték:
+370=Projekt
+371=Osztályok
+
+
+
+#Edit menu (more options)
+380=Megjegyzés Be
+381=Megjegyzés Ki
+382=Bekezdés Be
+383=Bekezdés Ki 
+384=Cserél Header/Forrás
+
+
+
+#Editor Options Dialog 400-499
+400=Szerkesztõ Beállításai
+401=Általános
+402=Kijelzõ
+403=Szintaktika
+404=Kód
+405=Kiegészítés
+406=Osztály tallózás
+
+
+
+#sub tabs
+410=Beillesztés
+411=Forrás beillesztés
+
+
+
+# General Tab
+420=Szerkesztõ beállításai
+421=Automatikus bekezdés
+422=Beszúrás mód
+423=Tab használata
+424=Rövid Tabok
+425=Visszatörléssel bekezdés ki
+426=Sorvégi "space"-ek megtartása
+427=Csoportos visszavonás
+428=Módosított Home billentyû
+429=Kurzor EOF után
+430=Kurzor EOL után
+431=Dupla kattintás sor kijelölés
+432=Szöveg keresése a kurzortól
+433=Görgetõsáv csak ha szükséges
+434=Fél lap görgetés
+435=Görgetéskor sorszám kijelzés
+436=Szintaktikai kiemelés használata:
+437=DnD fájlok beillesztése
+438=Tab mérete:
+439=Jobb margó
+440=Látható
+441=Szélesség:
+442=Szín:
+443=Kurzor alakja
+444=Beillesztésnél :
+445=Felülírásnál :
+446=Függõleges vonal
+447=Vizszintes vonal
+448=Fél kocka
+449=Kocka
+450=DnD fájlok beillesztése
+451=Rejtett karakterek mutatása
+452=Szerkesztõ útmutatás mutatása
+453=Zárójelpárok kiemelése
+
+
+
+# through 459 for additions
+
+
+
+# Display Tab
+460=Szerkesztõ betûkészlete
+461=Betûkészlet:
+462=Méret:
+463=Szerkesztõ betûkészlete
+464=Jelölõsáv
+465=Autómatikus méretezés
+466=Sorszámozás
+467=Bevezetõ nullák mutatása
+468=Nullával kezdve
+469=Egyedi betûkészlet
+470=Jelölõsáv betûkészlet
+
+
+
+# Syntax Tab
+471=Elõtér:
+472=Háttér:
+473=Stílusok
+474=Kövér
+475=Dõlt
+476=Aláhúzott
+477=Színsémák:
+478=Típus :
+479=Egyéni színbeállítások mentése
+419=Színbeállítás neve:
+
+
+
+# Code Tab
+480=Kód
+481=Menü szöveg
+482=Szekció
+483=Leírás
+484=Kód beillesztése a projekt kezdõ fájlba
+
+
+
+# Completion Tab
+485=Kódkiegészítés gyorsítás használata
+486=Fájlok a gyorsítótárban:
+487=Kódkiegészítés engedélyezése
+488=Késleltetés (ms):
+489=Háttér színe:
+
+
+
+# Class browsing Tab
+490=Osztály tallózó beállításai
+491=Helyi #include-ok használata
+492=Példa:
+493=Tallózómotor beállításai
+494=Nézet beállításai
+495=Osztály tallózó engedélyezése
+496=Globális #include-ok használata
+
+
+
+#New project form
+500=Új projekt
+501=Leírás:
+503=Név:
+504=&C projekt
+505=C&++ projekt
+506=&Alapértelmezett nyelv készítése
+507=Egyebek
+508=Projekt beállítások
+
+
+
+#Remove file form
+520=Törlés a projektbõl
+521=A törölni kívánt fájl kiválasztása :
+
+
+
+#Goto line form
+525=Sorra ugrás ...
+526=Újsor :
+
+
+
+#Tool config form
+530=Eszközök konfigurálása
+531=Jelenlegi eszközök
+
+
+
+#Edit Tool form
+535=Eszköz hozzáadása
+536=Cimke:
+537=Program :
+538=Munka könyvtár :
+539=Paraméterek :
+540=Makró hozzáadása
+541=Lehetséges makrók:
+
+
+
+#Icon Library Form
+545=Ikon könyvtár
+546=Kiválasztott ikon használata
+547=Tallóz
+
+
+
+#Configure Shortcuts Form
+550=Gyorsbillentyûk konfigurálása
+551= Kattints egy sorra, és nyomd meg a kívánt billentyûket!
+552=Tipp: nyomj "Escape"-et a törléshez...
+553=Menük
+554=Hozzárendelt billentyûk
+555=Mégse
+556=OK
+
+
+
+#Tool Menu Macros
+560=Default könyvtár
+561=dev-c++ munka könyvtár
+562=Fordító kimeneti fájlnév
+563=Az aktuális projekt vagy fájl útvonala
+564=Az aktuális projekt vagy fájl neve
+565=A projekt "neve"
+566=Az aktuális fájl neve
+567=Az aktuális fájl útvonala
+568=Szóközzel elválasztott aktuális forrás fájlok listája
+569=A kurzor alatt lévõ szó
+570=dev-c++ verzió
+
+
+
+#About form
+580=A Dev-C++-ról :)
+581=inseculous@users.sourceforge.net
+582=GNU General Public License
+583=Kapcsolattartás
+584=Bloodshed Software Website:
+585=Mingw Compiler Website:
+586=Dev-C++ discussion forums:
+587=Dev-C++ felhasz. levlista:
+588=Készítõk e-mail címe:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=&Frissítések keresése
+
+
+
+#Code Inserts Entry Edit form
+600=Edit code insert entry
+601=Add code insert entry
+602=Menü Elem Cimke
+603=Elem Leírása
+604=Menü Szekció
+
+
+
+#Environment options form
+
+
+
+606=Fordítási folyamatot jelzõ ablak 
+607=&Fordítás alatt legyen látható
+608=Forítás után &automatikus bezárás
+609=Indítókép letiltása
+610=Környezeti beállítások
+611=Általános
+612=Fájlok és Könyvtárak
+613=Autómatikus megnyitás
+614=C++ az alapértelmezett projekt típus
+615=Eszközsor teljesképernyõs módban
+616=Backup fájlok készítése
+617=Futtatáskor minimalizálás
+618=Megnyit/Ment dialógus stílusa
+619=Windows 2k (sidebar)
+620=Windows 9x
+621=Windows 3.1
+622=Nyelv :
+623=Üzenetablak fülek helye:
+624=Max.fájlszám a Korábbi Fájlok menüben:
+625=Felhasználói alapértelmezett könyvtár:
+626=Fordító kimeneti könyvtára:
+627=Ikon könyvtár:
+628=Indítókép:
+629=Felhasználói alapértelmezett könyvtár kiválasztása
+630=Fordító kimeneti könyvtár kiválasztása
+631=Ikon könyvtár kiválasztása
+632=Összes projekt fájl
+633=Csak az elsõ projekt fájl
+634=Egyiksem
+635=Menü teljesképernyõs módban 
+636=Dupla kattintás a projekt menedzserbõl való megnyitáshoz
+637=Nyelvfájlok könyvtár:
+638=Téma:
+639=Felület
+
+
+
+#Find Form
+
+
+
+640=Szöveg keresése:
+641=Keresés
+642=Keresés file-ban
+643=&Keresendõ szöveg
+644=Beállítások
+645=K&is/nagybetû különbözik
+646=K&eresés egész szóra
+647=Hol
+648=&Projektben
+649=&Megnyitott File-okban
+650=Keresési tartomány
+651=&Teljes
+652=&Kijelölt terület
+653=Keresés indítása
+654=K&urzortól
+655=F&ile elejétõl
+656=Keresési irány
+657=&Elõrõl 
+658=&Hátulról
+
+
+
+#Replace form
+
+
+
+670=Csere szövegben
+671=Szöveg keresése:
+672=Csere ezzel:
+673=Beállítások
+674=K&is/nagybetû különbözik
+675=K&eresés egész szóra
+676=&Csere a kurzornál
+677=Keresési irány
+678=&Elõrõl
+679=&Hátulról
+680=Keresési tartomány
+681=&Teljes
+682=&Kijelölt terület
+683=Keresés indítása
+684=K&urzortól
+685=F&ile elejétõl
+
+
+
+#Goto function form
+
+
+
+695=Keresés:
+696=Típus
+697=Függvény
+698=Sor
+
+
+
+#Compiler Options
+
+
+
+700=Fordító beállításai
+701=Fordító
+702=Könyvtárak
+703=Beállítások
+704=Linker
+705=Programok
+
+
+
+710=Bináris
+711=Lib-ek
+712=C Include file-ok
+713=C++ Include file-ok
+720=C fordító
+721=C++ fordító
+722=Fordító:
+725=ANSI C szabvány támogatása
+726=Néhány hagyományos C elõfeldolgozó támogatása
+727=Az összes figyelmeztetés kikapcsolása
+728=Minden hozzáférés ellenõrzésének kikapcsolása
+729=$ jel elfogadása azonosítóban
+730=Heurisztika használata a gyorsabb fordításhoz
+731=Cygwin fordító használata Mingw helyett
+732=Következõ kapcsolók hozzáadása a fordító parancssorához:
+733=   Késleltetés:
+734=Engedélyezzük a késleltetést ms-ban, ha a make kifogásolja a makefile idõbélyegét.
+735=Hibák megjelenítése soronként
+740=Kód generálás
+741=Optimalizálás
+745=Kivételkezelés engedélyezése
+746=A double és float legyen egyforma méretû
+747=Extra megjegyzések használata az asm kódban
+748=Optimalizálás
+749=Legjobb optimalizálás
+750=Kisebb optimalizálások végrehajtása
+751=Makefile készítés
+752=Gyors de nem tökéletes depedencia készítés
+753=Kód profil
+754=Profil info készítése elemzéshez
+755=Linkelés mint Object C
+756=Nyomkövetõ információ készítése
+757=Ne használjon standard system fájlokat vagy könyvtárakat
+758=Konzol ablak használatának tiltása
+759=Következõ kapcsolók hozzáadása a linker parancssorához:
+760=Nincs optimalizálás
+761=További optimalizálás
+
+
+
+770=Itt változtathatod meg a Dev-C++ által használt programokat (pl. a használni kívánt fordítót) :
+771=Fordítási módok
+772=Új fordítási mód
+773=Fordítási mód neve:
+774=Ez a fordítási mód nem törölhetõ!
+775=Biztosan törli ?
+776=Fordítási mód átnevezés
+777=A fordítási mód új neve:
+778=További optimalizálás
+
+
+
+#Help Editor Form
+
+
+
+780=Segítség Menü Szerkesztõ
+781=Szöveg menü
+782=Segítség Fájl
+783=Segítség Menü Beállítások
+784=Ikon:
+785=Menü Szekciók
+786=Szekciók 1
+787=Szekciók 2
+788=A segítség Popup Menüben jelenjen meg
+789=Mûveletek
+790=Kurzor alatti szó keresése ebben a segítség fájlban
+791=F1 hozzárendelése
+
+
+
+#Print File Form
+800=Fájl nyomtatása
+801=Beállítások
+802=Oldalak
+803=Színek
+804=Kiemelés
+805=Hosszú sorok tördelése
+806=Sorok számozása
+807=Sorszámozás nyomtatása
+808=Sorszámozás nyomtatása a margóra
+809=Másolatok száma:
+810=Csak a kijelölés nyomtatása
+
+
+
+#Update Form
+
+
+
+820=Dev-C++ frissítések keresése
+821=Folyamat:
+822=Eredmény:
+823=Kiadott verzió:
+824=Szükséges verzió:
+825=Leírás:
+826=Download hely (dupla-klikk a letöltéshez):
+
+
+
+#AddToDo form
+830=To-Do elem hozzáadása...
+831=Leírás
+832=Prioritás
+833=Felhasználó
+
+
+
+#ViewToDo form
+835=To-Do lista...
+836=Fájlnév
+837=Kész
+838=Ne mutassa az elkészült elemeket
+839=Szürõ:
+840=Minden fájl
+841=Csak a megnyitott fájlok
+842=Minden projekt fájl
+843=Csak a megnyitott projekt fájlok
+844=Megnyitott nem projekt fájlok
+845=Csak az aktuális fájl
+
+
+
+#Import MSVC++ form
+850=MS Visual C++ projekt importálás
+851=Visual C++ projekt fájl kiválasztása
+852=Beállítások 
+853=Import konfiguráció
+854=Dev-C++ projekt fájlnév
+855=Az MS Visual C++ projekt sikeresen konvertálódott Dev-C++ projekt-é! Megakarja nyitni?
+856=A %s cél konfiguráció nem található (lehet, hogy a DEV-C++ hibája miatt...)
+
+
+
+#Project Options form
+900=Projekt Beállítások
+901=Általános
+902=Fájlok/Könyvtárak
+903=Név:
+904=Ikon
+905=Gyûjtemény
+906=Tallóz
+907=Típus
+908=Win32 GUI
+909=Win32 Console
+910=Win32 Static Lib
+911=Win32 DLL
+912=Fordítás mint C++ 
+913=Parancssori Opciók
+914=Fordító:
+915=Linker  beállítások/opcionális lib-ek v. object fájlok:
+916=Lib Könyvtárak
+917=Erõforrás Fájlok
+918=Include Könyvtárak
+919=Ikon Kiválasztása
+920=Object fájl beillesztése
+921=Erõforrások Könyvtára
+922=Build Beállítások
+923=Könyvtárak
+989=Makefile
+924=A generált futtatható fájlok helye:
+925=A generált object fájlok helye:
+926=A generált futtatható fájl nevének felülbírálása erre:
+927=Lib v. Object Hozzáadás
+928=%d fájl [%d forrás, %d header, %d erõforrásfájl]
+
+
+
+#New template form
+930=Név:
+931=Leírás:
+932=Kategória:
+933=Az új projekt neve:
+934=Fájlok a template-ben:
+935=Fordító extra opciói:
+936=Linker extra opciói:
+937=Ikonok
+938=Template infó
+939=Fájlok
+940=Extrák
+941=Template ikon
+942=Új projekt ikon
+943=Létrehozás
+944=Template készítése a projektbõl 
+945=Használd a projekt Include könyvtárait
+946=Használd a projekt Library könyvtárait
+947=Használd a projekt Erõforrás könyvtárait
+
+
+
+#New variable/member forms
+950=Visszatérési típus:
+951=Változó neve:
+952=Megvalósítás ebben:
+953=Láthatóság
+954=Tag függvény létrehozása ennek változónak az OLVASÁSÁHOZ
+955=Tag függvény létrehozása ennek változónak az ÍRÁSÁHOZ
+956=Név:
+957=Megjegyzés
+958=Leírás:
+959=Stílus:
+960=Létrehoz
+961=Mégsem
+962=Ismeretlen osztály...
+963=Nincs meghatározva a megvalósítási fájlnév...
+964=Nincs meghatározva a kód behelyezésének a kezdõ sorszáma...
+965=Tag neve:
+966=Argumentumok:
+967=Osztály neve:
+968=Származtatás másik osztályból
+969=Származtatás
+970=Szülõ osztály:
+971=Header fájlnév:
+972=Megvalósítási fájlnév:
+973=Header fájlnév:
+974=Hozzáadás az aktuális projekthez
+975=Attribútumok
+
+
+
+#File properties form
+980=Fájlnév
+981=Projekt
+982=Összes sor
+983=Jelenlegi kódsorok
+984=Megjegyzés sorok
+985=Include-olt fájlok
+986=Üres sorok
+987=Fájl méret
+988=Abszolút
+990=Relatív
+991=Fájl dátum/idõ bélyeg
+992=Fordító beállításai
+
+
+
+#Profile analysis form
+995=Profil analízis
+996=Kimeneti lista
+997=Hívási struktúra
+
+
+
+#Global strings
+# messages
+1000=A keresett sztring ''%s'' nem található
+1001=A %s fájlt nem lehet megnyitni
+1002=Cseréli ezt ''%s''
+1003=A %s fájl már létezik %s-ben
+1004=Biztosan be akarja zárni %s fájt?
+1005=Menti a változtatásokat a %s-ban?
+1006=Bezárja az %s fájlt és létrehoz egy új projektet?
+1007=Átnevezés erre:
+1008=Fordítás folyamatban
+1009=Menti a változtatásokat az %s fájlban?
+1010=A fájl már létezik, felülírja?
+1011=Hozzáadja az új fájlt az aktuális projekthez?
+1012=Hozzáadja az új erõforrást az aktuális projekthez?
+1013=A projektje nem tartalmaz nyomkövetési információkat, szeretné engedélyezni a nyomkövetést, és újrafordítani a projektet? 
+1014=A fordító beállításaiban nincsennek engedélyezve a profil és/vagy nyomkövetési információk. Akarja engedélyezni és újrafordítani a projektet?
+1015=Legalább egyszer futassa a projektet a profil információ létrehozásához!
+1016=Írja be az új könyvtár nevét:
+1017=Biztosan törölni akarja ezt a könyvtárat?
+1018=Írja be az új könyvtár nevét:
+1019=A %s fájl csak olvasható.Akarja, hogy írható-olvasható legyen ? Ha nem akkor a fájlt nem mentse el!
+1020=Hiba történt. A %s fájl nem  írható-olvasható ezért nem sikerült menteni!
+1021=Hozzáférés megsértést (Segmentation Fault) okozott a program.
+1022=A forrás fájl újabb mint a futtatható állomány. Akarja újra fordítani?
+1023=Válassza ki a csatolni kívánt alkalmazást:
+
+
+
+# errors
+1500=A %s fájl nem megnyitható
+1501=%s fájl nem menthetõ
+1502=%s fájlt nem lehet átnevezni
+1503=A keresési mezõ nem lehet üres
+1504=Projekt nem futtatható
+1505=Projekt nincs lefordítva
+1506=A forrás fájl nincs lefordítva
+1507=Make fájl nem található.
+1508=Object fájl tõrlése nem sikerült
+1509=Template nem helyezhetõ a projektbe.
+1510=%s Erõforrás nem taláható: %s - %s
+1511=Template fájl %s nem található, átugorva.
+1512=Nincs template hozzárendelve.
+1513=A fájl %s nem található.
+1514=Nincs alkalmazás megadva.Beállithat egyet a Futtatás menü Paraméter opciójában.
+1515=Alkalmazás nem található!Megváltoztathatja a Futtatás menü Paraméter opciójában.
+
+
+
+# misc
+2000=Névtelen
+2001=Csak olvasható
+2002=Beszúrás
+2003=Felûlírás
+2004=Projekt%d
+2005=Kérlek adj meg másik fájlnevet.
+2006=%d soros fájl
+2007=Fájl átnevezése
+2008=%s indítása.
+2009= Feladat befejezve
+2010=bájtok
+2011=Módosítva
+2012=Hiba
+2013=Információ
+2014=Figyelmeztetés
+2015=Kérdés
+2016= Sikeres fordítás
+2017= Felhasználói megszakítás
+
+
+
+# buttons
+
+
+
+2500=&Ok
+2501=&Mégse
+2502=&Segítség
+2503=&Alapállapot
+2504=&Igen
+2505=&Nem
+2506=&Hozzáad
+2507=&Szerkeszt
+2508=&Levesz
+2509=&Töröl
+2510=&Bezár
+2511=&Készítõk
+2512=&Keres
+2513=&Cserél
+2514=&Rossz Törlése
+2515=Ö&sszes Csere
+2516=Tallóz
+2517=Levesz
+2518=Átnevez
+2519=Import
+2520=Ablak Mód
+2521=Törlés
+
+
+
+# CPU Window
+2600=CPU Ablak
+2601=Assembler kód:
+2602=Fügvény:
+2603=Assembler szintaktika:
+2604=Regiszterek:
+
+
+
+# TipOfTheDay Window
+2700=A nap tippje
+2701=Tudta, hogy...
+2702=...nincsennek megjeleníthetõ tippek?
+2703=Ne jelenítsen meg tippeket indításnál
+2704=Köv. tipp
+2705=Elõzõ tipp
+
+
+
+# Environment Options (more)
+2800=Fájl típusok társítása
+2801=Fájl típusok:
+2802=Kapcsold be/ki a megfelelõ checkbox-ot a fájlok társításához...
+2803=CVS Támogatás
+2804=CVS Program helye:
+2805=Tömörítési szint:
+2806=SSH használata RSH helyett
+2807=Template-ek könyvtár:
+2808=Válassza ki a template-ek könyvtárát
+2809=Használja az XP témáját
+2810=Külsõ programok
+2811=Külsõ program
+2812=Kiterjesztés
+2813=Külsõ program hozzárendelése:
+2814=Kiértékelés rámutatással
+2815=Megfigyelési hibák kijelzése
+2816= Változók értékének nyomkövetése 
+2817=  Alternatív konfigurációs fájl 
+2818=Használja ezt az alternatív konfigurációs fájlt
+2819=Megváltoztatta az alkalmazás által használt konfigurációs fájlt.<CR>Az új konfigurációs fájl *nem* használható azonnal. Minden elõzõ változtatás a *jelenlegi* konfigurációs fájlba fog elmentõdni.<CR><CR>Indítsa újra a az alkalmazást az új konfigurációs fájl használatához...
+
+
+
+# Execute menu (more)
+2900=Paraméterek...
+2901=Aktuális fájl fordítása
+
+
+
+# Window list
+2910=Ablak Lista
+2911=Válaszd ki a szerkeszteni kívánt ablakot
+
+
+
+# CVS Menu
+2990=Aktuális Fájl...
+2991=Teljes Projekt...
+2992=Konfigurálja a CVS támogatást a "Eszközök / Környezeti beállítások" pontban...
+
+
+
+# CVS form
+3000=Import beállításai
+3001=Repository
+3002=Globális beállítások
+3003=Checkout beállításai
+3004=Commit beállításai
+3005=Update beállításai
+3006=Diff beállításai
+3007=Log beállításai
+3008=CVS kimenete
+3009=Import
+3010=Checkout
+3011=Commit
+3012=Update
+3013=Diff
+3014=Log
+3015=Import könyvtára
+3016=Típus
+3017=Kiadó
+3018=Kiadás
+3019=Log üzenet
+3020=Modul neve
+3021=Kiterjesztés
+3022=Checkout mint
+3023=Checkout könyvtára
+3024=Rekurzívan az alkönyvtárakra
+3025=Megmaradó beállítások törlése
+3026=Hiányzó könyvtárak létrehozása
+3027=Üres könyvtárak törlése
+3028=Helyi változtatások eldobása
+3029=Régebbiek mint
+3030=Revízió/ág/tag
+3031=Ha nem található, a legújabbat
+3032=További revíziók
+3033=Unified diff formátum
+3034=Helyi fájl összehasonlítása a hasonló reviziójú/tagú távoli fájlal
+3035=Helyi fájl összehasonlítása egy másik távoli revízióval
+3036=Két távoli revizió összehasonlítása
+3037=Dátum
+3038=Alapértelmezett ág logolása
+3039=Csak az RCS fájlnevek kiírása
+3040=Ne írja ki a tag neveket
+3041=Szûrõ
+3042=Revízió/tag szerint
+3043=Dátum szerint
+3044=Felhasználó szerint
+3045=Repository
+3046=Részletek
+3047=Hozzáférés módja
+3048=Felhasználó
+3049=Szerver
+3050=Távoli könyvtár
+3051=Hozzáad
+3052=Töröl
+3053=Add beállításai
+3054=Remove beállításai
+3055=A fájl törlése a lemezrõl is...
+
+
+
+# Params form
+3100=Paraméterek
+3101=A programnak átadandó paraméterek:
+3102=Paramétert szolgáltató alkalmazás:
+
+
+
+# Project options form (continued)
+3200=Fájlok
+3201=Projekt fájlok:
+3202=Projekt opciók:
+3203=Nyomkövetési információ elõállítása
+3204=Végrehajtási információ elõállítása
+3205=FIGYELEM: Ezek a beállítások felülbírálják a globális fordító opciókat ebben a projektben.
+3206=Windows XP témák támogatása
+3207=Fájl opciók
+3208=Szerepeljen a fordításban
+3209=Fájl fordítása mint C++ fájl
+3210=Verzió információ
+3211=Verzió információ a projektben
+3212=Részletes verzió
+3213=Fõ verzió:
+3214=Al verzió:
+3215=Kiadás:
+3216=Fordítás:
+3217=Nyelv:
+3218=További információ:
+3219=Fordítási parancs felülbírálása
+3220=Kimeneti fájl
+3221=Hozzáadás a linkeléshez
+3222=Fordítási prioritás:
+3223=Fordításkor a "build number" automatikus növelése
+3224=Egyedi Makefile használata (ne generáljon Makefile-t, ezt használja)
+3225=Információ a Makefile készítéséhez...
+3226=&A következõ fájl(ok) hozzáadása a Makefile-hoz:
+
+
+3400=Exe fájl sztrippelése
+3401=Optimalizálás a következõ géptipusra
+3402=Processzor spec. utasításkészletének használata 

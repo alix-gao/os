@@ -1,0 +1,981 @@
+[lang]
+Lang=Galego
+Ver=1
+
+#Galego V1.02 15.03.2004 Dev-CPP 4.9.8.10
+#Mantedor(Maintainer): Anio_pke (Antonio Pequeño Baz)
+#Por Favor remitir comentarios e suxerencias a webmaster@galaico.net (http://traduccions.galaico.net)
+
+#Top level menus
+100=&Arquivo
+101=&Edición
+102=&Buscar
+103=&Ver
+104=&Proxecto
+105=E&xecutar
+106=&Ferramentas
+107=F&iestra
+108=Ax&uda
+109=&Depurar
+
+#File menu
+120=&Novo
+121=&Proxecto...
+122=Código &Fonte
+123=&Recurso
+124=Pla&ntilla...
+
+130=&Abrir Proxecto ou Arquivo
+131=Ab&rir Arquivo Recente
+132=&Limpar Historial
+133=&Gardar
+134=Gardar C&omo...
+135=Gardar &Todo
+136=Pe&char
+137=Pechar Pro&xecto
+138=Propiedades
+139=Gardar proxecto como...
+
+140=&Exportar
+141=A Páxina &HTML
+142=A &RTF (Documento de Texto Enriquecido)
+143=&Proxecto a HTML
+
+149=I&mportar
+150=&Imprimir
+151=&Configurar Impresión
+152=&Sair
+
+#Edit menu
+160=&Desfacer
+161=&Refacer
+162=&Cortar
+163=C&opiar
+164=&Pegar
+165=&Seleccionar Todo
+166=&Borrar
+167=&Insertar
+168=Eng&adir (ou Quitar) Marcador
+169=Ir a Marcador
+170=&Marcador
+171=Da&ta e Hora
+172=Com&entario de Cabeceira
+#Due to exhausted numbers, the Edit menu continues at 380...
+
+#Search menu
+175=&Buscar...
+176=Bus&car en arquivos
+177=&Remprazar
+178=Buscar &Novamente
+179=&Ir a Liña
+180=&Búsqueda Incremental
+181=Ir a &Función
+
+#View menu
+182=Explorador de Proxectos Solto (non anclado)
+183=Ir ó Explorador de &Proxectos
+184=Ir ó Explorador de &Clases
+185=&Explorador de Proxectos/Clases
+186=&Barra de Estado
+187=Resultado&s do Compilador
+188=Sempre &Visible
+189=Mostrar só cando se &necesite
+190=Barra de &Ferramentas
+
+# Toolbar Captions
+191=&Principal
+192=&Compilar e Executar
+193=Pro&xecto
+194=&Opcións
+195=&Especiais
+196=&Edición
+197=&Buscar
+198=&Fiestra de Resultados solta (non anclada)
+
+#Project menu
+200=&Novo código fonte
+201=Eng&adir a Proxecto
+202=&Quitar do proxecto
+203=&Editar Arquivo de Recursos
+204=Opcións do Pro&xecto
+205=Editar Arquivo de construcciónn
+206=En&gadir Arquivo de Recurso
+207=&Borrar Arquivo de Recursos
+
+#Execute menu
+210=&Compilar
+211=&Executar
+212=C&ompilar e Executar
+213=&Reconstruir Todo
+214=&Limpar resultadoss
+215=Re&sultados do Compilador
+216=Revisar Sinta&xe
+217=Reiniciar execución do &programa
+218=&Análise de Perfil
+219=Ca&ncelar
+
+#Tool menu
+220=Opcións do &Compilador
+221=Opcións do E&ntorno
+222=Opcións do E&ditor
+223=Configurar &Ferramentas
+224=Configurar &Teclas Rápidas
+
+#Window menu
+230=Modo &Pantalla Completa
+231=Modo &Normal
+232=&Seguinte
+233=&Anterior
+234=&Pechar Todo
+235=Pantalla completa de Dev-CPP %s. Presione Mayus-F12 para ver/ocultar barra de ferramentas. F12 para modo normal.
+236=Pechar todos menos este
+237=&Listar...
+
+#Help menu
+240=&Acerca de Dev-C++...
+241=Buscar A&ctualizacións...
+242=Configurar &Menú de Axuda...
+243=&Axuda en Dev-CPP
+
+#Debug Menu
+245=&Depurar
+246=Engadir/&Borrar Punto de Ruptura
+247=Seguinte &Paso
+248=Saltar ó Segu&inte paso
+249=Eng&adir variable vixiada
+250=Obser&var Variables
+251=&Deter Execución
+252=&Editar variable vixiada
+253=&Borrar variable vixiada
+254=Avanzar Pa&so a paso
+255=&Executar ata o cursor
+256=Ver f&iestra da CPU
+257=A&dxuntar ó proceso...
+258=&Modificar valor
+259=Borrar &todo
+
+#context menus
+# project menu
+260=&Novo Arquivo
+261=Eng&adir Arquivo
+262=&Borrar Arquivo...
+263=&Opcións...
+264=&Editar Arquivo de Recurso
+
+# unit menu
+270=&Borrar Arquivo
+271=&Renomear Arquivo
+272=&Pechar
+273=&Abrir
+274=Abrir Ca&beceira
+
+# class browser menu
+280=Ir a declaración
+281=Ir a implementación
+282=Nova &Clase/Función
+283=Nova &Función Membro
+284=Nova &Variable
+285=&Modo de visualización...
+286=&Todolos arquivos
+287=&Arquivo actual
+288=En&gadir carpeta
+289=&Borrar carpeta
+290=Re&nomear carpeta
+291=Non pode crear máis de %d carpetas nun proxecto...
+292=&Usar cores
+293=Arquivos do proxecto
+294=Mostrar membros herdados
+295=Abrir con...
+
+#Message control
+# sheets
+300=Co&mpilador
+301=Recursos
+302=Resultado da Compilación
+303=Ver Resultados
+304=Pechar
+305=Depurar
+
+# pop menu
+310=Borrar resu&ltados
+311=&Copiar resultados
+312=&Ocultar
+313=&Abrir
+
+# column headers
+# 320, 322, 323 not in inc file
+315=Liña
+316=Unidad
+317=Mensaxe
+318=Argumentos
+
+320=Encontrar Liña
+321=Columna
+322=Nome de Variable
+323=Valor
+324=Información:
+325=Resultado da Compilación:
+326=Erros Totales:
+327=Tamaño de Saída:
+
+#debug
+
+330=Variables observadas
+331=Retroseguemento
+332=Saída
+333=Enviar comando a GDB:
+334=Enviar
+
+# Specials toolbar items
+340=&Novo
+341=&Insertar...
+342=En&gadir/Borrar
+343=I&r a
+344=Fiestra do Proxecto
+345=Fiestra de Depuración
+346=Fiestra de resultados
+
+#non-visible (open/save dialogs)
+350=Abrir Arquivo
+351=Abrir Arquivo
+352=Exportar a
+353=Gardar Arquivo
+354=Gardar Proxecto
+355=Seleccionar Arquivo de Axuda
+
+357=Nova Variable Observada
+358=Introduce Nome da Variable:
+359=Modificar Variable Observada
+360=Novo Nome de Variable:
+361=&Modificar valor
+362=Variable a Modificar:
+363=Nuevo Valor
+
+370=Proxecto
+371=Clases
+
+380=Engadir comentario
+381=Borrar comentario
+382=Poñer Marxe
+383=Borrar Marxe
+384=Intercambiar encabezado/fonte
+
+#Editor Options Dialog 400-499
+400=Opcións do Editor
+401=Xerais
+402=Visualización
+403=Sintaxe
+404=Código
+405=Auto Completar Código
+406=Explorador de Clases
+
+#sub tabs
+410=Elementos do Menú insertar
+411=Código por omisión
+
+# General Tab
+419=Introducir nome da configuración:
+420=Opcións do Editor:
+421=Marxe Automático
+422=Modo Insertar
+423=Permitir o uso do caracter Tabulador
+424=Tabuladores intelixentes
+425=Tecla Retroceso quita marxe
+426=Manter Espacios ó Final de Liña
+427=Desfacer Múltiples Cambios
+428=Tecla Inicio mellorada como Visual C++
+429=Cursor Despois de Final de Archivo
+430=Cursor Despois de Final de Liña
+431=Doble Clic Selecciona a liña
+432=Situar o cursor no texto encontrado
+433=Barras de Desplazamento
+434=Desplazamento de Media Páxina
+435=Ensinar liña no Desplazamento
+436=Sintaxe Resaltada nos arquivos
+437=Insertar arquivos soltados na fiestra
+438=Tamaño do Tabulador:
+439=Liña no Marxe Dereito
+440=Visible
+441=Ancho
+442=Cor:
+443=Intercalación
+444=Insertar Intercalación
+445=Sobreescribir Intercalación
+446=Liña Vertical
+447=Liña Horizontal
+448=Medio Bloque
+449=Bloque
+450=Insertar Arquivos Arrastrados ó Programa
+451=Mostrar Caracteres de Liña Ocultos
+452=Mostrar axudas (pistas) no editor
+453=Resaltar chaves/parénteses concordantes
+
+# through 459 for additions
+
+# Mostrar Tab
+460=Formato da Fonte:
+461=Fonte
+462=Tamaño
+463=Mostra do formato da Fonte
+464=Canal (Barra na marxe esquerda)
+465=Tamaño Automático
+466=Números de Liña
+467=Mostrar Ceros Principais
+468=Comenzar en Cero
+469=Usar Fonte Preferida
+470=Mostra da Fonte do Canal
+
+# Syntax Tab
+471=Primer Plano
+472=Fondo
+473=Estilos
+474=Negriña
+475=Cursiva
+476=Suliñada
+477=Pre-configuracións
+478=Tipo :
+479=Gardar configuracións de sintaxe
+
+# Code Tab
+480=Código
+481=Texto no menú
+482=Sección
+483=Descripción
+484=Insertar Código por Defecto nun Código Fonte dun Proxecto Vacío
+
+# Completion Tab
+485=Usar memoria caché para autocompletar código
+486=Archivos en caché
+487=Permitir Autocompletar código
+488=Retardo (ms):
+489=Cor de fondo:
+
+# Class browsing Tab
+490=Configuración do Explorador de Clases
+491=Escanear arquivos locais referenciados nos #includes
+492=Mostra:
+493=Opcións do Motor de Búsqueda
+494=Opcións de Visualización
+495=Activar Explorador de Clases
+496=Escanear arquivos globales referenciados no #include
+497=Só mostrar clases do archivo activo
+
+#New project form
+500=Novo Proxecto
+501=Descripción do tipo de Proxecto seleccionado:
+502=Arquivo:
+503=Nome do Proxecto:
+504=En &C
+505=En C&++
+506=Facer C/C++ &Linguaxe predeterminada
+507=Miscelánea
+508=Opcións do proxecto
+
+#Remove file form
+520=Quitar do Proxecto
+521=Seleccione Arquivo a quitar do Proxecto :
+
+#Goto line form
+525=Ir a Liña ...
+526=Nova Liña:
+
+#Tool config form
+530=Configuración de Ferramentas
+531=Ferramentas Actuais:
+
+#Edit Tool form
+535=Editar Entrada de Ferramenta
+536=Nome
+537=Programa
+538=Carpeta de Traballo
+539=Parámetros
+540=Engadir Macro
+541=Macros Dispoñibles
+
+#Icon Library Form
+545=Librería de iconas
+546=Usar a Icona Seleccionada
+547=Explorar
+
+550=Configurar atallos do teclado
+551=Faga clic nun atallo e presione a tecla que queiras
+552=Suxerencia: Para borrar un atallo presiona ESC
+553=Entrada do menú
+554=Atallo Asignado
+555=&Cancelar
+556=Acep&tar
+
+#Tool Menu Macros
+560=Devolve o nome da carpeta por Defecto
+561=Devolve o nome da carpeta de Traballo de Dev-C++
+562=Devolve o Nome de Arquivo compilado
+563=Devolve o nome da carpeta do proxecto actual ou do código fonte
+564=Devolve o Nome de arquivo do proxecto actual ou do código fonte
+565=Devolve o nome do proxecto
+566=Devolve o nome do código fonte actual
+567=Devolve o nome da carpeta do Código Fonte actual
+568=Devolve unha lista espaciada dos Códigos Fonte do proxecto actual
+569=Devolve o cursor na palabra no editor activo
+570=Devolve a versión de Dev-C++
+# -- TO 579
+
+#About form
+580=Acerca de Dev-C++ :)
+581=inseculous@users.sourceforge.net
+582=Licencia Pública GPL de GNU
+583=Información de Contacto
+584=Sotfware Bloodshed, sitio web:
+585=Compilador Mingw, sitio web:
+586=Dev-C++, foros de discusión:
+587=Dev-C++, lista de correo:
+588=E-mail dos Autores:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=&Buscar Actualizacións
+
+#Code Inserts Entry Edit form
+600=Editar entrada para inserción de código
+601=Engadir entrada para inserción de código
+602=Nome da entrada no menú insertar
+603=Descripción da entrada
+604=Lugar no menú insertar
+
+#Environment options form
+606=Fiestra de Progreso Compilación
+607=&Ver durante a compilación
+608=&Pechar automáticamente
+609=Non mostrar pantalla de Saúdo no inicio
+610=Opcións de Entorno
+611=Principal
+612=Directorios
+613=Auto Abrir
+614=C++ por Defecto nun Novo proxecto
+615=Mostrar Barra de Ferramentas en Pantalla Completa
+616=Crear Arquivos de Respaldo  (Copia de Seguridade)
+617=Minimizar na execución do Programa
+618=Estilo das fiestra Abrir/Gardar
+619=Windows 2k (Barra lateral)
+620=Windows 9X
+621=Windows 3.1x
+622=Linguaxe:
+623=Mostrar resultados do Compilador:
+624=Máx número de Arquivos Recentes
+625=Directorio de Dev-C++
+626=Directorio de Saída
+627=Ruta da Librería de Iconas
+628=Imaxe de Pantalla de Saúdo
+629=Seleccionar Directorio por Defecto de Usuario
+630=Seleccionar Directorio de Saída do Compilador
+631=Seleccionar Directorio de Librerias de Iconas
+632=Tódolos arquivos do Proxecto
+633=Só o primeiro arquivo do proxecto
+634=Nada
+635=Mostrar Menú en Modo de Pantalla Completa
+636=Doble Click para Abrir Arquivos do Explorador de Proxectos
+637=Directorio dos Arquivos de Idiomas (Traduccións)
+638=Tema, Estilo das Iconas::
+639=Interface
+
+
+#Find Form
+640=Buscar Texto
+641=Buscar no &Arquivo Actual
+642=Buscar en &Tódolos Arquivos
+643=&Texto a Buscar
+644=Opcións:
+645=&Diferenciar Minús/Maiús
+646=&Palabras Completas Soamente
+647=Dirección
+648=&Arquivos no Proxecto
+649=Arquivos Ab&ertos
+650=Buscar en...
+651=G&lobal
+652=Texto seleccionado Soa&mente
+653=Empezar a Buscar...
+654=Dende Cu&rsor
+655=Dende o &Inicio
+656=Dirección
+657=Ad&iante
+658=A&trás
+
+#Replace form
+670=Remprazar Texto
+671=Texto a Buscar:
+672=Remprazar por:
+673=Opcións:
+674=&Diferenciar Minús/Maiús
+675=&Palabras Completas Soamente
+676=Pr&eguntar Remprazo
+677=Dirección:
+678=A&diante
+679=At&rás
+680=Buscar en...
+681=G&lobal
+682=Texto &seleccionado
+683=Empezar a Buscar...
+684=Dende o C&ursor
+685=A&lcance Completo
+
+695=Buscar por:
+696=Tipo
+697=Función
+698=Liña
+
+#Compiler Options
+700=Opcións do Compilador
+701=Compilador
+702=Directorios
+703=Configuración
+704=Enlazador(linker)
+705=Programas
+
+710=Binarios
+711=Librerías
+712=Cabeceiras C
+713=Cabeceiras C++
+720=Compilador C:
+721=Compilador C++:
+722=Compilador:
+725=Soportar todolos programas en C ANSI Estandar
+726=Soportar Preprocesadores Tradicionais de C
+727=Desactivar todolos Mensaxes de Aviso (Warnings)
+728=Desactivar todo o Chequeo de Acceso
+729=Aceptar Símbolos $ en identificadores
+730=Usar Heurística para compilar máis rápido
+731=Usar Compilador Cygwin en vez de Mingw
+732=Engadir os seguintes comandos cando chama ó compilador
+733=Retraso Compil.
+734=Activa un Retraso en milisegundos por se falla pola hora e data do arquivo de construcción
+735=Mostra un erro por liña
+
+740=Xeración de Código:
+741=Optimización:
+745=Activar Manexo de Excepcións
+746=Usar mesmo tamaño para tipo double e float
+747=Poñer comentarios de información extra en código xerado de ensamblador
+748=Optimizar
+749=Mellor Optimización
+750=Realizar un número menor de optimizacións
+751=Xeración do arquivo de construcción (makefile)
+752=Usar xeración de dependencias rápida pero imperfecta
+753=Xeración do perfil de código
+754=Xerar información do perfil para análise
+755=Enlazar un programa en formato 'Objective C'
+756=Xerar Información de Depuración
+757=Non usar arquivos ou bibliotecas do sistema
+758=Non crear unha fiestra de consola
+759=Engadir estos co&mandos á liña de comandos do linker
+760=Non optimizar
+761=Optimizar máis
+
+770=É posible cambiar os nomes dos programas que usa Dev-Cpp. (Por exemplo para usar un Cross Compiler).
+771=Compilador a configurar:
+772=Novo Compilador
+773=Introduza o novo nome do compilador:
+774=¡Non pode borrar o único Compilador que hai configurado!
+775=¿Estás seguro de que queres eliminar o compilador seleccionado?
+776=Cambia o nome do compilador
+777=Ingrese o novo nome para renomea-lo Compilador:
+778=Optimizacións intensivas
+
+#Help Editor Form
+780=Menú de Axuda do Editor
+781=Texto do Menú
+782=Arquivo de Axuda
+783=Axuda en Opcións do Menú
+784=Icona
+785=Sección do Menú
+786=Sección 1
+787=Sección 2
+788=Menú Desplegable de Axuda
+789=Accións
+790=Buscar en Arquivo de Axuda pola palabra baixo o cursor
+791=Asigna a función de F1
+
+#Print File Form
+800=Imprimir Arquivo
+801=Parámetros:
+802=Páxinas:
+803=&Cores
+804=&Resaltado
+805=Axus&te de liña
+806=Números de &Liña
+807=Imprimir Números de Liña
+808=Imprimir Números de Liña no Marxe
+809=Número de Copias:
+810=Imprimir Selección
+
+#Update Form
+820=Buscar Actualizacións de Dev-C++
+821=Tarea:
+822=Resultados:
+823=Versión de Saída:
+824=Versión necesaria para usar con:
+825=Descripción de Saída:
+826=Sitio de Descarga (doble click para baixar):
+
+830=Engadir nova Tarea
+831=Descripción
+832=Prioridade
+833=Usuario
+
+835=Lista de Tareas
+836=Nome de arquivo
+837=Realizado
+838=Non mostres obxetos marcados como feitos (correctos)
+839=Filtros:
+840=Todolos arquivos (dentro e Fora do proxecto)
+841=Só abrir arquivos (dentro e fora do proxecto)
+842=Todolos arquivos do proxecto
+843=Abrir só arquivos do proxecto
+844=Arquivos abertos que non son do proxecto
+845=Só o arquivo actual
+
+
+850=Proxecto MS Visual C++
+851=Seleccione arquivo de proxecto Visual C++
+852=Opcións de Importación
+853=Configuración para importar
+854=Nome de arquivo para proxecto Dev-Cpp
+855=O arquivo de proxecto de MS Visual C++ foi importado e convertido a proxecto Dev-Cpp. ¿Quere abrilo agora?
+856=Non se localiza a configuración "%s" (isto é probablemente un bug en Dev-C++)...
+
+#Project Options form
+900=Opcións de Proxecto
+901=Principal
+902=Directorios
+903=Nome:
+904=Icona:
+905=Librería
+906=Examinar
+907=Tipo:
+908=Win32 GUI (modo gráfico)
+909=Consola Win32 (modo texto)
+910=Libreria Estática Win32
+911=Librería DLL Win32
+912=Compilar como C++
+913=Opcións Adicionais na Liña de Comando:
+914=Compilador:
+915=Opcións do Enlazador: Librerías ou Obxetos Opcionais
+916=Directorios de Librerías (.a .lib .dll)
+917=Arquivos de recursos
+918=Directorios de Include
+919=Seleccionar Icona
+920=Incluir un Arquivo de Obxeto
+921=Directorios de recursos
+922=Opcións de Construcción
+923=Directorios
+924=Directorio de saída para arquivo executable
+925=Directorio de saída para arquivo obxeto
+926=Especificar Nome do Arquivo de Saída
+927=Engadir Librería ou Obxeto
+928=%d arquivos [%d fontes, %d cabeceiras, %d recursos]
+
+#New template form
+930=Nome:
+931=Descripción:
+932=Categoría:
+933=Nome do Novo Proxecto:
+934=Arquivos na plantilla:
+935=Opcións extra para o Compilador:
+936=Opcións extra para o Enlazador:
+937=Iconas:
+938=Información da plantilla
+939=Arquivos
+940=Extra(s)
+941=Icona da plantilla
+942=Icona do novo proxecto
+943=Crear
+944=Nova plantilla dende proxecto
+945=Use directorios Include do proxecto
+946=Use directorios de Librerías do proxecto
+947=Use directorios de Recursos do proxecto
+
+#New variable/member forms
+950=Devolver tipo:
+951=Nome de variable:
+952=Implementado en:
+953=Alcance do acceso:
+954=Crear función membro para LER desta variable
+955=Crear función membro para ESCRIBIR nesta variable
+956=Nome:
+957=Comentarios
+958=Descripción:
+959=Estilo:
+960=Cr&ear
+961=&Cancelar
+962=Clase descoñecida ...
+963=Non se pode determinar o nome do arquivo para implementación
+964=Non é posible deteminar o número de liña para insertar código
+965=Nome membro:
+966=Argumentos:
+967=Nome clase:
+968=&Herdar doutra clase
+969=Herdanza
+970=Herdar da clase:
+971=Nome do arquivo de encabezado:
+972=Arquivo de Implementación:
+973=Arquivo de encabezado:
+974=Eng&adir ó proxecto actual
+975=Atributos
+
+#File properties form
+980=Arquivo
+981=No proxecto
+982=Total de liñas
+983=Liñas de código
+984=Liñas de comentarios
+985=Arquivos incluidos
+986=Liñas vacías
+987=Tamaño do arquivo
+988=Absoluto
+989=Arquivo de construcción
+990=Relativo
+991=Data e Hora do Arquivo
+992=Configuración do compilador
+
+#Profile analysis form
+995=Análise do Perfil
+996=Saída sen formato
+997=Ver perfil (graph)
+
+#Global strings Antonio Pequeño B.
+# messages
+1000=Cadena ''%s'' non encontrada
+1001=O arquivo %s non puido ser aberto
+1002=¿Remprazar esta occurencia ''%s'?
+1003=Arquivo: %s xa existe en %s
+1004=¿Desexa realmente pechar %s?
+1005=¿Gardar cambios a %s?
+1006=¿Pechar %s e comezar novo proxecto?
+1007=Renomear a:
+1008=Compilando...
+1009=¿Gardar Cambios a %s?
+1010=O arquivo xa existe, ¿Sobreescribilo?
+1011=¿Engadir Novo Arquivo ó Proxecto?
+1012=¿Engadir Novo Recurso ó Proxecto?
+1013=O proxecto non ten información para depuración. ¿Desexa activar depuración e recompilar o proxecto?
+1014=Non activou información de perfil e/ou depuración nas Opcións do Compilador. ¿Quere activalas e reconstrui-lo proxecto agora?
+1015=Por favor, proba o teu proxecto ó menos unha vez, para que a información do perfil se xere...
+1016=Introduza novo nome da carpeta:
+1017=¿Realmente desexa borrar esta carpeta?
+1018=Introduza o novo nome de carpeta:
+1019=O arquivo %s é só de lectura. ¿Desexa cambialo a modo lectura e escritura? Se non, o arquivo non será grabado
+1020=Erro: O arquivo %s non foi cambiado a modo lectura e escritura e non puido ser grabado
+1021=Produciuse unha violación de acceso a memoria (fallo de segmentación) no seu programa
+1022=O arquivo fonte é máis recente que o executable. ¿Desexa reconstrui-lo executable?
+1023=Selecciona a aplicación que queres para adxuntar:
+
+# errors
+1500=Non se pode abri-lo Arquivo %s
+1501=Non se pode garda-lo Arquivo %s
+1502=Non se pode renomea-lo arquivo %s
+1503=O campo de Búsqueda non pode estar vacío
+1504=Proxecto non Executable
+1505=Proxecto non Compilado
+1506=Código Fonte non Compilado
+1507=Arquivo de Construcción non encontrado
+1508=Fallo o borra-los resultados
+1509=A plantilla non puido ser posta no Proxecto
+1510=O recurso %s non foi encontrado: %s - %s
+1511=A Plantilla %s non foi encontrada, Seguindo
+1512=Non hai ningunha Plantilla Asignada
+1513=O Arquivo %s non foi encontrado
+1514=Non se especificou aplicación local. Podes incluila no menú Executar, Parámetros.
+1515=¡Aplicación local non encontrada ! Podes cambiala no menú Executar, Parámetros.
+
+# misc
+2000=Sen Nome
+2001=Só Lectura
+2002=Insertar
+2003=Sobreescribir
+2004=Proxecto %d
+2005=Por favor use outro nome
+2006=Liñas do Arquivo: %d 
+2007=Renomear Arquivo
+2008=Executando %s
+2009=Execución Terminada
+2010=Bytes
+2011=Modificado
+2012=Erro
+2013=Información
+2014=Advertencia
+2015=Pregunta
+2016=Compilación Concluida con Éxito
+2017=Compilación Cancelada polo Usuario
+
+# buttons
+2500=&Aceptar
+2501=&Cancelar
+2502=Ax&uda
+2503=&Por Defecto
+2504=&Sí
+2505=&Non
+2506=Engad&ir
+2507=E&ditar
+2508=Eli&minar
+2509=B&orrar
+2510=Pecha&r
+2511=Au&tores
+2512=&Buscar
+2513=&Remprazar
+2514=Borrar In&válido
+2515=Rempa&zar Todo
+2516=E&xaminar
+
+2516=&Examinar
+2517=E&liminar
+2518=Re&nomear
+2519=&Importar
+2520=Modo &Fiestra
+2521=Limpar
+
+# CPU Window RO
+2600=Fiestra da CPU
+2601=Código ensamblador :
+2602=Función :
+2603=Sintaxe ensamblador :
+2604=Rexistros :
+
+2700=Suxerencia do día
+2701=¿Sabía que...
+2702=...non hai suxerencias para mostrar?
+2703=&Non mostrar suxerencias ó inicio
+2704=&S. suxerencia
+2705=&A. suxerencia 
+
+# Environment Options (more)
+2800=Asociacións de Arquivos
+2801=Tipos de arquivos:
+2802=Simplemente selecciona ou quita os tipos de arquivos que se asociarán a Dev-C++ como programa por defecto para abrilos...
+
+2803=Soporte CVS
+2804=Arquivo de Programa CVS
+2805=Nivel de Compresión
+2806=Usar SSH (seguro) no sitio de RSH
+2807=Directorio de Plantillas de proxectos
+2808=Seleccionar Directorio de Plantillas
+2809=Usar interface estilo XP
+2810=Programas externos
+2811=Programa externo
+2812=Extensión
+2813=Asociacións con programas externos:
+2814=Observa-la variable seleccionada có rato
+2815=Mostra-los erros observados
+2816=Explorador de depuración de variables
+2817=Arquivo de configuración diferente
+2818=Usa este arquivo de configuración diferente
+2819=Cambiado o arquivo de configuración a utilizar na túa aplicación.<CR>O novo arquivo de configuración *non* se usará na sesión actual. Calquer cambio que fagas nesta sesión, gardarase no arquivo de configuración *actual*<CR><CR>É recomendable reiniciar Dev-C++ agora, para que empece a usa-lo novo arquivo de configuración...
+
+# Execute menu (more)
+2900=Parámetros...
+2901=Compilar arquivo actual
+
+# Window list
+2910=Lista de Fiestras
+2911=Seleccione a fiestra que desexa editar :
+
+# CVS Menu
+2990=Arquivo actual...
+2991=Proxecto enteiro...
+2992=Por Favor, Configure soporte CVS en "Ferramentas / Opcións de Entorno"...
+
+# CVS form
+3000=Opcións de Importación
+3001=Repositorio
+3002=Opcións Globais
+3003=Opcións de Verificación
+3004=Opcións de Conclusión
+3005=Opcións de Actualización
+3006=Opcións da lista de cambios
+3007=Opcións do Log
+3008=Saída do CVS
+3009=Importar
+3010=Verificación
+3011=Conclusión
+3012=Actualización
+3013=Lista de cambios
+3014=Mensaxe Log
+3015=Directorio de Importación
+3016=Acción
+3017=Proveedor
+3018=Última versión
+3019=Mensaxe Log
+3020=Nome do módulo
+3021=Extensión
+3022=Verifique como
+3023=Directorio de Verificación
+3024=Recurrir dentro de subdirectorios
+3025=Reiniciar opcións engadidas
+3026=Crear directorios inexistentes
+3027=Borrar directorios vacíos
+3028=Cancelar cambios realizados localmente
+3029=Antes da data
+3030=Revisión/Rama/Etiqueta
+3031=Se non existe, descarga o máis recente
+3032=Outras revisións
+3033=Realizar unha lista de cambios unificada
+3034=Compara arquivo local coa revisión/etiqueta do mesmo arquivo remoto
+3035=Compara archivo local coa revisión do mismo arquivo remoto
+3036=Compare dúas revisións remotas
+3037=En data
+3038=Facer un log da rama por defecto
+3039=Listar só o nome de arquivo RCS
+3040=Non imprimir os nomes das etiquetas
+3041=Filtro
+3042=Por revisión/etiqueta
+3043=Por Data
+3044=Por Usuario
+3045=Repositorio
+3046=Detalles
+3047=Método de Acceso
+3048=Usuario
+3049=Servidor
+3050=Directorio remoto
+3051=Engadir
+3052=Borrar
+3053=Engadir opcións
+3054=Opcións de Borrar
+3055=Borra o arquivo tamén do disco duro...
+
+# Params form
+3100=Parámetros
+3101=Parámetros a pasar ó programa :
+3102=Aplicación local :
+
+# Project options form (continued)
+3200=Arquivos
+3201=Arquivos do Proxecto:
+3202=Opcións do Proxecto:
+3203=Xerar información para depurar
+3204=Xerar información do perfil
+3205=NOTA: Estas configuracións permanecerán neste proxecto sobre as opcións xerais do compilador.
+3206=Soportar Modo Windows XP
+3207=Opcións do Arquivo:
+3208=Incluir ó compilar
+3209=Compilar como C++
+3210=Información da Versión
+3211=Inclue a información da Versión no Proxecto
+3212=Detalles da Versión
+3213=Maior:
+3214=Menor:
+3215=Actualización (Release):
+3216=Construcción (Build):
+3217=Linguaxe:
+3218=Información Adicional:
+3219=Antepoñer á construcción
+3220=Arquivo de Saída
+3221=Incluir no proceso de Enlace
+3222=Prioridade de Construcción:
+3223=Auto-incrementar o número de construcción ó compilar
+3224=Usar un Makefile costumizado (non xeralo, usar este)
+3225=Información sobre o Makefile costumizado...
+3226=&Inclúe os seguintes archivos dentro do Makefile:
+
+# More compiler options
+3400=Borra-lo executable
+3401=Xerar instrucións para o seguinte ordenador
+3402=Activa-lo uso del procesador específico de creación de funcións

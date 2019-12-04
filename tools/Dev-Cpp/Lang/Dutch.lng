@@ -1,0 +1,987 @@
+################################################################
+#							#
+# 	Nederlandse vertaling					#
+# 	door Jordi De Groof					#
+# 	E-mail: jordi.degroof@gmail.com				#
+# 	Als je nog fouten vindt of sugessties hebt, gelieve me te e-mailen	#
+# 	Vertaling beëindigd op 19 december 2004			#
+# 							#
+################################################################
+
+[lang]
+Lang=Dutch (Nederlands)
+Ver=2
+
+#Top level menus
+100=&Bestand
+101=Be&werken
+102=&Zoeken
+103=Bee&ld
+104=&Project
+105=&Uitvoeren
+106=&Gereedschappen
+107=&Vensters
+108=&Help
+109=&Debug
+
+#File menu
+120=&Nieuw
+121=&Project...
+122=&Broncode...
+123=&Resource-bestand
+124=&Sjabloon...
+
+130=&Open Project of Bestand...
+131=He&ropenen
+132=Geschiedenis Wissen
+133=O&pslaan
+134=Opslaan &als...
+135=&Alles Opslaan
+136=&Sluiten
+137=Project S&luiten
+138=Eigenschappen
+139=Bewaar pro&ject als...
+
+140=&Exporteren
+141=als &HTML
+142=als &RTF
+143=&Project naar HTML
+
+149=&Importeren
+
+150=Af&drukken
+151=Pagina-&Instellingen
+152=&Afsluiten
+
+#Edit menu
+160=&Ongedaan maken
+161=&Herhalen
+162=K&nippen
+163=&Kopieren
+164=&Plakken
+165=Alles &Selecteren
+166=Verwij&deren
+167=&Invoegen
+168=&Creëer bladwijzer
+169=&Ga naar bladwijzer
+170=&Bladwijzer
+171=&Datum/Tijd
+172=&Commentaar Header
+
+#Search menu
+175=&Zoeken...
+176=Zoeken in &Bestanden...
+177=&Vervangen...
+178=V&olgende Zoeken
+179=&Ga naar Lijn...
+180=&Verhogend Zoeken
+181=Ga naar func&tie
+
+#View menu
+182=Zwevende Projectbeheer-venster
+183=Ga naar Projectbeheer
+184=Ga naar Klasse-&browser
+185=&Projectbeheer
+186=&Statusbalk
+187=&Rapportvenster
+188=&Altijd zichtbaar
+189=Alleen indien n&odig
+190=&Knoppenbalken
+198=Zwevend rapport-venster
+
+# Toolbar Captions
+191=Hoofdbalk
+192=Compileren en Uitvoeren
+193=Project
+194=Opties
+195=Speciaal
+196=Bewerken
+197=Zoeken
+
+#Project menu
+200=&Nieuw Unit
+201=Toevoegen &aan Project
+202=Ve&rwijderen uit Project
+203=B&ewerk Resource-bestand...
+204=Project-&opties
+205=Bewerk &Makefile
+206=Resource-bestand toevoegen
+207=Resource-bestand verwijderen
+
+#Execute menu
+210=&Compileren
+211=Uitvoe&ren
+212=C&ompileren && Uitvoeren
+213=Alles He&rcompileren
+214=O&pruimen
+215=Resultaten Co&mpileren
+216=&Syntax controle
+217=Reset &Programma
+218=Pro&fiel-analyse
+219=Compilatie afbreken
+
+#Tool menu
+220=&Compiler-opties
+221=Omge&vingsopties
+222=&Editor-opties
+223=&Gereedschappen Configureren
+224=&Snelkoppelingen Configureren
+
+#Window menu
+230=&Volledige scherm-modus
+231=Terug naar &Normaal
+232=&Volgende
+233=V&orige
+234=Alles &Sluiten
+235=%s versie %s volledig scherm. Druk op F11 om de werkbalken de verbergen of om naar normale mode te gaan.
+236=Sluit alles behalve dit
+237=Lijst...
+
+#Help menu
+240=&Over Dev-C++...
+241=&Controleren op Updates...
+242=Helpmenu &Aanpassen...
+243=&Help over Dev-C++
+
+#Debug Menu
+245=&Debug
+246=&Creëer Breekpunt
+247=&Volgende Stap
+248=&Stap Overslaan
+249=&Watch toevoegen
+250=&Bekijk variabelen
+251=Stop uitvoeren
+252=Toon &watch
+253=Ve&rwijder watch
+254=Stap &in
+255=Ga verder tot aan &cursor
+256=Toon &CPU Window
+257=&Toevoegen aan proces...
+258=&Bewerk waarde
+259=&Alles wissen
+
+#context menus
+# project menu
+260=Nieuw bestand
+261=Bestand toevoegen...
+262=Bestand verwijderen...
+263=Opties...
+264=Bewerk Resource-bestand
+
+# unit menu
+270=Verwijder bestand
+271=Hernoem file
+272=Sluiten
+273=Openen
+274=Header openen
+
+# class browser menu
+280=Ga naar declaratie
+281=Ga naar implementatie
+282=Nieuwe klasse
+283=Nieuwe lidfunctie
+284=Nieuwe variabele
+285=Toon mode...
+286=Alle bestanden
+287=Huidig bestand
+288=Voeg map toe
+289=Verwijder map
+290=Herbenoem map
+291=U kan niet meer dan %d mappen maken in één project...
+292=Gebruik kleuren
+293=Projectbestanden
+294=Toon overervende leden
+295=Openen met...
+
+#Message control
+# sheets
+300=Compileer
+301=Resources
+302=Compilatie-log
+303=Zoekresultaten
+304=Sluiten
+305=Debug
+
+# pop menu
+310=&Wissen
+311=&Kopieren
+312=&Verbergen
+313=&Openen
+
+# column headers
+315=Lijn
+316=Bestand
+317=Bericht
+318=Argumenten
+
+320=Zoeken naar Lijn
+321=Kolom
+322=Zoeken naar Bestand
+323=Zoeken naar Bericht
+324=Informatie:
+325=Compilatie-log:
+326=Totale Fouten:
+327=Bestandsgrootte:
+
+# debug
+
+330=Bekeken Variabelen
+331=Functies volgen
+332=Uitvoer
+333=Stuur commando naar GDB :
+334=Stuur
+
+# Specials toolbar items
+340=Nieuw
+341=Invoegen
+342=Creëer
+343=Ga naar
+344=Project-venster
+345=Debug-venster
+346=Rapport-venster
+
+#non-visible (open/save dialogs)
+350=Bestand Openen
+351=Unit Openen
+352=Exporteren naar
+353=Bestand Opslaan
+354=Project Opslaan
+355=Selecteer een help bestand
+
+357=Nieuwe variabele watch
+358=Vul variabele naam in:
+359=Pas variabelen watch aan
+360=Nieuwe variabele naam:
+361=Bewerk waarde
+362=Variabele om te bewerken:
+363=Nieuwe waarde:
+
+370=Project
+371=Klassen
+
+#Edit menu (more options)
+380=Commentaar
+381=Commentaar schrappen
+382=Vergroot inspringing
+383=Verklein inspringing
+384=Wissel header/source
+
+#Editor Options Dialog 400-499
+400=Editor-Opties
+401=Algemeen
+402=Beeld
+403=Syntax
+404=Code
+405=Vervolmaking
+406=Klasse browser
+
+#sub tabs
+410=Invoegsels
+411=Standaard bron
+
+# General Tab
+420=Editor Opties:
+421=Automatisch inspringen
+422=Invoeg mode
+423=Gebruik tab karakter:
+424=Intelligente tabs
+425=Backspace inspringen ongedaan maken
+426=Behoud achterkomende spaties
+427=Groep ongedaan maken
+428=Uitgebreide home-toets
+429=Cursor voorbij EOF
+430=Cursor voorbij EOL
+431=Dubbelklik-lijn
+432=Vind Tekst bij Cursor
+433=Scrollbars zoals nodig
+434=Halve pagina Scroll
+435=Scroll tip
+436=Gebruik syntax markering
+437=Voeg gedropte bestanden in
+438=Tab grootte:
+439=Rechter marge
+440=Zichtbaar
+441=Breedte
+442=Kleur
+443=Selectie
+444=Voeg selectie in
+445=Overschrijf selectie
+446=Vertikale Lijn
+447=Horizontale Lijn
+448=Halve blok
+449=Blok
+450=Voeg neerzette bestanden toe
+451=Toon verborgen lijn karakters
+452=Toon editor-tips
+453=Selectie komt overeen met tussenruimten
+
+# through 459 for additions
+
+# Display Tab
+460=Editor Lettertype:
+461=Lettertype
+462=Grootte
+463=Editor Lettertype
+464=Rand
+465=Auto Grootte
+466=Lijne Nummers
+467=Toon Leidende Nullen
+468=Start bij Nul
+469=Gebruik Aangepaste Lettertype
+470=Lettertype van rand
+
+# Syntax Tab
+471=Voorgrond
+472=Achtergrond
+473=Stijlen
+474=Vet
+475=Schuin
+476=Onderstreept
+477=Kleursnelheid instellingen
+478=Type:
+479=Sla aangepaste syntax instellingen op
+419=Voeg de nieuwe syntax-instelingsnaam in:
+
+# Code Tab
+480=Code
+481=Menu Tekst
+482=Sectie
+483=Beschrijving
+484=Voeg standaard-code in leeg projectbron-initialisatiebestand
+485=Gebruik code-completion cache
+
+# Completion Tab
+#485: beschikbaar
+486=Code-vervolmaking
+487=Code-vervolmaking inschakelen
+488=Vertraging (ms):
+489=Achtergrond kleur:
+
+# Class browsing Tab
+490=Klasse-browser Instellingen
+491=Scan lokale bestanden gerefereerd in #include's
+492=Voorbeeld:
+493=Engine opties
+494=Toon opties
+495=Schakel klasse-browser in
+496=Scan globale bestanden gerefereerd in #include's
+
+#New project form
+500=Nieuw project
+501=Beschrijving:
+503=Naam:
+504=&C Project
+505=C&++ Project
+506=&Instellen als standaardtaal
+507=Misc.
+508=Project-opties:
+
+#Remove file form
+520=Verwijderen uit project
+521=Selecteer het te verwijderen bestand:
+
+#Goto line form
+525=Ga naar lijn...
+526=Nieuwe Lijn:
+
+#Tool config form
+530=Tools Configuratie
+531=Huidige Tools:
+
+#Edit Tool form
+535=Toon Tool Ingang
+536=Titel
+537=Programma
+538=Werkdirectory
+539=Parameters
+540=Macro Invoegen
+541=Beschikbare Macros
+
+#Icon Library Form
+545=Pictogrammenverzameling
+546=Gebruik geselecteerde pictogram
+547=Bladeren
+
+#Configure Shortcuts Form
+550=Snelkoppelingen Configureren
+551=Klik op een item en druk op de snelkoppeling die je wenst!
+552=Tip: druk "Escape" om snelkoppeling te verwijderen...
+553=Menu Ingang
+554=Snelkoppeling aangewezen
+555=Annuleren
+556=OK
+
+#Tool Menu Macros
+560=Geeft standaard map terug
+561=Geeft de Dev-C++ werkmap terug
+562=Geeft de gecompileerde bestandsnaam terug
+563=Geeft de locatie van het huidige project terug
+564=Geeft de bestandsnaam van het huidige project terug
+565=Geeft de projectnaam terug
+566=Geeft de naam van het actieve bronbestand terug
+567=Geeft de locatie van het actieve bronbestand terug
+568=Geeft een door een spaties gescheiden lijst van bronbestanden in het huidige project terug
+569=Geeft het woord aan de cursor in het actieve venster terug
+570=Geeft de versie van Dev-C++ terug
+# -- TO 579
+
+#About form
+580=Over Dev-C++ :-)
+581=Copyright Bloodshed Software
+582=GNU General Public License
+583=Contact informatie
+584=Bloodshed software website:
+585=Mingw compiler website:
+586=Dev-C++ discussie forums:
+587=Dev-C++ gebruikers mailing list:
+588=Auteurs' e-mail:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=&Controleren op updates
+
+#Code Inserts Entry Edit form
+600=Bewerk code invoegen toegang
+601=Voeg code invoegen toegang toe
+602=Menu item titel
+603=Item beschrijving
+604=Menu sectie
+
+#Environment options form
+606=Compilatie-voortgangsvenster
+607=Zichtbaar tijdens compilatie
+608=Sluit na afloop
+609=Geen splash venster bij het opstarten
+610=Omgevingsoptions
+611=Algemeen
+612=Bestanden && Mappen
+613=Automatisch openen
+614=Standaard C++ projecten aanmaken
+615=Knoppenbalken tonen tijdens Volledige Scherm
+616=Reservekopieën aanmaken
+617=Minimaliseren tijdens uitvoeren
+618=Openen/Opslaan Dialoog-stijl
+619=Windows 2k (zijbar)
+620=Windows 9x
+621=Windows 3.1
+622=Taal
+623=Rapportvenster tabs
+624=Maximum aantal bestanden in heropen-menu
+625=Gebruikers standaard map
+626=Uitvoer Directory
+627=Icoon-verzameling map
+628=Splash screen afbeelding
+629=Selecteer standaard gebruikersmap
+630=Selecteer compiler-uitvoermap
+631=Selecteer icoon-verzamelingmap
+632=Alle projectbestanden
+633=Alleen eerste bestand in project
+634=Geen
+635=Toon menu in volledig scherm modus
+636=Dubbelklik om Project Manger bestanden te openen
+637=Taalbestanden path
+638=Thema:
+639=Interface
+
+#Find Form
+640=Tekst zoeken
+641=Zoeken
+642=Zoeken in Bestanden
+643=&Te zoeken tekst:
+644=Opties:
+645=Hoofdlettergevoelig
+646=Alleen hele &woorden
+647=Richting
+648=Bestanden in Project
+649=Bestanden &Openen
+650=Omvang
+651=&Globaal
+652=&Alleen geselecteerd
+653=Vanaf
+654=Vanaf Cursor
+655=Gehele omvang
+656=Richting
+657=Vooruit
+658=Achteruit
+
+#Replace form
+670=Zoeken en vervangen
+671=Zoeken naar:
+672=Vervangen door:
+673=Opties:
+674=&Identieke hoofd/kleine letters
+675=&Heel woord
+676=&Vragen bij vervangen
+677=Zoekrichting:
+678=&Omlaag
+679=O&mhoog
+680=Omvang:
+681=&Globaal
+682=&Alleen geselecteerd
+683=Begin:
+684=&Vanaf cursor
+685=&Heel document
+
+#Goto function form
+695=Zoeken naar:
+696=Type
+697=Functie
+698=Lijn
+
+#Compiler Options
+700=Compiler opties
+701=Compiler
+702=Mappen
+703=Code Generation/Optimizations
+704=Linker
+705=Programma's
+710=Binaries
+711=Libraries
+712=C Includes
+713=C++ Includes
+720=C compiler:
+721=C++ compiler:
+722=Compiler:
+725=Ondersteun alle standaard ANSI C programma's
+726=Probeer sommige aspecten van traditionele C preprocessors te ondersteunen
+727=Alle waarschuwingsberichten beletten
+728=Stop alle acces controle
+729=Accepteer $ in identifiers
+730=Gebruik heuristics om sneller te compileren
+731=Gebruik Cygwin in plaats van de Mingw compiler
+732=Voeg de volgende commando's toe bij het aanroepen van de compiler:
+733=Compilatie vertraaging
+734=Sta een vertraging in milliseconden toe als make problemen heeft met de tijd van de makefile.
+735=Toon één error per lijn
+
+740=Code generatie:
+741=Optimalisatie:
+745=Schakel uitzonderings-behandeling in
+746=Gebruik dezelfde grote voor double en float
+747=Zet extra commentaar informatie in de gegenereerde assembly code
+748=Optimaliseren
+749=Beste optimalisatie
+750=Doe enkele kleine optimalisaties
+751=Makefile generatie:
+752=Gebruik snelle maar imperfecte dependency generatie
+753=Code profiling:
+754=Genereer profiling info voor analyse
+755=Link een objectief C programma
+756=Genereer debugging informatie
+757=Gebruik geen standaard systeem opstartbestanden of libraries
+758=Compileer voor Win32 (geen console)
+759=Geef deze opties door aan de linker
+760=Optimaliseer niet
+761=Optimaliseer meer
+
+770=Mogelijk wil je de namen van de programma's veranderen die gebruikt worden in Dev-C++ (bv. als je een cross compiler gebruikt:
+771=Compiler set om te configureren:
+772=Nieuwe compiler set
+773=Voer de nieuwe set naam in:
+774=Je kan de enige overgebleven compiler set niet verwijderen!
+775=Ben je zeker dat je deze compiler set wilt verwijderen?
+776=Hernoem compiler set
+777=Voer de nieuwe naam voor de set in:
+778=Verdere optimalisaties
+
+#Help Editor Form
+780=Helpmenu-editor
+781=Menu-tekst
+782=Help-bestand
+783=Helpmenu-options
+784=Pictogram
+785=Menu Sectie
+786=Sectie 1
+787=Sectie 2
+788=Bij help popupmenu
+789=Bladeren...
+790=Zoek in het helpbestand naar het woord aan de cursor
+791=Wijs F1 snelkoppeling toe
+
+#Print File Form
+800=Print bestand
+801=Parameters:
+802=Pagina's:
+803=&Kleuren
+804=&Selecteren
+805=&Automatische terugloop
+806=&Lijn Nummer's
+807=Print lijnnummers
+808=Print lijnnummers in de marge
+809=Aantal kopies:
+810=Print alleen de selectie
+
+#Update Form
+820=Controleer voor updates voor Dev-C++
+821=Taak:
+822=Resultaat:
+823=Release Versie:
+824=Vereiste versie om mee te gebruiken:
+825=Beschrijving van de release:
+826=Download site (dubbelklik om te dowloaden):
+
+#AddToDo form
+830=Voeg Te-Doen item in...
+831=Beschrijving
+832=Prioriteit
+833=Gebruiker
+
+#ViewToDo form
+835=Te-Doen lijst...
+836=Bestandsnaam
+837=Gedaan
+838=Verberg items gemarkeerd als gedaan
+839=Filter:
+840=Alle bestanden(zowel binnen als buiten het project)
+841=Open alleen de bestanden(zowel binnen als buiten het project)
+842=Alle project bestanden
+843=Open alleen de projectbestanden
+844=Open niet-projectbestanden
+845=Alleen huidig bestand
+
+#Import MSVC++ form
+850=Importeer MS Visual C++ project
+851=Selecteer Visual C++ project bestand
+852=Importeer optie's
+853=Configuratie om te importeren
+854=Dev-C++ project bestandsnaam
+855=Het MS Visual C++ project-bestand is succesvol geïmporteerd en geconverteerd naar een Dev-C++ project! Wil je het nu openen?
+856=De configuratie van "%s" kan niet gevonden worden (dit is waarschijnlijk een fout in Dev-C++)...
+
+#Project Options form
+900=Project-opties
+901=Algemeen
+902=Bestanden/Directories
+903=Naam:
+904=Pictogram:
+905=Bibliotheek
+906=Bladeren
+907=Type:
+908=Win32 GUI
+909=Win32 Console
+910=Win32 Static Lib
+911=Win32 DLL
+912=Compileren als C++
+913=Additionele Commando-opties:
+914=Compiler:
+915=Linker opties/Optionele libs of object-bestanden
+916=Library mappen
+917=Resource mappen
+918=Include mappen
+919=Selecteer pictogram
+920=Include een object-bestand
+921=Resource-bestanden
+922=Build opties
+923=Mappen
+989=Makefile
+924=Output map van het &programma
+925=Output map van de &object bestanden
+926=&Overschrijf de output bestandsnaam
+927=Voeg library of object toe
+928=%d bestanden [%d sources, %d headers, %d resources]
+
+#New template form
+930=Naam:
+931=Beschrijving:
+932=Categorie:
+933=Nieuw project naam:
+934=Bestanden in sjabloon:
+935=Extra compiler-opties:
+936=Extra linker-opties:
+937=Pictogrammen:
+938=Informatie
+939=Bestanden
+940=Extra's
+941=Pictogram
+942=Pictogram voor Nieuw Project
+943=Aanmaken
+944=Nieuw sjabloon vanuit project
+945=Gebruik project's include-mappen
+946=Gebruik project's library-mappen
+947=Gebruik project's resource-mappen
+
+#New variable/member forms
+950=Teruggeef type:
+951=Variable naam:
+952=Implementeer in:
+953=Draagwijdte
+954=Creëer lidfunctie om te LEZEN van deze variable
+955=Creëer lidfunctie om naar deze variable te SCHRIJVEN
+956=Naam:
+957=Commentaar
+958=Beschrijving:
+959=Stijl:
+960=Creëer
+961=Annuleren
+962=Onbekende klasse...
+963=De bestandsnaam voor de implementatie kan niet gevonden worden...
+964=Het lijnnummer voor de in te voegen code kan niet gevonden worden...
+965=Lidnaam:
+966=Argumenten:
+967=Klasse naam:
+968=Overerven van een andere klasse
+969=Overerving
+970=Overerven van klasse:
+971=Header bestandsnaam:
+972=Implementatie bestandsnaam:
+973=Header bestandsnaam:
+974=Toevoegen aan het huidige project
+975=Attributen
+
+#File properties form
+980=Bestandsnaam
+981=In project
+982=Totaal aantal lijnen
+983=Eigenlijk aantal lijnen code
+984=Commentaar lijnen
+985=Geincluded bestanden
+986=Lege lijnen
+987=Bestandsgrootte
+988=Absoluut
+990=Relatief
+991=Datum/tijd stempel
+992=Compiler optie's
+
+#Profile analysis form
+995=Profiel-analyse
+996=Platte uitvoer
+997=Grafisch oproepen
+
+#Global strings
+# messages
+1000=Kan '%s' niet vinden
+1001=Bestand %s kan niet worden geopend.
+1002=Deze gebeurtenis "%s" vervangen?
+1003=Bestand: %s bestaat al in in %s
+1004=Weet u zeker dat u %s wilt sluiten?
+1005=Wijzigingen opslaan naar %s?
+1006=%s sluiten en een nieuw project starten?
+1007=Hernoemen naar:
+1008=Compilatie is al bezig.
+1009=Wijzigingen in %s opslaan?
+1010=Het bestand bestaat al. Wilt u het overschrijven?
+1011=Nieuwe broncode toevoegen aan het huidige project?
+1012=Nieuw resource-bestand toevoegen aan het huidige project?
+1013=Uw project heeft geen debugging informatie, wil je debugging inschakelen en het project hercompileren?
+1014=Je hebt profiling en/of debugging info niet ingeschakeld in Compiler Opties. Wil je ze nu inschakelen en het project hercompileren?
+1015=Gelieve het project minstens 1x uit te voeren zodat profiling info is gegenereerd...
+1016=Typ de nieuwe foldernaam:
+1017=Ben je zeker dat je deze folder wilt verwijderen?
+1018=Typ de nieuwe foldernaam:
+1019=Het bestand %s is alleen-lezen. Wil je het markeren als lezen-schrijven? Indien nee, zal het bestand niet bewaard worden...
+1020=Er is een error verschenen. Het bestand %s is niet gemarkeerd als lezen-schrijven en is niet bewaard...
+1021=Een toegangsovertreding (Segmentatie-fout) is opgetreden in je programma.
+1022=De source file is recenter dan het programma. Wil je het programma hercompileren?
+1023=Gelieve het programma te selecteren waaraan je wilt toevoegen:
+
+# errors
+1500=Het bestand %s kan niet geopend worden.
+1501=Kan niet schrijven naar %s
+1502=Het bestand kan %s niet hernoemd worden.
+1503=Zoekveld kan niet opengelaten worden
+1504=Het project is niet uitvoerbaar.
+1505=Het project is niet gecompileerd
+1506=Broncode is niet gecompileerd.
+1507=Makefile niet gevonden.
+1550=Fout
+1508=Makefile niet gevonden.
+1509=Opruiming mislukt.
+1510=%s Resource niet gevonden: %s - %s
+1511=Sjabloon %s is niet gevonden, Overgeslagen.
+1512=Geen sjabloon toegewezen.
+1513=Bestand %s is niet gevonden.
+1514=Er is geen host-programma ingegeven. Je kan het ingeven in het Uitvoeren menu, Parameters
+1515=Host-programma niet gevonden! Je kan het veranderen in het Uitvoeren menu, Parameters
+
+# misc
+2000=Naamloos
+2001=Alleen-lezen
+2002=Invoegen
+2003=Overschrijven
+2004=Project %d
+2005=Geef een ander bestandsnaam op a.u.b.
+2006=%d Lijnen in bestand
+2007=Bestand hernoemen
+2008=Bezig met uitvoeren van %s
+2009=Uitvoering voltooid
+2010=bytes
+2011=Gewijzigd
+2012=Fout
+2013=Informatie
+2014=Waarschuwing
+2015=Vraag
+2016=Compilatie succesvol
+2017=Compilatie afgebroken door de gebruiker
+
+# buttons
+2500=&OK
+2501=&Annuleren
+2502=&Help
+2503=&Standaard
+2504=&Ja
+2505=&Nee
+2506=&Toevoegen
+2507=&Bewerken
+2508=&Verwijderen
+2509=&Verwijderen
+2510=S&luiten
+2511=Auteu&rs
+2512=&Zoeken
+2513=Vervan&gen
+2514=Verwij&der Ongeldige
+2515=&Alles Vervangen
+2516=Bladeren
+2517=Verwijderen
+2518=Hernoem
+2519=Importeren
+2520=Venster-modus
+2521=Wissen
+
+# CPU Window
+2600=CPU-venster
+2601=Assembler code :
+2602=Functie :
+2603=Assembler syntax :
+2604=Registers :
+
+# TipOfTheDay Window
+2700=Tip van de Dag
+2701=Wist u dat...
+2702=...er geen tips zijn?
+2703=Tips niet weergeven na opstarten
+2704=Volgende tip
+2705=Vorige tip
+
+# Environment Options (more)
+2800=Koppelingen
+2801=Bestandstypen:
+2802=Selecteer voor welke bestandstypes Dev-C++ geregistreerd moet worden als het standaard programma om ze te openen...
+2803=CVS-ondersteuning
+2804=CVS Programmabestand
+2805=Compressie-niveau
+2806=Gebruik SSH in plaats van RSH
+2807=Templates-directory
+2808=Selecteer Templates-directory
+2809=Gebruik XP Thema
+2810=Externe programma's
+2811=Extern programma
+2812=Extentie
+2813=Externe programma associaties:
+2814=Bekijk variabele onder de muis
+2815=Rapporteer watch errors
+2816=Debug variabelen browser
+2817=Alternatief configuratiebestand
+2818=Gebruik dit alternatieve configuratiebestand
+2819=Je hebt het configuratie-bestand dat gebruikt wordt door de applicatie verandert.<CR>Het nieuwe configuratie-bestand zal *niet* gebruikt worden in de huidige sessie. Een wijziging in de configuratie die gedurende deze sessie wordt uitgevoerd, wordt bewaard in het *huidige* configuratie-bestand.<CR><CR>Het is aan te raden dat je de applicatie nu herstart, zodat het opstart met het gebruik van het nieuwe configuratie-bestand...
+
+# Execute menu (more)
+2900=Parameters...
+2901=Compileer huidig bestand
+
+# Window list
+2910=Vensterlijst
+2911=Selecteer de venster die u wilt bewerken:
+
+# CVS Menu
+2990=Huidig bestand...
+2991=Gehele project...
+2992=U moet eerst CVS-ondersteuning configureren in "Gereedschappen / Omgevingsopties".
+
+# CVS form
+3000=Importeer opties
+3001=Opslagplaats
+3002=Globale opties
+3003=Checkout opties
+3004=Commentaar opties
+3005=Update opties
+3006=Diff opties
+3007=Log opties
+3008=CVS-uitvoer
+3009=Importeer
+3010=Uitchecken
+3011=Commentaar
+3012=Update
+3013=Verschil
+3014=Log
+3015=Importeer-map
+3016=Actie
+3017=Verkoper
+3018=Release
+3019=Log bericht
+3020=Module naam
+3021=Extensie
+3022=Uitchecken als
+3023=Uitcheck-map
+3024=Opdelen in sub-mappen
+3025=Verwijder overbodige opties
+3026=Creëer onbestaande mappen
+3027=Verwijder lege mappen
+3028=Verwijder lokaal gemaakte veranderingen
+3029=Voor datum
+3030=Revisie/branche/tag
+3031=Indien niet gevonden, neem het recentste
+3032=Andere revisies
+3033=Voer een verenigd verschil uit
+3034=Vergelijk lokaal bestand met dezelfde revisie/tag
+3035=Vergelijk het lokale bestand met een andere herziening op afstand
+3036=Vergelijk twee herzieningen op afstand
+3037=Is date
+3038=Log de standaard tak
+3039=Toon enkel de RCS bestanden
+3040=Toon de tag-namen niet
+3041=Filter
+3042=Op revisie/tag
+3043=Op datum
+3044=Op gebruiker
+3045=Opslagplaats
+3046=Details
+3047=Toegangsmethode
+3048=Gebruiker
+3049=Server
+3050=Remote-map
+3051=Toevoegen
+3052=Verwijderen
+3053=Opties toevoegen
+3054=Opties verwijderen
+3055=Verwijder het bestand ook van de harde schijf...
+
+# Params form
+3100=Parameters
+3101=Parameters om naar je programma door te geven:
+3102=Host-programma :
+
+# Project options form (continued)
+3200=Bestanden
+3201=Project bestanden:
+3202=Project opties:
+3203=Genereer debugging informatie
+3204=Genereer profiling informatie
+3205=NOOT: Deze instellingen zullen de globale Compiler Opties alleen beïnvloeden in dit project.
+3206=Ondersteuning voor Windows XP-thema's
+3207=Bestand optie's:
+3208=Include in compilatie
+3209=Compile bestand als C++
+3210=Versie info
+3211=Include versie informatie in project
+3212=Versie details
+3213=Major:
+3214=Minor:
+3215=Release:
+3216=Build:
+3217=Taal:
+3218=Extra informatie:
+3219=Build commando overschrijven
+3220=Output bestand
+3221=Include in linking
+3222=Build prioriteit:
+3223=Het build nummer automatisch vermeerderen bij het compileren
+3224=Maak geen Makefile, gebruik deze
+3225=Informatie om Makefile aan te passen
+3226=&Gebruik de volgende bestanden in de Makefile:
+
+# More compiler options
+3400=Kleed programma uit
+3401=Genereer instructies voor de volgende machine
+3402=Sta het gebruik van processor-specifieke functies toe

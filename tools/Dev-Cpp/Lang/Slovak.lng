@@ -1,0 +1,909 @@
+[lang]
+Lang=Slovak (Slovenskı)
+Ver=3
+
+#Top level menus
+100=&Súbor
+101=Úpr&avy
+102=&H¾ada
+103=&Zobrazi
+104=P&rojekt
+105=&Spusti
+106=&Nástroje
+107=&Okná
+108=&Pomoc
+109=&Ladi
+
+#File menu
+120=&Novı
+121=&Projekt...
+122=&Zdrojovı kód
+123=Súbor p&rostriedkov
+124=Šablón&a...
+
+130=&Otvori projekt alebo súbor...
+131=Znovu o&tvori
+132=Zmaza &históriu
+133=&Uloi
+134=Uloi &ako...
+135=U&loi všetky
+136=&Zavrie
+137=Zavrie &projekt
+138=Vlastnosti
+
+140=&Exportova
+141=do &HTML
+142=do &RTF
+143=&Projekt do HTML
+149=&Importova
+
+150=&Tlaèi
+151=&Nastavenie tlaèe
+152=&Koniec
+
+#Edit menu
+160=Krok &spa
+161=Krok &vpred
+162=&Vystrihnú
+163=&Kopírova
+164=V&loi
+165=&Oznaèi všetko
+166=O&dstráni
+167=Vloi &iné
+168=&Prepnú záloku
+169=Skoèi na &záloku
+170=Záloka
+171=&Dátum a èas
+172=&Komentár pre hlavièku
+#Due to exhausted numbers, the Edit menu continues at 380...
+
+#Search menu
+175=&H¾ada...
+176=H¾a&da v súboroch...
+177=Nahradi...
+178=H¾ada &znovu
+179=Skoèit na &riadok...
+180=Rıch&le h¾adanie
+181=Skoèi na &funkciu...
+
+#View menu
+182=Správca projektu v samostatnom okne
+183=Zobrazi správcu projektu
+184=Zobrazi preh¾ad funkcií
+185=&Preh¾ad súborov/tried
+186=&Stavovı riadok
+187=&Vıstup prekladaèa
+188=&Vdy vidite¾nı
+189=&Len ak je to potrebné
+190=&Tlaèidlové lišty
+
+# Toolbar Captions
+191=Hlavná lišta
+192=Preklad a spúštanie
+193=Projekt
+194=Nastavenie
+195=Špeciálne funkcie
+196=Úpravy
+197=H¾adanie
+
+#Project menu
+200=&Novı modul
+201=&Prida do projeku
+202=&Odstráni z projeku
+203=&Upravi súbor prostriedkov...
+204=N&astavenie projektu
+205=Upravi &Makefile
+206=P&rida súbor prostriedkov...
+207=Od&stráni súbor prostriedkov...
+
+#Execute menu
+210=&Preloi
+211=&Spusti
+212=P&reloi && spusti
+213=&Znovu zostavi
+214=&Vyèisti
+215=Vıs&ledky prekladu
+216=S&kontrolova syntax
+217=&Reset programu
+218=&Analıza profilerom
+219=Preruši
+
+#Tool menu
+220=Nastavenie &prekladaèa
+221=Nastavenie p&rostredia
+222=Nastavenie &editoru
+223=Nastavenie &nástrojov
+224=Konfigurácia &klávesovıch skratiek
+
+#Window menu
+230=&Celá obrazovka
+231=&Spä do normálneho reimu
+232=&Nasledujúce
+233=&Predchádzajúce
+234=&Zavrie všetky
+235=%s verzia %s, celá obrazovka. Stlaè Shift+F12 na prepnutie nástrojovıch panelov alebo F12 pre návrat do normálenho reimu.
+236=Zavrie všetky okrem &tohto
+237=Zoznam...
+
+#Help menu
+240=&O Dev-C++...
+241=&Vyh¾ada aktualizácie/balíèky...
+242=&Prispôsobi ponuku Pomoc...
+243=&Pomoc
+
+#Debug Menu
+245=&Ladi
+246=&Prepnú breakpoint
+247=&Da¾ší krok
+248=P&okraèova
+249=&Sledova premennú
+250=Zoznam s&ledovanıch premennıch
+251=&Zastavi beh programu
+252=&Upravi sledovanie
+253=&Zruši sledovanie
+254=Vstúpi
+255=Spusti po &kurzor
+256=Ukáza okno &CPU
+
+
+#context menus
+# project menu
+260=Novı modul
+261=Prida modul...
+262=Odobra modul...
+263=Nastavenie...
+264=Upravi súbor prostriedkov
+
+# unit menu
+270=Odstráni súbor
+271=Premenova súbor
+272=Zavrie
+273=Otvori
+274=Otvori hlavièkovı súbor
+
+# class browser menu
+280=Skoèi na deklaráciu
+281=Skoèi na implementáciu
+282=Nová trieda
+283=Nová metóda
+284=Nová premenná
+285=Zobrazovací reim...
+286=Všetky súbory
+287=Aktuálny súbor
+288=Prida adresár
+289=Odstráni adresár
+290=Premenova adresár
+291=Nedá sa vytvori viac ako %d adresárov v tomto projekte...
+292=Poi farby
+293=Súbory projektu
+294=Zobrazova zdedené poloky
+
+#Message control
+# sheets
+300=Prekladaè
+301=Prostriedky
+302=Protokol o preklade
+303=Vısledky h¾adania
+304=Zavrie
+305=Ladi
+
+# pop menu
+310=&Vyèisti
+311=&Kopírova
+312=&Skry
+313=&Otvori
+
+# column headers
+# 320, 322, 323 not in inc file
+315=Riadok
+316=Modul
+317=Správa
+318=Parametre
+
+320=Nájs riadok
+321=Ståpec
+322=Meno premennej
+323=Hodnota
+324=Informácie:
+325=Protokol o preklade:
+326=Poèet chıb:
+327=Ve¾kos vıstupu:
+
+330=Sledované premenné
+331=Spätnı sled
+332=Vıstup
+333=Posla príkazy pre GDB:
+334=Posla
+
+# Specials toolbar items
+340=Novı
+341=Vloi
+342=Prepnú
+343=Skoèi na
+344=Okno projektu
+345=Ladiace okno
+
+#non-visible (open/save dialogs)
+350=Otvori súbor
+351=Otvori modul
+352=Exportova do
+353=Uloi súbor
+354=Uloi projekt
+355=Vyberte si súbor pomocou
+
+357=Nová sledovaná premenná:
+358=Zadajte meno premennej:
+359=Upravi sledovanú premennú:
+360=Nové meno premennej:
+
+370=Projekt
+371=Triedy
+
+#Edit menu (more options)
+380=Zakomentova
+381=Odkomentova
+382=Odsadi vpravo
+383=Odsadi v¾avo
+384=Vymeni hlavièkovı súbor/zdojovı kód
+
+#Editor Options Dialog 400-499
+400=Nastavenie editoru
+401=Všeobecné
+402=Zobrazenie
+403=Syntax
+404=Kód
+405=Doplòovanie kódu
+406=Preh¾ad tried
+
+#sub tabs
+410=Vkadanie kódu
+411=Predovelnı kód
+
+# General Tab
+419=Zadajte nové meno syntaxe:
+420=Nastavenie editoru:
+421=Automatické odsadzovanie
+422=Reim vkladania znakov
+423=Pouíva tabelátor
+424=Inteligentné tabelátory
+425=Backspace ruší odsadenie
+426=Necháva medzeri na novıch riadkoch
+427=Zoskupova krok spä
+428=Rozšírené klávesa home
+429=Povoli kurzor za koncom súboru
+430=Povoli kurzor za koncom riadkom
+431=Dvojité kliknutie oznaèí riadok
+432=H¾ada text pod kurzorom
+433=Zobrazi posuvníky len keï sú potrebné
+434=Rolovanie o pol stránky
+435=Rolova tipy
+436=Pouíva zvırazòovanie syntaxe
+437=Vklada zanechané súbory
+438=Ve¾kso tabelátoru:
+439=Pravı okraj
+440=Vidite¾nı
+441=Šírka
+442=Farba
+443=Tvar kurzora
+444=Vkladanie textu
+445=Prepisovanie textu
+446=Vertikálna èiara
+447=Horizontálna èiara
+448=Poloviènı obdånik
+449=Obdånik
+450=Vklada zanechané súbory
+451=Zobrazova skryté znaky
+452=Zobrazova pomôcky editoru
+453=Zobrazova zodpovedjúcu zátvorku
+
+# through 459 for additions
+
+# Display Tab
+460=Typ písma editoru:
+461=Typ písma
+462=Ve¾kos
+463=AÁÄBCÈ áaäbcè 012345 Ukáka písma
+464=Typ písma pre index riadkov
+465=Automatická ve¾kos
+466=Èísla riadkov
+467=Zobrazi úvodné nuly
+468=Zaèína od nuly
+469=Poui uívate¾skı typ písma
+470=AÁÄBCÈ áaäbcè 012345 Ukáka písma
+
+# Syntax Tab
+471=Farba textu
+472=Farba pozadia
+473=Štıly
+474=Tuèné
+475=Šikmé
+476=Podèiarknuté
+477=Rıchle nastavenie farieb
+478=Typy kódu:
+479=Uloi uívate¾ské nastavenie synataxe
+
+# Code Tab
+480=Kód
+481=Text ponuky
+482=Sekcia ponuky
+483=Popis
+484=Vklada prevolenı kód do prádzdneho zdrojového kód projektu
+485=Pouíva cache-pamä pri doplòovaní kódu
+
+# Completion Tab
+#485: available
+486=Doplòovanie kódu
+487=Pouíva doplòovanie kódu
+488=Oneskorenie (ms):
+489=Farba pozadia:
+
+# Class browsing Tab
+490=Nastavenie preh¾adu tried
+491=Preh¾adáva lokálne súbory uvedené v #include
+492=Ukáka:
+493=Nastavenie analızy
+494=Nastavenie zobrazenia
+495=Pouíva preh¾ad tried
+496=Preh¾adáva globálne súbory uvedené v #include
+497=Zobrazi iba triedy z aktívneho modulu
+
+#New project form
+500=Novı projekt
+501=Popis:
+503=Meno:
+504=&C Projekt
+505=C&++ Projekt
+506=&Nastavi ako predvolenı
+507=Ostatné
+508=Nastavanie projektu:
+
+#Remove file form
+520=Odstráni z projektu
+521=Vyberte súbor, ktorı chcete odstráni z projektu:
+
+#Goto line form
+525=Skoèi na riadok ...
+526=Novı riadok:
+
+#Tool config form
+530=Nastavenie nástrojov
+531=Aktuálne nástroje:
+
+#Edit Tool form
+535=Úpravy nástroja
+536=Názov
+537=Program
+538=Pracovnı adresár
+539=Parametre
+540=Vloi makro
+541=Makrá k dispozícii
+
+#Icon Library Form
+545=Kninica ikon
+546=Poui vybranú ikonu
+547=Nalistova
+
+#Configure Shortcuts Form
+550=Konfigurova klávsové skratky
+551= Kliknite na poloku a stlaète vytúenú klávesku!
+552=Tip: klávesa "Esc" vymae kláveskovú skratku...
+553=Poloka menu
+554=Priradená skratka
+555=Zruši
+556=OK
+
+#Tool Menu Macros
+560=Vráti predvolenı adresár
+561=Vráti pracovnı adresár Dev-C++
+562=Vráti meno preloeného súboru
+563=Vráti cestu k aktuálnemu projeku alebo zrojovému kódu
+564=Vráti meno súboru aktuálneho projeku alebo zrojového kódu
+565=Vráti meno projeku
+566=Vráti meno súboru aktuálneho zdrojového súboru
+567=Vráti cestu aktuálneho zrojového súboru
+568=Vráti zoznam modulov aktuálneho projektu oddelenı medzerami
+569=Vráti slovo pod kurorom v aktuálnom dokumente
+570=Vráti verziu Dev-C++
+# -- TO 579
+
+#About form
+580=O Dev-C++
+581=inseculous@users.sourceforge.net
+582=Licenèná zmluva - GNU General Public License
+583=Kontakné informácie
+584=Stránka Bloodshed Software:
+585=Stránka prekladaèa Mingw:
+586=Disksné fóra o Dev-C++:
+587=Mailing-list o Dev-C++:
+588=E-maily autorov:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=&Vyh¾ada aktualizácie
+
+#Code Inserts Entry Edit form
+600=Upravi poloku vkladania kódu
+601=Vloi poloku vkladania kódu
+602=Nadpis poloky ponuky
+603=Popis poloky
+604=Sekcia ponuky
+
+#Environment options form
+609=Nezobrazova úvodnú obrazovku
+610=Nastavenie prostredia
+611=Všeobecné
+612=Súbory a adresáre
+613=Automaticky otvára
+614=Predovlené C++ pri novom projekte
+615=Zobrazova nástrojové panely v reime celej obrazovky
+616=Vytvára záloné kópie
+617=Minimalizova pri spustení
+618=Štıl dialógov pri otváraní/ukladaní
+619=Windows 2k (postranná lišta)
+620=Windows 9x
+621=Windows 3.1
+622=Language/Jazyk:
+623=Záloky okna správ:
+624=Maximum súborov v ponuke Znovu otvori
+625=Predvolenı uívate¾skı adresár
+626=Vıstupnı adresár
+627=Cesta ku kninici ikon
+628=Úvodnı obrázok
+629=Vybra prevolenı uívate¾skı adresár
+630=Vybra vıstupnı adresár
+631=Vybra cestu ku kninici ikon
+632=Všetky projekty
+633=Iba prvı projekt
+634=Niè
+635=Zobrazova hlavnú ponuku v reime celej obrazovky
+636=Zo správcu projektu otvára súbory dvojklikom
+637=Cesta k jazkykovım súborom
+638=Téma:
+
+#Find Form
+639=Rozhranie
+640=Nájs text
+641=Nájs
+642=Nájs v súboroch
+643=H¾adanı &text
+644=Nastavenie:
+645=Rozlišova &ve¾ké/malé
+646=Iba &celé slová
+647=Preh¾adáva
+648=&Súbory v projekte
+649=&Otvorené súbory
+650=Rozsah h¾adania
+651=&Všade
+652=V&o vybranom texte
+653=Poèiatok h¾adania
+654=Od kurzora
+655=Cd zaèiatku súboru
+656=Smer h¾adania
+657=Dopredu
+658=Dozadu
+
+#Replace form
+670=Nahradi text
+671=H¾adanı &text:
+672=&Nahradi textom:
+673=Nastavenie:
+674=Rozlišova &ve¾ké/malé
+675=Iba &celé slová
+676=&Potvrdi nahradenie
+677=Smer h¾adania:
+678=Dopredu
+679=Dozadu
+680=Rozsah h¾adania:
+681=Všade
+682=V&o vybranom texte
+683=Poèiatok h¾adania:
+684=Od &kurzora
+685=Cd &zaèiatku súboru
+
+695=H¾ada:
+696=Typ
+697=Funkcia
+698=Riadok
+
+#Compiler Options
+700=Nastavenie prekladaèa
+701=Prekladaè
+702=Adresáre
+703=Generovanie kódu/optimalizácia
+704=Linker
+705=Programy
+710=Binárne súbory
+711=Kninice
+712=C hlavièkové súbory
+713=C++ hlavièkové súbory
+720=Prekladaè C:
+721=Prekladaè C++:
+722=Prekladaè:
+725=Podpora pre všetky štandartné ANSI programy
+726=Pokúsi sa o podporu niektorıch vlastností tradiènıch C-preprocesorov
+727=Potlaèi všetky varovné správy
+728=Vypnú kontrolu prístupu
+729=Akceptova $ v identifikátoroch
+730=Pouíva heuristiky na zrıchlenie prekladu
+731=Poui prekladaè Cygwin namiesto MinGW
+732=Prida nasledujúce príkazy pri volaní prekladaèa:
+733=Oneskorenie
+734=Povolí oneskorenie (v milisekundách) ak sa make sauje na èas súborov makefile
+740=Generovanie kódu:
+741=Optimalizácie:
+745=Povoli správu vınimiek
+746=Poi rovnakú ve¾kos pre double ako pre float
+747=Vloi viac komentárov do vygenerovaného assemblerovského kódu
+748=Optimalizova
+749=Najlepšia optimalizácia
+750=Previes mnostvo drobnıch optimalizácii
+751=Generovanie makefile:
+752=Poui rıchle ale nedokonalé generovanie závislostí
+753=Profilovanie:
+754=Generova informácie pre anlızu profilerom
+755=Linkova program jazyka Objective C
+756=Generova informácie pre ladenie
+757=Nepouíva štandarné štartovací kód a kninice
+758=Nevytvára okno konzoly
+759=Prida tieto príkazy na príkazovı riadok linkera
+760=&Neoptimalizova
+761=Optimalizova &viac
+770=Môete zmeni mená programov, pouitıch v Dev-C++ (napríklad ak pouívate cross-compiler):
+
+771=Konfigurovaná sada nastavení
+772=Nová sada nastavaní
+773=Zadajte meno novej sady:
+774=Nemôee odstráni jedinú zostávajúcu sadu nastavaní!
+775=Ste si istı e si eláte odstráni práve túto sadu nastavaní?
+776=Premenova sadu nastavení
+777=Zadajte meno na aké chcete sadu premenova:
+778=Ïa¾šie optimalizácie
+
+#Help Editor Form
+780=Úpravy ponuky Pomoc
+781=Text ponuky
+782=Súbor s pomocou
+783=Nastavenie ponuky Pomoc
+784=Ikona
+785=Vıber ponuky
+786=Èas 1
+787=Èas 2
+788=Menu pri pomoci
+789=Monosti
+790=H¾ada slovo na pozícií kurzora v pomoci
+791=Priradi klávesu F1
+
+#Print File Form
+800=Vytlaèi súbor
+801=Parametre:
+802=Stránky:
+803=&Farby
+804=&Zvırazòovanie
+805=&Zalamovanie slov
+806=Èísla &riadkov
+807=Tlaèi èísla riadkov
+808=Tlaèi èísla riadkov v okraji
+809=Poèet kópii:
+810= Vytlaèi iba vybranı text
+
+#Update Form
+820=Vyh¾ada aktualizáciu Dev-C++
+821=Úloha:
+822=Vısledky:
+823=Verzia balíèka:
+824=Poadovaná verzia:
+825=Popis balíèka:
+826=Server (dvojklikom stiahnete):
+830=Prida poloku do zoznamu úloh...
+831=Popis
+832=Priorita
+833=Uívate¾
+835=Zoznam úloh...
+836=Meno súboru
+837=Urobené
+838=Nezobrazova poloky oznaèené ako urobené
+839=Filter:
+840=Všetky súbory (aj súbory mimo projekt)
+841=Iba otvorené súbory (aj súbory mimo projekt)
+842=Všetky súbory projektu
+843=Otvorené súbory projektu
+844=Neotvorené súbory projektu
+845=Iba aktuálny súbor
+
+850=Importova projekt Visual C++
+851=Zvo¾te projekt Visual C++
+852=Nastavenie importovania
+853=Imporovaná konfigurácia
+854=Meno projektu Dev-C++
+855=Projekt Visual C++ bol úspešne importovanı and prevedenı na projekt Dev-C++! Chcete ho teraz otvori?
+
+#Project Options form
+900=Nastavenie projektu
+901=Všeobecné
+902=Súbory/Adresáre
+903=Meno:
+904=Ikona:
+905=Kninica
+906=Nalistova
+907=Typ:
+908=Win32 GUI
+909=Win32 konzolová aplikácia
+910=Win32 statická kninica 
+911=Win32 DLL
+912=Preklada ako C++
+913=Dodatoèné parametre príkazového riadku:
+914=Prekladaè:
+915=Nastavenie Linkera/Dodatoèné kninice a objektové súbory:
+916=Adresáre kniníc
+917=Súbory prostriedkov
+918=Kninice hlavièkovıch súborov
+919=Zvoli ikonu
+920=Pripoji objektovı súbor
+921=Adresáre prostriedkov
+922=Nastavenie zostavovania
+923=Adresáre
+924=&Vıstupnı adresár pre vykonate¾né súbory
+925=Vıstupnı &adresár pre objektové moduly
+927=Prida kninicu
+
+#New template form
+926=Zmeni &meno vıstupu
+930=Meno:
+931=Popis:
+932=Kategória:
+933=Meno nového projeku:
+934=Súbory v šablóne:
+935=Dodatoèné parametre prekladaèa:
+936=Dodatoèné parametre linkera:
+937=Ikony:
+938=Informácie o šablóne
+939=Súbory
+940=Ïalšie
+941=Ikona šablóny
+942=Ikona nového projektu
+943=Vytvori
+944=Nová šablóna podla projektu
+
+#New variable/member forms
+950=Návratovı typ:
+951=Meno premennej:
+952=Implementovaná v:
+953=Rozsah prístupu
+954=Vytovri funkciu na ÈÍTANIE z tejto premennej
+955=Vytovri funkciu na ZÁPIS do tejto premennej
+956=Meno:
+957=Komentáre
+958=Popis:
+959=Štıl:
+960=Vytvori
+961=Zruši
+962=Neznáma trieda...
+963=Nemôem urèi meno súboru pre implementáciu...
+964=Nemôem urèi èíslo riadku na vloenie...
+965=Meno èlena:
+966=Argumenty:
+967=Meno triedy:
+968=Zdedi z inej triedy
+969=Dediènos
+970=Zdedi z triedy:
+971=Meno hlavièkového súboru:
+972=Meno implementaèného súboru:
+973=Meno hlavièkového súboru:
+974=Prida do aktuálneho projektu
+975=Atribúty
+
+980=Modul
+981=Projekt
+982=Riadkov celkovo
+983=Poèet riadkov kódu
+984=Poèet riadkov komentárov
+985=Súbory pripojené cez #include
+986=Prázdne riadky
+987=Ve¾kos súboru
+988=Absolútne
+989=Súbor Makefile
+990=Relatívne
+991=Èasovo-dátumové razítko modulu
+992=Nastavenie prekladaèa
+
+#Profile analysis form
+995=Analıza profilerom
+996=Jednoduchı vıstup
+997=Graf
+
+#Global strings
+# messages
+1000=H¾adanı reazec ''%s'' nenájdenı
+1001=Súbor %s nemohol by otvorenı
+1002=Nahradi tento vıskyt ''%s'?
+1003=Súbor: %s u existuje v %s
+1004=Neozaj chcete zavrie %s
+1005=Uloit zmeny do %s?
+1006=Zavrie %s a vytvori novı projekt?
+1007=Premenova na:
+1008=Preklad prebieha
+1009=Uloit zmeny do %s?
+1010=Súbor existuje, prepísa?
+1011=Prida novı modul do aktuálneho projektu?
+1012=Prida novı súbor prostriedkov do aktuálneho projektu?
+1013=Váš projekt neobsahuje informácie na ladenie. Prajete si zapnú ladenie a preloi projekt znovu
+1014=Nemáte zapnuté Generovanie informácii pre analızu profilerom v Nastavení prekladaèa. Prajete si ich zapnú a preloi projekt znovu
+1015=Prosím, spustite projekt aspon raz aby mohly by vygenerované informácie pre profiler
+1016=Zadajte meno nového adresára:
+1017=Ste si istı, e chcete odstráni tento adresár?
+1018=Zadajte meno nového adresára:
+1019=Súbor %s je iba na èítanie. eláte si ho zmeni na súbor na èítanie i zápis? Ak nie, súbor nebude uloenı...
+1020=Vyskytla sa chyba. Súbor %s nebol oznaèenı ako súbor na èítanie aj zápis a nebol uloenı...
+1021=Vo vašom programe sa vyskytla vınimka (zlyhanie segmentácie)
+
+# errors
+1500=Nemôem otvori súbor %s
+1501=Nemôem uloi súbor %s
+1502=Nemôem premenova súbor %s
+1503=Nemôem h¾ada prádzdny reazec
+1504=Projekt nie je vykonate¾nı
+1505=Projekt nie je preloenı
+1506=Zdrojovı kód nie je preloenı
+1507=Makefile nenájdenı.
+1508=Vyèistenie zlyhalo
+1509=Šablóna nemôe by umiestnená v projekte.
+1510=Súbor prostriedkov %s nebol nájdenı: %s - %s
+1511=Súbor šablóny %s nebol nájdenı, preskakujem.
+1512=iadna šablóna nebola priradená.
+1513=Súbor %s nebol nájdenı.
+1514=Nie je nastavaná hostite¾ská aplikácia. Môete ju nastavi v ponuke Spusti/Parametre
+1515=Hostite¾ská aplikácia nenájdená ! Môete ju zmeni v ponuke Spusti/Parametre
+
+# misc
+2000=Nepomenovı
+2001=Iba na èítanie
+2002=Vkladanie
+2003=Prepis
+2004=Projekt%d
+2005=Prosím zadajte iné meno súboru.
+2006=%d riadkov v súbore
+2007=Premenova súbor
+2008=Vykonávam %s
+2009=Vykonávanie prerušené
+2010=bajtov
+2011=Zmenenı
+2012=Chyba
+2013=Informácia
+2014=Varovanie
+2015=Otázka
+2016=Preklad úspešnı
+2017=Preklad prerušenı uívate¾om
+
+# buttons
+2500=&Ok
+2501=&Zruši
+2502=&Pomoc
+2503=Predvolenı
+2504=Án&o
+2505=&Nie
+2506=&Prida
+2507=&Upravi
+2508=&Odstráni
+2509=&Zmaza
+2510=Z&avrie
+2511=&Autori
+2512=&Nájs
+2513=N&ahradi
+2514=&Zmaza nesprávne
+2515=Nahradi &všetko
+2516=Nalistova
+2517=Odstráni
+2518=Premenova
+2519=Importova
+2520=Reim okna
+
+2600=CPU okno
+2601=Kód v assembleri :
+2602=Funkcia :
+2603=Syntax assemleru :
+2604=Registre :
+
+2700=Tip dòa
+2701=Vedeli ste...
+2702=...iadne tipy nie sú k dispozicii?
+2703=Nezobrazova tipy pri spustení
+2704=Ïalší tip
+2705=Minulı tip
+
+2800=Typy súborov
+2801=Typy súborov:
+2802=Jednoducho oznaète alebo zrušte oznaèenie tıch typov súborov, pre ktoré bude Dev-C++ zaregistrovanı ako predvolená aplikácia
+
+2803=Podpora CVS
+2804=Aplikácia CVS
+2805=Úroveò kompresie
+2806=Pouíva SSH namiesto RSH
+2807=Adresár šablón
+2808=Zvoli adresár šablón
+2809=Poui tému XP
+2900=Parametre...
+2910=Zoznam okien
+2911=Vyberte okno, ktoré chcete upravi:
+2990=Momentálny súbor...
+2991=Celı projekt...
+2992=Prosím, nastavte si podporu CVS v ponuke "Nástroje / Nastavenie prostredia"...
+3000=Nastavenie importovania
+3001=Schránka
+3002=Globálne nastavenie
+3003=Nastavenie kontroly
+3004=Nastavenie odovzdávania
+3005=Nastavenie aktualizácie
+3006=Nastavenie rozdielov
+3007=Nastavenie protokolu
+3008=Vıstup CVS
+3009=Import
+3010=Kontrola
+3011=Odovzda
+3012=Aktualizácia
+3013=Rozdiely
+3014=Protokol
+3015=Aresár importu
+3016=Akcia
+3017=Dodávate¾
+3018=Edícia
+3019=Správa protokolu
+3020=Názov modulu
+3021=Prípona
+3022=Kontrolova ako
+3023=Adresár kontroly
+3024=Vrátane podaresárov
+3025=Znova nastavi prilepené nastavenia
+3026=Vytvára chıbajúce adresáre
+3027=Odstraòova prázdne adresáre
+3028=Zahodi zmeny vykonané lokálne
+3029=Predchádzajúci dátum
+3030=Edícia/vetva/známka
+3031=Ak nenájdenı, najnovší
+3032=Ïa¾šie edície
+3033=Prevádza jednotné rozdiely
+3034=Porovna lokálny súbor s rovnakou vzdialenou edíciou/známkou
+3035=Porovna lokálny súbor s inou vzdialenou edíciou
+3036=Porovna dva vzdialené adresáre
+3037=Je dátum
+3038=Predvolenú vetvu zapísa do protokolu
+3039=Vypísa iba mená súborov RCS
+3040=Nepísa mená známok
+3041=Filter
+3042=Pod¾a edície/známky
+3043=Pod¾a dátumu
+3044=Pod¾a uívate¾a
+3045=Schránka
+3046=Detaily
+3047=Spôsob prístupu
+3048=Uívate¾
+3049=Server
+3050=Vzdialenı adresár
+3051=Prida
+3052=Odstráni
+3053=Prida nastavenie
+3054=Odstráni nastavenie
+3055=Odstráni tie súbor z disku...
+3100=Parametre
+3101=Parametre, posielané vášmu programu:
+3102=Hostite¾ská aplikácia:
+3200=Súbory
+3201=Súbory projektu:
+3202=Nastavenie projektu:
+3203=Generova ladiace informácie
+3204=GEnerova informácie pre profiler
+3205=POZNÁMKA: Tieto nastenia prepíšu globálne Nastavenia prekladaèa ovpyvòujúc tak iba tento projekt.
+3206=Podpora tém Windows XP
+3207=Nastavenie súboru:
+3208=Zahrnú do prekladu
+3209=Preklada súbor ako C++
+3210=Verzia
+3211=Zahrnú informácie o verzii do projektu
+3212=Detaily
+3213=Hlavná verzia:
+3214=Ved¾ajšia verzia:
+3215=Edícia:
+3216=Build:
+3217=Jazyk:
+3218=Ïa¾šie informácie:

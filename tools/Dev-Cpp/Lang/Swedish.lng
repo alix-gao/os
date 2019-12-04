@@ -1,0 +1,958 @@
+[lang]
+Lang=Svenska
+Ver=14
+
+#Maintained and updated by Kalle Wallin (cpp-trans@metalproject.net)
+--------------------------------------------------------------------
+
+#Toppmenyerna
+100=Arkiv
+101=Redigera
+102=Sök
+103=Visa
+104=Projekt
+105=Exekvera
+106=Verktyg
+107=Fönster
+108=Hjälp
+109=Felsök
+
+#Arkivmenyn
+120=Nytt..
+121=Projekt...
+122=Källfil
+123=Resursfil
+124=Mall...
+
+130=Öppna projekt eller fil...
+131=Öppna senaste filer
+132=Rensa senaste filer
+133=Spara
+134=Spara som...
+135=Spara allt
+136=Stäng
+137=Stäng projekt
+138=Egenskaper
+139=Spara projekt som...
+
+140=Exportera
+141=till HTML
+142=till RTF
+143=projekt till HTML
+149=Importera
+
+150=Skriv ut...
+151=Utskriftsformat...
+152=Avsluta
+
+#Redigera-menyn
+160=Ångra
+161=Gör om
+162=Klipp ut
+163=Kopiera
+164=Klistra in
+165=Markera allt
+166=Ta bort
+167=Importera
+168=Växla bokmärke
+169=Gå till Bokmärke
+170=Bokmärke
+171=Datum/Tid
+172=Kommentarshuvud
+#På grund av brist på nummer fortsätter Redigera-menyn på 380...
+
+#Sökmenyn
+175=Sök...
+176=Sök i filer...
+177=Ersätt...
+178=Sök igen
+179=Gå till rad...
+180=Stegvis sökning
+181=Gå till funktion...
+
+#Visa-menyn
+182=Svävande projekt/klasser
+183=&Projekt
+184=&Klasser
+185=Bläddrare för klasser/projekt
+186=Statusfält
+187=Kompilatorns utdata
+188=Alltid synlig
+189=Endast när nödvändigt
+190=Verktygsfält
+
+# Verktygsfältets rubrik
+191=Verktyg
+192=Kompilera och kör
+193=Projekt
+194=Alternativ
+195=Extra
+196=Redigera
+197=Sök
+198=Svävande rapporter
+
+#Projektmenyn
+200=Ny enhet
+201=Lägg till projekt
+202=Ta bort från projekt
+203=Redigera resurfil...
+204=Projektalternativ
+205=Redigera Makefile
+206=Lägg till Resursfil...
+207=Ta bort Resursfil...
+
+#Exekvera-menyn
+210=Kompilera
+211=Kör
+212=Kompilera && Kör
+213=Bygg om allt
+214=Rensa
+215=Kompilera resultat
+216=Syntaxkontroll
+217=Starta om programmet
+218=Profilanalys
+219=Avbryt
+
+#Verktygsmenyn
+220=Kompilatoralternativ
+221=Miljöalternativ
+222=Redigeringsalternativ
+223=Ställ in verktyg
+224=Ställ in genvägar
+
+#Fönstermenyn
+230=Helskärmsläge
+231=Tillbaka till normalt
+232=Nästa
+233=Föregående
+234=Stäng alla
+235=%s version %s fullskärm. Tryck shift+F12 för Verktygsfält eller F12 för att återgå till normalläge.
+236=Stäng alla utom detta
+237=&Lista
+
+#Hjälpmenyn
+240=Om Dev-C++...
+241=Kontroll av uppdateringar/Paket...
+242=Konfigurera hjälpmenyn... 
+243=Dev-C++ användarhjälp
+
+#Felsökningsmenyn
+245=Felsök
+246=Växla brytpunkt
+247=Nästa steg
+248=Stega över
+249=Lägg till övervakare
+250=Övervaka variabler
+251=Avbryt körning 
+252=Ändra bevakning
+253=Ta bort bevakning
+254=Stega in i
+255=Kör till pekare
+256=Visa CPU-fönster
+
+#Kontextmenyer
+# Projektmenyer
+260=Ny fil
+261=Lägg till fil...
+262=Ta bort fil...
+263=Alternativ...
+264=Redigera resursfil
+
+#Enhetsmenyn
+270=Ta bort fil
+271=Byt namn på fil
+272=Stäng
+273=Öppna
+274=Öppna header
+
+#Klassdetaljsmenyn
+280=Gå till deklaration
+281=Gå till implementation
+282=Ny klass
+283=Ny medlemsfunktion
+284=Ny variabel
+285=Visa...
+286=Alla filer
+287=Nuvarande fil
+288=Lägg till katalog
+289=Ta bort katalog
+290=Döp om katalog
+291=Du kan inte ha mer än %d kataloger i ett projekt...
+292=Använd färger
+293=Projektfiler
+294=Visa ärvda medlemmar
+295=Öppna med...
+
+#Meddelandekontroll
+300=Kompilator
+301=Resurser
+302=Kompilatorlogg
+303=Sök resultat
+304=Stäng
+305=Felsök
+
+# popmeny - ???? /KW
+310=Rensa
+311=Kopiera
+312=Dölj
+313=Öppna
+
+# Kolumnhuvud
+# 320, 322, 323 är inte i inc-filen
+315=Rad
+316=Enhet
+317=Meddelande
+318=Argument
+
+320=Sök rad
+321=Kolumn
+322=Variabelnamn
+323=Värde
+324=Information:
+325=Kompilatorlogg:
+326=Antal fel:
+327=Filens storlek:
+
+#Felsökning
+330=Bevakade variabler
+331=Spåra bakåt
+332=Utdata
+333=Skicka kommando till GDB :
+334=Skicka
+
+# Speciella saker på verktygslisten
+340=Ny
+341=Lägg till
+342=Växla
+343=Gå till
+344=Projektfönster
+345=Felsökningsfönster
+346=Rapportfönster
+
+#ej synliga (öppna/spara dialoger)
+350=Öppna fil
+351=Öppna enhet
+352=Exportera till
+353=Spara fil
+354=Spara projekt
+355=Välj hjälpfil
+
+357=Ny variabelbevakning
+358=Ange variabelnamn:
+359=Ändra variabelbevakning
+360=Nytt variabelnamn:
+
+370=Projekt
+371=Klasser
+
+#Redigeramenyn (fler alternativ)
+380=Kommentera
+381=Avkommentera
+382=Öka indrag
+383=Minska indrag
+384=Växla .h/.cpp
+
+#Redigerarinställningar, alternativ 400-499
+400=Redigeraralternativ
+401=Allmänt
+402=Visning
+403=Syntax
+404=Kod
+405=Komplettera
+406=Klassbläddring
+
+#Underflikar
+410=Lägg till
+411=Standardkällkod
+
+#Allmänt-fliken
+420=Redigeraralternativ:
+421=Automatiskt indrag
+422=Inmatningsläge
+423=Använd tabulator-tecken
+424=Smart tabulering
+425=Backsteg tar bort indrag
+426=Behåll avslutande mellanslag
+427=Ångra i grupp
+428=Förbättrad home-knapp
+429=Markör efter EOF
+430=Markör efter EOL
+431=Dubbelklicka rader
+432=Sök text vid markör
+433=Rullningslister efter behov
+434=Halvsidesrullning
+435=Rullningsledtråd
+436=Använd syntaxmarkering
+437=Lägg till tappade filer
+438=Tabblängd:
+439=Högermarginal
+440=Synlig
+441=Bredd
+442=Färg
+443=Inskjutningstecken
+444=...för tillägg
+445=...för överskrift
+446=Vertikal linje
+447=Horisontell linje
+448=Halvt stycke
+449=Stycke
+450=Lägg till tappade filer
+451=Visa dolda radtecken
+452=Visa redigerarledtrådar
+453=Markera matchande parenteser
+
+# through 459 for additions
+
+# Visningsfliken
+460=Typsnitt i redigeraren:
+461=Typsnitt
+462=Storlek
+463=Redigerarens typnsnitt
+464=Sidomarginal
+465=Automatisk storlek
+466=Radnummer
+467=Vissa inledande nollor
+468=Börja vid noll
+469=Använd eget typsnitt
+470=Marginaltypsnitt
+
+# Syntaxfliken
+471=Text
+472=Bakgrund
+473=Format
+474=Fetstil
+475=Kursiv
+476=Understruken
+477=Snabbinställning
+478=Typ :
+
+479=Spara egna syntaxinställningar
+419=Namnge inställning:
+ 
+# Kodfliken
+480=Kod
+481=Menytext
+482=Sektion
+483=Beskrivning
+484=Lägg till koden i tomma projekts startfiler
+
+# Kompletteringsfliken
+485=Använd kodkompletteringsminnet
+486=Filer i minne:
+487=Använd kodkomplettering
+488=Fördröjning (ms):
+489=Bakgrundsfärg:
+
+# Klassbläddringsfliken
+490=Klassbläddrarens inställningar
+491=Genomsök lokala filer angivna i #include
+492=Exempel:
+493=Motoralternativ
+494=Visningsalternativ
+495=Använd klassbläddraren
+496=Genomsök globala filer angivna i #include
+497=Visa endast klasser från aktiv fil
+
+#Nytt projekt-formulär
+500=Nytt projekt
+501=Beskrivning:
+503=Namn:
+504=&C Projekt
+505=C&++-projekt
+506=Sätt som standardspråk
+507=Övrigt 
+508=Projektinställningar:
+
+#Ta bort fil-formulär
+520=Ta bort från projekt
+521=Vilken fil skall tas bort från projektet?
+
+#Gå till rad-formulär
+525=Gå till rad ...
+526=Ny Rad:
+
+#Verktygsinställningsformulär
+530=Verktygsinställning
+531=Nuvarande verktyg:
+
+#Redigera verktygs-formuläret
+535=Redigera verktyg
+536=Namn
+537=Program
+538=Arbetskatalog
+539=Parametrar
+540=Lägg till makro
+541=Tillgängliga makron
+
+#Ikonbiblioteksformulär
+545=Ikonbibliotek
+546=Använd markerad ikon
+547=Bläddra
+
+#Ställ in genvägar-formulär
+550=Ställ in genvägar
+551=Markera ett objekt och tryck på din valda genväg!
+552=Tips: tryck "Escape" för att ta bort en genväg...
+553=Menyalternativ
+554=Tilldelad genväg
+555=Avbryt
+556=OK
+
+#Verktygsmeny-genvägar
+560=Ger standardkatalogen
+561=Ger arbetskatalog för Dev-C++ 
+562=Ger namn för kompilerad fil
+563=Ger mappen till antingen det aktuella projektet eller källfilen
+564=Ger filnamnet till antingen det aktuella projektet eller källfilen
+565=Ger projektets "namn"
+566=Ger nuvarande källkods filnamn
+567=Ger nuvarande källkods sökväg
+568=Ger en mellanslagsseparerad lista det aktuella projektets filer
+569=Ger ordet vid markören i den aktuella redigeraren
+570=Ger aktuell version av Dev-C++
+# -- Till 579
+
+#Om...
+580=Om Dev-C++ :)
+581=inseculous@users.sourceforge.net
+582=GNU General Public License
+583=Kontaktinformation
+584=Bloodshed Softwares hemsida:
+585=Mingw Kompilers hemsida:
+586=Dev-C++-diskussionsforum:
+587=Dev-C++-användarmailinglista:
+588=Upphovsmännens e-post:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=&Sök efter uppdateringar
+
+#Code Inserts Entry Edit form - Vad kan detta vara? /KW
+600=Redigera kodinmatning
+601=Lägg till kodinmatning
+602=Menyrubrik
+603=Beskrivning
+604=Menysektion
+
+#Miljöalternativ
+606=Kompileringsstatusfönster 
+607=Visa under kompilering
+608=Dölj efter kompilering
+609=Inget välkomstfönster vid uppstart
+610=Miljöalternativ
+611=Allmänt
+612=Filer && Kataloger
+613=Öppna automatiskt
+614=Föredra C++ i nya projekt
+615=Visa verktygsfält i helskärmsläge
+616=Skapa säkerhetskopior
+617=Minimera vid körning
+618=Öppna/Spara-format
+619=Windows 2k (sidofält)
+620=Windows 9x
+621=Windows 3.1
+622=Språk:
+623=Medelandefönstrets flikar:
+624=Max antal filer i senaste-menyn
+625=Användarens standardkatalog
+626=Katalog att spara i
+627=Mapp för ikoner
+628=Bild i välkomstfönster
+629=Användarens standardkatalog
+630=Var skall kompilatorn spara filer?
+631=Katalog för ikoner
+632=Alla projektfiler
+633=Endast första projektfilen
+634=Ingen
+635=Visa menyn i helskärmsläge
+636=Dubbelklicka för att öppna projekthanterarens filer
+637=Mapp för språkfiler
+638=Utseende: 
+639=Gränssnitt
+
+#Sökformulär
+640=Sök text
+641=Sök
+642=Sök i filer
+643=&Text att söka efter
+644=Alternativ:
+645=&Matcha gemener && versaler
+646=Matcha &hela ord
+647=Riktning
+648=Filer i projekt
+649=&Öppna Filer
+650=Omfattning
+651=&Globalt
+652=Endast &markering
+653=Ursprung:
+654=Från markör
+655=Hela omfattningen
+656=Riktning
+657=Framåt
+658=Bakåt
+
+#Ersätt-formulär
+670=Ersätt text
+671=Text att söka efter:
+672=Ersätt med:
+673=Alternativ:
+674=&Matcha gemener && versaler
+675=Matcha &hela ord
+676=&Fråga vid ersättning
+677=Riktning:
+678=Framå&t
+679=&Bakåt
+680=Omfattning:
+681=&Globalt
+682=Endast markering
+683=Ursprung:
+684=Från markör
+685=Hela omfattningen
+
+#Goto-formulär
+695=Sök efter:
+696=Typ
+697=Funktion
+698=Rad
+
+#Kompilatoralternativ
+700=Kompilatoralternativ
+701=Kompilator
+702=Kataloger
+703=Kodgenerering/optimering
+704=Länkare
+705=Program
+
+710=Binärfiler
+711=Bibliotek
+712=C-inkluderingsfiler
+713=C++-inkluderingsfiler 
+720=C-kompilatorn:
+721=C++-kompilatorn:
+722=Kompilator:
+725=Stöd alla ANSI-standard C-program
+726=Försök stödja några aspekter av traditionella C-förprocessorer
+727=Hindra alla varningsmeddelanden
+728=Stäng av all tillgångskontroll
+729=Acceptera $ i identifikatorer
+730=Använd heuristisk för att kompilera snabbare
+731=Använd Cygwin istället för Mingw-kompilatorn
+732=Ge följande kommandon till kompilatorn:
+733=Fördröjning
+734=Använd en fördröjning i millisekunder om make klagar över make-filens tidsinfo. 
+740=Kodgenerering:
+741=Optimering:
+745=Använd undantagshantering
+746=Använd samma storlek för double och float
+747=Generera extra kommentarer i assemblerkoden
+748=Optimera
+749=Använd bästa optimering
+750=Genomför några mindre optimeringar
+751=Makefile-generering:
+752=Gör snabb men imperfekt beroende-beräkning
+753=Kodprofilering:
+754=Generera profileringsinformation för analys
+755=Länka ett Objective C-program
+756=Generera felsökninginformation
+757=Använd inte systemets standardfiler eller bibliotek
+758=Skapa inte ett konsolfönster
+759=Passera dessa kommandon till länkaren 
+760=Optimera inte
+761=Optimera mera
+
+770=Du kanske behöver ändra de filnamn som används i Dev-C++ (till exempel när en kors-kompilator används):
+771=Kompilatoruppsättning att konfigurera:
+772=Ny kompilatoruppsättning
+773=Ange namnet för den nya uppsättningen:
+774=Du kan inte radera den sista uppsättningen!
+775=Är du säker på att du vill radera denna?
+776=Döp om uppsättning
+777=Ange nytt namn för att byta namn på uppsättningen:
+778=Fler optimeringar
+
+#Hjälpformulär
+780=Inställningar för hjälpmenyn
+781=Menytext
+782=Hjälpfil
+783=Hjälpmenyalternativ
+784=Ikon
+785=Menysektion
+786=Sektion 1
+787=Sektion 2
+788=Visa meny vid hjälp
+789=Åtgärder
+790=Sök efter ord vid pekaren
+791=Ange F1 som genväg
+
+#Utskriftsformulär
+800=Skriv ut fil
+801=Parametrar:
+802=Sidor:
+803=&Färger
+804=&Markera
+805=&Radbrytning
+806=&Radnummer
+807=Skriv ut radnummer
+808=Skriv ut radnummer i marginalen
+809=Antal kopior:
+810= Skriv endast ut markering
+
+#Uppdateringsformulär
+820=Leta efter uppdatering av Dev-C++
+821=Uppgift:
+822=Resultat:
+823=Version:
+824=Version som behövs för att använda:
+825=Beskrivning:
+826=Nerladdnigsplats (dubbelklicka för att ta hem):
+
+#Lägg till att göra-formulär
+830=Lägg till att göra-punkt...
+831=Beskrivning
+832=Prioritet
+833=Användare
+
+#Visa att göra-formulär
+835=Att göra-lista...
+836=Filnamn
+837=Klart
+838=Visa inte avklarade punkter.
+839=Filter:
+840=Alla filer (även utanför projektet)
+841=Endast öppna filer (även utanför projektet)
+842=Alla filer i projektet
+843=Endast öppna filer i projektet
+844=Öppna filer utanför projektet
+845=Aktuell fil endast
+
+#Importera MSVC++-formulär
+850=Importera MS Visual C++-projekt
+851=Välj Visual C++-projektfil
+852=Alternativ för import
+853=Konfiguration att importera
+854=Filnamn för Dev-C++
+855=MS Visual C++-projektet har importerats och konverterats till ett Dev-C++ projekt! Vill du öppna det nu?
+
+#Projektalternativ
+900=Projektalternativ
+901=Allmänt
+902=Filer/kataloger
+903=Namn:
+904=Ikon:
+905=Bibliotek
+906=Bläddra
+907=Typ:
+908=Win32 GUI
+909=Win32-konsol
+910=Win32 Statiskt Bibliotek
+911=Win32-DLL
+912=Kompilera som C++
+913=Extra kommandoradsalternativ:
+914=Kompilator:
+915=Länkaralternativ/extra bibliotek eller objektfiler:
+916=Bibliotekskataloger
+917=Resursfiler
+918=Kataloger med include-filer
+919=Välj ikon
+920=Inkludera en objektfil
+921=Resurskataloger
+922=Bygg-alternativ
+923=Kataloger
+989=Makefile
+924=Katalog för körbara filer
+925=Objektfilskatalog
+926=Ändra utmatningsfilnamn
+927=Lägg till bibliotek
+928=%d filer [%d källkod, %d header-filer, %d resursfiler]
+ 
+#Ny mall
+930=Namn:
+931=Bekrivning:
+932=Kategori:
+933=Nytt projektnamn:
+934=Filer i mallen:
+935=Extra alternativ för kompileraren:
+936=Extra alternativ för länkaren:
+937=Ikoner:
+938=Mallinformation
+939=Filer
+940=Extra
+941=Mallikon
+942=Projektikon
+943=Skapa
+944=Ny mall ur projekt
+
+#Ny variabel/medlem
+950=Returtyp:
+951=Variabelnamn:
+952=Implementera i:
+953=Tillgångsområde
+954=Skapa medlemsfunktion för att LÄSA från variabeln
+955=Skapa medlemsfunktion för att SKRIVA till variabeln
+956=Namn:
+957=Kommentarer
+958=Beskrivning:
+959=Stil:
+960=Skapa
+961=Avbryt
+962=Okänd klass...
+963=Kan inte avgöra filnamnet att implementera i...
+964=Kan inte avgöra radnumret att stoppa in kod vid...
+965=Medlemsnamn:
+966=Argument:
+967=Klassnamn:
+968=Ärv från annan klass
+969=Arv
+970=Ärv från klass:
+971=Header-fil:
+972=Implementationsfil:
+973=Header-fil:
+974=Lägg till aktuellt projekt
+975=Egenskaper
+
+#Filegenskaper
+980=Filnamn
+981=I projekt
+982=Antal rader
+983=Faktiska rader kod
+984=Kommentarrader
+985=Inkluderade filer
+986=Tomma rader
+987=Filstorlek
+988=Absolut
+990=Relativ
+991=Senast ändrad
+992=Kompilatorinställningar
+
+#Profilanalys - platt utdata måste vara fel...
+995=Profilanalys
+996=Platt utdata
+997=Anropa graf
+
+#Globala strängar
+# meddelanden
+1000=Söksträng ''%s'' kunde inte hittas
+1001=Filen %s kunde inte öppnas
+1002=Ersätt denna instans ''%s'?
+1003=Fil: %s existerar redan i %s
+1004=Vill du verkligen stänga %s?
+1005=Spara ändringar i %s?
+1006=Stäng %s och öppna ett nytt projekt?
+1007=Döp om till:
+1008=Kompilerar redan
+1009=Spara ändringar i %s?
+1010=Filen finns redan, skriv över?
+1011=Lägg till ny enhet i projektet?
+1012=Lägg till ny resurs i projektet?
+1013=Ditt projekt har ingen felsökningsinformation, vill du aktivera felsökning och bygga om ditt projekt?
+1014=Du har inte aktiverat profilering och/eller felsökning i kompilatorns inställningar. Vill du aktivera dem och bygga om ditt projekt nu?
+1015=Var god kör projektet minst en gång så att profileringsinformation kan skapas... 
+1016=Ange den nya katalogens namn:
+1017=Säkert att du vill ta bort katalogen?
+1018=Ange den nya katalogens namn:
+1019=Filen %s är markerad som skrivskyddad. Vill du ändra till skrivbar? Annars kan filen inte sparas nu...
+1020=Ett fel uppstod. Filen %s var inte skrivbar och sparades inte...
+1021=Ett åtkomstfel uppstod i ditt program.
+1022=Källfilen är nyare än programmet - vill du kompilera på nytt?
+
+
+# Fel
+1500=Kan inte öppna fil %s
+1501=Kan inte spara fil %s
+1502=Kan inte döpa om fil %s
+1503=Sökfältet kan inte vara tomt
+1504=Projektet är inte körbart
+1505=Projektwr är inte kompilerat
+1506=Källfilen kompilerades inte
+1507=Hittar inte make-fil.
+1508=Rensning misslyckades
+1509=Mall kunde inte placeras i projektet.
+1510=%s Resurser hittades inte: %s - %s
+1511=Mallfil %s hittades inte, hoppar över den.
+1512=Ingen mall tilldelad.
+1513=Fil %s hittades inte.
+1514=Ingen värdapplikation angiven. Du kan ange den i Exekvera-menyn, under Parametrar.
+1515=Värdapplikationen kan inte hittas! Ställ in detta i Exekvera-menyn, under Parametrar.
+
+# Övrigt
+2000=Namnlös
+2001=Skrivskyddad
+2002=Lägg till
+2003=Skriv över
+2004=Projekt%d
+2005=Var god välj ett annat filnamn.
+2006=%d rader i filen
+2007=Döp om fil
+2008=Kör %s
+2009=Körning avslutad
+2010=bytes
+2011=Ändrad
+2012=Fel
+2013=Information
+2014=Varning
+2015=Fråga
+2016=Kompilering slutförd
+2017=Kompilering avbröts av användaren
+
+# Knappar
+2500=&Ok
+2501=&Avbryt
+2502=&Hjälp
+2503=&Standard
+2504=&Ja
+2505=&Nej
+2506=&Lägg till
+2507=&Redigera
+2508=&Ta bort
+2509=Ta &bort
+2510=S&täng
+2511=&Skapare
+2512=Sö&k
+2513=&Ersätt
+2514=Ta bort &ogiltiga
+2515=Ersätt &Alla
+2516=Bläddra
+2517=Ta bort
+2518=Döp om
+2519=Importera
+2520=Fönsterläge
+
+# CPU-fönster
+2600=CPU-fönster
+2601=Assemblerkod:
+2602=Funktion:
+2603=Assemblersyntax:
+2604=Register:
+
+# Dagens tips-fönstret
+2700=Dagens tips
+2701=Visste du att...
+2702=...det inte finns några tips att visa idag?
+2703=Visa inte tips vid start.
+2704=Nästa
+2705=Föregående
+
+#Utökade miljöalternativ
+2800=Bundna filtyper
+2801=Filtyper:
+2802=Kryssa i vilka filtyper du vill att Dev-C++ skall vara standardhanterare för...
+2803=CVS-stöd
+2804=Sökväg till CVS-program
+2805=Kompressionsnivå
+2806=Använd SSH i stället för RSH
+2807=Mallkatalog
+2808=Ange mallkatalog
+2809=Använd XP-tema
+2810=Externa program
+2811=Externt program
+2812=Filändelse
+2813=Externa programbindningar:
+2814=Övervaka variabel under musen
+2815=Rapportera övervaknings fel
+2816= Korrigera variabelfönster
+
+# Exekvera (forts)
+2900=Parametrar...
+2901=Kompilera aktuell fil
+
+# Fönsterlista
+2910=Fönsterlista
+2911=Ange vilket fönster du vill redigera:
+
+# CVS-Menyn
+# Eftersom jag inte har stenkoll på CVS så kan det här bli lite fel... /KW
+
+2990=Aktuell fil...
+2991=Hela projektet...
+2992=Ställ in CVS-stöd under "Verktyg / Miljöalternativ"...
+
+# CVS-formulär
+3000=Importalternativ
+3001=Förråd
+3002=Globala inställningar
+3003=Utcheckningsalternativ
+3004=Inlämningsalternativ
+3005=Uppdateringsalternativ
+3006=Diff-alternativ
+3007=Loggalternativ
+3008=CVS-utmatning
+3009=Importera
+3010=Checka ut
+3011=Lämna in
+3012=Uppdatera
+3013=Diff
+3014=Logg
+3015=Importkatalog
+3016=Handling
+3017=Handläggare
+# Möjligt att release skall vara släppa, men jag antar att det är version
+3018=Version
+3019=Loggmeddelande
+3020=Modulnamn
+3021=Filändelse
+3022=Checka ut som
+3023=Utcheckningskatalog
+3024=Sök i undermappar
+3025=Nollställ vidhäftande inställningar
+3026=Skapa saknade kataloger
+3027=Ta bort tomma kataloger
+3028=Släpp lokala ändringar
+3029=Innan datum
+3030=Revision/gren/beteckning
+3031=Om inte funnen, ta den senaste
+3032=Andra revisioner
+3033=Genomför en förenad diff
+3034=Jämför lokal fil med samma revision/beteckning på server
+3035=Jämför lokal fil med en annan revision på server
+3036=Jämför två revisioner på server
+3037=Är datum
+3038=Logga standardgrenen
+3039=Visa enbart RCS-filnamn
+3040=Skriv inte ut beteckningsnamn
+3041=Filtrera
+3042=Efter revision/beteckning
+3043=Efter datum
+3044=Efter användare
+3045=Förråd
+3046=Detaljer
+3047=Åtkomstmetod
+3048=Användare
+3049=Server
+3050=Fjärrkatalog
+3051=Lägg till
+3052=Ta bort
+3053=Tilläggsalternativ
+3054=Borttagningsalternativ
+3055=Ta även bort filen från hårddisken...
+
+# Parametrar
+3100=Parametrar
+3101=Parametrar att vidarebefordra till ditt program:
+3102=Värdapplikation:
+
+# Projektalternativ (forts)
+3200=Filer
+3201=Projektfiler:
+3202=Projektalternativ:
+3203=Generera felsökningsinformation
+3204=Generera profilinformation
+3205=OBS: Dessa inställningar åsidosätter globala kompilatorinställningar endast för detta projekt.
+3206=Stöd för Windows XP-teman
+3207=Filalternativ:
+3208=Inkludera vid kompilering
+3209=Kompilera fil som C++
+3210=Versionsinfo
+3211=Inkludera versionsinformation i projektet
+3212=Versionsdetaljer
+3213=Stor:
+3214=Liten:
+3215=Revision:
+3216=Kompilering:
+3217=Språk:
+3218=Övrig information:
+3219=Åsidosätt build-kommando
+3220=Utmatningsfil
+3221=Inkludera vid länkning
+3222=Byggnadsprioritet:

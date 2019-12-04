@@ -1,0 +1,798 @@
+[lang]
+Lang=Croatian
+Ver=1
+
+#Top level menus
+100=&Datoteka
+101=&Ureðivanje
+102=&Traži
+103=&Izgled
+104=&Projekt
+105=&Naredbe
+106=&Alati
+107=&Prozor
+108=&Pomoæ
+109=&Debug
+
+#File menu
+120=&Nova...
+121=&Projekt...
+122=&Source Datoteka
+123=&Resource Datoteka
+124=&Predložak...
+
+130=&Otvori projekt ili datoteku...
+131=&Ponovno otvori
+132=&Obriši povijest
+133=&Spremi
+134=Spremi &kao...
+135=Spr&emi sve
+136=&Zatvori
+137=Zatvori projekt
+138=Svojstva
+
+140=&Export
+141=u &HTML
+142=u &RTF
+143=&Projekt u HTML
+
+149=&Import
+
+150=&Ispis
+151=Postavke ispisa
+152=I&zlaz
+
+#Edit menu
+160=&Undo
+161=&Redo
+162=Iz&reži
+163=&Kopiraj
+164=&Zalijepi
+165=&Odaberi sve
+166=&Obriši
+167=&Unesi
+168=Postavi/Ukloni knjižne oznake
+169=&Odi na oznaku
+170=Knjižna oznaka
+171=&Datum/Vrijeme
+172=&Komentar
+#Due to exhausted numbers, the Edit menu continues at 380...
+
+#Search menu
+175=Traži...
+176=Traž&i u datotekama...
+177=Zamjeni...
+178=&Traži ponovno
+179=&Odi na liniju...
+180=&Integrirana potraga
+181=O&di na funkciju...
+
+#View menu
+185=&Preglednik projekta i klasa
+186=&Statusbar
+187=&Ispis kompajlera
+188=&Stalno vidljiv
+189=&Samo kada je potrebno
+190=&Alatne trake
+
+# Toolbar Captions
+191=Standarna
+192=Kompajlaj i pokreni
+193=Projekti
+194=O programu
+195=Specijalna
+196=Ureðivanje
+197=Traži
+
+#Project menu
+200=&Novo
+201=&Dodaj u projekt
+202=&Ukloni iz projekta
+203=&Uredi resurse...
+204=Po&stavke projekta
+205=Uredi &Makefile
+206=Dod&aj resurse...
+207=U&kloni resurse...
+
+#Execute menu
+210=&Kompajlaj
+211=&Pokreni
+212=K&ompajlaj i pokreni
+213=&Kompajlaj sve
+214=Po&èisti
+215=Rezul&tat kompajlanja
+216=&Provjera sintakse
+217=&Reset programa
+218=Anali&za profila
+
+#Tool menu
+220=&Postavke kompajlera
+221=P&ostavke okoline
+222=Iz&gled editora
+223=Uredi &alate
+224=Uredi preèa&ce
+
+#Window menu
+230=&Full Screen
+231=&Windowed
+232=&Sljedeæi
+233=&Prethodni
+234=&Zatvori sve
+235=%s verzija %s full screen. Pritisni Shift+F12 za prikaz alatnih traka iliti F12 za povratak u windowed mod 
+236=Zatvori sve o&sim ovoga
+
+#Help menu
+240=&O Dev-C++...
+241=&Provjeri nadogradnje...
+242=Ure&di Help meni...
+243=&Pomoæ oko Dev-C++
+
+#Debug Menu
+245=&Debug
+246=&Postavi/Ukloni breakpoint
+247=&Sljedeæi korak
+248=&Prekoraæi
+249=&Dodaj nadglednika
+250=&Nadgledaj varijable
+251=Zaustavi program
+252=&Uredi nadglednik
+253=&Ukloni nadglednik
+254=Korak &u
+255=Izvrši do &kursura
+256=&Otvori asm prozor
+
+#context menus
+# project menu
+260=Nova datoteka
+261=Dodaj datoteku...
+262=Ukloni datoteku...
+263=Postavke...
+264=Uredi resurse
+
+# unit menu
+270=Ukloni datoteku
+271=Preimenuj datoteku
+272=Zatvori
+273=Otvori
+274=Otvori zaglavlje
+
+# class browser menu
+280=Odi na definiciju...
+281=Odi na mjesto upotrebe
+282=Nova klasa
+283=Nova funkcija
+284=Nova varijabla
+285=Izgled...
+286=Sve datoteke
+287=Trenutna datoteka
+288=Dodaj mapu
+289=Ukloni mapu
+290=Preimenuj mapu
+291=Ne možeš dodati više od %d mapa u 1 projekt...
+292=Koristi boje
+293=Datoteke projekta
+
+#Message control
+# sheets
+300=Greške
+301=Resursi
+302=Ispis kompajlera
+303=Rezultati traženja
+304=Zatvori
+305=Debug
+
+# pop menu
+310=Po&èisti
+311=&Kopiraj
+312=&Sakri
+313=&Otvori
+
+# column headers
+# 320, 322, 323 not in inc file
+315=Linija
+316=Lokacija
+317=Poruka
+
+320=Traži liniju
+321=Col
+322=Naziv varijable
+323=Vrijednost
+324=Info:
+325=Ispis kompajlera:
+326=Ukupno grešaka:
+327=Velièina datoteke:
+
+# debug
+
+330=Nadgledane varijable
+331=Prati natrag
+332=Ispis
+333=Pošalji naredbu GDB-u :
+334=Pošalji
+
+# Specials toolbar items
+340=Nova
+341=Unesi
+342=Postavi/Ukloni
+343=Odi na
+
+#non-visible (open/save dialogs)
+350=Otvori datoteku
+351=Otvori
+352=Export u
+353=Spremi datoteku
+354=Spremi projekt
+355=Odaberi Help adtoteku
+
+357=Novi nadglednik varijabli
+358=Unesi ime varijable:
+359=Uredi nadglednik
+360=Naziv nove varijable:
+
+370=Projekt
+371=Klase
+
+#Edit menu (more options)
+380=Postavi komentar
+381=Ukloni komentar
+382=Pomakni udesno
+383=Pomakni ulijevo
+384=Zamjeni zaglavlje/kod
+
+#Editor Options Dialog 400-499
+400=Izgled editora 
+401=Opæe
+402=Prikaz
+403=Sintaksa
+404=Kod
+405=Dovršavanje koda
+406=Preglednik klasa
+
+#sub tabs
+410=Unosi
+411=Defaultni kod
+
+# General Tab
+420=Postavke editora:
+421=Auto pomicanje slidera
+422=Pokreni se u "Unos" modu
+423=Koristi Tab tipku
+424=Pomak kursura na tekst (Tab)
+425=Pomak kursura na tekst (Backspace)
+426=Prati "Space" tipku
+427=Grupni Undo
+428=Poboljšana "Home" tipka
+429=Kursur nakon EOF
+430=Kursur nakon EOL
+431=Dvoklik na liniju oznaèuje istu
+432=Traži rijeè smještenu ispod kursura
+433=Stvori slidere kad su potrebni
+434=PgUp i PgDn pomièu tekst za 1/2 str
+435=Prikazuj linije tijekom scrollanja
+436=Koristi bojanje sintakse
+437=Unesi "dovuèene" datoteke
+438=Velièina taba:
+439=Desna margina
+440=Vidljivo
+441=Širina
+442=Boja
+443=Caret
+444=Unos :
+445=Overwrite :
+446=Okomita crta
+447=Vodoravna crta
+448=Pola razmaka
+449=Razmak
+450=Unesi "dovuèene" datoteke
+451=Prikazuj skrivene znakove (EOL)
+452=Savjeti u editoru
+
+# through 459 for additions
+
+# Display Tab
+460=Editor Font:
+461=Font
+462=Velièina
+463=Fear is your worst enemy
+464=Gutter Font:
+465=Auto velièina
+466=Brojevi linija
+467=Prikazuj poèetne nule
+468=Poèni od nule
+469=Koristi vlastiti font
+470=Fear is your worst enemy
+
+# Syntax Tab
+471=Foreground
+472=Pozadina
+473=Stilovi
+474=Bold
+475=Italic
+476=Podcrtano
+477=Stilovi bojanja :
+478=Vrsta :
+479=Spremi vlastite postavke
+419=Unesi ime za nove postavke:
+
+# Code Tab
+480=Kod
+481=Tekst
+482=Sekcija
+483=Opis
+484=Unesi defaultni kod u nove projekte
+
+# Completion Tab
+485=Koristi code-completion memoriju
+486=Datoteke u memoriji:
+487=Koristi dovršavanje sintakse
+488=Pauza (ms):
+489=Boja pozadine:
+
+# Class browsing Tab
+490=Postavke preglednika klasa
+491=Skeniraj datoteke navedene u #include's
+492=Primjer:
+493=Postavke enginea
+494=Izgled
+495=Koristi preglednik klasa
+496=Skeniraj globalne datoteke navedene u #include's
+
+#New project form
+500=Novi projekt
+501=Opis:
+503=Ime:
+504=&C Projekt
+505=C&++ Projekt
+506=&Spremi kao defaultni jezik
+507=Ostalo
+508=Postavke:
+
+#Remove file form
+520=Ukloni iz projekta
+521=Odaberi datoteku za ukloniti iz projekta :
+
+#Goto line form
+525=Odi na liniju ...
+526=Nova linija:
+
+#Tool config form
+530=Postavljanje alata
+531=Trenutni alati:
+
+#Edit Tool form
+535=Zapis alata unosa
+536=Naziv
+537=Program
+538=Radna mapa
+539=Postavke
+540=Unesi makro
+541=Dostupni makro
+
+#Icon Library Form
+545=Ikone
+546=Koristi odabranu ikonu
+547=Preglednik
+
+#Configure Shortcuts Form
+550=Uredi preèace
+551= Klikni na stavku i odaberi preèac koji joj želiš pridružiti   
+552=Savjet: s "Esc" brišeš preèac...
+553=Naredba
+554=Pridruženi preèac
+555=Odustani
+556=Ok
+
+#Tool Menu Macros
+560=Vraæa put do defaultne mape
+561=Vraæa put do radne mape
+562=Vraæa put do kompajlanog programa
+563=Vraæa put do 
+564=Vraæa put do otvorenog projekta ili source datoteke
+565=Vraæa naziv projekta
+566=Vraæa naziv otvorene source datoteke
+567=Vraæa put do otvorene source datoteke
+568=Vraæa popis datoteka u otvorenom projektu
+569=Vraæa rijeè koja se trnutno nalazi ispod kursura
+570=Vraæa verziju Dev-C++ -a
+# -- TO 579
+
+#About form
+580=O Dev-C++ :)
+581=inseculous@users.sourceforge.net
+582=GNU General Public License
+583=Kontakt
+584=Bloodshed Software Website:
+585=Mingw Compiler Website:
+586=Dev-C++ forum :
+587=Dev-C++ mailing lista:
+588=E-mail autora:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=&Provjeri nadogradnje...
+
+#Code Inserts Entry Edit form
+600=Zapis promjene koda
+601=Zapis dodavanja koda
+602=Naziv stavke u meniju
+603=Opis stavke
+604=Sekcija menija
+
+#Environment options form
+609=Ne prikazuj Splash Screen pri pokretanju
+610=Postavke okoline
+611=Opæe
+612=Datoteke i mape
+613=Automatski otvori
+614=C++ je defaultni jezik 
+615=Prikaži alatne trake u full screenu
+616=Stvaraj arhive datoteka
+617=Minimiziraj pri startu
+618=Stil Open/Save dijaloga
+619=Windows 2k (boèna traka)
+620=Windows 9x
+621=Windows 3.1
+622=Jezik:
+623=Pozicija tabova u prozoru s porukama :
+624=Max datoteka u povjesti :
+625=Defaultna mapa
+626=Izlazna mapa
+627=Mapa s ikonama
+628=Splash Screen slika
+629=Odaberi defaultnu mapu
+630=Odaberi izlaznu mapu
+631=Odaberi mapu s ikonama
+632=Sve projekte
+633=Samo prvi projekt
+634=Ništa
+635=Prikaži meni u full screenu
+636=Dvoklik za otvaranje datoteka u Project Manageru
+637=Mapa s jezicima
+638=Stil :
+639=Suèelje
+
+#Find Form
+640=Traži tekst
+641=Traži
+642=Traži u datotekama
+643=Tekst za pronaæi:
+644=Postavke
+645=&Precizna pretraga
+646=&Samo cijele rijeèi
+647=Pretraži
+648=&Sve u projektu
+649=&Otvorene datoteke
+650=Podruèje za pretražiti
+651=&Sve
+652=&Samo oznaèeno
+653=Poèni od
+654=Kursora
+655=Od poèetka
+656=Smjer
+657=Dolje
+658=Gore
+
+#Replace form
+670=Zamjeni tekst:
+671=Tekst za pronaæi:
+672=Zamjeni s:
+673=Postavke
+674=&Precizna pretraga
+675=&Samo cijele rijeèi
+676=&Pitaj prije zamjene
+677=Smjer
+678=D&olje
+679=&Gore
+680=Podruèje za pretražiti
+681=&Sve
+682=&Samo oznaèeno
+683=Poèni od
+684=&Kursora
+685=&Od poèetka
+
+#Goto function form
+695=Traži:
+696=Tip
+697=Funkcija
+698=Linija
+
+#Compiler Options
+700=Postavke kompajlera
+701=Kompajler
+702=Mape
+703=Kompajlanje i optimizacija koda
+704=Linker
+705=Programi
+
+710=Binarne datoteke
+711=Libovi
+712=C zaglavlja
+713=C++ zaglavlja
+720=C kompajler:
+721=C++ kompajler:
+722=Kompajler:
+725=Podržavaj sve ANSI C programe
+726=Podržavaj neke stare C pretprocesorske naredbe
+727=Sprijeèi sva upozorenja
+728=Iskljuèi all access pregledavanje
+729=Prihvati $ u identifikatorima
+730=Koristi heuristics(!) za brže kompajlanje
+731=Koristi Cygwin umjesto Mingw (rijeè je o kompajlerima)
+732=Dodaj sljedeæu naredbu pri pozivanju kompajlera:
+733=Pauza od (ms) 
+734=Odgaða kompajlanje za xy ms (korisno kada .make prijavljuje grešku zbog krivog "time stampa") 
+740=Kompajlanje koda:
+741=Optimizacija:
+745=Ukljuèi exception handling
+746=Koristi istu velièinu za 'double' i 'float'
+747=Unesi dodatne komentare u generirani asm kod
+748=Optimiziraj
+749=Optimiziraj do &daske
+750=Provedi par manjih optimizacija
+751=Stvaranje .make datoteke:
+752=Koristi brzo ali nesavršeno kompajlanje
+753=Profil:
+754=Stvori profil za analizu
+755=Linkaj Objective C program
+756=Stvori debugging info
+757=Nemoj upotrebljavati standarne WIN datoteke i DLL-ove
+758=Nemoj stvarati console prozor 
+759=Dodaj ove komande u linker
+760=Ne&moj optimizirati
+761=Optimiziraj još &više
+
+770=MOžda æeš htjeti promjeniti nazive programa koji se koriste u Dev-C++ (npr. kod cross kompajlera) : 
+
+#Help Editor Form
+780=Help Menu Editor
+781=Tekst menija
+782=Help datoteka
+783=Postavke menija
+784=Ikona
+785=Sekcija menija
+786=Sekcija 1
+787=Sekcija 2
+788=Popup Meni
+789=Akcije
+
+#Print File Form
+800=Ispiši datoteku
+801=Postavke:
+802=Stranica:
+803=&Boje
+804=&Oznaèeno
+805=&Word wrap
+806=Br&oj linija
+807=Ispiši brojeve linija
+808=Ispiši brojeva linija u margini
+809=Broj kopija:
+810=Ispiši samo selektirano
+
+#Update Form
+820=Provjeri nadogradnje...
+821=Zadatak:
+822=Rezultati:
+823=Verzija:
+824=Potrebna verzija:
+825=Opis verzije:
+826=Download stranica (dvoklik za download):
+
+#AddToDo form
+830=Dodaj To-Do stavku...
+831=Opis
+832=Važnost
+833=Korisnik
+
+#ViewToDo form
+835=To-Do lista...
+836=Naziv
+837=Uèinio
+838=Ne prikazuj stavke oznaèene kao uèinjene
+839=Filter:
+840=Sve datoteke
+841=Samo otvorene datoteke
+842=Svi projekti
+843=Samo otvoreni projekti
+844=Ostale otvorene datoteke
+845=Samo trenutna datoteka
+
+#Import MSVC++ form
+850=Import MS Visual C++ projekt
+851=Odaberi Visual C++ projekt
+852=Import postavke
+853=Konfiguracija za import
+854=Naziv Dev-C++ projekta
+855=MS Visual C++ projekt je uspješno pretvoren u DEV-C++ projekt. Želiš li ga sada otvoriti ?
+
+#Project Options form
+900=Postavke projekta
+901=Opæe
+902=Datoteke/Mape
+903=Naziv:
+904=Ikona:
+905=Library
+906=Preglednik
+907=Tip:
+908=Win32 GUI
+909=Win32 Console
+910=Win32 Static Lib
+911=Win32 DLL
+912=Kompajlaj kao C++
+913=Dodatne postavke naredbenog retka:
+914=Kompajler:
+915=Postavke linkera, dodatni libovi... :
+916=DLL mape 
+917=Resursi
+918=Ukljuèi mape
+919=Odaberi ikonu
+920=Ukljuèi Object datoteku
+921=Direktoriji s resursima
+922=Opcije kompajlanja
+923=Mape
+989=Makefile
+924=&Izlazna mapa
+925=Dire&ktorij za Object datoteku
+926=Zan&emari krajnji naziv datoteke
+
+#New template form
+930=Naziv:
+931=Opis:
+932=Kategorija:
+933=Naziv novog projekta:
+934=Datotke u predlošku:
+935=Dodatne postavke kompajlera:
+936=Dodatne postavke linkera:
+937=Ikone:
+938=Info predloška
+939=Datoteke
+940=Dodatno
+941=Ikona predloška
+942=Nova ikona projekta
+943=Stvori
+944=Novi predložak iz projekta
+
+#New variable/member forms
+950=Povratni tip:
+951=Naziv varijable:
+952=Ukljuèiti u:
+953=Naèin pristupa
+954=Stvori funkciju koja èita iz ove varijable
+955=Stvori funkciju koja pise u ovu varijablu
+956=Naziv:
+957=Komentari
+958=Opis:
+959=Stil:
+960=Stvori
+961=Odustani
+962=Nepoznata klasa...
+963=Ne mogu odrediti ime datoteke za unos...
+964=Ne mogu odrediti broj linije...
+965=Naziv èlana:
+966=Argumenti:
+967=Naziv klase:
+968=Nasljedi od druge klase
+969=Nasljedstvo
+970=Nasljedi od klase:
+971=Naziv zaglavlja:
+972=Naziv nove klase:
+973=Naziv zaglavlja:
+974=Dodaj u trenutni projekt
+
+#File properties form
+980=Naziv datoteke
+981=U projektu
+982=Ukupno linija
+983=Linija koda
+984=Linija s komentarima
+985=Ukljuèenih datoteka
+986=Praznih linja
+987=Velièina
+
+#Profile analysis form
+995=Analiza profila
+996=Pozivi
+997=Graf poziva
+
+#Global strings
+# messages
+1000=Tekst ''%s'' nije pronaðen :-(
+1001=Ne mogu otvoriti %s 
+1002=Zamjeni ''%s'?
+1003=Datoteka: %s veæ postoji u %s
+1004=Jesi li siguran da želiš zatvoriti %s ?
+1005=Spremiti promjene u %s ?
+1006=Zatvoriti %s i otvoriti novi projekt ?
+1007=Preimenuj u:
+1008=Veæ kompajlam
+1009=Spremiti promjene u %s ?
+1010=Datoteka veæ postoji, snimiti preko nje ?
+1011=Dodaj novu datoteku u projekt ?
+1012=Dodaj nove resurse u projekt ?
+1013=Tvoj projekt ne sadrži debugging info, želiš li ga stvoriti ?
+1014=Nisi ukljuèio profile i/ili debugging u postavkama kompajlera.Želiš li ih uljuèiti i ponovno kompajlati projekt ?
+1015=Molim te, pokreni projekt barem jednom kako bi se stvorio profil ...
+1016=Unesi naziv nove mape:
+1017=Jesi li siguran da želiš ukloniti ovu mapu ?
+1018=Unesi nov naziv mape:
+1019=Datoteka %s se može samo èitati. Želiš li omoguèiti i pisanje u nju ? Ako ne, ona neæe biti spremljena...
+1020=Došlo je do greške:( Datoteka %s nije oznaèena kao read-write tako da nije spremljena...
+1021=Došlo je do nekakve nabrijane greške.
+
+# errors
+1500=Ne mogu otvoriti %s
+1501=Ne mogu snimiti %s
+1502=Ne mogu preimenovati %s
+1503=Polje ne smije biti prazno
+1504=Projekt nije izvršiv
+1505=Projekt nije kompajlan
+1506=Source datoteka nije kompajlana
+1507=Make datoteka nije pronaðena.
+1508=Èišæenje nije uspjelo
+1509=Nisam uspio unesti predložak u projekt.
+1510=%s Resurs nije pronaðen: %s - %s
+1511=Predložak %s nije pronaðen, preskaèem.
+1512=Predložak nije pridružen.
+1513=Datoteka %s nije pronaðena.
+
+# misc
+2000=Neimenovano
+2001=Samo za èitanje
+2002=Unos
+2003=Snimi preko
+2004=Projekt%d
+2005=Prosim te, navedi neki drugi naziv.
+2006=%d linija u datoteci
+2007=Preimenuj datoteku
+2008=--- Izvršavam %s
+2009=--- Zadatak izvršen
+2010=bajta
+2011=Mjenjano 
+2012=Greška
+2013=Info
+2014=Upozorenje
+2015=Pitanje
+2016=--- Kompilacija uspješna, jeeej :-)
+
+# buttons
+2500=&Ok
+2501=&Odustani
+2502=&Upomoæ
+2503=&Default
+2504=&Da
+2505=&Ne
+2506=&Dodaj
+2507=&Uredi
+2508=Uk&loni
+2509=Ob&riši
+2510=&Zatvori
+2511=&Autori
+2512=&Traži
+2513=&Zamjeni
+2514=&Obriši defektno
+2515=Zamjeni s&ve
+2516=Preglednik
+2517=Ukloni
+2518=Preimenuj
+2519=Import
+
+# CPU Window
+2600=ASM Prozpr
+2601=Asemblerski kod :
+2602=Funkcija :
+2603=Asm sintaksa :
+2604=Registri :
+
+# TipOfTheDay Window
+2700=Savjet dana
+2701=Jesi li znao da...
+2702=...nema ideja za prikazati?
+2703=Ne prikazuj na poèetku
+2704=Sljedeæi
+2705=Prethodni
+
+# Environment Options (more)
+2800=Integracija
+2801=Vrste datoteka:
+2802=Samo klikni na vrstu datoteke koji želiš povezati s Dev-C++

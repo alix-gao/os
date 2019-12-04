@@ -1,0 +1,63 @@
+:Base devcpp.hlp
+:Title Dev-C++ Help File
+1 Dev-C++ 5
+2 Introduction=ID_INTRODUCTION
+2 GNU General Public License=ID_GPL
+2 System Requirements=ID_SYSTEMREQUIREMENTS
+2 Credits=ID_CREDITS
+2 Tutorial=ID_TUTORIAL@tutorial.hlp
+2 Getting Started=ID_GETTINGSTARTED
+2 Basic Steps
+3 Creating a Project=ID_CREATEPROJECT
+3 Adding/Removing files=ID_ADDREMPROJECT
+3 Managing Project Options
+4 Project options overview=ID_MANAGEPROJECT
+4 Linking libraries with your project=ID_LINKLIB
+2 Compiling and Running
+3 Compiling and linking process=ID_COMPILELINK
+3 Executing your program=ID_EXECUTE
+2 Debugging within Dev-C++
+3 Introduction to debugging=ID_INTRODEBUG
+3 Debugging your program=ID_DEBUGPROCESS
+3 Integrated debugging commands
+4 Breakpoints=ID_BREAKPOINT
+4 Stepping in your program=ID_STEPDEBUG
+4 Displaying variables value and classes/structures members=ID_DISPLAYDEBUG
+4 Backtracing=ID_BACKTRACE
+4 Using CPU window=ID_CPUWINDOW
+2 Dev-C++ Templates and Packages
+3 Integrated Templates=ID_INTEGRATEDTEMPLATE
+3 Getting and installing Packages=ID_GETTINGPACKAGE
+3 Creating your Packages=ID_CREATEPACKAGES
+2 Options
+3 Compiler Options=ID_COMPILEROPTIONS
+3 Environment Options=ID_ENVIRONMENT
+3 Editor Options
+4 Editor settings=ID_EDITORSETTINGS
+4 Class Browser/Code Completion=ID_CLASSBROWSER
+4 Shortcuts=ID_SHORTCUTS
+2 Getting help
+3 FAQ (Frequently Asked Questions)=ID_FAQ
+3 Mailing List / Forum=ID_MAILINGLIST
+3 Contacting Authors=ID_AUTHORS
+1 An Introduction to C Programming
+2 Start Here=Topic56
+2 Topics
+3 Overview of C=Topic58
+3 Running C Programs=Topic59
+3 Structure of C Programs=Topic60
+3 Your First Program=Topic61
+3 Data Types - Part I=Topic62
+3 Input and Output=Topic63
+3 Control Loops=Topic64
+3 Conditional Execution=Topic65
+3 Structure and Nesting=Topic66
+3 Functions and Prototypes=Topic67
+3 Data Types - Part II=Topic68
+3 Arrays=Topic69
+3 Pointers=Topic70
+3 Strings=Topic71
+3 Structures=Topic72
+3 File Handling=Topic73
+3 Recommended Books=Topic74
+3 Appendix: C's functions=Topic57

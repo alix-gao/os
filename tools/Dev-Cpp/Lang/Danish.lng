@@ -1,0 +1,966 @@
+[lang]
+Lang=Danish 
+Ver=1
+
+#Top level menus
+100=&Filer
+101=&Rediger
+102=&Søg
+103=&IDE vinduer
+104=&Projekt
+105=&Kompiler
+106=&Værktøjer
+107=V&induer
+108=&Hjælp
+109=&Debug
+
+#File menu
+120=&Ny(t)
+121=&Projekt...
+122=&Source fil
+123=&Ressource fil
+124=S&kabelon...
+
+130=&Åben projekt eller fil...
+131=G&en-åben
+132=&Slet historie
+133=&Gem
+134=Gem s&om...
+135=Ge&m alt
+136=&Luk
+137=L&uk projekt
+138=Egenskaber
+139=Gem &project som...
+
+140=&Exporter
+141=til &HTML
+142=til &RTF
+143=&Projekt til HTML
+
+149=&Importer
+
+150=&Udskriv
+151=U&dskrift opsætning
+152=A&fslut
+
+#Edit menu
+160=&Fortryd
+161=&Genskab
+162=K&lip
+163=&Kopier
+164=&Sæt ind
+165=&Vælg Alt
+166=S&let
+167=&Indsæt
+168=Skift b&ogmærker
+169=Gå &til bogmærker
+170=&Bogmærke
+171=&Dato/Tid
+172=Ko&mmentar hoved
+#Due to exhausted numbers, the Edit menu continues at 380...
+
+#Search menu
+175=&Søg...
+176=S&øg i filer...
+177=&Erstat...
+178=Sø&g igen
+179=&Gå til linie...
+180=&Inkrementerbar Søgning
+181=Gå &til funktion...
+182="Løs" project manager
+
+#View menu
+183=Gå til project &Manager
+184=Gå to klasse &browser
+185=&Projekt/Klasse browser
+186=&Statusbar
+187=&Kompiler resultat
+188=&Altid synlig
+189=K&un hvis nødvendigt
+190=&Værktøjslinier
+
+# Toolbar Captions
+191=Hoved
+192=Kompiler og kør
+193=Projekt
+194=Indstillinger
+195=Special
+196=Rediger
+197=Søg
+198="Løst" rapport vindue
+
+#Project menu
+200=&Ny enhed
+201=&Tilføj til projekt
+202=&Fjern fra projekt
+203=&Rediger ressource fil...
+204=Projekt &indstillinger
+205=Rediger &Makefil
+206=T&ilføj ressource fil...
+207=F&jern ressource fil...
+
+205=Rediger &makefil
+
+#Execute menu
+210=&Kompiler
+211=K&ør
+212=K&ompiler && kør
+213=&Genbyg alt
+214=R&engør projekt
+215=Ko&mpilerings resultater
+216=&Syntaks check
+217=&Nulstil program 
+218=Pro&file analyse
+219=Abryd kompilering
+
+#Tool menu
+220=&Kompiler indstillinger
+221=&Miljø indstillinger
+222=&IDE indstillinger
+223=Konfigurer &værktøjer
+224=Konfigurer &genveje
+
+#Window menu
+230=&Fuldskærm
+231=&Tilbage til normal
+232=&Næste
+233=F&orrige
+234=&Luk alt
+235=%s version %s fuldskærm. Tryk shift+F12 for at slå værktøjslinier til/fra eller F12 for at gå tilbage til normal.
+236=Luk alle undtagen den aktive
+237=&Liste...
+
+
+#Help menu
+240=&Om Dev-C++...
+241=&Søg efter program opdateringer...
+242=&Konfigurer hjælpe menuen...
+243=&Hjælp til Dev-C++
+
+#Debug Menu
+245=&Debug
+246=&Skift breakpoint
+247=&Næste skridt
+248=S&pring over
+249=&Tilføj variabel overvågning
+250=&Overvåg variabel
+251=Stop kørsel
+252=&Editer variabel overvågning
+253=&Fjerne variable overvågning
+254=Step &ind i funktion
+255=Kør til &Cursor
+256=&Se CPU vindue
+
+#context menus
+# project menu
+260=Ny file
+261=Tilføj fil...
+262=Fjern fil...
+263=Indstillinger...
+264=Rediger Ressource fil
+
+# unit menu
+270=Fjern fil
+271=Omdøb fil
+272=Luk
+273=Åben
+274=Åben Header
+
+# class browser menu
+280=Gå til dekleration
+281=Gå til implementering
+282=Ny klasse
+283=Ny medlems funktion
+284=Ny variabel
+285=Vis..
+286=Alle filer
+287=Nuværende fil
+288=Ny folder
+289=Fjern folder
+290=Omdøb folder
+291=Du kan ikke oprette mere end %d foldere i et projekt...
+292=Brug farver
+293=Projekt filer
+294=Vis nedarvede medlemmer
+295=Åben med...
+
+
+#Message control
+# sheets
+300=Kompiler
+301=Ressourcer
+302=Kompiler log
+303=Find Resultater
+304=Luk
+305=Debug
+
+# pop menu
+310=&Slet
+311=&Kopier
+312=&Gem
+313=&Åben
+
+# column headers
+# 320, 322, 323 not in inc file
+315=Linie
+316=Enhed
+317=Besked
+318=Argumenter
+
+320=Find linie
+321=Kolonne
+322=Variabel navn
+323=Værdi
+324=Information:
+325=Kompiler kog:
+326=Fejl i alt:
+327=Fil størrelse:
+
+# debug
+
+330=Overvågede variable
+331=Backtrace
+332=Output
+333=Send kommando til GDB :
+334=Send
+
+
+# Specials toolbar items
+340=Ny
+341=Indsæt
+342=Skift
+343=Gå til
+344=Projekt vindue
+345=Debug vindue
+346=Rapport vindue
+
+#non-visible (open/save dialogs)
+350=Åben fil
+351=Åben enhed
+352=Exporter til
+353=Gem fil
+354=Gem projekt
+355=Vælg en hjælpe fil
+
+357=Ny variabel overvågning
+358=Indtast variabel navn:
+359=Rediger variabel overvåger
+360=Nyt variabel navn:
+
+370=Projekt
+371=Klasser
+
+#Edit menu (more options)
+380=Kommenter
+381=Udkommenter
+382=Ryk ind
+383=Ryk ud
+384=Skift mellem header/source
+
+#Editor Options Dialog 400-499
+400=IDE indstillinger
+401=Generelle
+402=Visuelle
+403=Syntaks
+404=Kode
+405=Færdiggørelse
+406=Klasse browsing
+
+#sub tabs
+410=Inserts
+411=Default source
+
+# General Tab
+420=Editor indstillinger:
+421=Auto Indent
+422=Insert Mode
+423=Use Tab Character
+424=Smart Tabs
+425=Backspace Unindents
+426=Keep Trailing Spaces
+427=Group Undo
+428=Enhanced Home Key
+429=Cursor Past EOF
+430=Cursor Past EOL
+431=Double Click Line
+432=Find tekst ved Cursor
+433=Vis scrollbars hvis nødvendigt
+434=Halv sides scroll
+435=Scroll Hint
+436=Brug syntaks fremhævning
+437=Insert Dropped Files
+438=Tab Size:
+439=Højre margen
+440=Synlig
+441=Bredde
+442=Farve
+443=Caret
+444=Insert Caret
+445=Overwrite Caret
+446=Vertikal linie
+447=Horisontal linie
+448=Halv blok
+449=Blok
+450=Insert Dropped Files
+451=Hvis skjulte linie karakterer
+452=Vis editor hints
+453=Marker matchende tuborgklammer/paranteser
+
+# through 459 for additions
+
+# Display Tab
+460=Editor font:
+461=Font
+462=Størrelse
+463=Editor font
+464=Gutter
+465=Automatisk størrelse
+466=Linie numre
+467=Hvis ledene nuller
+468=Start ved nul
+469=Brug brugervalgt font
+470=Gutter font
+
+# Syntax Tab
+471=Forgrund
+472=Baggrund
+473=Stil
+474=Fed
+475=Italic
+476=Understreget
+477=Farve skema
+478=Type :
+479=Gem ændret syntaks indstilling
+419=Skriv navn på ny syntaks indstilling:
+
+
+# Code Tab
+480=Kode
+481=Menu tekst
+482=Sektion
+483=Beskrivelse
+484=Indsæt standard kode i tomme projekters første source fil
+
+# Completion Tab
+485=Cache automatisk færdiggørelse af kode
+486=Automatisk færdiggørelse af kode
+487=Slå automatisk færdiggørelse af kode til
+488=Forsinkelse (ms):
+489=Baggrunds farve:
+
+# Class browsing Tab
+490=Klasse browser indstillinger
+491=Inkluder lokale filer fra #include referencer
+492=Eksempel:
+493=Engine indstillinger
+494=View indstillinger
+495=Slå klasse browser til
+496=Inkluder globale filer fra #include referencer
+497=Vis kun klasser fra den aktive fil
+
+#New project form
+500=Nyt projekt
+501=Beskrivelse:
+503=Navn:
+504=&C Projekt
+505=C&++ Projekt
+506=&Gør til standard sprog
+507=Diverse
+508=Projekt indstillinger:
+
+#Remove file form
+520=Fjern fra projekt
+521=Vælg fil der skal fjernes fra projektet:
+
+#Goto line form
+525=Gå til linie ...
+526=Ny linie:
+
+#Tool config form
+530=Værktøjs konfiguration
+531=Nuværende værktøjer:
+
+#Edit Tool form
+535=Rediger værktøjs emne
+536=Titel
+537=Program
+538=Katalog
+539=Parametre
+540=Indsæt makro
+541=Tilgængelige makroer
+
+#Icon Library Form
+545=Ikon bibliotek
+546=Brug valgte ikon
+547=Gennemse
+
+#Configure Shortcuts Form
+550=Konfigurer genveje
+551=Klik på et emne og tryk derefter på de ønskede genvejs taster
+552=Tip: tryk "Escape" for at slette en genvej...
+553=Menu entry
+554=Genvej opretted
+555=Afbryd
+556=OK
+
+#Tool Menu Macros
+560=Giver standard kataloget
+561=Giver dev-c++ katalog
+562=Giver navnet på den kompilerede fil
+563=Giver path'en til enten det aktive projekt eller source fil
+564=Giver filnavnet på enten det aktive projekt eller source fil
+565=Giver projektets "navn"
+566=Giver filnavnet på den aktive source fil
+567=Giver path'en til den aktive source fil
+568=Giver en space separeret liste af source files i det aktive projekt
+569=Giver ordet nærmest cursoren i den aktive editor
+570=Giver dev-c++ versionsnummeret
+# -- TO 579
+
+#About form
+580=Om Dev-C++ :)
+581=inseculous@users.sourceforge.net
+582=GNU General Public License
+583=Kontakt information
+584=Bloodshed Software hjemmeside:
+585=Mingw kompiler hjemmeside:
+586=Dev-C++ diskussions forum:
+587=Dev-C++ brugeres mailing list:
+588=Udviklernes e-mail:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=&Søg efter program opdateringer
+
+#Code Inserts Entry Edit form
+600=Rediger kode indsætnings entry
+601=Tilføj kode indsætnings entry
+602=Menu emne overskrivt
+603=Emne beskrivelse
+604=Menu sektion
+606=Kompilerings status vindue
+607=&Hvis under kompilering
+608=Luk automatisk efter kompilering
+
+#Environment options form
+609=Ingen opstarts skærm
+610=Miljø indstillinger
+611=Generalt
+612=Filer && Kataloger
+613=Automatisk åbning
+614=C++ er standard ved nyt projekt
+615=Vis værktøjslinier i fuldskærm
+616=Opret backup Filer
+617=Minimimer ved kørsel
+618=Åben/Gem dialog Stil
+619=Windows 2k (sidebar)
+620=Windows 9x
+621=Windows 3.1
+622=Sprog:
+623=Besked vindue tabs:
+624=Maksimum filer i gen-åben menu
+625=Brugers standard katalog
+626=Output katalog
+627=Ikon bibliotek katalog
+628=Intro billede
+629=Vælg standard bruger katalog
+630=Vælg kompiler output katalog
+631=Vælg ikon bibliotek katalog
+632=Alle projekt filer
+633=Kun første projekt fil
+634=Ingen
+635=Vis menu i fuldskærm
+636=Dobbelt klik for at åbne project manager filer
+637=Sprog fil katalog
+638=Tema:
+639=Interface
+
+#Find Form
+640=Find tekst
+641=Find
+642=Find i filer
+643=&Find tekst
+644=Options:
+645=&Case sensitiv
+646=&Kun hele ord
+647=Retning
+648=&Filer i projekt
+649=&Åbne filer
+650=Scope
+651=&Global
+652=&Kun valgte
+653=Start fra
+654=Fra cursor
+655=Fulde scope
+656=Retning
+657=Fremad
+658=Tilbage
+
+#Replace form
+670=Erstat tekst
+671=Find tekst:
+672=Erstat med:
+673=Indstillinger:
+674=&Case sensitiv
+675=&Kun hele ord
+676=&Spørg inden erstat
+677=Retning:
+678=F&remad
+679=&Tilbage
+680=Scope:
+681=&Global
+682=&Kun valgte
+683=Start fra:
+684=&Fra cursor
+685=F&ulde scope
+
+#Goto function form
+695=Søg efter:
+696=Type
+697=Funktion
+698=Linie
+
+#Compiler Options
+700=Kompiler indstillinger
+701=Kompiler
+702=Kataloger
+703=Kode generering/Optimeringer
+704=Linker
+705=Programmer
+710=Binære
+711=Libraries
+712=C Includes
+713=C++ Includes
+720=C kompiler:
+721=C++ kompiler:
+722=Kompiler:
+725=Understøt alle ANSI standard C programmer
+726=Forsøg at understøtte nogle aspekter af traditionelle C pre-processorer
+727=Skjul alle advarsler
+728=Slå access checking fra
+729=Accepter $ i identifiers
+730=Brug heuristics for at kompilere hurtigere
+731=Brug Cygwin i stedet for Mingw kompileren
+732=Tilføj følgende kommandoer til kompileren når den kaldes:
+733=Kompilerings forsinkelse
+734=Tilføjer en millisekund baseret forsinkelse, hvis make brokker sig over make filens timestamp
+740=Kode Generering:
+741=Optimering:
+745=Slå exception handling til
+746=Brug samme størrelse for double og float
+747=Indsæt ekstra kommentar information i genereret maskinkode
+748=Optimer
+749=Bedste optimering
+750=Udfør mindre optimeringer
+751=Makefil generering:
+752=Brug hurtig, men uakkurat dependency generering
+753=Kode profiling:
+754=Generer profiling information for analyse
+755=Link et Objective C program
+756=Generer debug information
+757=Brug ikke standard system startup filer og libraries
+758=Generer ikke et konsol vindue
+759=Tilføj følgende kommandoer til linkerens command-line
+760=Optimer ikke
+761=Optimer mere
+
+770=Du vil måske ændre navnene på program filnaven der bruges af Dev-C++. (For eksempel hvis du bruger en cross compiler) :
+771=Konfigurer følgende compiler opsætning:
+772=Ny compiler opsætning
+773=Indtast navn på opsætning
+774=Du skal have mindst en compiler opsætning!
+775=Er du sikker på du vil slette denne compiler opsætning?
+776=Omdøb compiler opsætning
+777=Indtast nyt navn på opsætning:
+778=Flere optimeringer
+
+
+#Help Editor Form
+780=Hjælpe menu editor
+781=Menu tekst
+782=Hjælpe fil
+783=Hjælpe menu indstillinger
+784=Ikon
+785=Menu sektion
+786=Sektion 1
+787=Sektion 2
+788=Virker med popup menu
+789=Browse efter fil...
+790=Kontekst sensitiv hjælp for ord ved cursor position
+791=Vælg genvej for F1
+
+#Print File Form
+800=Udskriv fil
+801=Parametre:
+802=Sider:
+803=&Farver
+804=&Fremhæv
+805=&Word wrap
+806=&Linie numre
+807=Udskriv linie numre
+808=Udskriv linie numre i margen
+809=Antal kopier:
+810=Udskriv kun valgte
+
+#Update Form
+820=Søg efter program opdateringer
+821=Opgave:
+822=Resultat:
+823=Ny Version:
+824=Krævet version for at bruge:
+825=Beskrivelse:
+826=Download sted (dobbelt-klik for at downloade):
+
+#AddToDo form
+830=Tilføj To-Do emne...
+831=Beskrivelse
+832=Prioritet
+833=Bruger
+
+#ViewToDo form
+835=To-Do liste...
+836=Filnavn
+837=Færdig
+838=Hvis ikke emner markeret som færdige
+839=Filter
+840=Alle filer (i projektet eller ej)
+841=Kun åbne filer (i projektet eller ej)
+842=Alle projekt filer
+843=Kun åbne projekt filer
+844=Åbne ikke-projekt filer
+845=Kun den aktive fil
+
+#Import MSVC++ form
+850=Importer MS Visual C++ projekt
+851=Vælg Visual C++ projekt fil
+852=Importerings indstillinger
+853=Konfiguration af importering
+854=Dev-C++ projekt filnavn
+855=MS Visual C++ projekt filen er blevet importeret og konverteret til et DevC++ projekt. Vil du åbne det nu?
+
+
+#Project Options form
+900=Projekt Indstillinger
+901=Generelt
+902=Filer/Kataloger
+903=Navn:
+904=Ikon:
+905=Bibliotek
+906=Browse
+907=Type:
+908=Win32 GUI
+909=Win32 Konsol
+910=Win32 Statisk Library
+911=Win32 DLL
+912=Kompiler som C++
+913=Yderligere command-line indstillinger:
+914=Kompiler:
+915=Linker indstillinger/valgfrige library eller object filer:
+916=Library kataloger
+917=Ressource filer
+918=Include kataloger
+919=Vælg Ikon
+920=Inkluder i object fil
+921=Ressource kataloger
+922=Build indstillinger
+923=Kataloger
+989=Makefil
+924=&Output katalog for eksekverbar fil
+925=&Object fil output katalog
+926=B&rug andet output filnavn
+927=Tilføj bibliotek eller object
+928=%d filer [%d source, %d headere, %d resourcer]
+
+#New template form
+930=Navn:
+931=Beskrivelse:
+932=Kategori:
+933=Nyt projekt navn:
+934=Filer i skabelon:
+935=Ekstra kompiler indstillinger:
+936=Ekstra linker indstillinger:
+937=Ikoner:
+938=Skabelon info
+939=Filer
+940=Ekstra
+941=Skabelon ikon
+942=Nyt projekt ikon
+943=Opret
+944=Ny skabelon fra projekt
+945=Brug projektets include kataloger
+946=Brug projektets biblioteks kataloger
+947=Brug projektets resource kataloger
+
+#New variable/member forms
+950=Retur type:
+951=Variabel navn:
+952=Implementer i:
+953=Tilgangs scope
+954=Opret medlems funktion til at LÆSE fra denne variabel
+955=Opret medlems funktion til at SKRIVE til denne variabel
+956=Navn:
+957=Kommentarer:
+958=Beskrivelse:
+959=Stil:
+960=Opret
+961=Afbryd
+962=Ukendt klasse...
+963=Kunne ikke finde et filnavn for implementeringen...
+964=Kunne ikke finde linie nummeret hvor koden skal indsættes...
+965=Medlems navn:
+966=Argumenter:
+967=Klasse navn:
+968=Nedarv fra anden klasse
+969=Nedarvning
+970=Nedarv fra klasse:
+971=Header filnavn:
+972=Implementation filnavn:
+973=Header filnavn:
+974=Tilføj til nuværende projekt
+975=Attributter
+
+#File properties form
+980=Filnavn
+981=I projekt
+982=Total antal linier
+983=Antal kode linier
+984=Kommentarer
+985=Inkluderede filer
+986=Tomme linier
+987=Fil størrelse
+988=Absolut
+990=Relativ
+991=Fils dato/tids stempel
+992=Kompiler indstillinger
+
+#Profile analysis form
+995=Profiler analyse
+996=Flat output
+997=Call graph
+
+#Global strings
+# messages
+1000=Tekst ''%s'' ikke fundet
+1001=Fil %s kunne ikke åbnes
+1002=Erstat ''%s'?
+1003=Fil: %s eksisterer allerede i in %s
+1004=Er du sikker på du vil lukke %s
+1005=Gem ændringer i %s?
+1006=Luk %s og start et nyt projekt?
+1007=Omdøb til:
+1008=Kompilering allerede igang
+1009=Gem rettelser til %s?
+1010=Fil eksisterer i forvejen, overskriv?
+1011=Tilføj ny enhed til det nuværende projekt?
+1012=Tilføj ny ressource til nuværende projekt?
+1013=Dit projekt har ikke debug information inkluderet. Vil du slå debugging til og bygge dit projekt igen? 
+1014=Du har ikke slået profiling og/eller debugging til i kompiler options. Vil du slå dem til nu og bygge projektet igen?
+1015=Kør venligst projektet mindst en gang så profiling information bliver genereret...
+1016=Indtast navn på ny folder:
+1017=Er du sikker på du vil fjerne denne folder?
+1018=Indtast nyt navn på folder:
+1019=Er du sikker på du vil gemme denne read only fil?
+1020=Der opstod en fejl. Filen %s var ikke markeret som read-write, så den blev IKKE gemt...
+1021=Der opstod en Access Violation (Segmentation Fault) i dit program.
+1022=Source filen er nyere end exe filen. Vil du bygge den igen?
+
+
+# errors
+1500=Kan ikke åbne fil %s
+1501=Kan ikke gemme fil %s
+1502=Kan ikke omdøbe fil %s
+1503=Søgnings felt kan ikke være blankt
+1504=Projekt er ikke ekskverbart
+1505=Projekt er ikke kompileret
+1506=Source fil ikke kompileret
+1507=Make fil ikke fundet.
+1508=Rengøring lykkedes ikke.
+1509=Skabelon kunne ikke tilknyttes projektet.
+1510=%s Ressource ikke fundet: %s - %s
+1511=Skabelon fil %s findes ikke, Ignoreret.
+1512=Ingen skabelon tilknyttet.
+1513=Fil %s findes ikke.
+1514=Ingen server application specificeret. Du kan sætte den i "Kør / Parametre".
+1515=Server applikation kunne ikke findes! Du kan ændre den i "Kør / Parametre".
+
+# misc
+2000=Unavngivet
+2001=Skrivebeskyttet
+2002=Indsæt
+2003=Overskriv
+2004=Projekt%d
+2005=Angiv venligst et andet filnavn.
+2006=%d Linier i fil
+2007=Omdøb fil
+2008=Eksekverer %s
+2009=Eksekvering afbrudt
+2010=bytes
+2011=Ændret
+2012=Fejl
+2013=Information
+2014=Advarsel
+2015=Spørgsmål
+2016=Kompilering gennemført
+2017=Kompilering afbrudt af bruger
+
+# buttons
+2500=&Ok
+2501=&Afbryd
+2502=&Hjælp
+2503=&Standard
+2504=&Ja
+2505=&Nej
+2506=&Tilføj
+2507=&Rediger
+2508=&Fjern
+2509=Sl&et
+2510=&Luk
+2511=&Tak
+2512=&Find
+2513=&Erstat
+2514=&Slet ugyldig
+2515=Erstat &Alt
+2516=Browse
+2517=Fjern
+2518=Omdøb
+2519=Importer
+2520=Vindue tilstand
+
+# CPU Window
+2600=CPU vindue
+2601=Assembler kode :
+2602=Funktion :
+2603=Assembler syntaks :
+2604=Registre :
+
+# TipOfTheDay Window
+2700=Dagens tip
+2701=Vidste du...
+2702=...at der ikke er nogen tips at vise? :)
+2703=Vis ikke tips ved opstart
+2704=Næste tip
+2705=Forrige tip
+
+# Environment Options (more)
+2800=Fil associeringer
+2801=Fil typer:
+2802=Bare kryds af vilke fil typer der skal registreres/afregistreres for det program der er associeret med dem...
+2803=CVS understøttelse
+2804=CVS program fil
+2805=Paknings niveau
+2806=Brug SSH i stedet for RSH
+2807=Templates katalog
+2808=Vælg template katalog
+2809=Brug XP tema
+2810=Eksterne programmer
+2811=Eksternt program
+2812=Efternavn
+2813=Eksterne program associationer
+2814=Se variabel under mus
+2815=Rapporter fejl under overvågning af variable
+2816=Debug variable browser
+
+# Execute menu (more)
+2900=Parametre...
+2901=Kompiler nuværende fil
+
+# Window list
+2910=Vindue liste
+2911=Vælge vindue du vil editere:
+
+# CVS Menu
+2990=Nuværende fil...
+2991=Hele projektet...
+2992=Konfigurer venligst CVS understøttelse i "Værktøjer / Miljø indstillinger"...
+
+# CVS form
+3000=Import Options
+3001=Repository
+3002=Global Options
+3003=Checkout Options
+3004=Commit Options
+3005=Update Options
+3006=Diff Options
+3007=Log Options
+3008=CVS Output
+3009=Import
+3010=Checkout
+3011=Commit
+3012=Update
+3013=Diff
+3014=Log
+3015=Import directory
+3016=Action
+3017=Vendor
+3018=Release
+3019=Log message
+3020=Module name
+3021=Extension
+3022=Checkout as
+3023=Checkout directory
+3024=Recurse into sub-directories
+3025=Reset any sticky options
+3026=Create missing directories
+3027=Remove empty directories
+3028=Drop changes made locally
+3029=Before date
+3030=Revision/branch/tag
+3031=If not found, get the most recent
+3032=Other revisions
+3033=Perform a unified diff
+3034=Compare local file with the same remote revision/tag
+3035=Compare local file with another remote revision
+3036=Compare two remote revisions
+3037=Is date
+3038=Log the default branch
+3039=List only the RCS filenames
+3040=Don't print tag names
+3041=Filter
+3042=By revision/tag
+3043=By date
+3044=By user
+3045=Repository
+3046=Details
+3047=Access method
+3048=User
+3049=Server
+3050=Remote directory
+3051=Add
+3052=Remove
+3053=Add Options
+3054=Remove Options
+3055=Remove the file from disk also...
+
+# Params form
+3100=Parametre
+3101=Parametre som skal videregives til dit program:
+3102=Server applikation:
+
+3200=Filer
+3201=Projekt filer:
+3202=Projekt indstillinger:
+3203=Generer debug information
+3204=Generer performance målings information
+3205=OBS! Disse indstillinger vil blive brugt i stedet for de globale kompilerings indstillinger for dette projekt.
+3206=Understøt Windows XP temaer
+3207=Fil indstillinger:
+3208=Inkluder i kompilering
+3209=Kompiler fil som C++
+3210=Versions information
+3211=Inkluder versions information i projekt
+3212=Versions detaljer
+3213=Major:
+3214=Minor:
+3215=Release:
+3216=Build:
+3217=Sprog
+3218=Yderligere information:
+3219=Override build command
+3220=Output fil
+3221=Inkluder ved linkning
+3222=Build prioritet:
+3223=Gør build nummer større automatisk ved hver kompilering
+
+

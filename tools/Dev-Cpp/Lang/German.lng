@@ -1,0 +1,1063 @@
+[lang]
+Lang=German (Deutsch)
+Ver=1
+
+
+#Top level menus
+100=&Datei
+101=B&earbeiten
+102=&Suchen
+103=&Ansicht
+104=&Projekt
+105=Ausführ&en
+106=&Werkzeuge
+107=&Fenster
+108=&Hilfe
+109=&Fehlersuche
+
+
+#File menu
+120=&Neu
+121=&Projekt...
+122=&Quelldatei
+123=&Ressourcen Datei
+124=&Vorlage...
+
+
+130=Pr&ojekt oder Datei öffnen...
+131=&Neu öffnen
+132=Ges&chichte löschen
+133=&Speichern
+134=Speichern &unter...
+135=&Alles Speichern
+136=S&chließen
+137=Projekt schließen
+138=Eigenschaften
+139=Speichere Projekt als...
+
+
+140=&Exportieren
+141=nach &HTML
+142=nach &RTF
+143=&Projekt nach HTML
+
+
+149=&Import
+
+
+150=&Drucken
+151=Druckereinstellungen
+152=&Beenden
+
+
+#Edit menu
+160=&Rückgängig
+161=Wiede&rholen
+162=&Ausschneiden
+163=&Kopieren
+164=&Einfügen
+165=Alle&s markieren
+166=&Löschen
+167=E&infügen
+168=Lesezeichen an/a&us
+169=&Gehe zu Lesezeichen
+170=Lesezeichen
+171=&Datum/Zeit
+172=&Kommentar Header
+#Due to exhausted numbers, the Edit menu continues at 380...
+
+
+#Search menu
+175=Suchen...
+176=Suchen in &Dateien...
+177=Ersetzen...
+178=Weiter&suchen
+179=&Gehe zu Zeile...
+180=&Inkrementelle Suche
+181=Gehe zu Funk&tion...
+
+
+#View menu
+182=Freier Projekt-Manager
+183=Gehe zum Projekt-&Manager
+184=Gehe zum Klassen-&Browser
+185=&Projekt/Klassen-Browser
+186=&Statuszeile
+187=&Compilerausgabe
+188=Immer sichtb&ar
+189=&Nur wenn nötig
+190=Symbolleis&ten
+
+
+# Toolbar Captions
+191=Standard
+192=Kompilieren und Ausführen
+193=Projekt
+194=Optionen
+195=Spezial
+196=Bearbeiten
+197=Suchen
+
+
+#View menu (bis)
+198=Freies &Reportfenster
+
+
+#Project menu
+200=&Neue Datei
+201=Zum Projekt &hinzufügen
+202=Aus Projekt entfe&rnen
+203=Ressourc&en Datei bearbeiten...
+204=Projekt &Optionen
+205=&Make-Datei bearbeiten
+206=Ressourcen &Datei hinzufügen...
+207=Ressourcen Datei ent&fernen...
+
+
+#Execute menu
+210=&Kompilieren
+211=Ausfüh&ren
+212=K&ompilieren + Ausführen
+213=Alles e&rneuern
+214=&Löschen
+215=Ko&mpilier Ergebnisse
+216=&Syntax Überprüfung
+217=&Programm zurücksetzen
+218=Pro&fil Analyse
+219=Abbrechen
+
+
+#Tool menu
+220=&Compiler Optionen
+221=&Umgebungs Optionen
+222=&Editor Optionen
+223=Konfiguriere &Werkzeuge
+224=Konfiguriere &Shortcuts
+
+
+#Window menu
+230=&Vollbild
+231=&Zurück zu Normal
+232=&Nächstes
+233=V&orheriges
+234=Alle S&chließen
+235=%s Version %s Vollbild. Drücke shift+F12 für Werkzeugleiste an/aus oder F12 für Normalmodus.
+236=&Schließe alles ohne dieses
+237=&Liste...
+
+
+#Help menu
+240=Ü&ber Dev-C++...
+241=Auf &Updates/Pakete prüfen...
+242=Hilfe-Menü &anpassen...
+243=Dev-C++ &Hilfe
+
+
+#Debug Menu
+245=&Fehlersuche
+246=Hal&tepunkt an/aus
+247=&Nächster Schritt
+248=Fortsetzen
+249=W&atch hinzuf.
+250=&Watch Variablen
+251=Ausführung stoppen
+252=Watch b&earbeiten
+253=Watch entfe&rnen
+254=Springe &in
+255=Ausführen bis &Cursor
+256=&CPU-Fenster
+257=&Zum Prozess hinzufügen...
+258=Wert &modifizieren
+259=&Lösche alles
+
+
+#context menus
+#project menu
+260=Neue Datei
+261=Datei hinzufügen...
+262=Datei entfernen...
+263=Optionen...
+264=Ressourcen Datei bearbeiten
+
+
+# File menu
+270=Datei entfernen
+271=Datei umbenennen
+272=Schließen
+273=Öffnen
+274=Header öffnen
+
+
+# class browser menu
+280=Gehe zu Deklaration
+281=Gehe zu Implementation
+282=Neue Klasse
+283=Neue Member-Funktion
+284=Neue Variable
+285=Ansicht...
+286=Alle Dateien
+287=aktuelle Datei
+288=Ordner hinzufügen
+289=Ordner entfernen
+290=Ordner umbenennen
+291=Sie können nicht mehr als %d Ordner in einem Projekt anlegen...
+292=Farben nutzen
+293=Projekt-Dateien
+294=Zeige geerbte Member
+295=Öffnen mit...
+
+
+#Message control
+# sheets
+300=Compiler
+301=Ressourcen
+302=Kompilier Log
+303=Suchergebnisse
+304=Schließen
+305=Fehlersuche
+
+
+# pop menu
+310=&Löschen
+311=&Kopieren
+312=&Verbergen
+313=Ö&ffnen
+
+
+# column headers
+# 320, 322, 323 not in inc file
+315=Zeile
+316=Datei
+317=Meldung
+318=Argumente
+
+
+320=Zeile suchen
+321=Spalte
+322=Variablenname
+323=Inhalt
+324=Information:
+325=Kompilier Log:
+326=Fehler insgesamt:
+327=Dateigröße:
+
+
+# debug
+
+
+330=Überwachte Variablen
+331=Ablaufverfolgung
+332=Ausgabe
+333=Sende Kommando zu GDB:
+334=Sende
+
+
+# Specials toolbar items
+340=Neu
+341=Einfügen
+342=Umschalten
+343=Gehe zu
+344=Projekt-Fenster
+345=Fehlersuch-Fenster
+346=Report-Fenster
+
+
+#non-visible (open/save dialogs)
+350=Datei öffnen
+351=Datei öffnen
+352=Exportieren nach
+353=Datei speichern
+354=Projekt speichern
+355=Hilfedatei auswählen
+
+
+357=Neuer Variablen Watch
+358=Variablen Name eingeben:
+359=Variablen Watch ändern
+360=Neuer Variablen Name:
+361=Wert ändern
+362=Variable zum ändern:
+363=Neuer Wert:
+
+
+370=Projekt
+371=Klassen
+
+
+#Edit menu (more options)
+380=Kommentar
+381=Kommentar aufheben
+382=Einrücken
+383=Einrückung aufheben
+384=Header/Source umschalten
+
+
+#Editor Options Dialog 400-499
+400=Editor Optionen
+401=Allgemein
+402=Anzeige
+403=Syntax
+404=Code
+405=Fertigstellung
+406=Klassenbrowser
+
+
+#sub tabs
+410=Einfügungen
+411=Standardquelle
+
+
+# General Tab
+419=Name der neuen Syntax Einstellungen:
+420=Editor Optionen:
+421=Auto Einrücken
+422=Einfügemodus
+423=Tab-Zeichen benutzen
+424=intelligente Tabs
+425=Backspaceerkennung
+426=Nachfolgende Leerzeichen halten
+427=Rückgängig zusammenfassen
+428=Erweiterte Home-Taste
+429=Cursor nach Dateiende
+430=Cursor nach Zeilenende
+431=Doppelklick markiert Zeile
+432=Text am Cursor suchen
+433=Scrollleisten wenn nötig
+434=Halber Seiten Scroll
+435=Scroll Hinweis
+436=Syntaxhervorhebung nutzen
+437=Gelöschte Dateien einfügen
+438=Tab Größe:
+439=Rechter Rand
+440=Sichtbar
+441=Breite
+442=Farbe
+443=Modusanzeige
+444=Einfügemodus
+445=Überschreibmodus
+446=Vertikale Linie
+447=Horizontale Linie
+448=Halber Block
+449=Block
+450=Gelöschte Dateien einfügen
+451=Versteckte Zeichen anzeigen
+452=Editor Tips zeigen
+453=Klammerpaare hervorheben
+
+
+# through 459 for additions
+
+
+# Display Tab
+460=Editor Schriftart:
+461=Schriftart
+462=Größe
+463=Editor Schriftart
+464=Rand
+465=Automat. Größe
+466=Zeilennummern
+467=Führende Nullen zeigen
+468=Mit Null starten
+469=Bel. Schriftart benutzen
+470=Rand-Schriftart
+
+
+# Syntax Tab
+471=Vordergrund
+472=Hintergrund
+473=Stil
+474=fett
+475=kursiv
+476=unterstrichen
+477=Farb-Schnelleinstellungen
+478=Typ:
+479=Eigene Syntax Einstellungen sichern
+
+
+# Code Tab
+480=Code
+481=Menü Text
+482=Untergruppe
+483=Beschreibung
+484=Standard Code in leere Anfangsquelldatei einfügen
+
+
+# Completion Tab
+485=Cache für Code-Vervollständigung nutzen
+486=Dateien im Cache:
+487=Code-Vervollständigung erlauben
+488=Verzögerung (ms):
+489=Hintergrundfarbe:
+
+
+# Class browsing Tab
+490=Klassen-Browser Einstellungen
+491=Scan lokale Dateien in #include Dateien
+492=Beispiel:
+493=Engine Optionen
+494=Ansichts Optionen
+495=Klassen-Browser erlauben
+496=Scan globale Dateien in #include Dateien
+
+
+#New project form
+500=Neues Projekt
+501=Beschreibung:
+503=Name:
+504=&C-Projekt
+505=C&++-Projekt
+506=&Standardsprache setzen
+507=Verschiedenes
+508=Projekt Optionen:
+
+
+#Remove file form
+520=Aus Projekt entfernen
+521=Zu entfernende Datei auswählen:
+
+
+#Goto line form
+525=Gehe zu Zeile...
+526=Neue Zeile:
+
+
+#Tool config form
+530=Werkzeugkonfiguration
+531=Aktuelle Werkzeuge:
+
+
+#Edit Tool form
+535=Werkzeug Eintrag bearbeiten
+536=Titel
+537=Programm
+538=Arbeitsverzeichnis
+539=Parameter
+540=Makro einfügen
+541=Verfügbare Makros
+
+
+#Icon Library Form
+545=Icon Bibliothek
+546=Ausgewähltes Icon benutzen
+547=Durchsuchen
+
+
+#Configure Shortcuts Form
+550=Konfiguriere Shortcuts
+551=Eintrag anklicken und gewünschten Shortcut eingeben!
+552=Tip: Drücke "Escape" zum Löschen eines Shortcut...
+553=Menü Eintrag
+554=Shortcut zugewiesen
+555=Abbruch
+556=OK
+
+
+#Tool Menu Macros
+560=Gibt das Standardverzeichnis zurück
+561=Gibt das Dev-C++ Arbeitsverzeichnis zurück
+562=Gibt den kompilierten Dateinamen zurück
+563=Gibt den Pfad entweder zum aktuellen Projekt- oder aktuellen Quelldatei zurück
+564=Gibt den Namen entweder der aktuellen Projekt- oder aktuellen Quelldatei zurück
+565=Gibt den Projektnamen zurück
+566=Gibt den Namen der aktuellen Quelldatei zurück
+567=Gibt den Pfad zur aktuellen Quelldatei zurück
+568=Gibt eine durch Leerzeichen getrennte Liste der Projekt-Quelldateien zurück
+569=Gibt das Wort am Cursor im aktiven Editor zurück
+570=Gibt die Dev-C++ Version zurück
+# -- TO 579
+
+
+#About form
+580=Über Dev-C++ :)
+581=inseculous@users.sourceforge.net
+582=GNU General Public License
+583=Kontakt Information
+584=Bloodshed Software Website:
+585=Mingw Compiler Website:
+586=Dev-C++ Diskussions Foren:
+587=Dev-C++ Benutzer Mailing Liste:
+588=Autoren E-Mail:
+589=http://www.bloodshed.net
+590=http://www.mingw.org
+591=http://www.bloodshed.net/forum
+592=http://www.bloodshed.net/devcpp-ml.html
+593=haiku@bloodshed.net
+594=Auf &Updates prüfen
+
+
+#Code Inserts Entry Edit form
+600=Code Einfügeeintrag bearbeiten
+601=Code Einfügeeintrag hinzufügen
+602=Menüpunkt Überschrift
+603=Menüpunkt Beschreibung
+604=Menü Gruppe
+
+
+#Environment options form
+606=Fortschrittsfenster f. Kompilation 
+607=Während Kompilation zeigen
+608=N&ach Kompilation schließen
+609=Kein Startbild
+610=Umgebungsoptionen
+611=Allgemein
+612=Dateien/Verzeichnisse
+613=Automatisch Öffnen
+614=Standard für neues C++-Projekt
+615=Symbolleisten im Vollbildmodus zeigen
+616=Sicherungsdateien erstellen
+617=Bei Ausführung minimieren
+618=Öffnen/Speichern Dialog-Stil
+619=Windows 2k (Seitenleiste)
+620=Windows 9x
+621=Windows 3.1
+622=Sprache:
+623=Meldungsfenster Reiter:
+624=Max. Dateien im "Neu öffnen" Menü
+625=Standardverzeichnis
+626=Ausgabeverzeichnis
+627=Icon-Bibliotheks-Pfad
+628=Startbild
+629=Standardverzeichnis wählen
+630=Ausgabeverzeichnis wählen
+631=Icon-Bibliotheksverzeichnis wählen
+632=Alle Projektdateien
+633=Nur erste Projektdatei
+634=Keine
+635=Menü im Vollbildmodus zeigen
+636=Projektmanager mit Doppelklick öffnen
+637=Sprachdateien-Pfad
+638=Thema:
+639=Schnittstelle
+
+
+#Find Form
+640=Suchtext
+641=Suchen
+642=In Dateien suchen
+643=Zu suchender &Text
+644=Optionen:
+645=Groß/Klein&schr.?
+646=Nur ganze &Wörter
+647=Wo
+648=&Dateien im Projekt
+649=&geöffnete Dateien
+650=Bereich
+651=&Gesamte Datei
+652=&Markierung
+653=Anfang
+654=Ab Cursor
+655=Textbeginn
+656=Richtung
+657=Vorwärts
+658=Rückwärts
+
+
+#Replace form
+670=Ersetzen
+671=Suchtext:
+672=Ersetzen durch:
+673=Optionen:
+674=Groß/Klein&schr. 
+675=Nur ganze &Wörter
+676=N&achfragen vor Ersetzen 
+677=Richtung:
+678=Vorwärts
+679=Rückwärts
+680=Bereich:
+681=&Gesamte Datei
+682=Nur &Markierung
+683=Anfang:
+684=Ab &Cursor
+685=T&extbeginn
+
+
+#Goto function form
+695=Suche nach:
+696=Type
+697=Funktion
+698=Zeile
+
+
+#Compiler Options
+700=Compiler Optionen
+701=Compiler
+702=Verzeichnisse
+703=Einstellungen
+704=Linker
+705=Programme
+
+
+710=Programmdateien
+711=Bibliotheken
+712=C-Includes
+713=C++-Includes
+720=C-Compiler:
+721=C++-Compiler:
+722=Compiler:
+725=Alle ANSI C-Standard-Programme unterstützen
+726=Unterstützung einiger traditioneller C-Präprozessor Aufgaben
+727=Alle Warnmeldungen unterdrücken
+728=Alle Zugangskontrollen abschalten
+729=$ (in Identifiers) zulassen
+730=Heuristiken zum schnelleren kompilieren nutzen
+731=Cygwin anstelle des Mingw Compiler benutzen
+732=Folgende Befehle beim Compiler-Aufruf hinzufügen:
+733=Verzögerung
+734=Erlaubt eine Verzögerung in ms, wenn der Compiler sich über den Zeitstempel der Makedatei beklagt.
+735=Zeigt einen Fehler pro Zeile
+
+
+740=Code Erzeugung
+741=Optimierung
+745=Erlaube Ausnahmebehandlung
+746=Gleiche Größe für double und float
+747=Zusätzliche Kommentare im Assembler-Code
+748=Optimiere
+749=Beste Optimierung
+750=Kleine Optimierungen vornehmen
+751=Makefile Erzeugung:
+752=Nutze schnelle aber unvollständige Abhängigkeits Erzeugung
+753=Code Profiling
+754=Erzeuge Auslastungsinfo zur Analyse
+755=Linkt ein Objectiv C Programm
+756=Generiert Fehlersuchinformationen
+757=Keine Standard Systemstartdateien oder Bibliotheken benutzen
+758=Kein Konsolenfenster erzeugen
+759=Diese Befehle zur Linker-Kommandozeile hinzufügen
+760=&Nicht optimieren
+761=Mehr optimieren
+
+
+770=Sie möchten vielleicht die in Dev-C++ genutzten Dateinamen ändern (z.B. bei Benutzung eines Cross-Compilers):
+771=Compiler Set konfigurieren
+772=Neuer Compiler Set
+773=Neuen Set Namen eingeben:
+774=Sie können den letzten Compiler Set nicht löschen !
+775=Sind Sie sicher diesen Compiler Set löschen zu wollen ?
+776=Compiler Set umbenennen
+777=Neuer Setname:
+778=Weitere Optimierungen
+
+
+#Help Editor Form
+780=Hilfemenü-Editor
+781=Menü Text
+782=Hilfedatei
+783=Hilfemenü Optionen
+784=Icon
+785=Menü Gruppe
+786=Gruppe 1
+787=Gruppe 2
+788=Im Hilfe Popupmenü
+789=Aktionen
+790=Suche in der Hilfe-Datei nach dem Word an Cursorposition
+791=F1-Shortcut zuweisen
+
+
+#Print File Form
+800=Datei drucken
+801=Parameter:
+802=Seiten:
+803=&Farben
+804=Syntax&hervorhebung
+805=&Zeilenumbruch
+806=Zei&lennummern
+807=Zeilennummern drucken
+808=Zeilennummern im Rand drucken
+809=Anzahl der Kopien:
+810=Nur Markierung drucken
+
+
+#Update Form
+820=Auf Update für Dev-C++ prüfen
+821=Aufgabe:
+822=Ergebnisse:
+823=Release Version:
+824=Nötige Version für Benutzung:
+825=Beschreibung des Release:
+826=Download Seite (Doppelklick für Download):
+
+
+#AddToDo form
+830=To-Do Eintrag hinzufügen...
+831=Beschreibung
+832=Priorität
+833=Benutzer
+
+
+#ViewToDo form
+835=To-Do Liste...
+836=Dateiname
+837=Fertig
+838=Keine als fertig markierten Einträge zeigen
+839=Filter:
+840=Alle Dateien (im Projekt und nicht)
+841=Nur offene Dateien (im Projekt und nicht)
+842=Alle Projekt-Dateien
+843=Nur offene Projekt-Dateien
+844=Offene Nicht-Projekt-Dateien
+845=Nur aktuelle Datei
+
+
+#Import MSVC++ form
+850=MS Visual C++-Projekt importieren
+851=Visual C++-Projektdatei auswählen
+852=Import Optionen
+853=Import konfigurieren
+854=Dev-C++ Projekt Dateiname
+855=Die MS Visual C++-Projektdatei wurde importiert und erfolgreich zu einem Dev-C++ Projekt konvertiert! Jetzt öffnen ?
+856=Kann Ziel-Konfiguration "%s" nicht finden (ev. ein Fehler in Dev-C++)...
+
+
+#Project Options form
+900=Projekt Optionen
+901=Allgemein
+902=Verzeichnisse
+903=Name:
+904=Icon:
+905=Bibliothek
+906=Durchsuchen
+907=Typ:
+908=Win32 GUI
+909=Win32 Konsole
+910=Win32 statische Bibliothek
+911=Win32 DLL
+912=Als C++ kompilieren
+913=Zusätzliche Kommandozeilen Optionen:
+914=Compiler:
+915=Linker Optionen/Optionale Bibliotheken oder Objektdateien:
+916=Bibliotheks-Verzeichnisse
+917=Ressourcen-Dateien
+918=Include Verzeichnisse
+919=Icon wählen
+920=Objektdatei einbinden
+921=Ressourcen-Verzeichnisse
+922=Build Optionen
+923=Verzeichnisse
+924=Ausgab&everzeichnis für ausführbare Dateien
+925=Ausgabeverzeichnis für &Objektdateien
+926=Überschreibe Ausgabe-Dateiname
+927=Bibliothek/Objekt hinzuf.
+928=%d Dateien [%d Quellen, %d Header, %d Ressourcen]
+
+
+#New template form
+930=Name:
+931=Beschreibung:
+932=Kategorie:
+933=Neuer Projektname:
+934=Dateien im Template:
+935=Compiler Extra Optionen:
+936=Linker Extra Optionen:
+937=Icons:
+938=Template Info
+939=Dateien
+940=Extras
+941=Template Icon
+942=Neues Projekt-Icon
+943=Erzeuge
+944=Neues Template aus Projekt
+945=Include-Verzeichnisse des Projektes nutzen
+946=Bibliotheks-Verzeichnisse des Projektes nutzen
+947=Ressourcen-Verzeichnisse des Projektes nutzen
+
+
+#New variable/member forms
+950=Rückgabe Typ:
+951=Variablen Name:
+952=Implementiert in:
+953=Zugriffsbereich
+954=Erzeuge Member-Funktion zum Lesen dieser Variable
+955=Erzeuge Member-Funktion zum Schreiben dieser Variable
+956=Name:
+957=Kommentare
+958=Beschreibung:
+959=Stil:
+960=Erzeuge
+961=Abbrechen
+962=Unbekannte Klasse...
+963=Dateiname der Implementation nicht bestimmbar...
+964=Zeilennummer für Codeeinfügung nicht bestimmbar...
+965=Member-Name:
+966=Argumente:
+967=Klassen-Name:
+968=Geerbt von anderer Klasse
+969=Vererbung
+970=Geerbt von Klasse:
+971=Header Dateiname:
+972=Implementation Dateiname:
+973=Header Dateiname:
+974=Zum aktuellen Projekt hinzufügen
+975=Attribute
+
+
+#File properties form
+980=Dateiname
+981=Im Projekt
+982=Alle Zeilen
+983=Aktuellle Code-Zeilen
+984=Kommentar-Zeilen
+985=Includierte Dateien
+986=Leere Zeilen
+987=Dateigröße
+988=Absolut
+989=Make Datei
+990=Relativ
+991=Datum/Zeitstempel der Datei
+992=Compiler-Einstellungen
+
+
+#Profile analysis form
+995=Auslastungs Analyse
+996=Funktionszeit 
+997=Funktionsabdeckung
+
+
+#Global strings
+# messages
+1000=Suchtext ''%s'' nicht gefunden
+1001=Die Datei %s konnte nicht geöffnet werden
+1002=Dieses Vorkommen (''%s'') ersetzen?
+1003=Die Datei %s existiert bereits in %s
+1004=Sind Sie sicher, daß Sie %s schließen wollen?
+1005=Änderungen an %s speichern?
+1006=%s Schließen und ein neues Projekt starten?
+1007=Umbenennen zu:
+1008=kompiliere bereits
+1009=Änderungen an %s speichern?
+1010=Die Datei existiert bereits, überschreiben?
+1011=Neue Datei zum Projekt hinzufügen?
+1012=Neue Ressource zum Projekt hinzufügen?
+1013=Ihr Projekt hat keine Debug-Informationen; Fehlersuche ermöglichen und Projekt neu erzeugen?
+1014=Sie haben Profiling und/oder Fehlersuche nicht ermöglicht; Ermöglichen und Projekt neu erzeugen?
+1015=Bitte das Projekt einmal laufen lassen um das Profilinfo zu erzeugen...
+1016=Geben Sie die neuen Ordnernamen ein:
+1017=Sind Sie sicher den Ordner entfernen zu wollen?
+1018=Geben Sie den neuen Ordnernamen ein:
+1019=Die Datei %s ist als read-only markiert. Als read/write markieren? Wenn nicht, wird die Datei nicht gesichert...
+1020=Ein Fehler ist aufgetreten. Die Datei %s war nicht als read/write markiert und wurde nicht gesichert...
+1021=Eine Zugriffsverletzung (Segmentation Fault) trat in Ihrem Programm auf.
+1022=Quelldatei ist jünger als die EXE-Datei. Neu erzeugen ?
+1023=Hinzuzufügende Anwendung auswählen:
+
+
+#errors
+1500=Kann %s nicht öffnen
+1501=Kann %s nicht speichern
+1502=Kann %s nicht umbenennen
+1503=Suchtext darf nicht leer sein
+1504=Projekt ist nicht ausführbar
+1505=Projekt ist nicht kompiliert
+1506=Quelldatei ist nicht kompiliert
+1507=Make Datei nicht gefunden.
+1508=Löschvorgang gescheitert
+1509=Vorlage konnte nicht ins Projekt eingefügt werden.
+1510=%s Ressource nicht gefunden: %s - %s
+1511=Vorlagendatei %s nicht gefunden, wird übersprungen.
+1512=Keine Vorlage zugewiesen.
+1513=Datei %s nicht gefunden.
+1514=Keine Host Anwendung angegeben. Sie können sie im Ausführen Menü, Parameter festlegen.
+1515=Host Anwendung nicht gefunden ! Sie können es im Ausführen Menü, Parameter ändern.
+
+
+# misc
+2000=Unbenannt
+2001=Nur Lesen
+2002=Einfügen
+2003=Überschreiben
+2004=Projekt%d
+2005=Bitte geben Sie einen anderen Dateinamen an.
+2006=%d Zeilen in Datei
+2007=Datei umbenennen
+2008=Führt %s aus
+2009=Ausführung beendet
+2010=Bytes
+2011=Verändert
+2012=Fehler
+2013=Information
+2014=Warnung
+2015=Frage
+2016=Kompilierung erfolgreich
+2017=Kompilation durch Benutzer abgebrochen
+
+
+# buttons
+2500=&Ok
+2501=Abbre&chen
+2502=&Hilfe
+2503=Stan&dard
+2504=&Ja
+2505=&Nein
+2506=&Hinzufügen
+2507=B&earbeiten
+2508=Entfe&rnen
+2509=&Löschen
+2510=S&chließen
+2511=&Autoren
+2512=&Suchen
+2513=E&rsetzen
+2514=Un&gültige lösch.
+2515=Ersetze &Alles
+2516=Durchsuchen
+2517=Entfernen
+2518=Umbenennen
+2519=Import
+2520=Fenster Modus
+2521=Löschen
+
+
+# CPU Window
+2600=CPU-Fenster
+2601=Assembler Code:
+2602=Funktion:
+2603=Assembler Syntax:
+2604=Register:
+
+
+# TipOfTheDay Window
+2700=Tip des Tages
+2701=Wussten Sie schon ?...
+2702=...keine Tips vorhanden
+2703=Keine Tips beim Start anzeigen
+2704=Nächster Tip
+2705=Vorheriger Tip
+
+
+# Environment Options (more)
+2800=Datei Zuordnung
+2801=Dateitypen:
+2802=Für welche Dateitypen soll Dev-C++ als Standardanwendung registriert werden ?
+2803=CVS Unterstützung
+2804=CVS Programm-Datei
+2805=Kompressions-Level
+2806=SSH statt RSH benutzen
+2807=Vorlagen-Verzeichnis
+2808=Vorlagen-Verzeichnis wählen
+2809=XP-Thema nutzen
+2810=Externe Programme
+2811=Externes Programm
+2812=Erweiterung
+2813=Externe Programm-Verbindungen:
+2814=Watch-Variable unter Maus
+2815=Watch Fehler melden
+2816=Fehlersuch-Variablen Browser 
+2817=Konfigurations-Datei wechseln 
+2818=Gewechselte Konfiguratios-Datei nutzen
+2819=Sie haben die Konfiguratios-Datei dieser Anwendung geändert.<CR>Diese neue Konf.-Datei wird in der aktuellen Sitzung *nicht* benutzt. Alle Änderungen dieser Sitzung an der Konfigurations-Datei werden in die gegenwärtige Konf.- Datei geschrieben.<CR><CR>Es ist empfehlenswert, die Anwendung neu zu starten, um die neue Konf.-Datei zu nutzen...
+
+
+#Execute menu (more)
+2900=Parameter...
+2901=Aktuelle Datei kompilieren
+
+
+# Window list
+2910=Fenster Liste
+2911=Fenster zum Bearbeiten wählen:
+
+
+# CVS Menu
+2990=Aktuelle Datei...
+2991=Ganzes Projekt...
+2992=Bitte konfigurieren Sie die CVS-Unterstützung in "Werkzeuge / Umgebungs Optionen"...
+
+
+# CVS form
+3000=Import Optionen
+3001=Repository
+3002=Globale Optionen
+3003=Auscheck Optionen
+3004=Ausführung Optionen
+3005=Update Optionen
+3006=Diff Optionen
+3007=Log Optionen
+3008=CVS-Ausgabe
+3009=Import
+3010=Auschecken
+3011=Ausführen
+3012=Update
+3013=Diff
+3014=Log
+3015=Import Verzeichnis
+3016=Aktion
+3017=Anbieter
+3018=Release
+3019=Log Meldung
+3020=Modulname
+3021=Extension
+3022=Auschecken als
+3023=Auscheck Verzeichnis
+3024=Unterverzeichnisse einbeziehen
+3025=Alle Optionen zurücksetzen
+3026=Erzeuge fehlende Verzeichnisse
+3027=Entferne leere Verzeichnisse
+3028=Änderungen lokal halten
+3029=Vor Datum
+3030=Revision/Zweig/Tag
+3031=Wenn nicht gefunden, nimm die letzte
+3032=Andere Revisionen
+3033=Vereintes diff ausführen
+3034=Vergleiche lokale Datei mit gleicher(m) remote Revision/Tag
+3035=Vergleiche lokale Datei mit anderen remote Revisionen
+3036=Vergleiche zwei remote Revisionen
+3037=Ist Datum
+3038=Log den Default-Zweig
+3039=Liste nur RCS-Dateinamen
+3040=Keine Tag-Namen drucken
+3041=Filter
+3042=für Revision/Tag
+3043=für Datum
+3044=für Benutzer
+3045=Repository
+3046=Details
+3047=Zugriffsmethode
+3048=Benutzer
+3049=Server
+3050=Remote Verzeichnis
+3051=Hinzufügen
+3052=Entfernen
+3053=Optionen hinzufügen
+3054=Optionen entfernen
+3055=Datei auch von Festplatte entfernen...
+
+
+# Params form
+3100=Parameter
+3101=Übergabe-Parameter für Ihr Programm:
+3102=Host Anwendung:
+
+
+# Project options form (continued)
+3200=Dateien
+3201=Projekt Dateien:
+3202=Projekt Optionen:
+3203=Erzeuge Fehlersuch-Informationen
+3204=Erzeuge Profiling-Informationen
+3205=Beachte: Diese Einstellungen überschreiben für dieses Projekt die globalen Compiler-Optionen.
+3206=Windows XP Themen unterstützen
+3207=Datei Optionen:
+3208=In Kompilation einbeziehen
+3209=Kompiliere Datei als C++
+3210=Versionsinfo
+3211=Versions-Informationen ins Projekt einbinden
+3212=Versionsdetails
+3213=Major:
+3214=Minor:
+3215=Release:
+3216=Build:
+3217=Sprache:
+3218=Zusätzliche Informationen:
+3219=Überschreibe Build Kommando
+3220=Ausgabedatei
+3221=Ins Linken einbeziehen
+3222=Build Priorität:
+3223=Build-Nummer beim Kompilieren automatisch erhöhen
+3224=Nutze eigenes Makefile (kein Makefile generieren)
+3225=Informationen über Anpassungen des Makefile...
+3226=&Folgende Datei ins Makefile einschließen:
+
+
+# More compiler options
+3400=EXE entfernen
+3401=Instruktionen für folgende CPU generieren
+3402=Prozessor spezifische Built-in Funktionen nutzen

@@ -1,0 +1,3 @@
+BALLBMP BITMAP "ball.bmp"
+MASKBMP BITMAP "ballmask.bmp"
+

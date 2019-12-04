@@ -1,0 +1,27 @@
+[Project]
+Ver=1
+FileName=Hello.dev
+Name=Hello Sample
+UnitCount=1
+Icon=
+Type=1
+ObjFiles=
+Includes=
+Libs=
+Resources=
+Compiler=
+Linker=
+IsCpp=1
+PrivateResource=
+ResourceIncludes=
+ExeOutput=
+ObjectOutput=
+
+[Unit1]
+FileName=Hello.cpp
+Open=1
+Top=1
+
+[Views]
+ProjectView=1
+

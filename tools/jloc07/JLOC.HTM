@@ -1,0 +1,456 @@
+<HTML><HEAD>
+<TITLE>JLOC version 0.6 Documentation</TITLE>
+</HEAD>
+
+JLOC.EXE version 0.6 by John S. Fine <A HREF="mailto:johnfine@erols.com">johnfine@erols.com</A>
+
+<P>   This program is a linker/locator for use when you need more control over
+placement of sections within the image, than a standard linker provides.
+
+<P>   Use this program entirely at your own risk.  I make no claim that
+this program is suitable or safe for any purpose.
+
+<H3>ZERO-PRICE SHAREWARE:</H3>
+
+   If you continue to use this program after a reasonable initial test,
+you must register it.  You do not need to send any money.  Registration
+consists entirely of sending an EMAIL to
+<A HREF="mailto:johnfine@erols.com">johnfine@erols.com</A>
+to tell me that you are using it, and where you got your copy.  Bug reports and
+suggestions are also welcome, though I can't promise to do anything with them.
+
+<H3>Contents:</H3>
+<UL>
+<LI><A HREF="#usage">Usage</A>
+<LI><A HREF="#dpmi">DPMI</A>
+<LI><A HREF="#control">Control Files</A>
+<LI><A HREF="#misc">Miscellaneous Features</A>
+</UL>
+
+<H3><A NAME="usage">Usage</A></H3>
+<P>JLOC <A HREF="#control">control_file</A> output_file map_file sym_file
+<P>The map and symbol files are optional.
+
+<H3><A NAME="dpmi">DPMI</A></H3>
+JLOC was built using DJGPP.  You don't need DJGPP to run it, but you
+do need DPMI.  DOS sessions in Windows or OS/2 will have DPMI available.
+If you are running true DOS, you might not have DPMI.  Download a copy of
+<A href="ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2misc/csdpmi4b.zip">csdpmi4b.zip</A>
+.  Put CWSDPMI.EXE somewhere in your path.  If DPMI is not
+active when you start JLOC, the stub at the beginning of JLOC will run
+CWSDPMI to provide DPMI services for JLOC.  CWSDPMI exits when JLOC
+exits.
+
+<H3><A NAME="control">Control Files</A></H3>
+<UL>
+<LI><A HREF="#concepts">Concepts</A>
+<LI><A HREF="#syntax">Syntax</A>
+<LI><A HREF="#expression">Expressions</A>
+<LI><A HREF="#sequence">Sequence Rules</A>
+<LI><A HREF="#examples">Examples</A>
+</UL>
+
+<H4><A NAME="concepts">Concepts</A></H4>
+JLOC requires a control file to tell it how to build your program.
+<P>There are several definitions required to understand the structure of
+a control file:
+<UL>
+<LI><A NAME="namespace">NameSpace</A>:
+Every control file must define at least one NameSpace.
+Usually you will want only one.  To link multiple programs together into
+one image, you use multiple NameSpaces.  Each NameSpace has its own symbol
+table so that symbols in one program do not conflict with symbols in
+another.<P>
+Source files are specified by NameSpace.  For each NameSpace you
+provide a list of all the source files it contains.<P>
+
+<LI><A NAME="chunk">Chunk</A>:
+I use the work "chunk" instead of "segment" for the major
+meaning of the word "segment".  I do this because "segment" has several
+other meanings and its use is imprecise.  A chunk is the portion of a
+SINGLE obj that has a single segment name.  A standard linker calls
+those "segments".  A linker or JLOC may combine "segments" into larger
+things, which a linker also calls "segments".  At run time, segment
+registers are used to point to groups or other things which are then
+all called "segments".<P>
+
+<LI><A NAME="base">Base</A>:
+The thing a segment register points to, has a base address.
+I call that simply "base".  A base is a 32 bit linear address.<P>
+
+<LI><A NAME="selector">Selector</A>:
+The value in a segment register is called a selector.  In
+real mode that will be the base divided by 16.  In protected mode it is
+something else.<P>
+
+<LI><A NAME="start">Start</A>:
+A <A HREF="#section">section</A>, has a linear address at which it
+is loaded in memory.  I call that simply "start".  This often has the
+same value as <A HREF="#base">base</A>, but it is not the same concept.<P>
+
+<LI><A NAME="i_start">I_Start</A>:
+A section has a location within the image file.  This is
+called its I_Start.  In a traditional linker the entire image has a
+single load address, and the load address (<A HREF="#start">start</A>)
+of any part would be the sum of the overall load address plus that part's image address
+(I_Start).  With JLOC, the two are independent.<P>
+
+<LI><A NAME="section">Section</A>:
+This is the main unit in which you manage the process of
+locating <A HREF="#chunk">chunks</A> in memory.<P>
+JLOC merges <A HREF="#chunk">chunks</A> together into sections.  All the chunks
+in a section share the same <A HREF="#base">base</A> address.  Since <A HREF="#base">base</A>
+is explicitly defined for each section, you may also choose to have multiple sections
+share a base address.<P>
+<LI><A NAME="scope">Scope</A>:
+The control file itself is divided into what I call "scopes".  Each <A HREF="#namespace">namespace</A>
+and each <A HREF="#section">section</A> has a scope.  Each scope consists of one or more
+sets of lines within the control file.  The first line of each such set is a <A HREF="#scope_line">scope line</A>,
+which identifies the scope to which it and following lines belong.  Usually, you only need one
+scope line (plus one or more <A HREF="#filename_line">file</A>, <A HREF="#symbol_line">symbol</A>,
+or <A HREF="#chunk_line">chunk</A> lines) for each scope.  See <A HREF="#sequence">sequence rules</A>
+for reasons you might need more than one scope line.<P>
+</UL>
+<H4><A NAME="syntax">Control file syntax</A></H4>
+<UL>
+<LI><A HREF="#scope_line">Scope lines</A> introduce Namespaces and Sections.
+<LI><A HREF="#namespace_line">Namespace scope lines</A>
+<LI><A HREF="#section_line">Section scope lines</A>
+<LI><A HREF="#filename_line">Filename lines</A> are used within Namespace scopes.
+<LI><A HREF="#symbol_line">Symbol definition lines</A> are used within Namespace scopes.
+<LI><A HREF="#chunk_line">Chunk selection lines</A> are used within Section scopes.
+<LI><A HREF="#comments">Comments</A> are any part of a line following a ";".
+</UL>
+
+<H4><A NAME="scope_line">Scope line syntax</A></H4>
+Namespaces and Sections must have
+names which are different from any other Namespaces and Sections.  They
+may be the same as the names of files, groups, classes, segments or symbols.
+<P>A scope line introduces (or reintroduces) a Namespace or a Section.  It has the name
+of the Namespace or Section followed by ":".  The ":" must be followed by a blank, tab,
+or newline.
+<P>When a previously defined scope is reintroduced, there should be no additional
+information on the line.
+<P>When a scope is introduced for the first time, additional information is required
+on <A HREF="#section_line">section lines</A> and optional on <A HREF="#namespace_line">namespace lines</A>
+
+<H4><A NAME="namespace_line">Namespace line syntax</A></H4>
+This line gives the name of a <A HREF="#namespace">Namespace</A> and indicates that
+following lines (up to the next scope line) will be <A HREF="#filename_line">filename</A>
+or <A HREF="#symbol_line">symbol</A> lines.
+<P>An optional "^" on the namespace line specifies that all symbols within the
+namespace will be converted to upper case.  Remember to put a space or tab after the
+":" and before the "^".
+
+<H4><A NAME="section_line">Section line syntax</A></H4>
+<PRE>
+<A HREF="#section">section</A>:  <A HREF="#base">base</A>  <A HREF="#start">start</A>  <A HREF="#i_start">i_start</A>  <A HREF="#selector">selector</A>
+</PRE>
+<P>The start is optional.  If ommitted JLOC will compute a <A HREF="#def_start">default start</A>.
+<P>The i_start is optional.  If ommitted JLOC will compute a <A HREF="#def_i_start">default i_start</A>.
+<P>The selector is optional.  If omitted JLOC will use base/16 as the selector.
+<P>Commas are optional between the parameters of a Section line;  However, if you omit a parameter
+and do not omit following parameters, the commas are required to make clear which parameters are
+present.
+<P>To exclude a section from the output file and from the map, use "-1" in place of i_start.  Definitions within
+the section are still available for resolving FIXUPs in other sections.  "-1" is not needed to exclude
+the usual BSS segment because uninitialized space which would fall at
+the end of the output file is automatically excluded from the output file (but not from the map).
+Segments of debug information (such as DEBSYM and DEBTYP produced by MASM) get no special
+handling by JLOC.  If you wish to exclude them from the image, you must define a section
+for them and explicitly exclude it from the image.
+<P>An i_start value of -2 is used for a section that contains
+<A HREF="#patches">patches</A> to be applied in the last stage of linking.
+<P>Following the section line, you should have one or more <A HREF="#chunk_line">chunk selection lines</A>
+to specify which <A HREF="#chunk">chunks</A> belong to that section.
+
+<H4><A NAME="def_start">Computing a default value for </A><A HREF="#start">start</A></H4>
+When the <A HREF="#start">start</A> value is omitted from a <A HREF="#section_line">section line</A>,
+JLOC will compute a default value.  If there is any previous <A HREF="#section_line">section line</A>
+in the control file, which is not a <A HREF="#patches">patch</A> section, then JLOC will add the
+<A HREF="#start">start</A> and length of the section described by the last such line to compute
+the default for the current line.  If there is no such line preceeding the current line then
+JLOC will use zero as the default start.
+<P>If the <A HREF="#start">start</A> expression begins with a #, then the default is computed
+and then aligned as specified.
+
+<H4><A NAME="def_i_start">Computing a default value for </A><A HREF="#i_start">i_start</A></H4>
+When the <A HREF="#i_start">i_start</A> value is omitted from a <A HREF="#section_line">section line</A>,
+JLOC will compute a default value.  If there is any previous <A HREF="#section_line">section line</A>
+in the control file, which is not a <A HREF="#patches">patch</A> section and is also not omitted from
+the image by an i_start value of -1, then JLOC will compute the differences between the
+<A HREF="#i_start">i_start</A> and <A HREF="#start">start</A> of the section described by the last such line
+and add that difference to the <A HREF="#start">start</A> value of the current line to compute
+the default for the current line.  This mimics the behavior of an ordinary linker in which the
+difference between <A HREF="#i_start">i_start</A> and <A HREF="#start">start</A> is the same
+for all sections.  If there is no such line preceeding the current line then
+JLOC will use zero as the difference (It will set <A HREF="#i_start">i_start</A>
+equal to <A HREF="#start">start</A>).
+
+<H4><A NAME="filename_line">Filename line syntax</A></H4>
+Filenames appear within the scope of a namespace.  One filename per line, no wild-cards, no spaces within a name.
+Spaces or tabs are permitted before or after the (full path) name.
+
+<H4><A NAME="symbol_line">Symbol definition syntax</A></H4>
+symbol = <A HREF="#expression">expression</A>
+<P>A symbol definition occurs within the scope of a namespace.  The symbol may be
+used by FIXUPs in any file within the namespace.
+<P>Symbols (both those defined in the control file, and public symbols defined in
+the OBJ and LIB files) may be used in any <A HREF="#expression">expression</A>
+in the control file.  When used in an expression the symbol name must always be
+prefixed by the namespace name (namespace.symbol), even within the scope of the namespace.
+<P>When defining a symbol, DO NOT prefix it with the name of the namespace.
+
+<H4><A NAME="chunk_line">Chunk selection syntax</A></H4>
+namespace, group, class, segment, filename
+<P>Chunk selection lines occur within the scope of a section.  They specify which
+chunks belong to that section.  Each chunk belongs to exactly one section.  If more
+than one chunk selection line fits a chunk, that chunk is selected by only the
+first selection line which fits.
+<P>Each of the items on a chunk selection line is optional.  Any item which is either
+omitted or replaced by "*" will match any chunk.  A chunk is selected if every item
+that is specified matches.
+<P>The commas are also optional;  However, each set of spaces and tabs is reduced to
+just one space, so you need either an "*" or a "," to mark the location of any
+omitted item that is followed by specified item(s).
+<P>The filename (if specified) must exactly match the name as specified on a
+filename line in the namespace scope.
+
+<H4><A NAME="expression">Expressions</A></H4>
+   Spaces are not permitted within expressions.  An expression consists of hex numbers,
+decimal numbers, <A HREF="#symbol_line">symbols</A>, and <A HREF="#section_values">section values</A>
+combined using <A HREF="#operators">operators</A> and grouped with parenthesis.
+
+<H4><A NAME="numbers">Numbers</A></H4>
+   All numbers must start with a digit (add a leading zero if necessary).
+Decimal numbers must end with ".";  All other numbers are hex.
+
+<H4><A NAME="section_values">Section values</A></H4>
+
+Section values must be prefixed with the section name (section.value).  The
+defined values are:
+<TABLE>
+<TR><TD>base     <TD> Linear address, relative to which all its offsets are computed.
+<TR><TD>start    <TD> Starting linear address.
+<TR><TD>image    <TD> Starting address within image file.
+<TR><TD>length   <TD> Length.
+<TR><TD>i_length <TD> Length excluding uninitialized data at the end.
+<TR><TD>after    <TD> start+length.
+<TR><TD>i_after  <TD> image+length   (Note the use of length, not i_length).
+</TABLE>
+
+<H4><A NAME="operators">Operators</A></H4>
+<TABLE>
+<TR><TD>|     <TD>Bitwise or
+<TR><TD>^     <TD>Bitwise xor
+<TR><TD>&amp; <TD>Bitwise and
+<TR><TD>#     <TD>Align A#B = (A+B-1) &amp; (-B)
+<TR><TD>&gt;  <TD>Right shift
+<TR><TD>&lt;  <TD>Left shift
+<TR><TD>+     <TD>Add
+<TR><TD>-     <TD>Subtract
+<TR><TD>*     <TD>Multiply
+<TR><TD>/     <TD>Divide (unsigned)
+<TR><TD>%     <TD>Modulo (unsigned)
+</TABLE>
+
+
+<H4><A NAME="sequence">Sequence rules</A></H4>
+<UL>
+<LI>The sequence of <A HREF="#section">sections</A> within the address space is entirely determined
+by the <A HREF="#start">start</A> values on the <A HREF="#section_line">section lines</A>.  The
+sequence of the sections within the control file only affects the sequence in the address space
+when the <A HREF="#start">start</A> values are <A HREF="#def_start">defaulted</A>.<P>
+<LI>The assignment of <A HREF="#chunk">chunks</A> to <A HREF="#section">sections</A> is affected
+by the sequence of <A HREF="#chunk_line">chunk selection lines</A> in the entire control file.<P>
+
+<LI>The sequence of <A HREF="#chunk">chunks</A> within a <A HREF="#section">section</A> is NOT affected by
+the sequence of <A HREF="#chunk_line">chunk selection lines</A>.<P>
+Several aspects of the sequence of <A HREF="#chunk">chunks</A> within a <A HREF="#section">section</A>
+are subject to change in future versions of JLOC.  If the sequence of <A HREF="#chunk">chunks</A>
+matters and is NOT defined by the following rules then you should create multiple <A HREF="#section">sections</A>
+to control the sequence.
+<UL>
+<LI>When namespace, group, class, and segment are all equal, the sequence of <A HREF="#chunk">chunks</A>
+within a <A HREF="#section">section</A> is determined by the sequence of <A HREF="#filename_line">filename lines</A>
+within the entire control file.
+<LI>When namespace, group, and class are all equal, the sequence of <A HREF="#chunk">chunks</A>
+within a <A HREF="#section">section</A> is determined by alphabetic order of the segment names.
+<LI>When namespace and group are equal, the sequence of <A HREF="#chunk">chunks</A>
+within a <A HREF="#section">section</A> is determined by alphabetic order of the class names.
+<LI>Group membership of a <A HREF="#chunk">chunk</A> is determined only by group records in
+the same object module as the chunk.  A group record in a different object module, which
+specifies group membership for a chunk's segment, will have no effect.
+</UL><P>
+<LI><A HREF="#expression">Expressions</A> anywhere in the control file (even specifying
+section values) can reference any symbols or section values.  Symbols and section values
+can be referenced before they are defined, and sections may depend on other sections
+that appear later in the control file and/or later in the image.  JLOC will fail if
+there are circular reference patterns that do not converge.  It will correctly resolve
+non-circular (and some circular) references regardless of sequence.
+</UL>
+
+<H3><A NAME="misc">Miscellaneous Features</A></H3>
+
+<H4><A NAME="patches">Patch stage</A></H4>
+By setting the i_start value of a section to -2, that section is excluded from the body
+of the image and used as a sequence of patches which are applied to the body of the
+image in the last stage of linking.
+<P>Each patch consists of:
+<PRE>
+  1  DWORD  Must be zero
+  1  DWORD  Offset of patch within the image file
+  1  DWORD  Length of patch
+  N  BYTES  Contents of patch
+</PRE>
+It is directly followed (no alignment) by the next patch.
+<br>To generate an offset within the image file you may want to use the
+<A HREF="#emptyg">Empty GROUP</A> feature.
+<P>Patches are useful for doing link-time initialization of things that would
+normally require run-time initialization.  Link-time initialization is
+especially powerful for programs that execute in ROM.
+A good example is the interrupt descriptor table for a stand-alone protected mode program.  You can find
+sample source code for that at
+<A HREF="http://www.erols.com/johnfine/#jlocpatch">http://www.erols.com/johnfine/#jlocpatch</A>
+
+<H4><A NAME="emptyg">Empty GROUPs</A></H4>
+An empty GROUP is one that does not have any segments listed in ANY of its declarations.
+It is not empty if any module declares it with any segments.
+<P>When JLOC is asked to compute the offset of something relative to an empty group
+it computes instead the offset of that object within the image file.
+<P>There are many reasons you might need the offset relative to the image file, and in complex images
+that might be hard to compute from normal addresses. For example,
+<UL>
+<LI>A program that loads in multiple parts from a single image file.
+<LI>A program that writes options or other data back to the image from which it loaded.
+<LI>Use of JLOC's <A HREF="#patches">patch stage</A>.
+</UL>
+TASM Syntax:
+<PRE>
+  image GROUP
+ ...  offset image:something
+</PRE>
+NASM Syntax:
+<PRE>
+  GROUP image
+ ...  something WRT image
+</PRE>
+<H4><A NAME="descriptor">Building Descriptors</A></H4>
+386 descriptors are stored with important fields, such as offset or address, broken into subfields.
+If you wanted to build a descriptor at assembly time you would be limited to values that are known at
+assembly time in order to break the values into subfields.
+<P>JLOC allows you to build simplified descriptors at assembly time which can contain externs and other
+values that are not known until link time.  JLOC can then rearrange the bits to form a true descriptor.
+JLOC does this step after applying "fixups" which resolve externs etc. and before applying 
+<A HREF="#patches">patches</A> (which might move the descriptor to a new location).
+<P>To make JLOC rearrange the bits of a descriptor you must declare a global symbol whose name
+begins with <CODE>?fixD..@</CODE> at the address of the descriptor.
+<P>There is more documentation on this subject inside the sample file GDT.INC which is distributed with JLOC.
+<HR><H3><A NAME="examples">Examples</A></H3>
+<HR><PRE>
+ALL:
+   bootstrap.obj
+BOOT: 0 7C00 0
+   *
+</PRE>
+
+<P> This file is used to link a bootstrap (floppy or hard-drive boot) program.
+The <A HREF="#namespace_line">line</A> "ALL:" defines a <A HREF="#namespace">namespace</A>.
+The <A HREF="#filename_line">second line</A> lists the (only) obj file.
+The <A HREF="#section_line">third line</A> defines a <A HREF="#section">section</A>.
+  Bootstrap programs always load at 0:7C00.
+The section line tells JLOC that the assumed segment register points to 0,
+the section is actually loaded at 7C00 in memory, but at 0 in the image file
+output by JLOC.  In a traditional linker it is hard to achieve this difference
+between the base and the start.
+The "*" is a <A HREF="#chunk_line">chunk selection</A> specifying that all remaining
+chunks go in this section.  JLOC requires
+that you assign every chunk to some section.
+<HR><PRE>
+ALL:
+   file1.obj
+   file2.obj
+   file3.obj
+   last.obj
+DATA:  0F0000 MAIN.after MAIN.i_after
+   *,DGROUP
+   ,,,FONT
+FINAL:  0F0000 100000-FINAL.length FINAL.start-0F0000
+   *,*,*,*,last.obj
+MAIN: 0F0000 0F0000 0
+   *
+</PRE>
+
+<P>This file is used to link a BIOS.  All of the BIOS fits within F000:xxxx.
+The DATA section is defined as directly following the MAIN section within
+F000:xxxx.  It is defined here as containing all chunks in group DGROUP as
+well as chunks with segment name FONT.
+
+<P>The FINAL section contains code which must end at exactly F000:FFFF.
+(BIOS's normally have sections that must sit at predefined addresses.  Getting
+them there with traditional linkers is very hard).  With JLOC you can use
+<A HREF="#expression">expressions</A> to compute where <A HREF="#section">sections</A>
+go at link time.
+
+<P>The MAIN section contains everything else and is loaded first.
+
+<P>Chunks are assigned according to the <A HREF="#sequence">sequence</A>
+in the control file.  In the
+above example, if last.obj includes a chunk in DGROUP, that chunk would go
+in DATA, not in FINAL.
+
+<P>SECTIONS are loaded in memory exactly where you specify.  The order of
+the sections in the control file doesn't affect the load order.  The above
+example loads in the order MAIN,DATA,FINAL.
+<HR><PRE>
+VCPI:
+   {list of OBJ's omitted}
+   read_from = OS.i_start
+   read_size = OS.length
+   gdt = KERNEL.gdt
+   entry = KERNEL.entry
+KERNEL:
+   {list of OBJ's omitted}
+LOADER:  0 100 0
+   VCPI
+OS: 0 0FF800000 LOADER.i_after 8
+   *
+</PRE>
+
+<P>This file is used to build a test copy of an OS.  Since I edit/assemble/link
+the OS in DOS, I want to start it from DOS for testing.
+
+<P>There are two programs connected together.  The first is a VCPI client.
+Assuming QEMM or EMM386 (or similar) is loaded, the VCPI client turns them
+off and takes control of the system.  It sets up paging and loads the OS.
+
+<P>JLOC is told that the VCPI client loads at 0:100.  Actually it loads at
+nnnn:100, where nnnn isn't known until load time. I haven't yet added the
+ability for JLOC to handle that (and to produce EXE files rather than BIN
+or COM file).  VCPI is simply coded carefully to work despite that
+restriction.
+
+<P>The symbol tables of the two programs are separate (so they each might
+have a symbol named "printf").  However, we tell the VCPI program about two
+symbols from the OS.  Its gdt and its entry point.  It can use those two
+symbols as if they were its own.  We also define two symbols for it giving
+the start and length of the OS section within the image file.
+
+<P>When I build a 32 bit OS, I like to use the top 4Mb of the linear address
+space for page tables and the 4Mb below that for the OS.  I also like to use
+true flat segments in the OS so offset 0 in the OS code segment equals
+linear address 0.  This means that the code starts at offset FF800000 in
+the code segment.  That is rather hard (not impossible) with a traditional
+linker.  With JLOC, I just ask for it and get it.
+
+<P>In the above example, I just lumped all the OS code and data together.
+In a real OS, I would probably have multiple sections.  This OS must use
+two selectors for the flat segment.  8 is the flat code selector.  As
+shown above, JLOC will use 8 as the selector for anything in OS.  When
+coding, I was careful not to leave any data selector for the linker to
+resolve (they are all resolved at assembly time).  Actually I wrote the
+OS test before I wrote JLOC, so then I didn't leave any selectors for
+the linker to resolve.  I have no idea how to get a traditional linker
+to resolve protected mode selectors.  The 8 in the above example is
+only used in the "JMP entry" instruction at the end of VCPI.
+</HTML>

@@ -1,0 +1,11 @@
+masm
+nasm
+borland turbo-c 2.0
+jlic
+dev-cpp
+bochs
+winimage
+bushound
+usbview
+editplus
+source insight

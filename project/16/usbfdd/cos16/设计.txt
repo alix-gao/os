@@ -1,0 +1,25 @@
+timeint:
+mov temp_sp,sp
+mov temp_ss,ss
+根据no相应跳转
+mov sp,process_table.reg
+pusha
+换换堆栈
+call ctimeint
+mov sp,sche_stack
+mov ss,sche_stack+2
+popa
+send eoi
+iretd
+
+int no;
+void ctimeint()
+{
+  schel();
+  sche_stack=&(process_table[no].regs);
+}
+
+void schel()
+{
+  no=no%3;
+}

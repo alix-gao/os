@@ -1,0 +1,16 @@
+//example
+{item}
+[key]key value //[key] should be followed by {item}
+[set1]value1
+[set2]value2
+file end with enter
+
+{item}
+[mac]30:b4:9e:46:01:4f
+<ip>192.168.29.120
+<mask>255.255.255.0
+
+{item}
+[mac]30:b4:9e:41:31:16
+<ip>192.168.29.123
+<mask>255.255.255.0

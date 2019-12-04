@@ -1,0 +1,318 @@
+"build 16 bit binary for usbfdd" 
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
+Microsoft (R) Macro Assembler Version 5.00 
+Copyright (C) Microsoft Corp 1981-1985, 1987.  All rights reserved.
+
+
+  49908 + 398716 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
+
+Microsoft (R) Overlay Linker  Version 3.65   
+Copyright (C) Microsoft Corp 1983-1988.  All rights reserved.
+
+LINK : warning L4021: no stack segment
+mbr.bin
+Microsoft (R) Macro Assembler Version 5.00 
+Copyright (C) Microsoft Corp 1981-1985, 1987.  All rights reserved.
+
+
+  49830 + 398794 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
+
+Microsoft (R) Overlay Linker  Version 3.65   
+Copyright (C) Microsoft Corp 1983-1988.  All rights reserved.
+
+LINK : warning L4021: no stack segment
+dbr.bin
+Microsoft (R) Macro Assembler Version 5.00 
+Copyright (C) Microsoft Corp 1981-1985, 1987.  All rights reserved.
+
+
+  49822 + 398802 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
+
+Microsoft (R) Overlay Linker  Version 3.65   
+Copyright (C) Microsoft Corp 1983-1988.  All rights reserved.
+
+LINK : warning L4021: no stack segment
+asm16.bin
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+main.c:
+
+        Available memory 398358
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+rmho.c:
+
+        Available memory 394242
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+load.c:
+
+        Available memory 396172
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+fat32.c:
+Warning fat32.c 768: Unreachable code in function read_file_by_clus_no
+
+        Available memory 384380
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+lib.c:
+
+        Available memory 392008
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+vfs.c:
+
+        Available memory 404480
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+crc16.c:
+
+        Available memory 401482
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   cos16.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  416k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   int.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  414k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   pm.asm
+*Warning* pm.asm(21) Segment alignment not strict enough
+Error messages:    None
+Warning messages:  1
+Passes:            1
+Remaining memory:  412k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   main.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  409k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   rmho.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  405k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   load.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  407k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   fat32.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  382k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   lib.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  405k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   vfs.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  414k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   crc16.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  413k
+
+
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+"build 16 bit binary for usbhdd" 
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
+Microsoft (R) Macro Assembler Version 5.00 
+Copyright (C) Microsoft Corp 1981-1985, 1987.  All rights reserved.
+
+
+  49908 + 398716 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
+
+Microsoft (R) Overlay Linker  Version 3.65   
+Copyright (C) Microsoft Corp 1983-1988.  All rights reserved.
+
+LINK : warning L4021: no stack segment
+mbr.bin
+Microsoft (R) Macro Assembler Version 5.00 
+Copyright (C) Microsoft Corp 1981-1985, 1987.  All rights reserved.
+
+
+  49830 + 398794 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
+
+Microsoft (R) Overlay Linker  Version 3.65   
+Copyright (C) Microsoft Corp 1983-1988.  All rights reserved.
+
+LINK : warning L4021: no stack segment
+dbr.bin
+Microsoft (R) Macro Assembler Version 5.00 
+Copyright (C) Microsoft Corp 1981-1985, 1987.  All rights reserved.
+
+
+  49822 + 398802 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
+
+Microsoft (R) Overlay Linker  Version 3.65   
+Copyright (C) Microsoft Corp 1983-1988.  All rights reserved.
+
+LINK : warning L4021: no stack segment
+asm16.bin
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+main.c:
+
+        Available memory 398358
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+rmho.c:
+
+        Available memory 394242
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+load.c:
+
+        Available memory 396172
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+fat32.c:
+Warning fat32.c 768: Unreachable code in function read_file_by_clus_no
+
+        Available memory 384380
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+lib.c:
+
+        Available memory 392008
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+vfs.c:
+
+        Available memory 404480
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+crc16.c:
+
+        Available memory 401482
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   cos16.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  416k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   int.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  414k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   pm.asm
+*Warning* pm.asm(21) Segment alignment not strict enough
+Error messages:    None
+Warning messages:  1
+Passes:            1
+Remaining memory:  412k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   main.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  409k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   rmho.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  405k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   load.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  407k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   fat32.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  382k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   lib.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  405k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   vfs.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  414k
+
+Turbo Assembler  Version 4.1  Copyright (c) 1988, 1996 Borland International
+
+Assembling file:   crc16.asm
+Error messages:    None
+Warning messages:  None
+Passes:            1
+Remaining memory:  413k
+
+
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。

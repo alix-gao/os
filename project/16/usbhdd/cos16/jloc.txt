@@ -1,0 +1,13 @@
+ALL:
+   cos16.obj
+   int.obj
+   pm.obj
+   main.obj
+   rmho.obj
+   load.obj
+   fat32.obj
+   lib.obj
+   vfs.obj
+   crc16.obj
+MAIN: 0 4000 0
+   *

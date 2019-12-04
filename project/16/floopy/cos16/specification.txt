@@ -1,0 +1,233 @@
+cos16.asm是入口处，经过命名规则发现的；
+写这个代码发现了类型定义的重要性；
+void debug_mem(unsigned int addr_16bit)
+
+cos16完成2个功能，软切换和加载。
+
+将数组gdt设置成局部变量，不行，该成全局变量。
+
+void debug_mem(unsigned int addr_16bit)
+本想将形参该成为unsigned long addr_32bit
+但turbo c不支持这样的地址。
+
+    asm mov ax,int13_es
+    asm mov es,ax
+    asm mov ax,int13_cx
+    asm mov bx,int13_bx
+    asm mov cx,int13_cx
+    asm mov dx,int13_dx
+    asm int 13H
+寄存器使用过多，导致生成了错乱的代码。
+
+计算过程中使用了0x10000，超过了16位，错乱。
+使用移位来完成相同的功能。
+
+pm.asm还不能选择.386宏，否则offset都成了32位偏移量了。
+
+发现可以使用D:\TASM\BIN\B32TOOLS来查看编译错误。
+
+死掉的地方找到了，不是在mov cr0的时候，而是之前的lidtr和lgdtr，
+看来不要轻易的人为哪些指令不可能死，一定要最终确认。
+
+lgdt指令不认识段式地址，只有线性地址，这一点很重要。
+
+在pm.asm中，在mov cr0,eax之前jmp $并不会导致reboot，说明中断是关闭的。但不加cli，进入保护模式经常异常。
+在intel手册中找到了进入保护模式前cli的原因：
+8.9.1. Switching to Protected Mode
+Before switching to protected mode, a minimum set of system data structures and code modules
+must be loaded into memory, as described in Section 8.8., “Software Initialization for Protected-
+Mode Operation”. Once these tables are created, software initialization code can switch into
+protected mode.
+Protected mode is entered by executing a MOV CR0 instruction that sets the PE flag in the CR0
+register. (In the same instruction, the PG flag in register CR0 can be set to enable paging.)
+Execution in protected mode begins with a CPL of 0.
+The 32-bit IA-32 processors have slightly different requirements for switching to protected
+mode. To insure upwards and downwards code compatibility with all 32-bit IA-32 processors,
+it is recommended that the following steps be performed:
+1. Disable interrupts. A CLI instruction disables maskable hardware interrupts. NMI
+interrupts can be disabled with external circuitry. (Software must guarantee that no
+exceptions or interrupts are generated during the mode switching operation.)
+2. Execute the LGDT instruction to load the GDTR register with the base address of the
+GDT.
+3. Execute a MOV CR0 instruction that sets the PE flag (and optionally the PG flag) in
+control register CR0.
+4. Immediately following the MOV CR0 instruction, execute a far JMP or far CALL
+instruction. (This operation is typically a far jump or call to the next instruction in the
+instruction stream.)
+The JMP or CALL instruction immediately after the MOV CR0 instruction changes the
+flow of execution and serializes the processor.
+If paging is enabled, the code for the MOV CR0 instruction and the JMP or CALL
+instruction must come from a page that is identity mapped (that is, the linear address before
+the jump is the same as the physical address after paging and protected mode is enabled).
+The target instruction for the JMP or CALL instruction does not need to be identity
+mapped.
+5. If a local descriptor table is going to be used, execute the LLDT instruction to load the
+segment selector for the LDT in the LDTR register.
+6. Execute the LTR instruction to load the task register with a segment selector to the initial
+protected-mode task or to a writable area of memory that can be used to store TSS
+information on a task switch.
+7. After entering protected mode, the segment registers continue to hold the contents they had
+in real-address mode. The JMP or CALL instruction in step 4 resets the CS register.
+Perform one of the following operations to update the contents of the remaining segment
+registers.
+— Reload segment registers DS, SS, ES, FS, and GS. If the ES, FS, and/or GS registers
+are not going to be used, load them with a null selector.
+— Perform a JMP or CALL instruction to a new task, which automatically resets the
+values of the segment registers and branches to a new code segment.
+8. Execute the LIDT instruction to load the IDTR register with the address and limit of the
+protected-mode IDT.
+9. Execute the STI instruction to enable maskable hardware interrupts and perform the
+necessary hardware operation to enable NMI interrupts.
+Random failures can occur if other instructions exist between steps 3 and 4 above. Failures will
+be readily seen in some situations, such as when instructions that reference memory are inserted
+between steps 3 and 4 while in system management mode.
+8.9.2. Switching Back to Real-Address Mode
+The processor switches back to real-address mode if software clears the PE bit in the CR0
+register with a MOV CR0 instruction. A procedure that re-enters real-address mode should
+perform the following steps:
+1. Disable interrupts. A CLI instruction disables maskable hardware interrupts. NMI
+interrupts can be disabled with external circuitry.
+2. If paging is enabled, perform the following operations:
+— Transfer program control to linear addresses that are identity mapped to physical
+addresses (that is, linear addresses equal physical addresses).
+— Insure that the GDT and IDT are in identity mapped pages.
+— Clear the PG bit in the CR0 register.
+— Move 0H into the CR3 register to flush the TLB.
+3. Transfer program control to a readable segment that has a limit of 64 KBytes (FFFFH).
+This operation loads the CS register with the segment limit required in real-address mode.
+4. Load segment registers SS, DS, ES, FS, and GS with a selector for a descriptor containing
+the following values, which are appropriate for real-address mode:
+— Limit = 64 KBytes (0FFFFH)
+— Byte granular (G = 0)
+— Expand up (E = 0)
+— Writable (W = 1)
+— Present (P = 1)
+— Base = any value
+The segment registers must be loaded with non-null segment selectors or the segment
+registers will be unusable in real-address mode. Note that if the segment registers are not reloaded, execution continues using the descriptor attributes loaded during protected
+mode.
+5. Execute an LIDT instruction to point to a real-address mode interrupt table that is within
+the 1-MByte real-address mode address range.
+6. Clear the PE flag in the CR0 register to switch to real-address mode.
+7. Execute a far JMP instruction to jump to a real-address mode program. This operation
+flushes the instruction queue and loads the appropriate base and access rights values in the
+CS register.
+8. Load the SS, DS, ES, FS, and GS registers as needed by the real-address mode code. If any
+of the registers are not going to be used in real-address mode, write 0s to them.
+9. Execute the STI instruction to enable maskable hardware interrupts and perform the
+necessary hardware operation to enable NMI interrupts.
+
+分析了一下函数的调用过程：
+call far ptr和call near ptr都一样的，因为ret只有一个。
+所以，near跳转前要将cs压栈。
+
+#define cos32_len (512*32*4)
+编译器将这个宏认成了0，无奈，改写如下：
+#define cos32_len 0x10000
+没有预处理功能的原因。
+
+看turbo c的编译：
+0x1c000/0x10000+0xc000
+	mov	dx,1
+	mov	ax,-16384
+	push	dx
+	push	ax
+
+cos32_load_addr+32*512*3
+	xor	dx,dx
+	mov	ax,-16384
+	push	dx
+	push	ax
+只因为没有预处理。
+
+u盘的磁道为32，在加载asm32时，在内存中会将asm16覆盖掉，不过此时asm16已经没有存在的价值了。
+
+Disk geometry parameters for target USB disk:
+	Cylinders = 7
+	MediaType = 11
+	TracksPerCylinder = 255
+	SectorsPerTrack = 63
+	BytesPerSector = 512
+
+增加了fat32程序，支持文件系统。
+turbo c不支持//注释方式，只支持/**/注释方式。
+
+制作u盘文件系统时，使用winimage录制了朗科u盘的镜像，烧到apacer上，windows不能识别，认为需要重新格式化。
+因此，对于每个u盘都需要亲自录制镜像，然后在镜像的基础上修改。
+使用usbboot可以生成32扇区为一磁道的格式，这样比较方便。
+flashboot只能生成63扇区为一磁道的格式。
+
+lib.c中包含的打印函数支持可重入。因为所有模块都要用。
+fat32.c这个模块要使用，自己封装，封装后的函数可以不可重入，因为只有自己的模块使用。
+
+修改了内存结构安排，导致堆栈段变化。
+错误的把20000H的堆栈设置成了ss:2000H，sp:0000H，在段页式的内存结构中，在一个段内，会产生环回。
+2000H:0000H减一，会变成2000H:ffffH，而不是1fffH:000fH或者1000H:ffffH。
+如果一直在减少会逐步从2000H:ffffH变成2000H:0000H。
+应该是ss:1000H，sp:0ffeH。
+找到不能返回内核进程的原因了。
+      sp_over:
+        push     DGROUP:_temp_reg_sp
+        push     DGROUP:_temp_reg_ss
+        push     ax
+        push     cx
+        push     dx
+        push     bx
+        push     bp
+        push     si
+        push     di
+        push     ds
+        push     es
+        ;int_stack
+        mov      ss,word ptr DGROUP:_temp_reg_ss
+        mov      sp,word ptr DGROUP:_temp_reg_sp
+        ;scheule
+        call     far ptr _time_int_func
+        ;point to new pt.reg
+        mov      sp,word ptr DGROUP:_sche_stack
+        mov      ss,word ptr DGROUP:_sche_stack+2
+        ;fresh
+        pop      es
+        pop      ds
+        pop      di
+        pop      si
+        pop      bp
+        pop      bx
+        pop      dx
+        pop      cx
+        pop      ax
+
+        pop      ss ;ss not change must.
+        pop      sp ;point to stack
+
+        ;send eoi
+        mov      al,020H
+        mov      dx,020H
+        out      dx,al
+
+        iret
+应为修改了堆栈指针，导致堆栈段和tss段不在一个16位段中。
+因此，在进行pop ss时，ss为0x1000，而继续pop sp时，仍然想从tss那段内存中更新sp，但tss的内存段为0，而此时因为ss已经变成0x1000了。
+因此，pop出来的sp就是一个错误值了。
+看这个注释：;ss not change must.!!!
+
+为了支持不同的段，修改如下：
+;fresh
+        pop      es
+        pop      ds
+        pop      di
+        pop      si
+        pop      bp
+        pop      bx
+        pop      dx
+        pop      cx
+        pop      ax
+        pop      DGROUP:_temp_reg_ss
+	pop      DGROUP:_temp_reg_sp
+
+	mov      _temp_reg,ax
+	mov      ax,word ptr DGROUP:_temp_reg_ss
+	mov      ss,ax
+	mov      ax,word ptr DGROUP:_temp_reg_sp
+        mov      sp,ax
+	mov      ax,_temp_reg

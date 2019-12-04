@@ -1,0 +1,10 @@
+ALL:
+   cos16.obj
+   int.obj
+   pm.obj
+   main.obj
+   rmho.obj
+   load.obj
+   lib.obj
+MAIN: 0 4000 0
+   *

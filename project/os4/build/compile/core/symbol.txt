@@ -1,0 +1,1 @@
+..\..\..\..\..\tools\Dev-Cpp\bin\nm -f posix core.o 

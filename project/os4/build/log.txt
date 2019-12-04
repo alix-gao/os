@@ -1,0 +1,342 @@
+
+set option...
+
+compile vs...
+link...
+
+
+
+delete object...
+
+compile core...
+
+copy file...
+apic.o
+bmp.o
+break.o
+croutine.o
+desktop.o
+disk.o
+dump.o
+ehci.o
+exception.o
+fat32.o
+font.o
+harddisk.o
+hid.o
+i386.o
+image.o
+init.o
+interrupt.o
+isr.o
+kdm.o
+keyboard.o
+kit.o
+klm.o
+kpm.o
+ksm.o
+lapic.o
+mass_storage.o
+message.o
+mouse.o
+mutex.o
+ohci.o
+paint.o
+panic.o
+pci.o
+pic.o
+pit.o
+print.o
+ps2_mouse.o
+rtc.o
+rwlock.o
+semaphore.o
+spinlock.o
+task.o
+timer.o
+trace.o
+trap.o
+uhci.o
+usb.o
+usb_hub.o
+vbe.o
+vds.o
+vesa_get.o
+vesa_set.o
+vesa_vb.o
+vfs.o
+vga_bios.o
+vga_paint.o
+vvs.o
+watchdog.o
+window.o
+xhci.o
+已复制        60 个文件。
+
+delete file...
+
+packing
+..\..\..\..\..\tools\Dev-Cpp\bin\ar -cvq  object\*.o
+
+make_symbol
+..\..\..\..\..\tools\Dev-Cpp\bin\gcc -c symbol.c
+
+call project.bat wn823n
+delete object...
+
+compile driver...
+wn725n driver
+
+copy file...
+custom_gpio_linux.o
+Hal8188EPwrSeq.o
+Hal8188ERateAdaptive.o
+HalBtc8188c2Ant.o
+HalBtc8192d2Ant.o
+HalBtc8192e1Ant.o
+HalBtc8192e2Ant.o
+HalBtc8723a1Ant.o
+HalBtc8723a2Ant.o
+HalBtc8723b1Ant.o
+HalBtc8723b2Ant.o
+HalBtc8812a1Ant.o
+HalBtc8812a2Ant.o
+HalBtc8821a1Ant.o
+HalBtc8821a2Ant.o
+HalHWImg8188E_BB.o
+HalHWImg8188E_FW.o
+HalHWImg8188E_MAC.o
+HalHWImg8188E_RF.o
+HalPhyRf.o
+HalPhyRf_8188e.o
+HalPwrSeqCmd.o
+hal_btcoex.o
+hal_com.o
+hal_com_phycfg.o
+hal_intf.o
+hal_phy.o
+hal_usb.o
+hal_usb_led.o
+i82579.o
+ioctl_cfg80211.o
+ioctl_linux.o
+mlme_linux.o
+odm.o
+odm_AntDiv.o
+odm_debug.o
+odm_HWConfig.o
+odm_interface.o
+odm_RegConfig8188E.o
+odm_RTL8188E.o
+osdep_service.o
+os_intfs.o
+PhyDM_Adaptivity.o
+platform_ops.o
+recv_linux.o
+rtl8139.o
+rtl8188eu_led.o
+rtl8188eu_recv.o
+rtl8188eu_xmit.o
+rtl8188e_cmd.o
+rtl8188e_dm.o
+rtl8188e_hal_init.o
+rtl8188e_mp.o
+rtl8188e_phycfg.o
+rtl8188e_rf6052.o
+rtl8188e_rxdesc.o
+rtl8188e_sreset.o
+rtl8188e_xmit.o
+rtw_android.o
+rtw_ap.o
+rtw_beamforming.o
+rtw_br_ext.o
+rtw_btcoex.o
+rtw_bt_mp.o
+rtw_cmd.o
+rtw_debug.o
+rtw_eeprom.o
+rtw_efuse.o
+rtw_ieee80211.o
+rtw_io.o
+rtw_ioctl_query.o
+rtw_ioctl_rtl.o
+rtw_ioctl_set.o
+rtw_iol.o
+rtw_mlme.o
+rtw_mlme_ext.o
+rtw_mp.o
+rtw_mp_ioctl.o
+rtw_odm.o
+rtw_p2p.o
+rtw_proc.o
+rtw_pwrctrl.o
+rtw_recv.o
+rtw_rf.o
+rtw_security.o
+rtw_sreset.o
+rtw_sta_mgt.o
+rtw_tdls.o
+rtw_vht.o
+rtw_wapi.o
+rtw_wapi_sms4.o
+rtw_wlan_util.o
+rtw_xmit.o
+usb_dev_cfg.o
+usb_halinit.o
+usb_intf.o
+usb_ops_cvs.o
+usb_ops_linux.o
+wifi_regd.o
+xmit_linux.o
+已复制       100 个文件。
+
+delete file...
+
+packing
+..\..\..\..\..\tools\Dev-Cpp\bin\ar -cvq  object\*.o
+
+
+set option...
+
+delete object...
+
+compile ...
+
+copy file...
+cstring.o
+library.o
+list.o
+math.o
+memory.o
+sbuffer.o
+stdio.o
+已复制         7 个文件。
+
+delete file...
+
+link...
+
+
+delete object...
+
+compile network...
+
+copy file...
+aes-internal-dec.o
+aes-internal.o
+aes-unwrap.o
+arp.o
+config.o
+eapol_supp.o
+eth_interface.o
+icmp.o
+ip_layer.o
+md5-internal.o
+md5.o
+net.o
+rc4.o
+sha1-internal.o
+sha1-pbkdf2.o
+sha1.o
+wpa_common.o
+wpa_ie.o
+已复制        18 个文件。
+
+delete file...
+
+packing
+..\..\..\..\..\tools\Dev-Cpp\bin\ar -cvq common.lib object\*.o
+
+
+
+compile shell...
+link...
+set color
+COLOR a7
+
+set option...
+
+delete file...
+
+link...
+..\..\..\tools\Dev-Cpp\bin\gcc -Wall -fPIC -Wl,-E -Wl,-Map,map.txt -Wl,-Bstatic -Wl,--no-gc-sections -Ttext  cvs.lds -o os4.exe -Wl,--start-group compile\boot\boot.obj compile\core\core.o compile\libc\common.lib compile\shell\shell.obj -Wl,--end-group
+io delay ...
+
+section num: 15
+section: .dummy
+virtualaddress: 1000000
+sizeofrawdata: 200
+*pointertorawdata: 600
+section .dummy has been writen ...
+section: .boot
+virtualaddress: 1000290
+sizeofrawdata: 200
+*pointertorawdata: 890
+section .boot has been writen ...
+section: .text
+virtualaddress: 1001000
+sizeofrawdata: c1a00
+*pointertorawdata: c00
+section .text has been writen ...
+section: .data
+virtualaddress: 10c3000
+sizeofrawdata: 1be00
+*pointertorawdata: c2600
+section .data has been writen ...
+section: .rdata
+virtualaddress: 10df000
+sizeofrawdata: 2c400
+*pointertorawdata: de400
+section .rdata has been writen ...
+section: .bss
+virtualaddress: 110c000
+sizeofrawdata: 0
+*pointertorawdata: 0
+section .bss has been writen ...
+section: .idata
+virtualaddress: 15c2000
+sizeofrawdata: 400
+*pointertorawdata: 10a800
+section .idata has been writen ...
+section: .bios
+virtualaddress: 15d0000
+sizeofrawdata: 1000
+*pointertorawdata: 10ac00
+section .bios has been writen ...
+section: .ainit
+virtualaddress: 15d0e18
+sizeofrawdata: 200
+*pointertorawdata: 10bc18
+section .ainit has been writen ...
+section: .binit
+virtualaddress: 15d0e20
+sizeofrawdata: 200
+*pointertorawdata: 10be20
+section .binit has been writen ...
+section: .dinit
+virtualaddress: 15d0e38
+sizeofrawdata: 200
+*pointertorawdata: 10c038
+section .dinit has been writen ...
+section: .minit
+virtualaddress: 15d0e50
+sizeofrawdata: 200
+*pointertorawdata: 10c250
+section .minit has been writen ...
+section: /4
+virtualaddress: 15d0e60
+sizeofrawdata: 200
+*pointertorawdata: 10c460
+section /4 has been writen ...
+section: /17
+virtualaddress: 15d0e70
+sizeofrawdata: 200
+*pointertorawdata: 10c670
+section /17 has been writen ...
+section: /27
+virtualaddress: 15d0e78
+sizeofrawdata: 200
+*pointertorawdata: 10c878
+section /27 has been writen ...
+
+tool\symbol.exe

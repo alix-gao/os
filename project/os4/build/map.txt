@@ -1,0 +1,3065 @@
+Archive member included because of file (symbol)
+
+compile\libc\common.lib(stdio.o)
+                              compile\boot\boot.obj (register_print)
+compile\libc\common.lib(cstring.o)
+                              compile\core\core.o (compare_string)
+compile\libc\common.lib(memory.o)
+                              compile\core\core.o (copy_mem)
+compile\libc\common.lib(sbuffer.o)
+                              compile\core\core.o (create_sbuffer)
+compile\libc\common.lib(library.o)
+                              compile\core\core.o (_dump_stack)
+compile\libc\common.lib(math.o)
+                              compile\core\core.o (power_of_2)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(CRTglob.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_CRT_glob)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(CRTfmode.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_CRT_fmode)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(txtmode.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_fmode)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(pseudo-reloc.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_pei386_runtime_relocator)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(CRT_fp10.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_fpreset)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(gccmain.o)
+                              compile\boot\boot.obj (__main)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(pseudo-reloc-list.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(pseudo-reloc.o) (__RUNTIME_PSEUDO_RELOC_LIST__)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/crtbegin.o (__w32_sharedptr_initialize)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_umoddi3.o)
+                              compile\driver\driver.o (__umoddi3)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_udivdi3.o)
+                              compile\driver\driver.o (__udivdi3)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_ctors.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(gccmain.o) (__CTOR_LIST__)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_eprintf.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o) (__eprintf)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00233.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_imp___iob)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00080.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_imp____set_app_type)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00540.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_imp__atexit)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00350.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_imp___onexit)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00121.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_cexit)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00060.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (__p__environ)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00656.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (signal)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00062.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (__p__fmode)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00388.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (_setmode)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00039.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (__getmainargs)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00662.o)
+                              compile\driver\driver.o (sscanf)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00575.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o) (free)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00626.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o) (malloc)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00533.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o) (abort)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00560.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_eprintf.o) (fflush)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00569.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_eprintf.o) (fprintf)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxh.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00233.o) (_head_libmsvcrt_a)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxt.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxh.o) (_libmsvcrt_a_iname)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00735.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (SetUnhandledExceptionFilter@4)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00155.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o (ExitProcess@4)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00220.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o) (_imp__GetAtomNameA@12)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00175.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o) (_imp__FindAtomA@4)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00001.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o) (_imp__AddAtomA@4)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbh.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00735.o) (_head_libkernel32_a)
+../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbt.o)
+                              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbh.o) (_libkernel32_a_iname)
+
+Allocating common symbols
+Common symbol       size              file
+
+__DTOR_LIST__       0x10              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_ctors.o)
+__packed            0x10              compile\driver\driver.o
+__w32_sharedptr_terminate
+                    0x10              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+g_itf_ip_list       0x20              compile\net\net.o
+vbe_init_ljmp_16_ram
+                    0x10              compile\core\core.o
+security_ie         0x100             compile\net\net.o
+g_ping_task         0x20              compile\net\net.o
+security_ie_len     0x10              compile\net\net.o
+BTEfuseContent      0x600             compile\driver\driver.o
+temp                0x100             compile\core\core.o
+g_icmp_reply_fuc_list
+                    0x20              compile\net\net.o
+fakeBTEfuseContent  0x600             compile\driver\driver.o
+vbe_entry_ljmp_16_ram
+                    0x10              compile\core\core.o
+__w32_sharedptr     0x10              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+wpa_cfg             0x20              compile\net\net.o
+__CTOR_LIST__       0x10              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_ctors.o)
+__w32_sharedptr_unexpected
+                    0x10              ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+g_arpTable          0x1c00            compile\net\net.o
+g_eth_phydev_list   0x178050          compile\net\net.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00400000                __image_base__ = 0x400000
+                0x00000000                __dll__ = 0x0
+                0x00001000                __section_alignment__ = 0x1000
+                0x00000200                __file_alignment__ = 0x200
+                0x00000004                __major_os_version__ = 0x4
+                0x00000000                __minor_os_version__ = 0x0
+                0x00000001                __major_image_version__ = 0x1
+                0x00000000                __minor_image_version__ = 0x0
+                0x00000004                __major_subsystem_version__ = 0x4
+                0x00000000                __minor_subsystem_version__ = 0x0
+                0x00000003                __subsystem__ = 0x3
+                0x00200000                __size_of_stack_reserve__ = 0x200000
+                0x00001000                __size_of_stack_commit__ = 0x1000
+                0x00100000                __size_of_heap_reserve__ = 0x100000
+                0x00001000                __size_of_heap_commit__ = 0x1000
+                0x00000000                __loader_flags__ = 0x0
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/crtbegin.o
+START GROUP
+LOAD compile\boot\boot.obj
+LOAD compile\core\core.o
+LOAD compile\libc\common.lib
+LOAD compile\shell\shell.obj
+LOAD compile\net\net.o
+LOAD compile\driver\driver.o
+END GROUP
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmoldname.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingwex.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libuser32.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libadvapi32.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libshell32.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmoldname.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingwex.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a
+LOAD ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/crtend.o
+
+.dummy          0x01000000      0x200
+ *(.dummy)
+ .dummy         0x01000000        0x8 compile\boot\boot.obj
+                0x01000000                dummy
+
+.boot           0x01000290      0x200
+ *(.boot)
+ .boot          0x01000290       0x24 compile\boot\boot.obj
+                0x01000290                main
+ *(.boot.startup)
+ .boot.startup  0x010002b4       0x74 compile\boot\boot.obj
+                0x010002b4                version
+                0x0100030f                os_main
+                0x010002d8                get_end_section_addr
+ *(.boot.data)
+ .boot.data     0x01000328        0x4 compile\boot\boot.obj
+
+.text           0x01001000    0xc1a00
+ *(.init)
+ *(.text)
+ .text          0x01001000      0x280 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o
+                0x01001240                WinMainCRTStartup
+                0x01001220                mainCRTStartup
+                0x01001260                atexit
+                0x01001270                _onexit
+ .text          0x01001280       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/crtbegin.o
+                0x01001280                __do_sjlj_init
+ .text          0x01001290       0x40 compile\boot\boot.obj
+                0x01001290                callee
+                0x010012a4                caller
+ .text          0x010012d0    0x22d40 compile\core\core.o
+                0x01018745                win_backspace@4
+                0x01020a28                add_usb_int_pipe
+                0x01015f72                midpoint
+                0x0101ec6c                divide_error
+                0x0100326f                write_file@12
+                0x01017d4e                get_ivt_func
+                0x0101ada2                spin_lock@4
+                0x010209ab                recv_usb_bulk_data
+                0x01023097                current_bpp@0
+                0x01016a20                panic
+                0x0101ecba                stack_segment
+                0x01021fce                init_vbe
+                0x010230a3                current_resolution@0
+                0x01016281                win_draw_line
+                0x01023f98                modify_current_window_handle@4
+                0x0101ec92                bounds
+                0x0101d4c7                create_toolhelp32snapshot@4
+                0x0101ec0d                trace_hex_info
+                0x0100c060                print_asc
+                0x01012666                post_thread_msg@8
+                0x010230b6                clear_screen
+                0x0101c376                get_task_id
+                0x0100f946                read_klm@16
+                0x01002afd                set_disk_device_id
+                0x01010c13                alloc_ksm_absv
+                0x0100f08d                init_kdm
+                0x01023bf3                create_ui_task@12
+                0x01020c24                usb_config_desc
+                0x01002e32                create_file@8
+                0x0101283d                get_dest_hwindow
+                0x010180ab                delay_ms
+                0x010230f0                dog_event
+                0x01023b19                dispatch_msg@4
+                0x0101f8f1                usb_endpoint_proportion
+                0x0100e71d                check_data
+                0x01002af0                curr_disk_device_id
+                0x0101791d                out_pci_reg
+                0x01016f06                get_pci_dev_bar
+                0x01002b1d                get_disk_device
+                0x0100ef53                free_kdm@8
+                0x01019391                set_rtc_callback@16
+                0x01018c50                dump_log_file
+                0x0100e824                irq2_int
+                0x0101df8d                active_loader
+                0x01017bb0                close_pic
+                0x01002114                uninstall_debugger@4
+                0x01023cd4                open_hdc@4
+                0x0100e1eb                modify_16code_read_descriptor
+                0x0100f400                create_klm@8
+                0x0100d962                enable_cache
+                0x0101dc8e                line_task
+                0x01023579                show_window@4
+                0x0101e91a                kill_timer@4
+                0x0101ec31                stop_trace
+                0x01004207                dump_all_events
+                0x0101c493                exit_task@0
+                0x010012d0                get_lapic_start_vector
+                0x01012c80                create_critical_section@8
+                0x0101e390                set_timer_callback@16
+                0x010168f5                read_screen@16
+                0x01017d22                register_interrupt_func
+                0x01010c8e                init_ksm
+                0x0101ec98                invalid_op
+                0x0101d499                fresh_snapshot
+                0x0100e754                init_ukernel
+                0x0100f547                add_klm@12
+                0x01003f47                register_disk
+                0x01003502                change_working_dir@8
+                0x0101ecae                invalid_tss
+                0x0101b2bc                ready_task@8
+                0x01017c1d                wrap_int
+                0x0100e15a                uninstall_lapic_int@4
+                0x010172d0                disable_pci_int
+                0x010129aa                init_idle_station
+                0x01019f5c                write_lock@4
+                0x0100d4a9                get_core_id@0
+                0x0101c39d                get_task_name
+                0x0102251f                set_vesa_graphics_mode
+                0x0100f731                write_klm@16
+                0x010191f8                init_ps2_mouse
+                0x0101eca8                coprocessor_segment_overrun
+                0x01012ce4                leave_critical_section@4
+                0x0101eceb                machine_check
+                0x010030c2                close_file@4
+                0x0101abb2                wait_mevent@8
+                0x0100e84e                irq3_int
+                0x01001f4a                set_bp@16
+                0x0100d977                disable_cache
+                0x01015e14                draw_line
+                0x0101bbb7                suspend_task@8
+                0x0101ec72                debug
+                0x01019f08                read_unlock@4
+                0x0101641b                win_draw_rect
+                0x0100e280                init_image
+                0x0101ecc9                page_fault
+                0x0101cd20                delay_function
+                0x01017ff2                get_thread_tick
+                0x01023fb9                get_msgproc@4
+                0x0100e878                irq4_int
+                0x01002f80                list_file@4
+                0x010203bb                enum_usb_device
+                0x0101ebe9                trace_str_info
+                0x010041b0                record_event
+                0x0101b1f9                lock_schedule@0
+                0x010223ab                show_vesa_mode_info
+                0x010181b7                delay_us
+                0x0101c2c7                get_task_ldt
+                0x0101ebdf                trace_is_ok
+                0x0101ec8c                overflow
+                0x0100301b                open_file@8
+                0x0100e8cc                irq6_int
+                0x0101ecd2                reserved
+                0x01022080                read_device
+                0x01017f88                pit_thread@28
+                0x010187bd                reset_cursor
+                0x01010cb9                ksm_base
+                0x01001fcf                clear_bp@4
+                0x0100d912                phys_to_virt@4
+                0x01022030                alloc_device_id
+                0x01022043                register_device
+                0x0100d98c                _x86_switch_task
+                0x010039ec                test_write
+                0x0101994b                kill_rtc@4
+                0x01001d12                int3_handle
+                0x01022cc0                vga_write_pix
+                0x0100e7d0                system_timer_int
+                0x0100d93e                virt_is_abs@4
+                0x01019fd7                write_unlock@4
+                0x01019764                modify_rtc@8
+                0x0101a783                destroy_event_handle@4
+                0x0101276f                broadcast_msg@4
+                0x01022af9                check_disk_spec_fs
+                0x010031b2                read_file@12
+                0x01012250                init_bmmcb
+                0x01022b6c                register_fs
+                0x0101dcfe                verify_htask
+                0x0101295a                init_task_station
+                0x01017df5                init_pic
+                0x01016f99                get_pci_dev_cmd
+                0x0101eca4                double_fault
+                0x01010bf0                alloc_ksm
+                0x01018a5a                vprint_buffer
+                0x010099de                trap_wrap_handle@8
+                0x0101ecb4                segment_not_present
+                0x01002c9e                write_disk@16
+                0x0100c222                init_harddisk_int
+                0x0101a8c8                wait_event@8
+                0x0100425e                register_dump
+                0x01010140                alloc_coherent_mem@12
+                0x0101ab0b                notify_mevent@8
+                0x01017beb                open_pic
+                0x010038d4                test_write_ex
+                0x01002ac5                set_desktop_resolution
+                0x0101c9b7                delay_task@8
+                0x0100d67e                system_pdbr
+                0x0101f66b                alloc_usb_device
+                0x01023f8e                get_current_window_handle@0
+                0x0101b25b                unlock_schedule@0
+                0x010207e3                free_usb_addr
+                0x0102379a                init_window_class
+                0x01010d4e                lapic_lint1_int
+                0x0101e763                modify_timer@8
+                0x01020bd3                usb_device_desc
+                0x0101c4ad                destroy_task@4
+                0x01023963                init_idle_window_rc
+                0x0102209e                update_device_parameters
+                0x010169f7                init_paint
+                0x01012a74                free_task_station
+                0x01019e9b                read_lock@4
+                0x01023ad8                get_message@4
+                0x0101ae38                spin_unlock@4
+                0x0100e99e                irq11_int
+                0x010189ab                kprint
+                0x0101d528                get_process32next@4
+                0x010187b8                eraser
+                0x01017146                enable_pci_int
+                0x0101ec80                nmi
+                0x01003ca7                test_read
+                0x0101fe87                register_usb_driver
+                0x01023624                repaint_window@4
+                0x0100e3a5                unregister_image
+                0x0100e974                irq10_int
+                0x0100f3f0                init_kit
+                0x010029e2                init_desktop_task
+                0x0101aa8b                query_event@8
+                0x0100e94a                irq9_int
+                0x0101fdc8                find_usb_device
+                0x01017c13                get_pic_start_vector
+                0x0100ff75                test_klm
+                0x0100dfb4                uninstall_int@4
+                0x01022fe0                open_graphics_mode@4
+                0x0100dbbe                init_task_gdt
+                0x0102092e                send_usb_bulk_data
+                0x01017f00                system_tick
+                0x0101c5ad                modify_entity_station
+                0x0101ea79                timer_function
+                0x01022c47                init_vga_graphics_mode
+                0x0100e920                real_time_clock_int
+                0x01018039                os_set_timer_channel0
+                0x0101aac5                create_mevent@12
+                0x01018c8b                flog
+                0x01002a79                get_desktop_window@0
+                0x01003670                test_load
+                0x01023e0f                set_window_length@8
+                0x0101a1fc                init_semaphore
+                0x01023df9                get_window_length@4
+                0x01023ec0                destroy_window@4
+                0x01010cfa                lapic_cmci_int
+                0x0102208a                list_device
+                0x0100d490                get_pc_thunk@0
+                0x010042ce                dump
+                0x010218cb                create_hub_monitor
+                0x010236ec                update_window@4
+                0x0102207b                close_device
+                0x010124e0                post_msg@8
+                0x01010dcc                lapic_ts_int
+                0x0101cfbc                dump_task_stack_wl
+                0x0101678e                win_clear_screen@4
+                0x01023cab                get_window_attr@4
+                0x0101f783                free_usb_device
+                0x0100e6fd                save_data
+                0x0101ecdb                x87_fpu_floating_point_error
+                0x01001351                wrap_lapic_int
+                0x01009a96                init_trap
+                0x01018015                bios_rst_timer_channel0
+                0x0100df32                install_int@12
+                0x01002c03                read_disk@16
+                0x01018fe1                init_print
+                0x010167f5                paint_icon@16
+                0x0100e597                show_image@12
+                0x0100ee38                alloc_kdm@16
+                0x010228b6                vesa_24bpp_read_pix
+                0x0100ea1c                harddisk_int
+                0x0102291c                vesa_32bpp_write_pix
+                0x0102204d                open_device@4
+                0x010123ba                alloc_msg@4
+                0x0101954e                set_rtc_msg@16
+                0x0101a7a1                notify_event@8
+                0x01012b40                paint_mouse
+                0x0100e8f6                irq7_int
+                0x0101ece4                alignment_check
+                0x0101c672                get_task_station
+                0x0101277b                receive_msg
+                0x01015d10                draw_rect
+                0x0100fe53                destroy_klm@4
+                0x01001325                register_lapic_func
+                0x01018c2c                ascii
+                0x01020c7c                usb_interface_info
+                0x01022729                vesa_16bpp_write_pix
+                0x01023fe4                register_hook@4
+                0x01022981                vesa_32bpp_read_pix
+                0x01001392                close_lapic_int@4
+                0x0100e1b6                modify_16code_descriptor
+                0x01009990                register_trap
+                0x0101aae8                destroy_mevent@4
+                0x0101bee3                modify_task_priority@8
+                0x0100ea46                irq15_int
+                0x0100dad9                init_ldt
+                0x010035b9                open_dir@8
+                0x01017ac8                close_pic_int@4
+                0x0100c0e0                read_harddisk
+                0x0101c410                current_task_handle@0
+                0x0101c1b1                get_task_status@4
+                0x0101ebd0                start_trace
+                0x01016594                win_draw_curve
+                0x0101a756                create_event_handle@12
+                0x0101c13b                get_task_priority@4
+                0x01002053                init_debugger
+                0x01020b34                set_usb_dedicated
+                0x010012da                get_lvt_func
+                0x01010d78                lapic_error_int
+                0x0100e255                init_processor
+                0x01019e40                init_rw_lock@4
+                0x0100ea70                install_intw
+                0x010179e0                open_pic_int@4
+                0x01002d39                update_disk_fs
+                0x01010cd0                lapic_timer_int
+                0x0100d4b3                get_cpu_id@0
+                0x01010a25                init_kpm
+                0x010103eb                free_coherent_mem@8
+                0x01001492                init_apic
+                0x01012d04                destroy_critical_section@4
+                0x0100435b                init_dump
+                0x010238bc                create_window@4
+                0x0100e9c8                ps2_mouse
+                0x0100e0d8                install_lapic_int@12
+                0x01020803                recv_usb_control_data
+                0x0101671e                win_eraser@20
+                0x0101c8da                create_task@40
+                0x0100332c                size_of_file@4
+                0x01022836                vesa_24bpp_write_pix
+                0x0101d574                init_task
+                0x01023a00                register_window_class@4
+                0x010177e1                get_pci_dedicated
+                0x01023933                lookup_handle_by_app_name@4
+                0x01017864                in_pci_reg
+                0x0100d8d9                virt_to_phys@4
+                0x0101e70a                timer_left@4
+                0x01020aca                del_usb_int_pipe
+                0x01019bfd                set_rtc_thread_msg@16
+                0x010231a6                init_watch_dog
+                0x0102061d                unenum_usb_device
+                0x0101d517                destroy_toolhelp32snapshot@4
+                0x01019d16                init_rtc_int
+                0x01022d8d                vga_read_pix
+                0x01012475                free_msg@4
+                0x01023800                init_window_handle_tab
+                0x01022e6e                vga_read_mode_0
+                0x0101616b                win_write_pix
+                0x01018c18                direct_log_file@4
+                0x0100d4bd                alloc_gdt_item
+                0x01023dc8                set_window_width@8
+                0x01020b85                get_usb_dedicated
+                0x01023a8c                register_static_window_class@4
+                0x01023e40                close_hdc@8
+                0x01023db2                get_window_width@4
+                0x01022085                write_device
+                0x010020b0                install_debugger@8
+                0x0101b5cb                pend_task@8
+                0x0101e7e5                reset_timer@4
+                0x0101ecc0                general_protection
+                0x0102217d                choose_vesa_mode
+                0x01002ed9                delete_file@8
+                0x0100373b                test_edit
+                0x0101e02c                init_core_task
+                0x0101ecf4                simd_floating_point_exception
+                0x0100fc55                klm_addr@12
+                0x0100f4f2                klm_size@4
+                0x0100f3a8                init_keyboard_int
+                0x010129f5                active_task_station@4
+                0x0101e54d                set_timer_msg@16
+                0x01017759                set_pci_dedicated
+                0x01015fa2                draw_curve
+                0x0100e220                modify_16data_descriptor
+                0x0100d764                amap@12
+                0x0100e060                uninstall_trap@4
+                0x0100e7fa                keyboard_int
+                0x010160c3                draw_point
+                0x0101a030                check_sem
+                0x010025dc                send_mouse_msg
+                0x01016e22                enable_pci_dma
+                0x01020898                send_usb_control_data
+                0x0101ec9e                device_not_available
+                0x0101ad50                init_spinlock@4
+                0x01022620                init_vesa_paint
+                0x01022a94                unmount_disk_fs
+                0x01012cc4                enter_critical_section@4
+                0x0101744b                register_pci_driver
+                0x01018d56                wtflog
+                0x01001d71                int1_handle
+                0x01022a1e                mount_disk_fs
+                0x01010da2                lapic_pmc_int
+                0x0100ee1b                show_kdm_num
+                0x0100d9a9                init_tss
+                0x0101d041                dump_task_pc
+                0x01017659                init_pci
+                0x0101820a                init_pit_int
+                0x0101ec86                int3
+                0x0101b8a4                resume_task@8
+                0x0101b058                schedule@0
+                0x01012426                alloc_timer_msg@0
+                0x0100e9f2                irq13_int
+                0x01023ecc                free_window_resource
+                0x0101e291                init_timer
+                0x0100e2ab                register_image
+                0x0100e010                install_trap@8
+                0x0100403b                unregister_disk
+                0x010227b5                vesa_16bpp_read_pix
+                0x0101f7c4                usb_endpoint_mps
+                0x01003472                end_of_file@4
+                0x01022f43                vga_write_mode_2
+                0x010033bc                seek_file@12
+                0x01002b36                query_disk
+                0x0101970b                rtc_left@4
+                0x0100138b                open_lapic_int@4
+                0x0100e8a2                irq5_int
+                0x01020cca                usb_device_speed
+                0x0100fb5b                loop_klm@12
+                0x01010caf                get_current_ksm
+                0x01020798                alloc_usb_addr
+                0x010125f0                send_msg@8
+                0x010197e6                reset_rtc@4
+                0x01010d24                lapic_lint0_int
+ .text          0x01024010      0x3e0 compile\libc\common.lib(stdio.o)
+                0x01024010                show_text
+                0x01024380                snprintf
+                0x01024050                register_print
+                0x01024130                snprint
+                0x01024060                print
+                0x010243b0                printf
+ .text          0x010243f0      0x580 compile\libc\common.lib(cstring.o)
+                0x01024510                copy_n_string
+                0x010248e0                strcat
+                0x010248b0                strcmp
+                0x010244d0                string_max_length
+                0x01024830                strnlen
+                0x01024910                strncat
+                0x01024690                kmp_next
+                0x01024600                split_string
+                0x010244b0                string_length
+                0x010247e0                strncpy
+                0x010243f0                compare_string
+                0x01024720                kmp
+                0x01024440                lookup_string
+                0x01024550                string_to_num
+                0x010247c0                strcpy
+                0x010244f0                copy_string
+                0x01024860                strncmp
+                0x01024810                strlen
+ .text          0x01024970      0x280 compile\libc\common.lib(memory.o)
+                0x01024a60                write_be_u32
+                0x01024ae0                memcpy
+                0x01024b60                memset
+                0x01024970                copy_mem
+                0x01024b80                memcmp
+                0x010249f0                set_mem
+                0x01024a90                write_be_u16
+                0x01024ab0                read_be_u32
+                0x01024b10                memmove
+                0x01024a20                cmp_mem
+                0x010249a0                move_mem
+ .text          0x01024bf0      0x2a0 compile\libc\common.lib(sbuffer.o)
+                0x01024cf0                sbuffer_full
+                0x01024d80                pop_sbuffer
+                0x01024cc0                sbuffer_empty
+                0x01024d20                push_sbuffer
+                0x01024bf0                create_sbuffer
+                0x01024c90                destroy_sbuffer
+                0x01024de0                sbuffer_example
+ .text          0x01024e90       0xa0 compile\libc\common.lib(library.o)
+                0x01024e90                _dump_stack
+                0x01024f10                dump_stack
+ .text          0x01024f30       0x20 compile\libc\common.lib(math.o)
+                0x01024f30                power_of_2
+ .text          0x01024f50     0x1500 compile\shell\shell.obj
+                0x01025fd8                track_broken_mem
+                0x0102595b                register_cmd
+                0x010259ee                unregister_cmd
+ .text          0x01026450     0x8e60 compile\net\net.o
+                0x0102b160                md5_vector
+                0x0102e6e0                wpa_cipher_txt
+                0x0102af73                IP_AddLocalIPAddr
+                0x01026a4b                aes_decrypt_deinit
+                0x01026a90                rijndaelKeySetupEnc
+                0x0102e85e                wpa_bss_get_ie
+                0x01026a2a                aes_decrypt
+                0x01029b81                Eth_RegDevice
+                0x0102761a                add_static_arp_item
+                0x0102a684                ping_status
+                0x0102bc60                rc4_skip
+                0x0102d98e                sha1_prf
+                0x0102ea90                wpa_parse_wpa_ie
+                0x01028c99                recv_eapol
+                0x0102d3f8                SHA1Update
+                0x0102e372                wpa_parse_wpa_ie_wpa
+                0x01027bd0                eapol_sm_txStart
+                0x01027c7a                wpa_supplicant_send_2_of_4
+                0x0102d957                hmac_sha1
+                0x0102b058                IP_del_local_IPAddr
+                0x010278e3                recv_eapol_packet
+                0x01027c53                random_get_bytes
+                0x01027930                wpa_hexdump
+                0x0102ae26                IP_RecvPacket
+                0x0102ba20                hmac_md5_vector
+                0x0102a58e                ping
+                0x01029570                Eth_RecvMsgFromPhy
+                0x0102a758                str2ipv4
+                0x0102b2d2                MD5Final
+                0x0102debf                wpa_parse_wpa_ie_rsn
+                0x01029477                Eth_Init
+                0x0102bc00                process_packet
+                0x0102aab8                IP_SendPacket
+                0x0102a471                ICMP_RecvPacket
+                0x01027386                Arp_GetArpInfoByIPAddr
+                0x0102edf1                wpa_gen_wpa_ie
+                0x0102e8ba                gen_ie_by_parse_scan
+                0x0102bdc0                sha1_vector
+                0x010285f7                wpa_supplicant_send_4_of_4
+                0x0102b1f4                MD5Update
+                0x0102f027                wpa_supplicant_parse_ies
+                0x01027acb                wpa_eapol_key_send
+                0x01026559                aes_decrypt_init
+                0x010272a3                Arp_Init
+                0x0102d721                pbkdf2_sha1
+                0x0102a7fe                IP_Init
+                0x0102a439                ICMP_Init
+                0x0102e665                rsn_pmkid
+                0x0102e790                wpa_compare_rsn_ie
+                0x01026ba0                aes_unwrap
+                0x0102b1c3                MD5Init
+                0x01027825                create_dbg_wpa_dev
+                0x0102db29                wpa_pmk_to_ptk
+                0x0102e8a1                select_first_bitfield
+                0x010272fa                Arp_RecvPacket
+                0x0102e7f0                wpa_bss_get_vendor_ie
+                0x0102bbc7                hmac_md5
+                0x0102e723                wpa_key_mgmt_txt
+                0x01029d3b                Eth_DeRegDevice
+                0x0102d4c0                SHA1Final
+                0x01029e02                Eth_GetItfMacAddr
+                0x0102d3c0                SHA1Init
+                0x01026d63                RefreshArpTableInfo
+                0x010278de                init_eapol
+                0x0102da90                wpa_eapol_key_mic
+                0x010296c6                Eth_SendMsgToPhy
+                0x0102b0ea                get_ipv4_address
+                0x0102d7b0                hmac_sha1_vector
+                0x010273ec                Arp_SendPacket
+                0x0102a70e                ipCksum
+                0x0102be23                SHA1Transform
+                0x01026450                rijndaelKeySetupDec
+ .text          0x0102f2b0    0x92d20 compile\driver\driver.o
+                0x0106904b                rtw_lock_resume_scan_timeout
+                0x0107315a                Hal_ReadPowerSavingMode88E
+                0x01034b0f                PHY_ConvertTxPowerByRateInDbmToRelativeValuesOld
+                0x01092de2                OnAction_dls
+                0x010a3a8d                build_nego_resp_wfd_ie
+                0x0109d9a8                receive_disconnect
+                0x01068f73                rtw_sleep_schedulable
+                0x0108b5bf                rtw_find_same_network
+                0x010694d3                rtw_ndev_notifier_register
+                0x0106f053                AntDivCompare8188E
+                0x010b1bb6                sreset_restore_security_station
+                0x010b281a                rtw_free_stainfo
+                0x010a7016                p2p_ps_wk_cmd
+                0x010a746d                init_wifidirect_info
+                0x01092dec                OnAction_back
+                0x0105ff89                odm_RefreshBasicRateMask
+                0x01045a83                ODM_ReadAndConfig_MP_8188E_MAC_REG_ICUT
+                0x010a0e4a                rtw_chk_start_clnt_join
+                0x010acf17                recv_frame_monitor
+                0x01066055                ODM_SetBBReg
+                0x0106b463                Phydm_NHMCounterStatistics
+                0x0105e123                ODM_ChangeDynamicInitGainThresh
+                0x01031789                rtw_hal_networktype_to_raid
+                0x010646a9                ODM_Process_RSSIForAntDiv
+                0x01075d8f                PHY_UpdateTxPowerDbm8188E
+                0x010699f7                rtw_conn
+                0x010841f0                efuse_GetMaxSize
+                0x010bd5bc                hal_poweroff_8188eu
+                0x010c05da                rtl8188eu_recv_tasklet
+                0x0103265f                PHY_GetTxPowerByRateBase
+                0x01065a07                ODM_PhyStatusQuery_92CSeries
+                0x01065f81                ODM_Read4Byte
+                0x01030282                ODM_RAInfo_Init_all
+                0x01078a33                init_mlme_ap_info
+                0x010a1a95                rtw_odm_get_perpkt_rssi
+                0x010884fd                oid_rt_get_ap_ip_hdl
+                0x01091432                OnAssocReq
+                0x01060a18                odm_TXPowerTrackingCheckCE
+                0x0106785c                _netdev_open
+                0x0108eb27                rtw_init_registrypriv_dev_network
+                0x010419ff                SwLedControlMode8
+                0x0103825b                rtw_hal_mgnt_xmit
+                0x010603f5                odm_DynamicTxPower
+                0x01090bb0                OnAuth
+                0x0108171f                power_saving_wk_hdl
+                0x0103063d                ODM_RA_Set_TxRPT_Time
+                0x01061aaf                odm_PathDiversity
+                0x010b6dc5                _rtw_init_xmit_priv
+                0x010836f8                Efuse_Write1ByteToFakeContent
+                0x010a8230                PS_RDY_CHECK
+                0x0108681d                convert_ip_addr
+                0x010c1e60                _rtw_xmit_entry
+                0x01084f09                rtw_set_fixed_ie
+                0x01085c8f                rtw_get_sec_ie
+                0x01067ceb                rtw_ips_pwr_up
+                0x0107789e                rtl8188eu_init_xmit_priv
+                0x01082302                rtw_setstaKey_cmdrsp_callback
+                0x01069ab7                register_netdev
+                0x010a924a                rtw_init_recvframe
+                0x010a3905                build_nego_req_wfd_ie
+                0x0108a625                rtw_set_country
+                0x01037dba                rtw_hal_power_off
+                0x010900c6                mgt_dispatcher
+                0x01082f2d                down_clk
+                0x010a3d9d                build_invitation_req_wfd_ie
+                0x0106970e                rtw_drv_proc_init
+                0x010ad633                security_type_str
+                0x0107e80e                _rtw_init_evt_priv
+                0x010b1f0b                sreset_start_adapter
+                0x010361b6                PHY_GetTxPowerByRate
+                0x0105ce0c                rtw_os_indicate_disconnect
+                0x0108e108                rtw_set_auth
+                0x0107eff5                rtw_setstandby_cmd
+                0x01088055                _rtw_write_port_and_wait
+                0x0103802f                rtw_hal_set_odm_var
+                0x010693fa                iwe_stream_event_len_adjust
+                0x010770e6                _dbg_dump_tx_info
+                0x010a7848                rtw_p2p_enable
+                0x010b2f9b                rtw_get_bcmc_stainfo
+                0x010a9d4b                process_pwrbit_data
+                0x01075c5b                PHY_GetTxPowerIndex_8188E
+                0x010bb11c                dequeue_pending_xmitbuf_under_survey
+                0x010b3676                rtw_set_oper_bw
+                0x010b506d                rtw_check_bcn_info
+                0x010662b8                ODM_GetCurrentTime
+                0x010836b3                Efuse_Read1ByteFromFakeContent
+                0x010b382a                rtw_get_on_oper_ch_time
+                0x01032315                ParseQualifiedString
+                0x010a912a                rtw_mfree_recv_priv_lock
+                0x01067e0c                pm_netdev_open
+                0x010c1fa9                rtw_xmit_entry
+                0x01069380                copy_from_user
+                0x01030421                ODM_RA_GetDecisionRate_8188E
+                0x01084b60                EFUSE_ShadowMapUpdate
+                0x010b368a                rtw_get_oper_choffset
+                0x010324ee                linked_info_dump
+                0x010387bc                rtw_hal_notch_filter
+                0x0103869d                rtw_hal_sreset_reset
+                0x010b73c0                _rtw_free_xmit_priv
+                0x010383ea                rtw_hal_read_bbreg
+                0x0106d963                rtl8188e_set_FwPwrMode_cmd
+                0x010a11b3                rtw_odm_dbg_comp_msg
+                0x0108112a                rtw_lps_ctrl_wk_cmd
+                0x01092987                OnDisassoc
+                0x01068f99                rtw_usleep_os
+                0x010ad8bf                rtw_wep_encrypt
+                0x010a02b9                sitesurvey_cmd_hdl
+                0x0106ddfe                ConstructNullFunctionData
+                0x01066194                ODM_IsWorkItemScheduled
+                0x010a440b                build_probe_resp_p2p_ie
+                0x01077961                rtl8188e_fill_fake_txdesc
+                0x010b5d69                get_highest_rate_idx
+                0x0109f857                setopmode_hdl
+                0x0108274d                rf_reg_dump
+                0x01084c55                EFUSE_ShadowWrite
+                0x01068a2c                _rtw_mfree
+                0x01081bc5                c2h_evt_hdl
+                0x0105e344                ODM_Write_DIG
+                0x010b1a9d                sreset_reset_value
+                0x010a80ea                rtw_set_rpwm
+                0x0108b3f5                rtw_is_same_ibss
+                0x01062e60                odm_Set_RA_DM_ARFB_by_Noisy
+                0x01064933                odm_QueryRxPwrPercentage
+                0x01037991                Hal_ChannelPlanToRegulation
+                0x01038947                rtw_hal_c2h_id_filter_ccx
+                0x010381a3                rtw_hal_irp_reset
+                0x01065177                odm_RxPhyStatusJaguarSeries_Parsing
+                0x0108ec9a                rtw_joinbss_reset
+                0x010a89ec                rtw_set_ips_deny
+                0x0108bc6d                rtw_survey_event_callback
+                0x0108919f                rtw_set_802_11_connect
+                0x01087d89                _rtw_write8
+                0x010615e1                odm_EdcaTurboCheck
+                0x01049e70                phy_SimularityCompare_8188E
+                0x01088604                oid_rt_dedicate_probe_hdl
+                0x010b4058                rtw_get_camid
+                0x0109baef                issue_action_BA
+                0x01078997                rtl8188eu_hal_xmit
+                0x01088840                oid_rt_ap_switch_into_ap_mode_hdl
+                0x0106e497                rtl8188e_set_FwJoinBssReport_cmd
+                0x010c1bce                rtw_os_wake_queue_at_free_stainfo
+                0x0103891e                rtw_hal_c2h_handler
+                0x010318b8                hw_var_port_switch
+                0x010a377d                build_assoc_resp_wfd_ie
+                0x0108af28                _rtw_free_mlme_priv
+                0x010b6181                update_IOT_info
+                0x0108b3a6                rtw_free_network_nolock
+                0x01087337                rtw_get_wfd_attr_content
+                0x010b5cc6                update_supported_rate
+                0x010867db                macstr2num
+                0x01087f3f                _rtw_write_mem
+                0x01045efd                ODM_ReadAndConfig_MP_8188E_RadioA_1T_ICUT
+                0x010300da                ODM_RASupport_Init
+                0x010b593a                is_ap_in_tkip
+                0x010837b6                Efuse_CalculateWordCnts
+                0x0106903c                rtw_lock_ext_suspend_timeout
+                0x01044b50                InitLed
+                0x010a72db                reset_global_wifidirect_info
+                0x010853d1                rtw_generate_ie
+                0x010ab05c                validate_recv_data_frame
+                0x0108d695                rtw_cpwm_event_callback
+                0x010690cd                rtw_is_file_readable
+                0x010a7d53                ips_leave
+                0x01076989                rtl8188e_process_phy_info
+                0x01081fee                rtw_joinbss_cmd_callback
+                0x01065a7e                ODM_PhyStatusQuery_JaguarSeries
+                0x010316b3                c2h_evt_read
+                0x010b1ac2                sreset_get_wifi_status
+                0x0107390c                ResumeTxBeacon
+                0x010b5dc3                Update_RA_Entry
+                0x010a48fd                build_assoc_resp_p2p_ie
+                0x0108d80c                rtw_mlme_reset_auto_scan_int
+                0x01084682                rtw_BT_efuse_map_write
+                0x010372e2                PHY_SetTxPowerLimit
+                0x0104565c                ODM_ReadAndConfig_MP_8188E_PHY_REG_PG
+                0x0109f513                survey_timer_hdl
+                0x0105e8a6                odm_DIGInit
+                0x01049b16                _PHY_ReloadMACRegisters
+                0x0108555e                rtw_get_wpa_ie
+                0x010b2482                rtw_mfree_sta_priv_lock
+                0x010850b9                rtw_get_ie
+                0x0105fdb2                ODM_Get_Rate_Bitmap
+                0x01098260                alloc_mgtxmitframe_once
+                0x010863cc                rtw_ieee802_11_parse_elems
+                0x0108b3c0                rtw_free_network_queue
+                0x01062edb                ODM_UpdateNoisyState
+                0x0107c463                stop_ap_mode
+                0x010774a6                rtl8188eu_init_recvbuf
+                0x010a1032                set_ch_hdl
+                0x01068d94                _rtw_init_sema
+                0x0104cb3e                PHY_APCalibrate_8188E
+                0x010a7c5b                ips_enter
+                0x010692ff                rtw_cbuf_pop
+                0x010840b0                rtw_efuse_access
+                0x0106612f                ODM_MoveMemory
+                0x010a93fa                rtw_free_uc_swdec_pending_queue
+                0x01075c35                phy_GetCurrentTxNum_8188E
+                0x0109c648                IsLegal5GChannel
+                0x0103664b                phy_GetWorldWideLimit
+                0x010319b6                GetHwReg
+                0x0109e372                report_join_res
+                0x010bf641                usb_set_intf_ops
+                0x01049dcb                _PHY_PIModeSwitch
+                0x01032204                GetFractionValueFromString
+                0x01086869                rtw_macaddr_cfg
+                0x010c1b15                rtw_os_xmit_schedule
+                0x010b34ce                UpdateBrateTblForSoftAP
+                0x010a113b                led_blink_hdl
+                0x010b36b0                rtw_get_offset_by_ch
+                0x010883e4                oid_rt_get_tx_beacon_ok_hdl
+                0x0108e1da                rtw_set_key
+                0x01060aff                odm_TXPowerTrackingCheckMP
+                0x010bd5b2                _ps_open_RF
+                0x010adf73                rtw_secmicappend
+                0x0105f2e8                odm_DigAbort
+                0x0107381e                Hal_InitChannelPlan
+                0x0108b314                rtw_free_mlme_priv
+                0x01088666                oid_rt_get_total_rx_bytes_hdl
+                0x010867ab                key_2char2num
+                0x01038716                rtw_hal_sreset_get_wifi_status
+                0x010b6a47                rtw_search_max_mac_id
+                0x010bb1e3                check_pending_xmitbuf
+                0x010a0a2c                set_tx_beacon_cmd
+                0x01098188                _alloc_mgtxmitframe
+                0x010b369c                rtw_set_oper_choffset
+                0x010b3de5                _clear_cam_entry
+                0x01068ed3                _rtw_queue_empty
+                0x01082921                dump_adapters_status
+                0x0106c840                rtw_recv_monitor
+                0x0106c2b8                rtw_os_recv_resource_init
+                0x01073202                Hal_ReadTxPowerInfo88E
+                0x010a82db                rtw_set_ps_mode
+                0x01097f19                on_action_public_vendor
+                0x010a8e9a                rtw_ps_deny_cancel
+                0x0109e98c                mlmeext_joinbss_event_callback
+                0x0107628c                PHY_CheckIsLegalRfPath8192C
+                0x010765c3                rtl8188e_RF_ChangeTxPath
+                0x0107c09a                sta_info_update
+                0x01066180                ODM_StartWorkItem
+                0x010bcfeb                rtl8188eu_hal_init
+                0x01038232                rtw_hal_xmit
+                0x0107ffbb                rtw_setstakey_cmd
+                0x010660fd                ODM_AllocateMemory
+                0x0106767e                netdev_br_init
+                0x01082501                mac_reg_dump
+                0x01049450                _PHY_PathAFillIQKMatrix
+                0x010b3163                cckratesonly_included
+                0x01080327                rtw_setrttbl_cmd
+                0x010b659e                process_addba_req
+                0x010b356b                Switch_DM_Func
+                0x010b97fe                rtw_free_xmitframe
+                0x0108a974                rtw_IOL_append_LLT_cmd
+                0x01069428                usb_alloc_urb
+                0x010bed4c                SetHalDefVar8188EUsb
+                0x0106b64f                Phydm_SetTRxMux
+                0x0107cda0                nat25_db_expire
+                0x010ac68d                process_recv_indicatepkts
+                0x01075461                PHY_GetTxPowerLevel8188E
+                0x0103641f                PHY_SetTxPowerLevelByPath
+                0x01061b2d                odm_PHY_ReloadAFERegisters
+                0x010a935c                rtw_enqueue_recvframe
+                0x0105d664                ODM_CmnInfoPtrArrayHook
+                0x01038cb8                PHY_RFShadowRecorverFlagSet
+                0x010310dd                HwRateToMRate
+                0x010688a0                rtw_atoi
+                0x010746b7                dump_bcn_qinfo_88e
+                0x010690e1                rtw_store_to_file
+                0x010462aa                ODM_ReadAndConfig_MP_8188E_TxPowerTrack_PCIE
+                0x0108ab0f                rtw_IOL_append_DELAY_MS_cmd
+                0x010690c0                ATOMIC_DEC_RETURN
+                0x010322ab                IsCommentString
+                0x010886c8                oid_rt_get_enc_key_mismatch_count_hdl
+                0x01069037                rtw_lock_suspend_timeout
+                0x0108ef20                rtw_restructure_ht_ie
+                0x01087fcf                _rtw_read_port_cancel
+                0x01068cd5                _rtw_memcmp
+                0x01069019                rtw_suspend_lock_init
+                0x0103e7d8                BlinkHandler
+                0x01084db3                rtw_get_bit_value_from_ieee_value
+                0x010660a2                ODM_SetRFReg
+                0x0108f629                rtw_roaming
+                0x01081431                rpt_timer_setting_wk_hdl
+                0x01068d2d                _rtw_init_listhead
+                0x0106c83b                rtw_hostapd_mlme_rx
+                0x0108b333                rtw_enqueue_network
+                0x0107ac54                rtw_acl_remove_sta
+                0x01067d43                rtw_ips_pwr_down
+                0x0107e753                _rtw_init_cmd_priv
+                0x010a5045                process_p2p_provdisc_req
+                0x01068cb4                _rtw_memcpy
+                0x01037e14                rtw_hal_init
+                0x01068b08                _rtw_skb_alloc
+                0x0108b621                rtw_get_oldest_wlan_network
+                0x01088223                oid_rt_pro_set_fw_dig_state_hdl
+                0x0105e1bc                ODM_DynamicATCSwitch_init
+                0x01085987                rtw_parse_wpa2_ie
+                0x0109d321                start_create_ibss
+                0x010a9dc0                process_wmmps_data
+                0x01084226                efuse_GetCurrentSize
+                0x0107f537                rtw_setbbreg_cmd
+                0x01081378                rtw_lps_change_dtim_cmd
+                0x010a9460                rtw_enqueue_recvbuf_to_head
+                0x010b238d                _rtw_free_sta_xmit_priv_lock
+                0x01095efc                issue_probersp_p2p
+                0x0107c11c                ap_sta_info_defer_update
+                0x0108aa70                _rtw_IOL_append_WRF_cmd
+                0x0109fa7e                join_cmd_hdl
+                0x01068ef7                rtw_get_current_time
+                0x01088517                oid_rt_get_channelplan_hdl
+                0x01083fc2                efuse_WordEnableDataRead
+                0x0106c3cb                rtw_os_alloc_msdu_pkt
+                0x01068e6e                _rtw_spinunlock
+                0x010812e4                rtw_lps_change_dtim_hdl
+                0x01066185                ODM_StopWorkItem
+                0x01067f74                rtw_ndev_destructor
+                0x010636a8                odm_TRX_HWAntDiv_Init_88E
+                0x01081b09                rtw_c2h_wk_cmd
+                0x0103491d                PHY_InitTxPowerByRate
+                0x010693e6                iwe_stream_lcp_len
+                0x01068e0c                _rtw_mutex_init
+                0x010656c0                odm_Init_RSSIForDM
+                0x010b3d18                _write_cam
+                0x0108d0e6                rtw_sta_media_status_rpt
+                0x01069609                rtw_drv_proc_deinit
+                0x01069484                skb_copy_bits
+                0x01084e62                rtw_is_cckratesonly_included
+                0x01081e70                rtw_survey_cmd_callback
+                0x01072b97                GetEEPROMSize8188E
+                0x01075d99                PHY_ScanOperationBackup8188E
+                0x01070ee5                Hal_EFUSEGetEfuseDefinition88E
+                0x01047733                setIqkMatrix_8188E
+                0x010315ed                Hal_MappingOutPipe
+                0x0105cba9                _dynamic_check_timer_handlder
+                0x01087ce7                action_public_str
+                0x0107b66a                associated_clients_update
+                0x010a93a1                rtw_free_recvframe_queue
+                0x01087d69                _rtw_read32
+                0x0108b301                rtw_init_mlme_priv
+                0x0106b14e                update_sec_info
+                0x0103671f                PHY_GetTxPowerLimit
+                0x010ac361                recv_indicatepkt_reorder
+                0x01060475                odm_RSSIMonitorInit
+                0x0108401d                Efuse_WordEnableDataWrite
+                0x01069594                rtw_stop_drv_threads
+                0x01039fc0                SwLedBlink3
+                0x0108bad8                rtw_add_network
+                0x0108b848                rtw_update_scanned_network
+                0x01087e7e                _rtw_write16_async
+                0x01087d23                _rtw_read8
+                0x01041b67                SwLedControlMode9
+                0x010b9d9d                rtw_free_hwxmits
+                0x010ad02f                recv_func_prehandle
+                0x0106c2c2                rtw_os_recv_resource_alloc
+                0x0108b1be                _rtw_free_network_queue
+                0x0108833e                oid_rt_get_tx_retry_hdl
+                0x010a503b                process_p2p_devdisc_resp
+                0x010a5ab3                process_p2p_group_negotation_resp
+                0x01098245                alloc_mgtxmitframe
+                0x01038065                rtw_hal_get_odm_var
+                0x010b9294                rtw_alloc_cmdxmitframe
+                0x0103850f                rtw_hal_set_chan
+                0x0107eb59                rtw_free_cmd_obj
+                0x010bb238                rtw_xmit_thread
+                0x010ac1d8                recv_indicatepkts_in_order
+                0x010926f0                OnDeAuth
+                0x0104ca40                PHY_LCCalibrate_8188E
+                0x01038b13                PHY_RFShadowCompare
+                0x0105e197                getIGIForDiff
+                0x010a21c3                rtw_p2p_is_channel_list_ok
+                0x0103888f                rtw_hal_c2h_evt_read
+                0x01078a67                free_mlme_ap_info
+                0x0105cfb1                _link_timer_hdl
+                0x010a9f3b                sta2sta_data_frame
+                0x01085002                hal_ch_offset_to_secondary_ch_offset
+                0x01065c05                ODM_ConfigRFWithTxPwrTrackHeaderFile
+                0x01047a62                ODM_TxPwrTrackSetPwr88E
+                0x01038484                rtw_hal_write_rfreg
+                0x01035910                phy_GetChnlIndex
+                0x010c0e33                usbctrl_vendorreq
+                0x0107ebc2                rtw_stop_cmd_thread
+                0x010365cc                PHY_SetTxPowerIndexByRateArray
+                0x01085f38                rtw_get_wps_ie_from_scan_queue
+                0x0108f5f7                rtw_set_to_roam
+                0x01096b8b                issue_probereq_p2p
+                0x01078f55                chk_sta_is_alive
+                0x01048551                GetDeltaSwingTable_8188E
+                0x010a1149                set_csa_hdl
+                0x01075466                PHY_SetTxPowerLevel8188E
+                0x01033573                PHY_GetRateValuesOfTxPowerByRate
+                0x010457a5                ODM_ReadFirmware_MP_8188E_FW_WoWLAN_S
+                0x01061a76                odm_PathDiversityInit
+                0x01066871                odm_PrimaryCCA_Init
+                0x01064672                odm_AntselStatistics
+                0x0105d183                ODM_DMInit
+                0x0107285c                rtl8188e_stop_thread
+                0x010b3545                Restore_DM_Func_Flag
+                0x010b23f7                rtw_mfree_stainfo
+                0x010abc45                recvframe_chk_defrag
+                0x010a80d2                pwr_state_check_handler
+                0x010a86fe                LeaveAllPowerSaveModeDirect
+                0x010a88ab                rtw_init_pwrctrl_priv
+                0x010886e2                oid_rt_get_enc_key_match_count_hdl
+                0x0107e991                _rtw_dequeue_cmd
+                0x0105f971                odm_DynamicBBPowerSavingInit
+                0x01067519                rtw_free_drv_sw
+                0x010b414c                rtw_camid_is_gk
+                0x010b3aa0                get_bsstype
+                0x01060484                odm_RSSIMonitorCheck
+                0x01069641                rtw_init_netdev_name
+                0x0106088a                odm_TXPowerTrackingThermalMeterInit
+                0x0109cda1                collect_bss_info
+                0x0108392e                efuse_ReadEFuse
+                0x01069050                ATOMIC_SET
+                0x01088745                oid_rt_get_hardware_radio_off_hdl
+                0x01044b87                DeInitLed
+                0x01094791                issue_p2p_GO_confirm
+                0x0106db1c                ConstructBeacon
+                0x010348d8                PHY_StoreTxPowerByRateOld
+                0x01032cd3                phy_StoreTxPowerByRateBaseOld
+                0x010a5246                rtw_p2p_check_peer_oper_ch
+                0x010305c0                ODM_RA_SetRSSI_8188E
+                0x010a40fb                build_provdisc_req_wfd_ie
+                0x01081745                free_assoc_resources_hdl
+                0x010691b2                rtw_random32
+                0x010692bc                rtw_cbuf_empty
+                0x0106e13f                CheckFwRsvdPageContent
+                0x010b9629                rtw_alloc_xmitframe
+                0x01074923                PHY_QueryBBReg8188E
+                0x01068893                RTW_STATUS_CODE
+                0x0107616f                PHY_SwChnl8188E
+                0x01080560                rtw_addbareq_cmd
+                0x01080d6c                traffic_status_watchdog
+                0x0106b4fe                Phydm_NHMCounterStatisticsReset
+                0x0104ab1c                phy_LCCalibrate_8188E
+                0x0109c380                send_delba
+                0x010b6b3f                dump_TX_FIFO
+                0x01081825                rtw_ps_cmd
+                0x010b3ac7                get_beacon_interval
+                0x01088f10                rtw_set_802_11_ssid
+                0x0107f303                rtw_setdatarate_cmd
+                0x0107ea0f                rtw_free_evt_priv
+                0x01065b16                ODM_MacStatusQuery
+                0x010b383b                rtw_get_on_cur_ch_time
+                0x0107f091                rtw_sitesurvey_cmd
+                0x010b64df                update_sta_support_rate
+                0x0108781c                rtw_mcs_rate
+                0x01038537                rtw_hal_set_chnl_bw
+                0x0107be32                rtw_ap_inform_ch_switch
+                0x01081f91                rtw_disassoc_cmd_callback
+                0x01072cee                InitLLTTable
+                0x01075d9e                phy_SpurCalibration_8188E
+                0x010b96d2                rtw_alloc_xmitframe_ext
+                0x010b35fc                Set_MSR
+                0x01061b8b                ODM_SingleDualAntennaDetection
+                0x0108707d                rtw_WLAN_BSSID_EX_remove_p2p_attr
+                0x010b1a63                sreset_init_value
+                0x01030943                dump_chip_info
+                0x010887d4                oid_rt_get_scan_in_progress_hdl
+                0x01061952                GetPSDData
+                0x010458a8                ODM_ReadAndConfig_MP_8188E_MAC_REG
+                0x0108abd7                rtw_IOL_cmd_buf_dump
+                0x0103b39a                SwLedBlink7
+                0x010b4f89                VCS_update
+                0x01061655                odm_EdcaTurboCheckCE
+                0x01049702                _PHY_PathBFillIQKMatrix
+                0x0108eeb6                rtw_build_wmm_ie_ht
+                0x0103039e                ODM_RA_GetShortGI_8188E
+                0x0107688d                PHY_RF6052_Config8188E
+                0x01088358                oid_rt_get_rx_retry_hdl
+                0x01046482                ODM_ReadAndConfig_MP_8188E_TxPowerTrack_USB
+                0x010385cd                rtw_hal_dm_watchdog
+                0x010a9cce                recv_decache
+                0x0106c31e                rtw_os_recvbuf_resource_alloc
+                0x0108985a                rtw_set_802_11_remove_wep
+                0x01038d5e                PHY_RFShadowRecorverFlagSetAll
+                0x010a13c6                rtw_odm_dbg_level_set
+                0x0108a894                rtw_IOL_append_cmds
+                0x01068dc4                _rtw_up_sema
+                0x0106ca4b                rtw_os_read_port
+                0x01088963                rtw_validate_bssid
+                0x010a49b3                build_deauth_p2p_ie
+                0x01037dd7                rtw_hal_init_opmode
+                0x010c192e                rtw_set_tx_chksum_offload
+                0x010b6477                update_sta_basic_rate
+                0x01046723                ConfigureTxpowerTrack
+                0x01039278                SwLedBlink1
+                0x01068b4b                _rtw_netif_rx
+                0x010666a0                odm_ConfigBB_TXPWR_LMT_8188E
+                0x01069107                rtw_alloc_etherdev
+                0x01070130                _8051Reset88E
+                0x010689ef                _rtw_zmalloc
+                0x0108d6a9                _rtw_join_timeout_handler
+                0x01065b1b                ODM_ConfigRFWithHeaderFile
+                0x010488e7                phy_PathA_RxIQK
+                0x01069083                ATOMIC_INC
+                0x0106cab0                _rtw_reordering_ctrl_timeout_handler
+                0x0107907a                expire_timeout_chk
+                0x010b58c6                update_beacon_info
+                0x01086779                str_2char2num
+                0x0106fa9e                rtl8188e_IOL_exec_cmds_sync
+                0x01038326                rtw_hal_update_ra_mask
+                0x0108963f                rtw_set_802_11_authentication_mode
+                0x01068afe                skb_clone
+                0x01080983                rtw_set_chplan_cmd
+                0x010be831                GetHalDefVar8188EUsb
+                0x0108c6d1                rtw_scan_abort_timeout
+                0x01068e58                _rtw_spinlock
+                0x010661f8                ODM_SetTimer
+                0x01083401                eeprom_read16
+                0x0107c355                start_ap_mode
+                0x01035f71                PHY_GetRateIndexOfTxPowerByRate
+                0x010318bd                SetHwReg
+                0x0107f465                rtw_setphy_cmd
+                0x01066896                ODM_DynamicPrimaryCCA_DupRTS
+                0x0108440d                rtw_efuse_map_write
+                0x010984b2                dump_mgntframe_and_wait_ack
+                0x0108afb5                _rtw_alloc_network
+                0x01083ab1                EFUSE_Write1Byte
+                0x0104cdb3                HalPwrSeqCmdParsing
+                0x0107aa6a                rtw_set_macaddr_acl
+                0x01066823                ODM_DIG_LowerBound_88E
+                0x0106b233                Phydm_CheckAdaptivity
+                0x01068b38                _rtw_skb_clone
+                0x01069402                kref_put
+                0x010a32fd                build_probe_resp_wfd_ie
+                0x0105cb96                _rtw_scan_timeout_handler
+                0x010738e9                _InitTransferPageSize
+                0x0109adbe                issue_nulldata
+                0x010882ef                oid_rt_get_large_packet_crc_hdl
+                0x01098655                issue_beacon
+                0x0105f8b6                odm_CCKPacketDetectionThresh
+                0x01060b27                odm_SwAntDivChkAntSwitchCallback
+                0x0107ccb7                nat25_db_cleanup
+                0x0108b34d                rtw_alloc_network
+                0x010b9dcd                rtw_init_hwxmits
+                0x01068f36                rtw_get_passing_time_ms
+                0x0105f2f2                odm_FalseAlarmCounterStatistics
+                0x010b7d59                qos_acm
+                0x010a8f7e                _rtw_init_recv_priv
+                0x0108b2bd                rtw_get_capability
+                0x01043a83                SwLedControlMode13
+                0x0108f873                init_hw_mlme_ext
+                0x01065cbd                ODM_ConfigBBWithHeaderFile
+                0x010a09c4                chk_bmc_sleepq_cmd
+                0x010c1933                rtw_os_xmit_resource_alloc
+                0x01044b13                ResetLedStatus
+                0x01088802                oid_rt_get_bss_wireless_mode_hdl
+                0x0105e1c6                odm_Write_CrystalCap
+                0x01068d63                rtw_list_insert_tail
+                0x0106945c                usb_kill_urb
+                0x0108b3db                rtw_find_network
+                0x01066176                ODM_ReleaseSpinLock
+                0x0108c214                rtw_dummy_event_callback
+                0x010386dc                rtw_hal_sreset_xmit_status_check
+                0x010873ef                ieee80211_is_empty_essid
+                0x010b20c3                _rtw_init_stainfo
+                0x010bb05e                enqueue_pending_xmitbuf_to_head
+                0x01070f2d                Hal_EFUSEGetEfuseDefinition_Pseudo88E
+                0x010a527b                rtw_p2p_ch_inclusion
+                0x0107ea2e                rtw_free_cmd_priv
+                0x0106618a                ODM_FreeWorkItem
+                0x01065fe5                ODM_Write4Byte
+                0x010a06c5                set_stakey_hdl
+                0x0109ff70                rtw_scan_sparse
+                0x01068d0b                _rtw_memset
+                0x010b5c73                update_basic_rate
+                0x010668a7                odm_DynamicPrimaryCCA
+                0x01037f0e                rtw_hal_deinit
+                0x010881a6                rtw_reset_continual_io_error
+                0x01069067                ATOMIC_ADD
+                0x010371b9                PHY_InitTxPowerLimit
+                0x010b452d                allocate_fw_sta_entry
+                0x010b230c                rtw_stainfo_offset
+                0x0104141c                SwLedControlMode7
+                0x0108c5ef                rtw_indicate_scan_done
+                0x010a0d16                change_band_update_ie
+                0x01084c5a                Efuse_InitSomeVar
+                0x01069ad8                netif_carrier_on
+                0x01066dad                rtw_start_drv_threads
+                0x0108b2ee                rtw_get_timestampe_from_ie
+                0x010853b6                rtw_get_rateset_len
+                0x0107aff8                rtw_ap_set_wep_key
+                0x010b45bc                WFD_info_handler
+                0x010883fe                oid_rt_get_tx_beacon_err_hdl
+                0x010831a6                wait_eeprom_cmd_done
+                0x010736af                Hal_EfuseParseCustomerID88E
+                0x0109e6ab                update_sta_info
+                0x010a8654                LPS_Leave
+                0x01080c23                rtw_tdls_cmd
+                0x010c191c                rtw_endofpktfile
+                0x01076b17                update_recvframe_phyinfo_88e
+                0x0108d14f                rtw_stassoc_event_callback
+                0x01061159                ODM_AntselStatistics_88C
+                0x010b24f6                _rtw_free_sta_priv
+                0x010b9237                rtw_free_cmd_xmitbuf
+                0x010b3af8                is_client_associated_to_ap
+                0x01088418                oid_rt_get_rx_icv_err_hdl
+                0x01068b2e                _rtw_skb_copy
+                0x0106900c                rtw_yield_os
+                0x010663c6                odm_ConfigRF_RadioA_8188E
+                0x010860ca                rtw_get_wps_attr
+                0x010a6746                process_p2p_presence_req
+                0x0108510c                rtw_get_ie_ex
+                0x01081650                rtw_dm_ra_mask_hdl
+                0x010ab869                wlanhdr_to_ethhdr
+                0x010a3f4c                build_invitation_resp_wfd_ie
+                0x010b18d8                rtw_sec_restore_wep_key
+                0x0107feee                rtw_setopmode_cmd
+                0x010ae541                rtw_tkip_encrypt
+                0x01088a05                rtw_do_join
+                0x0102f2dd                rtw_wifi_gpio_wlan_ctrl
+                0x01060032                odm_RefreshRateAdaptiveMaskCE
+                0x01075457                rtl8188e_PHY_ConfigRFWithParaFile
+                0x01066cc3                rtw_recv_select_queue
+                0x01049986                _PHY_SaveADDARegisters
+                0x01065f12                ODM_GetHWImgVersion
+                0x010905b1                OnProbeRsp
+                0x010b3617                rtw_get_oper_ch
+                0x010387fd                rtw_hal_c2h_valid
+                0x010b3ff3                clear_cam_cache
+                0x01068dbf                _rtw_free_sema
+                0x010b94f5                rtw_free_xmitbuf
+                0x01068c8d                rtw_mfree2d
+                0x010b3bba                CAM_empty_entry
+                0x01085afc                rtw_get_wapi_ie
+                0x010b3332                ratetbl_val_2wifirate
+                0x01076eb6                rtl8188e_sreset_linked_status_check
+                0x010b3f5d                write_cam_cache
+                0x0105e004                odm_BasicDbgMessage
+                0x01083075                shift_in_bits
+                0x010b4767                WMMOnAssocRsp
+                0x010b2e4e                rtw_get_stainfo
+                0x010b1dbd                sreset_restore_network_status
+                0x0108c4db                rtw_indicate_disconnect
+                0x010985ab                update_hidden_ssid
+                0x01075c48                tx_power_extra_bias
+                0x010643f4                ODM_AntDiv
+                0x0108c7a7                rtw_scan_abort_no_wait
+                0x0105db6b                odm_CmnInfoHook_Debug
+                0x0108562a                rtw_get_wpa2_ie
+                0x010b4f4b                ERP_IE_handler
+                0x010a8997                rtw_free_pwrctrl_priv
+                0x01030de5                hal_com_config_channel_plan
+                0x0106028a                odm_DynamicTxPowerInit
+                0x010b3cbd                read_cam
+                0x01077a42                fill_txdesc_vcs
+                0x0106d88f                rtl8188e_Add_RateATid
+                0x0109827b                update_mgnt_tx_rate
+                0x010adef8                rtw_secmicappendbyte
+                0x0106016e                ODM_RAStateCheck
+                0x010bd934                rtl8188eu_inirp_init
+                0x0107f80e                rtw_readtssi_cmdrsp_callback
+                0x01049173                phy_PathB_IQK_8188E
+                0x010b3b28                is_client_associated_to_ibss
+                0x0103db05                SwLedBlink13
+                0x01066437                odm_ConfigRF_RadioB_8188E
+                0x01038cd5                PHY_RFShadowCompareFlagSetAll
+                0x01038581                rtw_hal_set_tx_power_level
+                0x010b4275                rtw_camid_alloc
+                0x01076244                PHY_SetSwChnlBWMode8188E
+                0x0102f2d3                rtw_wifi_gpio_init
+                0x0106dfef                ConstructProbeRsp
+                0x0108891a                oid_rt_set_default_key_id_hdl
+                0x01049d27                _PHY_PathAStandBy
+                0x01085edc                rtw_is_wps_ie
+                0x01070639                rtl8188e_InitializeFirmwareVars
+                0x0103809b                rtw_hal_enable_interrupt
+                0x01067087                devobj_deinit
+                0x01092bf7                on_action_spct_ch_switch
+                0x0106e0c9                rtl8188e_set_FwRsvdPage_cmd
+                0x010806d0                rtw_free_assoc_resources_cmd
+                0x0108a73b                rtw_set_band
+                0x01042944                SwLedControlMode10
+                0x010728e3                UpdateHalRAMask8188E
+                0x0106304d                ODM_UpdateInitRate
+                0x0105ccc4                rtw_reset_securitypriv
+                0x010777a6                rtl8188eu_free_recv_priv
+                0x01061b76                ODM_SingleDualAntennaDefaultSetting
+                0x0107f3b7                rtw_setbasicrate_cmd
+                0x010670ff                rtw_reset_drv_sw
+                0x01068d3a                rtw_is_list_empty
+                0x01065f43                ODM_Read1Byte
+                0x01077873                xmit_tasklet_entry_point@28
+                0x010b95bd                rtw_init_xmitframe
+                0x010662c5                ODM_GetProgressingTime
+                0x010693f0                iwe_stream_point_len
+                0x010adebc                rtw_secmicsetkey
+                0x01037d24                rtw_hal_dm_init
+                0x01066ea8                rtw_init_default_value
+                0x01037d41                rtw_hal_dm_deinit
+                0x01083202                eeprom_clean
+                0x0105d2aa                ODM_DMWatchdog
+                0x010bb337                rtw_sctx_chk_waring_status
+                0x01031690                c2h_evt_clear
+                0x010a9570                recvframe_chkmic
+                0x01045292                ODM_ReadAndConfig_MP_8188E_PHY_REG_1T
+                0x010666e6                odm_ConfigBB_PHY_8188E
+                0x01095af7                issue_p2p_provision_request
+                0x01066032                ODM_GetMACReg
+                0x01063507                odm_UpdateTxAnt
+                0x010a312a                build_probe_req_wfd_ie
+                0x01088237                oid_rt_get_signal_quality_hdl
+                0x01087426                ieee80211_get_hdrlen
+                0x01084289                rtw_efuse_map_read
+                0x0103177f                c2h_evt_read_88xx
+                0x010b2f42                rtw_init_bcmc_stainfo
+                0x010c12d6                usb_read_mem
+                0x0105d0c7                rtw_indicate_sta_disassoc_event
+                0x010c1c34                rtw_mlcst2unicst
+                0x0107f8ee                rtw_createbss_cmd_ex
+                0x010434de                SwLedControlMode11
+                0x0108434b                rtw_BT_efuse_map_read
+                0x01069add                netif_carrier_off
+                0x0106618f                ODM_ScheduleWorkItem
+                0x010485b8                phy_PathA_IQK_8188E
+                0x01036b08                phy_CrossReferenceHTAndVHTTxPowerLimit
+                0x0108ada5                rtw_mfree_mlme_priv_lock
+                0x010a51d9                rtw_p2p_get_peer_ch_list
+                0x01031fab                GetHalDefVar
+                0x01038738                rtw_hal_sreset_inprogress
+                0x0106c0c0                platform_wifi_power_on
+                0x010b5d9b                get_highest_mcs_rate
+                0x01086c7d                rtw_get_p2p_ie_from_scan_queue
+                0x010ba5e4                xmitframe_enqueue_for_sleeping_sta
+                0x010325ab                rtw_hal_busagg_qsel_check
+                0x01066199                ODM_StallExecution
+                0x010b25d6                rtw_alloc_stainfo
+                0x010b32a2                judge_network_type
+                0x0109f932                createbss_hdl
+                0x0109fe96                disconnect_hdl
+                0x01086a26                dump_wps_ie
+                0x01082100                rtw_createbss_cmd_callback
+                0x010a7bd5                _ips_enter
+                0x0109831e                update_mgntframe_attrib_addr
+                0x0106b778                Phydm_MACEDCCAState
+                0x01035972                PHY_GetTxPowerIndexBase
+                0x010b3664                rtw_get_oper_bw
+                0x01098025                OnAction_ht
+                0x010bf769                rtw_hw_suspend
+                0x010992f6                _issue_probereq
+                0x0109ef02                chk_ap_is_alive
+                0x010a6b66                process_p2p_ps_ie
+                0x0103af5b                SwLedBlink5
+                0x0104997c                ODM_CheckPowerStatus
+                0x010896b5                rtw_set_802_11_add_wep
+                0x01085027                rtw_set_ie_secondary_ch_offset
+                0x010bdee5                SetHwReg8188EU
+                0x01077906                urb_zero_packet_chk
+                0x01037f6b                rtw_hal_set_hwreg
+                0x010ac5b1                rtw_reordering_ctrl_timeout_handler
+                0x010a853e                LPS_Enter
+                0x01068de4                _rtw_down_sema
+                0x01062f2a                Set_RA_DM_Ratrbitmap_by_Noisy
+                0x010774dd                rtl8188eu_init_recv_priv
+                0x010690d7                rtw_retrive_from_file
+                0x010bb3c9                rtw_ack_tx_wait
+                0x01067b6c                ips_netdrv_open
+                0x0108aacf                rtw_IOL_append_DELAY_US_cmd
+                0x0105d728                odm_CommonInfoSelfInit
+                0x0106905d                ATOMIC_READ
+                0x010b6832                rtw_alloc_macid
+                0x010a8494                LPS_RF_ON_check
+                0x010ac171                recv_indicatepkts_pkt_loss_cnt
+                0x010b3b83                decide_wait_for_beacon_timeout
+                0x01068bfb                _rtw_usb_buffer_free
+                0x010b1ba1                sreset_inprogress
+                0x010a92fe                _rtw_enqueue_recvframe
+                0x0107afab                rtw_ap_set_group_key
+                0x0106607f                ODM_GetBBReg
+                0x01060e59                odm_InitHybridAntDiv
+                0x010a87c9                LeaveAllPowerSaveMode
+                0x010a6978                pre_tx_provdisc_handler
+                0x010b91c5                rtw_alloc_cmd_xmitbuf
+                0x0108c7c2                rtw_scan_abort
+                0x01069573                rtw_android_priv_cmd
+                0x01037cea                rtw_hal_def_value_init
+                0x0107aa9b                rtw_acl_add_sta
+                0x01060e92                odm_StaDefAntSel
+                0x010b21b2                _rtw_init_sta_priv
+                0x01069046                rtw_lock_traffic_suspend_timeout
+                0x010a4e19                process_p2p_devdisc_req
+                0x0109b049                issue_nulldata_in_interrupt
+                0x01085719                rtw_get_wpa2_cipher_suite
+                0x01068ff9                rtw_udelay_os
+                0x01092d80                on_action_spct
+                0x010748cb                GetHalDefVar8188E
+                0x01090345                p2p_listen_state_process
+                0x010888cb                oid_rt_get_connect_state_hdl
+                0x01068fe6                rtw_mdelay_os
+                0x010bb3ae                rtw_sctx_done
+                0x01077abc                fill_txdesc_phy
+                0x01038c3f                PHY_RFShadowRecorverAll
+                0x0108b360                rtw_free_network
+                0x01049c77                _PHY_MACSettingCalibration
+                0x0106838d                rtw_suspend_common
+                0x01038613                rtw_hal_bcn_related_reg_setting
+                0x010ba3f5                rtw_xmit
+                0x01038de7                PHY_RFShadowRefresh
+                0x01030ed5                MRateToHwRate
+                0x0109f826                addba_timer_hdl
+                0x010837f1                ReadEFuseByte
+                0x0107f840                rtw_createbss_cmd
+                0x010886fc                oid_rt_get_channel_hdl
+                0x0108f823                rtw_mlme_band_check
+                0x01063123                odm_AntDiv_on_off
+                0x010a9b90                portctrl
+                0x01097f69                on_action_public_default
+                0x010c01a6                interrupt_handler_8188eu
+                0x010a0f22                rtw_get_ch_setting_union
+                0x0107ceab                nat25_db_handle
+                0x010a9166                _rtw_free_recv_priv
+                0x010b456e                flush_all_cam_entry
+                0x01090388                OnProbeReq
+                0x01038209                rtw_hal_xmitframe_enqueue
+                0x0108f61d                rtw_to_roam
+                0x01068f19                rtw_ms_to_systime
+                0x01032106                GetHexValueFromString
+                0x010736f1                Hal_ReadAntennaDiversity88E
+                0x01030123                ODM_RAInfo_Init
+                0x0103d444                SwLedBlink11
+                0x01082ef3                up_clk
+                0x010a12db                rtw_odm_dbg_comp_set
+                0x010a6a4a                pre_tx_negoreq_handler
+                0x010738a1                SetBcnCtrlReg
+                0x0104495f                LedControlUSB
+                0x010ad563                rtw_ch2freq
+                0x010661ac                ODM_delay_ms
+                0x0105df00                odm_CmnInfoUpdate_Debug
+                0x010c1896                _rtw_open_pktfile
+                0x010b5f16                check_assoc_AP
+                0x01087edd                _rtw_read_mem
+                0x0108619f                rtw_get_wps_attr_content
+                0x010adfaf                rtw_secgetmic
+                0x0108ed0d                rtw_ht_use_default_setting
+                0x0108a5d7                rtw_set_scan_mode
+                0x010660d3                ODM_GetRFReg
+                0x0106482c                ODM_SetTxAntByTxInfo
+                0x010a49bd                process_probe_req_p2p_ie
+                0x01068ee6                rtw_end_of_queue_search
+                0x0107e93e                _rtw_enqueue_cmd
+                0x0108a9d1                _rtw_IOL_append_WW_cmd
+                0x0107eacc                rtw_enqueue_cmd
+                0x010656c5                odm_Process_RSSIForDM
+                0x01063295                ODM_UpdateRxIdleAnt
+                0x01064965                odm_SignalScaleMapping_92CSeries_patch_RT_CID_819x_Netcore
+                0x010b18a6                rtw_use_tkipkey_handler
+                0x01099685                issue_probereq_ex
+                0x0105e959                odm_DigForBtHsMode
+                0x010b6a95                rtw_handle_dualmac
+                0x0106fb92                rtw_IOL_cmd_tx_pkt_buf_dump
+                0x010a682f                restore_p2p_state_handler
+                0x0106d780                rtl8192c_h2c_msg_hdl
+                0x010ba373                rtw_get_ff_hwaddr
+                0x010b3abc                get_my_bssid
+                0x0108886e                oid_rt_pro_rf_write_registry_hdl
+                0x010a80e5                traffic_check_for_leave_lps
+                0x0107e8cf                _rtw_free_cmd_priv
+                0x010b44da                rtw_camid_free
+                0x010a13e8                rtw_odm_ability_msg
+                0x010bbd39                rtl8188eu_interface_configure
+                0x01088467                oid_rt_set_encryption_algorithm_hdl
+                0x010c0d70                rtl8188eu_set_intf_ops
+                0x01072857                rtl8188e_start_thread
+                0x010a7383                rtw_init_wifidirect_timers
+                0x010662ae                ODM_FillH2CCmd
+                0x0105d7e9                odm_CommonInfoSelfUpdate
+                0x010bf8cf                rtw_hw_resume
+                0x010b5d2b                support_short_GI
+                0x01038181                rtw_hal_inirp_deinit
+                0x01086ef0                rtw_get_p2p_attr_content
+                0x01060b0e                ODM_SwAntDivChkPerPktRssi
+                0x0103a4c7                SwLedBlink4
+                0x010a6b1c                p2p_protocol_wk_hdl
+                0x010b2fd2                rtw_access_ctrl
+                0x01096d57                rtw_action_public_decache
+                0x010882a0                oid_rt_get_middle_packet_crc_hdl
+                0x010614c7                ODM_EdcaTurboInit
+                0x0106046b                odm_DynamicTxPower_92D
+                0x01060507                odm_RSSIMonitorCheckCE
+                0x010745f4                dump_qinfo_88e
+                0x010b3e3a                write_cam
+                0x01098292                update_mgntframe_attrib
+                0x010604cb                odm_RSSIMonitorCheckMP
+                0x01078299                rtl8188eu_xmitframe_complete
+                0x01038ab3                PHY_CalculateBitShift
+                0x01073d53                SetHwReg8188E
+                0x0106f9dd                rtl8188e_iol_efuse_patch
+                0x010b681f                beacon_timing_control
+                0x01098bde                issue_probersp
+                0x0105e95e                odm_DIG
+                0x0106908e                ATOMIC_DEC
+                0x01080782                rtw_dynamic_chk_wk_cmd
+                0x01074734                dump_mac_qinfo_88e
+                0x010691bc                rtw_buf_free
+                0x010ad5b4                rtw_freq2ch
+                0x01068556                rtw_resume_process_normal
+                0x01044ec8                ODM_ReadAndConfig_MP_8188E_AGC_TAB_1T
+                0x010b3e9d                clear_cam_entry
+                0x010a91bb                _rtw_alloc_recvframe
+                0x0108db63                rtw_select_roaming_candidate
+                0x01076da3                rtl8188e_sreset_xmit_status_check
+                0x0108e996                rtw_restruct_sec_ie
+                0x0107897d                rtl8188eu_mgnt_xmit
+                0x0103e8e9                BlinkWorkItemCallback
+                0x0106a90b                cfg80211_rtw_add_key
+                0x01069023                rtw_lock_suspend
+                0x010bb35e                rtw_sctx_done_err
+                0x0104ad2e                phy_APCalibrate_8188E
+                0x010bcc42                HalRxAggr8188EUsb
+                0x010a1713                rtw_odm_adaptivity_dml_msg
+                0x010779ed                fill_txdesc_sectype
+                0x010382ca                rtw_hal_free_xmit_priv
+                0x010c19bb                rtw_os_xmit_resource_free
+                0x0108a97e                _rtw_IOL_append_WB_cmd
+                0x010690a6                ATOMIC_SUB_RETURN
+                0x010661e5                ODM_sleep_us
+                0x01061a08                ConvertTo_dB
+                0x0106b956                Phydm_SearchPwdBLowerBound
+                0x010c18bb                _rtw_pktfile_read
+                0x010a08b0                add_ba_hdl
+                0x01060b1d                ODM_SwAntDivRestAfterLink
+                0x010b75ca                query_ra_short_GI
+                0x010386bf                rtw_hal_sreset_reset_value
+                0x01032381                isAllSpaceOrTab
+                0x010b5e12                update_tx_basic_rate
+                0x01087630                rtw_get_bcn_info
+                0x010bff2c                rtw_usb_get_sw_pointer
+                0x01088779                oid_rt_supported_wireless_mode_hdl
+                0x0106972f                wait_for_completion_timeout
+                0x01030498                ODM_RA_GetHwPwrStatus_8188E
+                0x010690eb                rtw_alloc_etherdev_with_old_priv
+                0x01067dad                rtw_ips_dev_unload
+                0x010457be                ODM_ReadFirmware_MP_8188E_FW_WoWLAN_T
+                0x010839a1                EFUSE_Read1Byte
+                0x01088027                _rtw_write_port
+                0x0108aa22                _rtw_IOL_append_WD_cmd
+                0x01081d3b                rtw_drvextra_cmd_hdl
+                0x0106b489                Phydm_GetNHMCounterStatistics
+                0x01045477                ODM_ReadAndConfig_MP_8188E_PHY_REG_1T_ICUT
+                0x01036670                phy_GetChannelIndexOfTxPowerLimit
+                0x0107eb38                rtw_dequeue_cmd
+                0x010694f4                rtw_ndev_notifier_unregister
+                0x0107bf6a                rtw_sta_flush
+                0x01063864                odm_Smart_HWAntDiv_Init_88E
+                0x01049a16                _PHY_SaveMACRegisters
+                0x01082413                dump_drv_version
+                0x010a7ad3                rtw_fw_ps_state
+                0x010bb410                rtw_ack_tx_done
+                0x010a6778                find_phase_handler
+                0x0108bc59                rtw_atimdone_event_callback
+                0x01086ab8                rtw_get_p2p_merged_ies_len
+                0x01064a24                odm_SignalScaleMapping
+                0x0107ea4d                rtw_cmd_filter
+                0x0106bb63                Phydm_AdaptivityInit
+                0x010880ae                _rtw_write_port_cancel
+                0x010692a8                rtw_cbuf_full
+                0x010b1e87                sreset_stop_adapter
+                0x0106495b                odm_SignalScaleMapping_92CSeries_patch_RT_CID_819x_Lenovo
+                0x010a740d                rtw_init_wifidirect_addrs
+                0x01069b85                add_netif
+                0x010889e2                rtw_validate_ssid
+                0x01083d71                efuse_OneByteWrite
+                0x01073557                Hal_EfuseParseXtal_8188E
+                0x010b1b73                sreset_set_wifi_error_status
+                0x010b5dde                enable_rate_adaptive
+                0x01066fe6                devobj_init
+                0x01068e38                _rtw_mutex_free
+                0x010a0bd1                chk_bmc_sleepq_hdl
+                0x010b944b                rtw_alloc_xmitbuf
+                0x010c1add                rtw_os_xmit_complete
+                0x01088481                oid_rt_get_preamble_mode_hdl
+                0x0108f475                rtw_issue_addbareq_cmd
+                0x0107ec08                rtw_cmd_thread
+                0x0107740e                rtl8188eu_DeInitSwLeds
+                0x010885ea                oid_rt_set_bcn_intvl_hdl
+                0x0108505e                rtw_set_ie_mesh_ch_switch_parm
+                0x01078cf6                rtw_add_bcn_ie
+                0x01092dd8                OnAction_qos
+                0x010b1876                omac1_aes_128
+                0x010bba16                issue_eapol_data
+                0x010b3be2                invalidate_cam_all
+                0x010b5c00                wifirate2_ratetbl_inx
+                0x0108b139                _rtw_find_network
+                0x01083136                standby
+                0x01060b2c                odm_InitHybridAntDiv_88C_92D
+                0x010c1a7a                rtw_os_pkt_complete
+                0x0109c693                site_survey
+                0x01079a4c                update_sta_info_apmode
+                0x01066586                odm_ConfigBB_PHY_REG_PG_8188E
+                0x01060b18                ODM_SwAntDivResetBeforeLink
+                0x0107fe0c                rtw_disassoc_cmd
+                0x010b33d3                ratetbl2rateset
+                0x01068d4b                rtw_list_insert_head
+                0x01076069                PHY_SetBWMode8188E
+                0x0106932c                rtw_cbuf_alloc
+                0x01060470                odm_RSSIDumpToRegister
+                0x0108b42d                is_same_ess
+                0x010a17fb                rtw_odm_adaptivity_dc_backoff_msg
+                0x010662a9                ODM_ReleaseTimer
+                0x01083f59                Efuse_PgPacketWrite
+                0x010602ab                odm_DynamicTxPowerSavePowerIndex
+                0x0106902d                rtw_resume_lock_suspend
+                0x0103479f                PHY_StoreTxPowerByRateNew
+                0x0105d865                odm_CmnInfoInit_Debug
+                0x0105cad2                rtw_ioctl
+                0x0105fa90                ODM_RF_Saving
+                0x010a642d                process_p2p_group_negotation_confirm
+                0x01081732                reset_securitypriv_hdl
+                0x0108f232                rtw_update_ht_cap
+                0x0108ff7a                free_mlme_ext_priv
+                0x0108ebb0                rtw_update_registrypriv_dev_network
+                0x010386f9                rtw_hal_sreset_linked_status_check
+                0x0109559e                issue_p2p_invitation_response
+                0x0103299c                phy_SetTxPowerByRateBase
+                0x0109c4cc                send_beacon
+                0x010b05b6                rtw_aes_decrypt
+                0x010c12db                usb_write_mem
+                0x0103b72c                SwLedBlink8
+                0x0106031f                odm_DynamicTxPowerRestorePowerIndex
+                0x01087db9                _rtw_write16
+                0x01086e1e                rtw_get_p2p_attr
+                0x010b6d4d                _rtw_init_sta_xmit_priv
+                0x01072daf                Hal_InitPGData88E
+                0x0106913f                rtw_change_ifname
+                0x01088575                oid_rt_set_preamble_mode_hdl
+                0x01066287                ODM_CancelTimer
+                0x0109f84d                NULL_hdl
+                0x01078e6b                rtw_remove_bcn_ie
+                0x0105f99d                odm_DynamicBBPowerSaving
+                0x010b9329                rtw_alloc_xmitbuf_ext
+                0x01073639                rtl8188e_EfuseParseChnlPlan
+                0x010bb523                rtw_xmit_eapol_coalesce
+                0x010b65fa                update_TSF
+                0x010a8d78                rtw_pm_set_ips
+                0x0108ab8d                rtw_IOL_cmd_boundary_handle
+                0x0106947a                msecs_to_jiffies
+                0x010381d6                rtw_hal_intf_ps_func
+                0x010ba581                xmitframe_hiq_filter
+                0x0109318f                issue_p2p_GO_request
+                0x0109e281                report_surveydone_event
+                0x01038101                rtw_hal_check_ips_status
+                0x01084fdd                secondary_ch_offset_to_hal_ch_offset
+                0x01087481                rtw_get_cipher_info
+                0x010c0d06                rtl8188eu_xmit_tasklet
+                0x010b1970                rtw_handle_tkip_countermeasure
+                0x0108c2bb                rtw_free_assoc_resources
+                0x01083f2e                Efuse_PgPacketRead
+                0x01087eae                _rtw_write32_async
+                0x010b38e9                SetBWMode
+                0x010aa937                validate_recv_ctrl_frame
+                0x01085fd6                rtw_get_wps_ie
+                0x01037d98                rtw_hal_power_on
+                0x01093b92                issue_p2p_GO_response
+                0x0109b6af                issue_deauth
+                0x01060466                odm_DynamicTxPower_92C
+                0x0108a915                rtw_IOL_applied
+                0x0107bd34                ap_free_sta
+                0x010834d2                eeprom_read_sz
+                0x01080acb                rtw_led_blink_cmd
+                0x0108bb1c                rtw_is_desired_network
+                0x010a89c6                rtw_interface_ps_func
+                0x010823d6                rtw_getrttbl_cmd_cmdrsp_callback
+                0x0108530f                rtw_set_supported_rate
+                0x010a2f24                build_beacon_wfd_ie
+                0x0106954d                simple_strtoul
+                0x010b6b17                dvobj_get_port0_adapter
+                0x010a0bc3                h2c_msg_hdl
+                0x010b6309                update_wireless_mode
+                0x0109e483                report_del_sta_event
+                0x010888c1                oid_rt_pro_rf_read_registry_hdl
+                0x01077901                rtl8188eu_free_xmit_priv
+                0x0103d85c                SwLedBlink12
+                0x010bed70                _update_response_rate
+                0x0104d4ce                rtw_indicate_wx_disassoc_event
+                0x01038655                rtw_hal_antdiv_rssi_compared
+                0x0108120f                rtw_dm_in_lps_hdl
+                0x01031656                hal_init_macaddr
+                0x01083738                Efuse_PowerSwitch
+                0x01068f56                rtw_get_time_interval_ms
+                0x01069041                rtw_lock_rx_suspend_timeout
+                0x01069028                rtw_unlock_suspend
+                0x0109d7d5                start_clnt_auth
+                0x01068f86                rtw_msleep_os
+                0x01092418                OnAssocRsp
+                0x010b9035                rtw_put_snap
+                0x0104d40c                rtw_indicate_wx_assoc_event
+                0x010693b3                copy_to_user
+                0x01038eb3                SwLedBlink
+                0x01039c5e                SwLedBlink2
+                0x010467f0                ODM_TXPowerTrackingCallback_ThermalMeter
+                0x010677da                rtw_drv_register_netdev
+                0x01074dab                storePwrIndexDiffRateOffset
+                0x010b8b8c                rtw_txframes_pending
+                0x01030e6e                HAL_IsLegalChannel
+                0x0108d352                rtw_stadel_event_callback
+                0x010735f3                Hal_EfuseParseEEPROMVer88E
+                0x0109b723                issue_deauth_ex
+                0x01082f6a                shift_out_bits
+                0x01044379                SwLedControlMode15
+                0x01086d1b                rtw_get_p2p_ie
+                0x010b36ec                rtw_get_center_ch
+                0x010a7edf                rtw_ps_processor
+                0x0106f04e                rtl8188e_deinit_dm_priv
+                0x010b663d                correct_TSF
+                0x010a18cc                rtw_odm_adaptivity_parm_msg
+                0x010a0552                setauth_hdl
+                0x01060b22                odm_SwAntDetectInit
+                0x0106901e                rtw_suspend_lock_uninit
+                0x0108b052                _rtw_free_network
+                0x0105d680                ODM_CmnInfoUpdate
+                0x010a52ed                process_p2p_group_negotation_req
+                0x01066303                odm_ConfigRFReg_8188E
+                0x0105fd82                odm_RateAdaptiveMaskInit
+                0x0103c6f9                SwLedBlink10
+                0x0108875f                oid_rt_get_key_mismatch_hdl
+                0x010a6ea7                p2p_ps_wk_hdl
+                0x01069662                netif_device_attach
+                0x01038140                rtw_hal_inirp_init
+                0x010322c8                GetU1ByteIntegerFromStringInDecimal
+                0x010b9bda                rtw_xmit_classifier
+                0x01068e3d                _rtw_spinlock_init
+                0x01069750                wireless_send_event
+                0x010898fd                rtw_set_802_11_add_key
+                0x0105d4e2                ODM_CmnInfoInit
+                0x0105cf9e                _survey_timer_hdl
+                0x0107035c                rtl8188e_FirmwareDownload
+                0x01086b1f                rtw_p2p_merge_ies
+                0x0108378f                Efuse_GetCurrentSize
+                0x0107f68f                rtw_setrfreg_cmd
+                0x010737c4                Hal_ReadThermalMeter_88E
+                0x0106002d                odm_RefreshRateAdaptiveMaskMP
+                0x0108b281                rtw_generate_random_ibss
+                0x010b502c                update_ldpc_stbc_cap
+                0x010a162b                rtw_odm_adaptivity_mode_msg
+                0x01074beb                PHY_SetRFReg8188E
+                0x010b909c                rtw_update_protection
+                0x0108f7a5                get_miracast_mode_str
+                0x010b3629                rtw_set_oper_ch
+                0x0108d79c                rtw_scan_timeout_handler
+                0x010bcc47                USB_AggModeSwitch
+                0x01087d46                _rtw_read16
+                0x010b5d13                update_MCS_rate
+                0x01038955                rtw_hal_is_disable_sw_channel_plan
+                0x010849a2                Efuse_ReadAllMap
+                0x010b6660                adaptive_early_32k
+                0x0109e15f                report_survey_event
+                0x0105cb83                rtw_join_timeout_handler
+                0x0108a411                rtw_set_802_11_remove_key
+                0x010700c6                _MCUIO_Reset88E
+                0x010b93d3                rtw_free_xmitbuf_ext
+                0x010b87ab                rtw_make_wlanhdr
+                0x01038763                rtw_hal_iol_cmd
+                0x0107f7dc                rtw_getbbrfreg_cmdrsp_callback
+                0x010b2cf8                rtw_free_all_stainfo
+                0x0105e1c1                ODM_DynamicATCSwitch
+                0x01038aea                PHY_RFShadowWrite
+                0x010a7d91                rtw_pwr_unassociated_idle
+                0x0109b8db                issue_action_spct_ch_switch
+                0x010661bf                ODM_delay_us
+                0x010b5a31                should_forbid_n_rate
+                0x010bb2c7                rtw_sctx_wait
+                0x01082627                bb_reg_dump
+                0x01084eb1                rtw_check_network_type
+                0x0107b6ec                bss_cap_update_on_sta_join
+                0x010ae940                rtw_tkip_decrypt
+                0x0106c739                rtw_handle_tkip_mic_err
+                0x01066115                ODM_FreeMemory
+                0x010a920c                rtw_alloc_recvframe
+                0x010b3862                SelectChannel
+                0x01065e95                ODM_ConfigFWWithHeaderFile
+                0x010b1fd8                sreset_reset
+                0x0106ef05                rtl8188e_HalDmWatchDog
+                0x010a0cd2                tx_beacon_hdl
+                0x0107ada1                rtw_ap_set_pairwise_key
+                0x010a12fd                rtw_odm_dbg_level_msg
+                0x0107f954                rtw_startbss_cmd
+                0x01069bef                del_netif
+                0x0109a1bf                issue_assocreq
+                0x0106e7b6                rtl8188e_set_p2p_ps_offload_cmd
+                0x0106d7f7                rtl8188e_set_raid_cmd
+                0x0106b2b4                Phydm_NHMCounterStatisticsInit
+                0x01037855                PHY_GetTxPowerIndex
+                0x01037d7b                rtw_hal_sw_led_deinit
+                0x010bae62                xmit_delivery_enabled_frames
+                0x010afb41                rtw_aes_encrypt
+                0x010832cb                eeprom_write16
+                0x01045d28                ODM_ReadAndConfig_MP_8188E_RadioA_1T
+                0x010869b9                dump_ies
+                0x010b337d                is_basicrate
+                0x010a7c95                _ips_leave
+                0x010887f8                oid_rt_wireless_mode_for_scan_list_hdl
+                0x010607fb                getSwingIndex
+                0x0103167b                rtw_init_hal_com_default_value
+                0x010be753                GetHwReg8188EU
+                0x01068d7a                rtw_init_timer
+                0x010b4eac                HTOnAssocRsp
+                0x010a8f09                rtw_ps_deny_get
+                0x010a1153                tdls_hdl
+                0x01067252                rtw_init_drv_sw
+                0x010b1b8a                sreset_set_trigger_point
+                0x01069189                rtw_division64
+                0x010770a1                handle_txrpt_ccx_88e
+                0x0106b5a2                Phydm_SetEDCCAThreshold
+                0x0106b8a1                Phydm_CheckEnvironment
+                0x01083f8c                Efuse_PgPacketWrite_BT
+                0x010aac53                validate_recv_mgnt_frame
+                0x0108c47a                rtw_indicate_connect
+                0x010695d1                netif_wake_subqueue
+                0x010699d7                rtw_disconn
+                0x010c1792                usb_write_port_cancel
+                0x0105d035                rtw_indicate_sta_assoc_event
+                0x01069510                usb_deregister
+                0x0105cc35                rtw_init_mlme_timer
+                0x0106626d                ODM_InitializeTimer
+                0x01068b1b                _rtw_skb_free
+                0x010a951a                rtw_dequeue_recvbuf
+                0x01081232                rtw_dm_in_lps_wk_cmd
+                0x01068f01                rtw_systime_to_ms
+                0x01090771                OnBeacon
+                0x01060b09                odm_SwAntDivInit
+                0x01080471                rtw_setassocsta_cmd
+                0x010349e4                PHY_StoreTxPowerByRate
+                0x01068e53                _rtw_spinlock_free
+                0x01069200                rtw_buf_update
+                0x0106c5fa                rtw_os_recv_indicate_pkt
+                0x010ad323                rtw_signal_stat_timer_hdl
+                0x01068e9a                _rtw_spinunlock_ex
+                0x01082341                rtw_setassocsta_cmdrsp_callback
+                0x0108ac83                _rtw_init_mlme_priv
+                0x01072e29                Hal_EfuseParseIDCode88E
+                0x0106da44                rtl8188e_set_FwMediaStatus_cmd
+                0x0109964c                issue_probereq
+                0x010641e1                ODM_AntDivInit
+                0x010b40e8                _rtw_camid_is_gk
+                0x010b7331                rtw_mfree_xmit_priv_lock
+                0x010871b8                rtw_get_wfd_ie
+                0x0104857a                ConfigureTxpowerTrack_8188E
+                0x01063530                odm_RX_HWAntDiv_Init_88E
+                0x01068a4a                dev_alloc_skb
+                0x01037fc9                rtw_hal_set_def_var
+                0x0104cd2d                PHY_SetRFPathSwitch_8188E
+                0x010aa1ec                ap2sta_data_frame
+                0x010851e4                rtw_ies_remove_ie
+                0x0108ae10                rtw_free_mlme_priv_ie_data
+                0x0103841a                rtw_hal_write_bbreg
+                0x010bafe3                enqueue_pending_xmitbuf
+                0x010383b0                rtw_hal_start_thread
+                0x010c12e0                usb_read_port_cancel
+                0x01068eb0                _rtw_init_queue
+                0x01080b73                rtw_set_csa_cmd
+                0x01049b9f                _PHY_PathADDAOn
+                0x01068abb                dev_kfree_skb_any
+                0x01068e84                _rtw_spinlock_ex
+                0x0106894b                _rtw_zvmalloc
+                0x01068c19                rtw_malloc2d
+                0x01065dcb                ODM_ConfigMACWithHeaderFile
+                0x01060b04                odm_TXPowerTrackingCheckAP
+                0x010b3113                cckrates_included
+                0x01088106                rtw_init_io_priv
+                0x01076481                DumpBBDbgPort_92CU
+                0x010baa3a                stop_sta_xmit
+                0x010857df                rtw_parse_wpa_ie
+                0x01073823                HalDetectPwrDownMode88E
+                0x0107fa6f                rtw_joinbss_cmd
+                0x01088826                oid_rt_ap_get_associated_station_list_hdl
+                0x01061ae8                odm_PHY_SaveAFERegisters
+                0x01074960                PHY_SetBBReg8188E
+                0x010a8a26                _rtw_pwr_wakeup
+                0x0109d8eb                start_clnt_assoc
+                0x01038b91                PHY_RFShadowRecorver
+                0x01087c88                rtw_action_frame_parse
+                0x0103554e                PHY_TxPowerByRateConfiguration
+                0x0106b83f                Phydm_CalNHMcnt
+                0x010692cf                rtw_cbuf_push
+                0x010475dc                ODM_ResetIQKResult
+                0x010c1556                usb_write_port
+                0x010607cf                odm_RSSIMonitorCheckAP
+                0x0104d3bf                indicate_wx_scan_complete_event
+                0x0106d7c2                rtl8188e_set_rssi_cmd
+                0x0109f038                linked_status_chk
+                0x0108145b                rtw_rpt_timer_cfg_cmd
+                0x010b977b                rtw_alloc_xmitframe_once
+                0x01072bea                _LLTWrite
+                0x0106effb                rtl8188e_init_dm_priv
+                0x010c1883                rtw_remainder_len
+                0x0107b3df                update_beacon
+                0x0107f5e9                rtw_getbbreg_cmd
+                0x0107bb79                bss_cap_update_on_sta_leave
+                0x0105f9cc                odm_1R_CCA
+                0x01083687                read_eeprom_content
+                0x01038be3                PHY_RFShadowCompareAll
+                0x010894bb                rtw_set_802_11_disassociate
+                0x010803d5                rtw_getrttbl_cmd
+                0x01060461                odm_DynamicTxPowerAP
+                0x010607d4                ODM_InitAllTimers
+                0x01038630                rtw_hal_antdiv_before_linked
+                0x01068145                rtw_suspend_free_assoc_resource
+                0x0105e7fe                odm_DIGbyRSSI_LPS
+                0x0108ec95                rtw_get_encrypt_decrypt_from_registrypriv
+                0x01037ffc                rtw_hal_get_def_var
+                0x010b4e61                HT_info_handler
+                0x0109ed26                _linked_info_dump
+                0x010385ea                rtw_hal_dm_watchdog_in_lps
+                0x01045773                ODM_ReadFirmware_MP_8188E_FW_NIC_S
+                0x010ad17e                recv_func
+                0x010c1a1a                dump_os_queue
+                0x010aa659                sta2ap_data_frame
+                0x01069032                rtw_resume_unlock_suspend
+                0x010b31b4                networktype_to_raid
+                0x01067f98                rtw_dev_unload
+                0x010a8e2b                rtw_ps_deny
+                0x0108b46f                is_same_network
+                0x0103b322                SwLedBlink6
+                0x010630cb                odm_dtc
+                0x0109eb9e                mlmeext_sta_add_event_callback
+                0x01066c32                rtw_classify8021d
+                0x0106148e                odm_HwAntDiv
+                0x0106c0f3                rtw_os_alloc_recvframe
+                0x01068bcd                _rtw_usb_buffer_alloc
+                0x010682f3                rtw_suspend_normal
+                0x010a21f8                is_any_client_associated
+                0x01065f9d                ODM_Write1Byte
+                0x0108101c                lps_ctrl_wk_hdl
+                0x01069457                usb_free_urb
+                0x010a51cf                process_p2p_provdisc_resp
+                0x0105cff9                init_mlme_ext_timer
+                0x0108b0f0                _rtw_free_network_nolock
+                0x0109d4a5                start_clnt_join
+                0x010607e3                odm_IQCalibrate
+                0x0109e5bf                report_add_sta_event
+                0x0108017c                rtw_clearstakey_cmd
+                0x0104665a                ODM_ReadAndConfig_MP_8188E_TXPWR_LMT
+                0x010333f3                PHY_GetRateSectionIndexOfTxPowerByRate
+                0x01063da5                odm_HW_AntDiv
+                0x0106935f                rtw_cbuf_free
+                0x01084e14                rtw_is_cckrates_included
+                0x0108881c                oid_rt_scan_with_magic_packet_hdl
+                0x0108ab4f                rtw_IOL_append_END_cmd
+                0x01091171                OnAuthClient
+                0x01037cb0                rtw_hal_read_chip_info
+                0x0106c0ca                platform_wifi_power_off
+                0x010769bd                update_recvframe_attrib_88e
+                0x0107eb4e                rtw_cmd_clr_isr
+                0x010bb2a3                rtw_sctx_init
+                0x01038680                rtw_hal_sreset_init
+                0x010b344f                get_rate_set
+                0x010b8ccd                rtw_calculate_wlan_pkt_size_by_attribue
+                0x0108f66a                _rtw_roaming
+                0x010a68a5                pre_tx_invitereq_handler
+                0x01060432                odm_DynamicTxPowerNIC
+                0x010b3ed2                write_cam_from_cache
+                0x010323d8                rtw_hal_check_rxfifo_full
+                0x0106dd89                ConstructPSPoll
+                0x01066d0e                rtw_init_netdev
+                0x010a14eb                rtw_odm_ability_set
+                0x010983d1                dump_mgntframe_and_wait
+                0x0106f082                AntDivBeforeLink8188E
+                0x01034a7e                phy_ConvertTxPowerByRateByBase
+                0x010bab9f                wakeup_sta_to_xmit
+                0x0103e11f                SwLedBlink15
+                0x0106915b                rtw_modular64
+                0x0107e4f4                dhcp_flag_bcast
+                0x01080fc6                dynamic_chk_wk_hdl
+                0x0108d93e                rtw_dynamic_check_timer_handlder
+                0x0108a5f7                rtw_set_channel_plan
+                0x0109644c                _issue_probereq_p2p
+                0x010a8d19                rtw_pm_set_lps
+                0x01038c9b                PHY_RFShadowCompareFlagSet
+                0x010b2354                rtw_get_stainfo_by_offset
+                0x0104c272                PHY_IQCalibrate_8188E
+                0x01084bfa                EFUSE_ShadowRead
+                0x01067b0c                netdev_open
+                0x01031311                HalSetBrateCfg
+                0x010a467d                build_prov_disc_request_p2p_ie
+                0x010c1160                ffaddr2pipehdl
+                0x0105cfc4                _addba_timer_hdl
+                0x0106496f                odm_SignalScaleMapping_92CSeries
+                0x0107c162                rtw_ap_restore_network
+                0x0106650e                odm_ConfigBB_AGC_8188E
+                0x01075380                PHY_BBConfig8188E
+                0x0105f92a                ODM_Write_CCK_CCA_Thres
+                0x010384e0                rtw_hal_set_bwmode
+                0x010317ee                rtw_hal_update_sta_rate_mask
+                0x0103205e                eqNByte
+                0x0108b567                _rtw_find_same_network
+                0x0103879a                rtw_hal_xmit_thread_handler
+                0x010664a8                odm_ConfigMAC_8188E
+                0x01032f2b                phy_StoreTxPowerByRateBase
+                0x01098065                OnAction_vht
+                0x01069ae2                netif_rx
+                0x010887ee                oid_rt_forced_data_rate_hdl
+                0x0108a4a4                rtw_get_cur_max_rate
+                0x01065fc1                ODM_Write2Byte
+                0x010a1543                rtw_odm_adaptivity_en_msg
+                0x010460d2                ODM_ReadAndConfig_MP_8188E_TxPowerTrack_AP
+                0x010b4c96                HT_caps_handler
+                0x01084f46                rtw_set_ie
+                0x0109e6a1                rtw_port_switch_chk
+                0x010abe33                amsdu_to_msdu
+                0x0107792d                rtl8188eu_cal_txdesc_chksum
+                0x010b1c7e                sreset_restore_network_station
+                0x0107398c                StopTxBeacon
+                0x010a8f43                _rtw_init_sta_recv_priv
+                0x0108396e                EFUSE_GetEfuseDefinition
+                0x010ab505                validate_recv_frame
+                0x01074c6e                PHY_MACConfig8188E
+                0x010b9957                rtw_free_xmitframe_queue
+                0x0109f643                link_timer_hdl
+                0x010835b0                eeprom_read
+                0x01086f87                rtw_set_p2p_attr_content
+                0x010773ac                rtl8188eu_InitSwLeds
+                0x0108375c                BTEfuse_PowerSwitch
+                0x0108955c                rtw_set_802_11_bssid_list_scan
+                0x01085653                rtw_get_wpa_cipher_suite
+                0x01095e0f                is_matched_in_profilelist
+                0x01036c5f                PHY_ConvertTxPowerLimitToPowerIndex
+                0x010b9d04                rtw_alloc_hwxmits
+                0x0108e463                rtw_restruct_wmm_ie
+                0x01038309                rtw_hal_free_recv_priv
+                0x01094ee6                issue_p2p_invitation_request
+                0x0105ce3a                rtw_report_sec_ie
+                0x0107e59d                scdb_findEntry
+                0x0106967e                eth_type_trans
+                0x010690b3                ATOMIC_INC_RETURN
+                0x010bd987                rtl8188eu_inirp_deinit
+                0x0108884a                oid_rt_ap_supported_hdl
+                0x0103050f                ODM_RA_UpdateRateInfo_8188E
+                0x0108f771                rtw_linked_check
+                0x0104408b                SwLedControlMode14
+                0x0108b67f                update_network
+                0x01088854                oid_rt_ap_set_passphrase_hdl
+                0x010611be                ODM_SetTxAntByTxInfo_88C_92D
+                0x010689c1                _rtw_malloc
+                0x01075444                PHY_RFConfig8188E
+                0x010a9a22                decryptor
+                0x0105cfd7                init_addba_retry_timer
+                0x01067431                rtw_cancel_all_timer
+                0x01032093                IsHexDigit
+                0x01097fa2                on_action_public
+                0x01072a31                rtl8188e_set_hal_ops
+                0x01069099                ATOMIC_ADD_RETURN
+                0x010789b1                rtl8188eu_hal_xmitframe_enqueue
+                0x0108061e                rtw_reset_securitypriv_cmd
+                0x0104578c                ODM_ReadFirmware_MP_8188E_FW_NIC_T
+                0x01079873                update_bmc_sta
+                0x0105ff8e                odm_RefreshRateAdaptiveMask
+                0x010adbcf                rtw_wep_decrypt
+                0x0106bce2                Phydm_Adaptivity
+                0x010ac02e                check_indicate_seq
+                0x010a4b21                process_assoc_req_p2p_ie
+                0x010b4713                WMM_param_handler
+                0x010a94bd                rtw_enqueue_recvbuf
+                0x01037d5e                rtw_hal_sw_led_init
+                0x0107273e                rtl8188e_GetHalODMVar
+                0x0108bdab                rtw_surveydone_event_callback
+                0x010607d9                ODM_CancelAllTimers
+                0x010476a3                ODM_GetRightChnlPlaceforIQK
+                0x0108166e                rtw_dm_ra_mask_wk_cmd
+                0x010a35d9                build_assoc_req_wfd_ie
+                0x0104383e                SwLedControlMode12
+                0x010bd87b                rtl8188eu_hal_deinit
+                0x01086bf1                dump_p2p_ie
+                0x010b9df0                rtw_br_client_tx
+                0x01030660                ODM_RA_TxRPT2Handle_8188E
+                0x01092bd6                OnAtim
+                0x010384be                rtw_hal_interrupt_handler
+                0x010bb0bf                dequeue_pending_xmitbuf
+                0x01065aca                ODM_PhyStatusQuery
+                0x01087f6d                _rtw_read_port
+                0x010b8bf9                rtw_txframes_sta_ac_pending
+                0x010824b9                dump_log_level
+                0x01064b19                odm_RxPhyStatus92CSeries_Parsing
+                0x01072861                hal_notch_filter_8188e
+                0x0103ddf6                SwLedBlink14
+                0x010a1a6f                rtw_odm_adaptivity_parm_set
+                0x01098371                dump_mgntframe
+                0x01084f9a                rtw_set_ie_ch_switch
+                0x0106c8f8                rtw_recv_indicatepkt
+                0x010ae059                rtw_seccalctkipmic
+                0x01069123                rtw_free_netdev
+                0x01096bad                issue_probereq_p2p_ex
+                0x010befdc                rtl8188eu_set_hal_ops
+                0x0108feab                init_mlme_ext_priv
+                0x0109812f                OnAction
+                0x0108f60e                rtw_dec_to_roam
+                0x01038ad0                PHY_RFShadowRead
+                0x0109805b                OnAction_wmm
+                0x01037d07                rtw_hal_free_data
+                0x01081512                antenna_select_wk_hdl
+                0x010a0b13                mlme_evt_hdl
+                0x0103e8e4                BlinkTimerCallback
+                0x010bd5b7                _ps_close_RF
+                0x010b242c                rtw_mfree_all_stainfo
+                0x0108854b                oid_rt_set_channelplan_hdl
+                0x01069625                dev_put
+                0x01088ca6                rtw_set_802_11_bssid
+                0x0106c2dd                rtw_os_recv_resource_free
+                0x0106891d                _rtw_vmalloc
+                0x0109ecf6                mlmeext_sta_del_event_callback
+                0x010ac0ee                enqueue_reorder_recvframe
+                0x010383cd                rtw_hal_stop_thread
+                0x0108a94c                rtw_IOL_exec_cmds_sync
+                0x010bf627                rtw_set_hal_ops
+                0x0106c290                rtw_os_free_recvframe
+                0x01088251                oid_rt_get_small_packet_crc_hdl
+                0x0105ccb1                rtw_os_indicate_scan_done
+                0x010a926c                rtw_free_recvframe
+                0x0108ccd7                rtw_joinbss_event_prehandle
+                0x010c0df2                rtl8188eu_set_hw_type
+                0x01037f9a                rtw_hal_get_hwreg
+                0x010765c8                rtl8188e_PHY_RF6052SetBandwidth
+                0x010a9eb0                count_rx_stats
+                0x0108c219                rtw_fwdbg_event_callback
+                0x010aba8f                recvframe_defrag
+                0x01087e18                _rtw_writeN
+                0x010ad2d7                rtw_recv_entry
+                0x0104a117                phy_IQCalibrate_8188E
+                0x0109b2a7                issue_qos_nulldata
+                0x01035f00                PHY_GetTxPowerTrackingOffset
+                0x01069531                rtw_unregister_netdevs
+                0x0105d57e                ODM_CmnInfoHook
+                0x01074ba6                PHY_QueryRFReg8188E
+                0x01037ccd                rtw_hal_read_chip_version
+                0x01037c93                rtw_hal_chip_configure
+                0x010382a8                rtw_hal_init_xmit_priv
+                0x0108f7e3                rtw_ch_set_search_ch
+                0x010661d2                ODM_sleep_ms
+                0x0107e9fc                rtw_init_evt_priv
+                0x0106f5c5                efuse_read_phymap_from_txpktbuf
+                0x01076fb3                dump_txrpt_ccx_88e
+                0x01079716                add_RATid
+                0x01072c65                _LLTRead
+                0x010b3979                set_channel_bwmode
+                0x01069075                ATOMIC_SUB
+                0x01047a1e                DoIQK_8188E
+                0x010735a9                Hal_EfuseParseBoardType88E
+                0x01072743                rtl8188e_SetHalODMVar
+                0x010b41a1                _rtw_camid_search
+                0x01088378                oid_rt_get_rx_total_packet_hdl
+                0x0108de67                rtw_select_and_join_from_scanned_queue
+                0x010bb455                update_eapol_attrib
+                0x010389f9                rtw_hal_macid_wakeup
+                0x0108b2b2                rtw_get_capability_from_ie
+                0x0107e852                _rtw_free_evt_priv
+                0x010a2e27                build_beacon_p2p_ie
+                0x01076287                PHY_SetMonitorMode8192C
+                0x0106eeae                rtl8188e_InitHalDm
+                0x01068b64                _rtw_skb_queue_purge
+                0x010b3b4f                is_IBSS_empty
+                0x010a150d                rtw_odm_adaptivity_ver_msg
+                0x010886be                oid_rt_current_tx_power_level_hdl
+                0x01081760                p2p_protocol_wk_cmd
+                0x01061031                odm_SetRxIdleAnt
+                0x010bdd82                UpdateInterruptMask8188EU
+                0x01068799                rtw_resume_common
+                0x010b31ec                networktype_to_raid_ex
+                0x01037900                PHY_SetTxPowerIndex
+                0x01087e4e                _rtw_write8_async
+                0x01081a53                rtw_c2h_packet_wk_cmd
+                0x01099c6d                issue_asocrsp
+                0x01087299                rtw_get_wfd_ie_from_scan_queue
+                0x010a0573                setkey_hdl
+                0x0103556e                PHY_SetTxPowerIndexByRateSection
+                0x0109806f                OnAction_p2p
+                0x01067f61                pm_netdev_close
+                0x0108713b                dump_wfd_ie
+                0x0106617b                ODM_InitializeWorkItem
+                0x0104cb43                phy_SetRFPathSwitch_8188E
+                0x0106c394                rtw_os_recvbuf_resource_free
+                0x010b421b                rtw_camid_search
+                0x010a7304                rtw_init_wifi_display_info
+                0x01032623                phy_TxPwrIdxToDbm
+                0x010b5b5f                is_ap_in_wep
+                0x010648f3                ODM_InitDebugSetting
+                0x01034ea1                phy_ConvertTxPowerByRateInDbmToRelativeValues
+                0x0103844c                rtw_hal_read_rfreg
+                0x0109817e                DoReserved
+                0x0108b234                rtw_if_up
+                0x01060b13                odm_SwAntDivChkAntSwitch
+                0x01049a99                _PHY_ReloadADDARegisters
+                0x010385a9                rtw_hal_get_tx_power_level
+                0x01036302                PHY_SetTxPowerByRate
+                0x010b9b50                rtw_get_sta_pending
+                0x01075489                PHY_SetTxPowerIndex_8188E
+                0x0106ab9b                init_net_dev
+                0x010382e7                rtw_hal_init_recv_priv
+                0x010a184f                rtw_odm_adaptivity_needed
+                0x0107f739                rtw_getrfreg_cmd
+                0x010611c3                odm_HwAntDiv_92C_92D
+                0x01066150                ODM_CompareMemory
+                0x01079dc4                start_bss_network
+                0x010380ce                rtw_hal_disable_interrupt
+                0x010317be                rtw_get_mgntframe_raid
+                0x010a4283                build_provdisc_resp_wfd_ie
+                0x0103b7a4                SwLedBlink9
+                0x01060169                odm_RefreshRateAdaptiveMaskAPADSL
+                0x010b349e                UpdateBrateTbl
+                0x0108af65                _rtw_enqueue_network
+                0x010887ba                oid_rt_get_channel_list_hdl
+                0x010b6472                fire_write_MAC_cmd
+                0x0108153a                rtw_antenna_select_cmd
+                0x0107e9e9                rtw_init_cmd_priv
+                0x01031a01                SetHalDefVar
+                0x010bedde                SetBeaconRelatedRegisters8188EUsb
+                0x01060393                odm_DynamicTxPowerWritePowerIndex
+                0x01065f62                ODM_Read2Byte
+                0x010b9128                rtw_count_tx_stats
+                0x0104673f                ODM_ClearTxPowerTrackingState
+                0x0108a7d3                rtw_IOL_accquire_xmit_frame
+                0x010689a3                _rtw_vmfree
+                0x010387e0                rtw_hal_reset_security_engine
+                0x010695b0                time_after
+                0x010450ad                ODM_ReadAndConfig_MP_8188E_AGC_TAB_1T_ICUT
+                0x010607e8                odm_TXPowerTrackingInit
+                0x0108f5a4                rtw_append_exented_cap
+                0x0108d0bc                rtw_joinbss_event_callback
+                0x01066008                ODM_SetMACReg
+                0x0105cc8b                rtw_os_indicate_connect
+                0x010b351f                Save_DM_Func_Flag
+                0x0106cac3                rtw_init_recv_timer
+                0x010bcf3a                RfOnOffDetect
+                0x010a10ce                set_chplan_hdl
+                0x010bf99e                rtw_usb_if1_init
+                0x01066171                ODM_AcquireSpinLock
+                0x0103837a                rtw_hal_add_ra_tid
+                0x010b6949                rtw_release_macid
+                0x010b5df8                set_sta_rate
+                0x0108937a                rtw_set_802_11_infrastructure_mode
+                0x01080834                rtw_set_ch_cmd
+                0x010ad084                recv_func_posthandle
+                0x01088152                rtw_inc_and_chk_continual_io_error
+                0x010607de                ODM_ReleaseAllTimers
+                0x010695ed                netif_stop_subqueue
+                0x010819a1                rtw_chk_hi_queue_cmd
+                0x01096e3a                on_action_public_p2p
+                0x01087de9                _rtw_write32
+                0x0108822d                oid_rt_pro_set_fw_ra_state_hdl
+                0x0107a1f6                rtw_check_beacon_data
+                0x010609d7                ODM_TXPowerTrackingCheck
+                0x01077fa1                rtl8188eu_xmit_buf_handler
+                0x010b8cfb                rtw_xmitframe_coalesce
+                0x010630d0                PhyDM_Get_Structure
+                0x010b9a42                rtw_dequeue_xframe
+                0x0108b2f6                rtw_get_beacon_interval_from_ie
+                0x01083bd3                efuse_OneByteRead
+                0x010320c8                MapCharToHexDigit
+                0x010b99b6                rtw_xmitframe_enqueue
+                0x01038967                rtw_hal_macid_sleep
+                0x0107e2f1                nat25_handle_frame
+                0x0108860e                oid_rt_get_total_tx_bytes_hdl
+                0x010a3c15                build_nego_confirm_wfd_ie
+                0x010b620f                update_capinfo
+                0x01099850                issue_auth
+                0x01074870                GetHwReg8188E
+ .text          0x010c1fd0       0x30 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(pseudo-reloc.o)
+                0x010c1fd0                _pei386_runtime_relocator
+ .text          0x010c2000       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(CRT_fp10.o)
+                0x010c2000                _fpreset
+                0x010c2000                fpreset
+ .text          0x010c2010      0x110 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(gccmain.o)
+                0x010c20b0                __main
+                0x010c2010                __do_global_dtors
+                0x010c2050                __do_global_ctors
+ .text          0x010c2120      0x2f0 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+                0x010c21d0                __w32_sharedptr_initialize
+ .text          0x010c2410      0x1e0 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_umoddi3.o)
+                0x010c2410                __umoddi3
+ .text          0x010c25f0      0x130 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_udivdi3.o)
+                0x010c25f0                __udivdi3
+ .text          0x010c2720       0x50 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_eprintf.o)
+                0x010c2720                __eprintf
+ .text          0x010c2770        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00080.o)
+                0x010c2770                __set_app_type
+ *fill*         0x010c2778        0x8 00
+ .text          0x010c2780        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00121.o)
+                0x010c2780                _cexit
+ *fill*         0x010c2788        0x8 00
+ .text          0x010c2790        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00060.o)
+                0x010c2790                __p__environ
+ *fill*         0x010c2798        0x8 00
+ .text          0x010c27a0        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00656.o)
+                0x010c27a0                signal
+ *fill*         0x010c27a8        0x8 00
+ .text          0x010c27b0        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00062.o)
+                0x010c27b0                __p__fmode
+ *fill*         0x010c27b8        0x8 00
+ .text          0x010c27c0        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00388.o)
+                0x010c27c0                _setmode
+ *fill*         0x010c27c8        0x8 00
+ .text          0x010c27d0        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00039.o)
+                0x010c27d0                __getmainargs
+ *fill*         0x010c27d8        0x8 00
+ .text          0x010c27e0        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00662.o)
+                0x010c27e0                sscanf
+ *fill*         0x010c27e8        0x8 00
+ .text          0x010c27f0        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00575.o)
+                0x010c27f0                free
+ *fill*         0x010c27f8        0x8 00
+ .text          0x010c2800        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00626.o)
+                0x010c2800                malloc
+ *fill*         0x010c2808        0x8 00
+ .text          0x010c2810        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00533.o)
+                0x010c2810                abort
+ *fill*         0x010c2818        0x8 00
+ .text          0x010c2820        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00560.o)
+                0x010c2820                fflush
+ *fill*         0x010c2828        0x8 00
+ .text          0x010c2830        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00569.o)
+                0x010c2830                fprintf
+ *fill*         0x010c2838        0x8 00
+ .text          0x010c2840        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00735.o)
+                0x010c2840                SetUnhandledExceptionFilter@4
+ *fill*         0x010c2848        0x8 00
+ .text          0x010c2850        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00155.o)
+                0x010c2850                ExitProcess@4
+ *fill*         0x010c2858        0x8 00
+ .text          0x010c2860        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00220.o)
+                0x010c2860                GetAtomNameA@12
+ *fill*         0x010c2868        0x8 00
+ .text          0x010c2870        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00175.o)
+                0x010c2870                FindAtomA@4
+ *fill*         0x010c2878        0x8 00
+ .text          0x010c2880        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00001.o)
+                0x010c2880                AddAtomA@4
+ *fill*         0x010c2888        0x8 00
+ .text          0x010c2890       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/crtend.o
+ *(SORT(.text$*))
+ *(.glue_7t)
+ *(.glue_7)
+                0x010c28a0                ___CTOR_LIST__ = .
+                0x010c28a0                __CTOR_LIST__ = .
+                0x010c28a0        0x4 LONG 0xffffffff
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(.ctor)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+ .ctors         0x010c28a4        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/crtend.o
+                0x010c28a8        0x4 LONG 0x0
+                0x010c28ac                ___DTOR_LIST__ = .
+                0x010c28ac                __DTOR_LIST__ = .
+                0x010c28ac        0x4 LONG 0xffffffff
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(.dtor)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x010c28b0        0x4 LONG 0x0
+ *(.fini)
+ *(.gcc_exc)
+                0x010c28b4                PROVIDE (etext, .)
+ *(.gcc_except_table)
+
+.data           0x010c3000    0x1be00
+                0x010c3000                __data_start__ = .
+ *(.data)
+ .data          0x010c3000      0xa80 compile\core\core.o
+ .data          0x010c3a80      0xc40 compile\shell\shell.obj
+ .data          0x010c46c0       0xf0 compile\net\net.o
+                0x010c4730                g_Ip_upper_protocol
+                0x010c46d0                g_eth_upper_protocol
+ .data          0x010c47b0    0x1a510 compile\driver\driver.o
+                0x010dca68                rtw_busy_thresh
+                0x010dca74                rtw_bw_mode
+                0x010c4890                rtl8188E_radio_off_flow
+                0x010dd9d0                oid_rtl_seg_01_11
+                0x010dea0a                ARTHEROS_OUI1
+                0x010d7580                gDeltaSwingTableIdx_MP_5GA_P_TxPowerTrack_AP_8188E
+                0x010c57a0                Array_MP_8188E_AGC_TAB_1T
+                0x010dd54c                GlobalDebugLevel
+                0x010dca8c                rtw_stbc_cap
+                0x010dca7c                rtw_ampdu_enable
+                0x010dd5f8                WPA_AUTH_KEY_MGMT_PSK_OVER_802_1X
+                0x010d785a                gDeltaSwingTableIdx_MP_2GB_N_TxPowerTrack_PCIE_8188E
+                0x010c70c0                Array_MP_8188E_PHY_REG_PG
+                0x010d7a80                gDeltaSwingTableIdx_MP_5GA_P_TxPowerTrack_USB_8188E
+                0x010d29a0                Array_MP_8188E_FW_WoWLAN_T
+                0x010deb90                usb_drv
+                0x010c4bf0                rtl8188E_hwpdn_flow
+                0x010de440                odm_ability_str
+                0x010dca60                rtw_long_retry_lmt
+                0x010d7140                Array_MP_8188E_RadioA_1T_ICUT
+                0x010de4ac                odm_dbg_level_str
+                0x010c6ac0                Array_MP_8188E_PHY_REG_1T_ICUT
+                0x010dca78                rtw_cbw40_enable
+                0x010d66e8                ArrayLength_MP_8188E_FW_WoWLAN_T
+                0x010dd610                WPA_CIPHER_SUITE_WEP104
+                0x010dca2c                rtw_channel
+                0x010d768e                gDeltaSwingTableIdx_MP_2GCCKA_N_TxPowerTrack_AP_8188E
+                0x010dd5ea                RTW_WPA_OUI_TYPE
+                0x010de3c0                odm_comp_str
+                0x010c4a70                rtl8188E_suspend_flow
+                0x010dcaa0                rtw_AcceptAddbaReq
+                0x010dcac4                rtw_adaptivity_dc_backoff
+                0x010dbd70                rtw_rates
+                0x010dd614                RSN_VERSION_BSD
+                0x010c48f0                rtl8188E_card_disable_flow
+                0x010d6da0                Array_MP_8188E_RadioA_1T
+                0x010dca3c                rtw_rts_thresh
+                0x010dea22                REALTEK_OUI
+                0x010dd5f4                WPA_AUTH_KEY_MGMT_UNSPEC_802_1X
+                0x010d7740                gDeltaSwingTableIdx_MP_5GB_P_TxPowerTrack_PCIE_8188E
+                0x010d790e                gDeltaSwingTableIdx_MP_2GCCKA_N_TxPowerTrack_PCIE_8188E
+                0x010d7a20                gDeltaSwingTableIdx_MP_5GA_N_TxPowerTrack_USB_8188E
+                0x010dc590                CCKSwingTable_Ch14_New
+                0x010dc6b0                TxScalingTable_Jaguar
+                0x010dd626                RSN_CIPHER_SUITE_TKIP
+                0x010dcaa8                rtw_hwpdn_mode
+                0x010dea10                BROADCOM_OUI1
+                0x010dd330                wlancmds
+                0x010d78f0                gDeltaSwingTableIdx_MP_2GCCKB_P_TxPowerTrack_PCIE_8188E
+                0x010c5fe0                Array_MP_8188E_AGC_TAB_1T_ICUT
+                0x010c49b0                rtl8188E_card_enable_flow
+                0x010d76e0                gDeltaSwingTableIdx_MP_5GB_N_TxPowerTrack_PCIE_8188E
+                0x010d7670                gDeltaSwingTableIdx_MP_2GCCKB_P_TxPowerTrack_AP_8188E
+                0x010dca54                rtw_check_fw_ps
+                0x010d7800                gDeltaSwingTableIdx_MP_5GA_P_TxPowerTrack_PCIE_8188E
+                0x010d75f8                gDeltaSwingTableIdx_MP_2GB_P_TxPowerTrack_AP_8188E
+                0x010dd5f0                WPA_AUTH_KEY_MGMT_NONE
+                0x010dd61e                RSN_CIPHER_SUITE_NONE
+                0x010dd632                RSN_CIPHER_SUITE_WEP104
+                0x010dea28                REALTEK_96B_IE
+                0x010dcab0                ifname
+                0x010dcab4                if2name
+                0x010dc3b0                OFDMSwingTable_New
+                0x010d7ada                gDeltaSwingTableIdx_MP_2GB_N_TxPowerTrack_USB_8188E
+                0x010d7520                gDeltaSwingTableIdx_MP_5GA_N_TxPowerTrack_AP_8188E
+                0x010d7b34                gDeltaSwingTableIdx_MP_2GA_P_TxPowerTrack_USB_8188E
+                0x010dd61a                RSN_AUTH_KEY_MGMT_PSK_OVER_802_1X
+                0x010d7b16                gDeltaSwingTableIdx_MP_2GA_N_TxPowerTrack_USB_8188E
+                0x010d76ac                gDeltaSwingTableIdx_MP_2GCCKA_P_TxPowerTrack_AP_8188E
+                0x010dca98                rtw_rf_config
+                0x010d7be0                Array_MP_8188E_TXPWR_LMT
+                0x010dca40                rtw_frag_thresh
+                0x010ddd4c                WMM_OUI
+                0x010d79c0                gDeltaSwingTableIdx_MP_5GB_P_TxPowerTrack_USB_8188E
+                0x010dca94                rtw_lowrate_two_xmit
+                0x010d7b70                gDeltaSwingTableIdx_MP_2GCCKB_P_TxPowerTrack_USB_8188E
+                0x010dd622                RSN_CIPHER_SUITE_WEP40
+                0x010dca48                rtw_scan_mode
+                0x010ddd6c                RSN_TKIP_CIPHER
+                0x010dd62a                RSN_CIPHER_SUITE_WRAP
+                0x010d7616                gDeltaSwingTableIdx_MP_2GA_N_TxPowerTrack_AP_8188E
+                0x010ddd50                WPS_OUI
+                0x010dca70                rtw_ht_enable
+                0x010ce630                ArrayLength_MP_8188E_FW_NIC_T
+                0x010d7634                gDeltaSwingTableIdx_MP_2GA_P_TxPowerTrack_AP_8188E
+                0x010dca44                rtw_preamble
+                0x010dcaf4                current
+                0x010de7b8                ch_freq_map_num
+                0x010dd5ee                RTW_WPA_VERSION
+                0x010dea1c                MARVELL_OUI
+                0x010dcaac                rtw_hw_wps_pbc
+                0x010c4cb0                rtl8188E_enter_lps_flow
+                0x010dca6c                rtw_wmm_enable
+                0x010d7960                gDeltaSwingTableIdx_MP_5GB_N_TxPowerTrack_USB_8188E
+                0x010d78d2                gDeltaSwingTableIdx_MP_2GCCKB_N_TxPowerTrack_PCIE_8188E
+                0x010c4b30                rtl8188E_resume_flow
+                0x010ddd5c                WMM_INFO_OUI
+                0x010ddd80                MCS_rate_1R
+                0x010dd62e                RSN_CIPHER_SUITE_CCMP
+                0x010dca84                rtw_short_gi
+                0x010d6760                Array_MP_8188E_MAC_REG
+                0x010dea13                BROADCOM_OUI2
+                0x010d7af8                gDeltaSwingTableIdx_MP_2GB_P_TxPowerTrack_USB_8188E
+                0x010dca90                rtw_beamform_cap
+                0x010dd5fc                WPA_CIPHER_SUITE_NONE
+                0x010dcaec                current_ent
+                0x010d7bac                gDeltaSwingTableIdx_MP_2GCCKA_P_TxPowerTrack_USB_8188E
+                0x010dd604                WPA_CIPHER_SUITE_TKIP
+                0x010dea1f                RALINK_OUI
+                0x010ce640                Array_MP_8188E_FW_WoWLAN_S
+                0x010d6a60                Array_MP_8188E_MAC_REG_ICUT
+                0x010de596                signal_stat_calc_profile
+                0x010ddca0                OnAction_tbl
+                0x010d75da                gDeltaSwingTableIdx_MP_2GB_N_TxPowerTrack_AP_8188E
+                0x010d2988                ArrayLength_MP_8188E_FW_WoWLAN_S
+                0x010dca30                rtw_wireless_mode
+                0x010dc0b0                OFDMSwingTable
+                0x010d78b4                gDeltaSwingTableIdx_MP_2GA_P_TxPowerTrack_PCIE_8188E
+                0x010dd110                rtw_cmd_callback
+                0x010dd60c                WPA_CIPHER_SUITE_CCMP
+                0x010dcd10                Rtl8192S_HighPower_RadioA_Array
+                0x010dcabc                rtw_fw_iol
+                0x010dea16                BROADCOM_OUI3
+                0x010dca50                rtw_smart_ps
+                0x010d7896                gDeltaSwingTableIdx_MP_2GA_N_TxPowerTrack_PCIE_8188E
+                0x010d792c                gDeltaSwingTableIdx_MP_2GCCKA_P_TxPowerTrack_PCIE_8188E
+                0x010dca4c                rtw_adhoc_tx_pwr
+                0x010dd990                oid_rtl_seg_01_03
+                0x010dca34                rtw_vrtl_carrier_sense
+                0x010d7652                gDeltaSwingTableIdx_MP_2GCCKB_N_TxPowerTrack_AP_8188E
+                0x010d7878                gDeltaSwingTableIdx_MP_2GB_P_TxPowerTrack_PCIE_8188E
+                0x010ddd68                WPA_TKIP_CIPHER
+                0x010c71c0                Array_MP_8188E_FW_NIC_S
+                0x010cafe0                Array_MP_8188E_FW_NIC_T
+                0x010c4d30                rtl8188E_leave_lps_flow
+                0x010dea25                AIRGOCAP_OUI
+                0x010ddd58                WFD_OUI
+                0x010dc170                CCKSwingTable_Ch1_Ch13
+                0x010dca5c                rtw_radio_enable
+                0x010cafd8                ArrayLength_MP_8188E_FW_NIC_S
+                0x010de610                ch_freq_map
+                0x010ddd70                MCS_rate_2R
+                0x010dd616                RSN_AUTH_KEY_MGMT_UNSPEC_802_1X
+                0x010c4830                rtl8188E_power_on_flow
+                0x010dc290                CCKSwingTable_Ch14
+                0x010ddd62                WMM_PARA_OUI
+                0x010dea0d                ARTHEROS_OUI2
+                0x010dca80                rtw_rx_stbc
+                0x010dca28                rtw_rfintfs
+                0x010dca88                rtw_ldpc_cap
+                0x010dda30                oid_rtl_seg_03_00
+                0x010dd710                oid_rtl_seg_01_01
+                0x010dcac0                rtw_hiq_filter
+                0x010dca64                rtw_short_retry_lmt
+                0x010ddd48                RTW_WPA_OUI
+                0x010dc470                CCKSwingTable_Ch1_Ch13_New
+                0x010d7b8e                gDeltaSwingTableIdx_MP_2GCCKA_N_TxPowerTrack_USB_8188E
+                0x010dcaa4                rtw_antdiv_cfg
+                0x010dcab8                rtw_max_roaming_times
+                0x010dd608                WPA_CIPHER_SUITE_WRAP
+                0x010d74c0                gDeltaSwingTableIdx_MP_5GB_P_TxPowerTrack_AP_8188E
+                0x010d7b52                gDeltaSwingTableIdx_MP_2GCCKB_N_TxPowerTrack_USB_8188E
+                0x010dca38                rtw_vcs_type
+                0x010dca58                rtw_usb_rxagg_mode
+                0x010dca9c                rtw_channel_plan
+                0x010d77a0                gDeltaSwingTableIdx_MP_5GA_N_TxPowerTrack_PCIE_8188E
+                0x010d7460                gDeltaSwingTableIdx_MP_5GB_N_TxPowerTrack_AP_8188E
+                0x010dea19                CISCO_OUI
+                0x010ddbe0                mlme_sta_tbl
+                0x010ddd54                P2P_OUI
+                0x010dd600                WPA_CIPHER_SUITE_WEP40
+                0x010c6400                Array_MP_8188E_PHY_REG_1T
+ .data          0x010decc0       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(CRTglob.o)
+                0x010decc0                _CRT_glob
+ .data          0x010decd0       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(txtmode.o)
+                0x010decd0                _fmode
+ .data          0x010dece0       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(gccmain.o)
+ .data          0x010decf0       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+ *(.data2)
+ *(SORT(.data$*))
+                0x010ded00                __data_end__ = .
+ *(.data_cygwin_nocopy)
+
+.rdata          0x010df000    0x2c400
+ *(.rdata)
+ .rdata         0x010df000       0x40 compile\boot\boot.obj
+ .rdata         0x010df040     0x6b00 compile\core\core.o
+ .rdata         0x010e5b40       0x20 compile\libc\common.lib(stdio.o)
+ .rdata         0x010e5b60       0x20 compile\libc\common.lib(sbuffer.o)
+ .rdata         0x010e5b80       0x20 compile\libc\common.lib(library.o)
+ .rdata         0x010e5ba0      0x2a0 compile\shell\shell.obj
+ .rdata         0x010e5e40     0x1f80 compile\net\net.o
+ .rdata         0x010e7dc0    0x233b0 compile\driver\driver.o
+                0x011062f0                Td4s
+                0x011063f0                rcons
+                0x01105ef0                Td0
+                0x010f38f0                dB_Invert_Table
+                0x01109ad0                rtw_usb_id_len
+                0x01105af0                Te0
+ .rdata         0x0110b170       0xe0 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+ *(SORT(.rdata$*))
+ *(.eh_frame)
+                0x0110b250                ___RUNTIME_PSEUDO_RELOC_LIST__ = .
+                0x0110b250                __RUNTIME_PSEUDO_RELOC_LIST__ = .
+ *(.rdata_runtime_pseudo_reloc)
+                0x0110b250                ___RUNTIME_PSEUDO_RELOC_LIST_END__ = .
+                0x0110b250                __RUNTIME_PSEUDO_RELOC_LIST_END__ = .
+
+.pdata
+ *(.pdata)
+
+.bss            0x0110c000   0x4b5b30
+                0x0110c000                __bss_start__ = .
+ *(.bss)
+ .bss           0x0110c000       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../../crt2.o
+                0x0110c004                _argc
+                0x0110c000                _argv
+ .bss           0x0110c010   0x3367e0 compile\core\core.o
+                0x014417c0                hook
+ .bss           0x014427f0       0x10 compile\libc\common.lib(stdio.o)
+ .bss           0x01442800       0x20 compile\libc\common.lib(sbuffer.o)
+ .bss           0x01442820      0x180 compile\shell\shell.obj
+ .bss           0x014429a0       0x50 compile\net\net.o
+                0x014429b0                dbg_wpa
+                0x014429e0                g_ip_identify
+                0x014429d0                g_sendIcmpSeqNo
+ .bss           0x014429f0     0x4590 compile\driver\driver.o
+                0x01444150                rtw_80211d
+                0x01444314                fakeEfuseUsedBytes
+                0x01444730                fakeEfuseModifiedMap
+                0x01444120                rtw_uapsd_max_sp
+                0x0144411c                rtw_uapsd_enable
+                0x01445150                fakeBTEfuseUsedBytes
+                0x01445a10                null_addr
+                0x01444100                rtw_power_mgnt
+                0x014440f0                rtw_chip_version
+                0x014440fc                rtw_soft_ap
+                0x01444138                rtw_low_power
+                0x01444d50                BTEfuseModifiedMap
+                0x01444110                rtw_software_encrypt
+                0x0144413c                rtw_wifi_spec
+                0x01444168                rtw_adaptivity_dml
+                0x01444128                rtw_uapsd_acbe_en
+                0x01445170                fakeBTEfuseInitMap
+                0x01444124                rtw_uapsd_acbk_en
+                0x01444530                fakeEfuseInitMap
+                0x01444108                rtw_ack_policy
+                0x01444310                fakeEfuseBank
+                0x01444930                BTEfuseUsedBytes
+                0x0144416c                rtw_tx_pwr_lmt_enable
+                0x0144414c                rtw_mc2u_disable
+                0x014440f4                rtw_lbkmode
+                0x0144412c                rtw_uapsd_acvi_en
+                0x01444130                rtw_uapsd_acvo_en
+                0x01444170                rtw_tx_pwr_by_rate
+                0x01444144                rtw_enusbss
+                0x01444158                rtw_initmac
+                0x01446f20                ui_pid
+                0x01444118                rtw_acm_method
+                0x01444104                rtw_ips_mode
+                0x01444140                rtw_antdiv_type
+                0x0144410c                rtw_mp_mode
+                0x01444134                rtw_ampdu_amsdu
+                0x01444950                BTEfuseInitMap
+                0x01444190                jiffies
+                0x01444330                fakeEfuseContent
+                0x01444160                rtw_adaptivity_en
+                0x01444114                rtw_software_decrypt
+                0x01444164                rtw_adaptivity_mode
+                0x01444154                rtw_qos_opt_enable
+                0x01444148                rtw_hwpwrp_detect
+                0x014440f8                rtw_network_mode
+                0x01445570                fakeBTEfuseModifiedMap
+                0x0144415c                rtw_notch_filter
+                0x01446f2c                rtw_sw_export
+ .bss           0x01446f80       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(CRTfmode.o)
+                0x01446f80                _CRT_fmode
+ .bss           0x01446f90       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(gccmain.o)
+ .bss           0x01446fa0       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmingw32.a(pseudo-reloc-list.o)
+ .bss           0x01446fb0       0x20 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+ *(COMMON)
+ COMMON         0x01446fd0      0x120 compile\core\core.o
+                0x01446fd0                vbe_init_ljmp_16_ram
+                0x01446fe0                temp
+                0x014470e0                vbe_entry_ljmp_16_ram
+ COMMON         0x014470f0   0x179de0 compile\net\net.o
+                0x014470f0                g_itf_ip_list
+                0x01447110                security_ie
+                0x01447210                g_ping_task
+                0x01447230                security_ie_len
+                0x01447240                g_icmp_reply_fuc_list
+                0x01447260                wpa_cfg
+                0x01447280                g_arpTable
+                0x01448e80                g_eth_phydev_list
+ COMMON         0x015c0ed0      0xc10 compile\driver\driver.o
+                0x015c0ed0                __packed
+                0x015c0ee0                BTEfuseContent
+                0x015c14e0                fakeBTEfuseContent
+ COMMON         0x015c1ae0       0x30 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(w32-shared-ptr.o)
+                0x015c1ae0                __w32_sharedptr_terminate
+                0x015c1af0                __w32_sharedptr
+                0x015c1b00                __w32_sharedptr_unexpected
+ COMMON         0x015c1b10       0x20 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2\libgcc.a(_ctors.o)
+                0x015c1b30                __bss_end__ = .
+
+.edata
+ *(.edata)
+
+/DISCARD/
+ *(.debug$S)
+ *(.debug$T)
+ *(.debug$F)
+ *(.drectve)
+
+.idata          0x015c2000      0x400
+ SORT(*)(.idata$2)
+ .idata$2       0x015c2000       0x14 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbh.o)
+                0x015c2000                _head_libkernel32_a
+ .idata$2       0x015c2014       0x14 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxh.o)
+                0x015c2014                _head_libmsvcrt_a
+ SORT(*)(.idata$3)
+                0x015c2028        0x4 LONG 0x0
+                0x015c202c        0x4 LONG 0x0
+                0x015c2030        0x4 LONG 0x0
+                0x015c2034        0x4 LONG 0x0
+                0x015c2038        0x4 LONG 0x0
+ SORT(*)(.idata$4)
+ .idata$4       0x015c203c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbh.o)
+ .idata$4       0x015c2040        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00001.o)
+ .idata$4       0x015c2044        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00155.o)
+ .idata$4       0x015c2048        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00175.o)
+ .idata$4       0x015c204c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00220.o)
+ .idata$4       0x015c2050        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00735.o)
+ .idata$4       0x015c2054        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbt.o)
+ .idata$4       0x015c2058        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxh.o)
+ .idata$4       0x015c205c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00039.o)
+ .idata$4       0x015c2060        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00060.o)
+ .idata$4       0x015c2064        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00062.o)
+ .idata$4       0x015c2068        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00080.o)
+ .idata$4       0x015c206c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00121.o)
+ .idata$4       0x015c2070        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00233.o)
+ .idata$4       0x015c2074        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00350.o)
+ .idata$4       0x015c2078        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00388.o)
+ .idata$4       0x015c207c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00533.o)
+ .idata$4       0x015c2080        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00540.o)
+ .idata$4       0x015c2084        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00560.o)
+ .idata$4       0x015c2088        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00569.o)
+ .idata$4       0x015c208c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00575.o)
+ .idata$4       0x015c2090        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00626.o)
+ .idata$4       0x015c2094        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00656.o)
+ .idata$4       0x015c2098        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00662.o)
+ .idata$4       0x015c209c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxt.o)
+ SORT(*)(.idata$5)
+ .idata$5       0x015c20a0        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbh.o)
+ .idata$5       0x015c20a4        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00001.o)
+                0x015c20a4                _imp__AddAtomA@4
+ .idata$5       0x015c20a8        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00155.o)
+                0x015c20a8                _imp__ExitProcess@4
+ .idata$5       0x015c20ac        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00175.o)
+                0x015c20ac                _imp__FindAtomA@4
+ .idata$5       0x015c20b0        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00220.o)
+                0x015c20b0                _imp__GetAtomNameA@12
+ .idata$5       0x015c20b4        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00735.o)
+                0x015c20b4                _imp__SetUnhandledExceptionFilter@4
+ .idata$5       0x015c20b8        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbt.o)
+ .idata$5       0x015c20bc        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxh.o)
+ .idata$5       0x015c20c0        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00039.o)
+                0x015c20c0                _imp____getmainargs
+ .idata$5       0x015c20c4        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00060.o)
+                0x015c20c4                _imp____p__environ
+ .idata$5       0x015c20c8        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00062.o)
+                0x015c20c8                _imp____p__fmode
+ .idata$5       0x015c20cc        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00080.o)
+                0x015c20cc                _imp____set_app_type
+ .idata$5       0x015c20d0        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00121.o)
+                0x015c20d0                _imp___cexit
+ .idata$5       0x015c20d4        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00233.o)
+                0x015c20d4                _imp___iob
+ .idata$5       0x015c20d8        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00350.o)
+                0x015c20d8                _imp___onexit
+ .idata$5       0x015c20dc        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00388.o)
+                0x015c20dc                _imp___setmode
+ .idata$5       0x015c20e0        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00533.o)
+                0x015c20e0                _imp__abort
+ .idata$5       0x015c20e4        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00540.o)
+                0x015c20e4                _imp__atexit
+ .idata$5       0x015c20e8        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00560.o)
+                0x015c20e8                _imp__fflush
+ .idata$5       0x015c20ec        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00569.o)
+                0x015c20ec                _imp__fprintf
+ .idata$5       0x015c20f0        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00575.o)
+                0x015c20f0                _imp__free
+ .idata$5       0x015c20f4        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00626.o)
+                0x015c20f4                _imp__malloc
+ .idata$5       0x015c20f8        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00656.o)
+                0x015c20f8                _imp__signal
+ .idata$5       0x015c20fc        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00662.o)
+                0x015c20fc                _imp__sscanf
+ .idata$5       0x015c2100        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxt.o)
+ SORT(*)(.idata$6)
+ .idata$6       0x015c2104        0xc ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00001.o)
+ .idata$6       0x015c2110        0xe ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00155.o)
+ *fill*         0x015c211e        0x2 00
+ .idata$6       0x015c2120        0xc ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00175.o)
+ .idata$6       0x015c212c       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00220.o)
+ .idata$6       0x015c213c       0x1e ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00735.o)
+ *fill*         0x015c215a        0x2 00
+ .idata$6       0x015c215c       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00039.o)
+ .idata$6       0x015c216c       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00060.o)
+ .idata$6       0x015c217c        0xe ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00062.o)
+ *fill*         0x015c218a        0x2 00
+ .idata$6       0x015c218c       0x12 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00080.o)
+ *fill*         0x015c219e        0x2 00
+ .idata$6       0x015c21a0        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00121.o)
+ *fill*         0x015c21aa        0x2 00
+ .idata$6       0x015c21ac        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00233.o)
+ .idata$6       0x015c21b4        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00350.o)
+ *fill*         0x015c21be        0x2 00
+ .idata$6       0x015c21c0        0xc ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00388.o)
+ .idata$6       0x015c21cc        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00533.o)
+ .idata$6       0x015c21d4        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00540.o)
+ *fill*         0x015c21de        0x2 00
+ .idata$6       0x015c21e0        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00560.o)
+ *fill*         0x015c21ea        0x2 00
+ .idata$6       0x015c21ec        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00569.o)
+ *fill*         0x015c21f6        0x2 00
+ .idata$6       0x015c21f8        0x8 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00575.o)
+ .idata$6       0x015c2200        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00626.o)
+ *fill*         0x015c220a        0x2 00
+ .idata$6       0x015c220c        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00656.o)
+ *fill*         0x015c2216        0x2 00
+ .idata$6       0x015c2218        0xa ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00662.o)
+ SORT(*)(.idata$7)
+ *fill*         0x015c2222        0x2 00
+ .idata$7       0x015c2224        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00001.o)
+ .idata$7       0x015c2228        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00155.o)
+ .idata$7       0x015c222c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00175.o)
+ .idata$7       0x015c2230        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00220.o)
+ .idata$7       0x015c2234        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbs00735.o)
+ .idata$7       0x015c2238       0x10 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libkernel32.a(dchbt.o)
+                0x015c2238                _libkernel32_a_iname
+ .idata$7       0x015c2248        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00039.o)
+ .idata$7       0x015c224c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00060.o)
+ .idata$7       0x015c2250        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00062.o)
+ .idata$7       0x015c2254        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00080.o)
+ .idata$7       0x015c2258        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00121.o)
+ .idata$7       0x015c225c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00233.o)
+ .idata$7       0x015c2260        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00350.o)
+ .idata$7       0x015c2264        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00388.o)
+ .idata$7       0x015c2268        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00533.o)
+ .idata$7       0x015c226c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00540.o)
+ .idata$7       0x015c2270        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00560.o)
+ .idata$7       0x015c2274        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00569.o)
+ .idata$7       0x015c2278        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00575.o)
+ .idata$7       0x015c227c        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00626.o)
+ .idata$7       0x015c2280        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00656.o)
+ .idata$7       0x015c2284        0x4 ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxs00662.o)
+ .idata$7       0x015c2288        0xc ../../../tools/Dev-Cpp/bin/../lib/gcc/mingw32/3.4.2/../../..\libmsvcrt.a(dkxt.o)
+                0x015c2288                _libmsvcrt_a_iname
+
+.CRT            0x015c3000        0x0
+                0x015c3000                ___crt_xc_start__ = .
+ *(SORT(.CRT$XC*))
+                0x015c3000                ___crt_xc_end__ = .
+                0x015c3000                ___crt_xi_start__ = .
+ *(SORT(.CRT$XI*))
+                0x015c3000                ___crt_xi_end__ = .
+                0x015c3000                ___crt_xl_start__ = .
+ *(SORT(.CRT$XL*))
+                0x015c3000                ___crt_xp_start__ = .
+ *(SORT(.CRT$XP*))
+                0x015c3000                ___crt_xp_end__ = .
+                0x015c3000                ___crt_xt_start__ = .
+ *(SORT(.CRT$XT*))
+                0x015c3000                ___crt_xt_end__ = .
+
+.tls            0x015c3000        0x0
+                0x015c3000                ___tls_start__ = .
+ *(.tls)
+ *(.tls$)
+ *(SORT(.tls$*))
+                0x015c3000                ___tls_end__ = .
+
+.endjunk        0x015c3000        0x0
+                0x015c3000                PROVIDE (end, .)
+                0x015c3000                PROVIDE (_end, .)
+                0x015c3000                __end__ = .
+
+.rsrc
+ *(.rsrc)
+ *(SORT(.rsrc$*))
+
+.reloc
+ *(.reloc)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.bios           0x015d0000     0x1000
+ *(.bios)
+ .bios          0x015d0000      0xe18 compile\core\core.o
+
+.ainit          0x015d0e18      0x200
+                0x015d0e18                __ainit_start = .
+ *(.ainit)
+ .ainit         0x015d0e18        0x8 compile\core\core.o
+                0x015d0e20                __ainit_end = .
+ *(.data_cygwin_nocopy)
+
+.binit          0x015d0e20      0x200
+                0x015d0e20                __binit_start = .
+ *(.binit)
+ .binit         0x015d0e20       0x14 compile\core\core.o
+                0x015d0e34                __binit_end = .
+ *(.data_cygwin_nocopy)
+
+.dinit          0x015d0e38      0x200
+                0x015d0e38                __dinit_start = .
+ *(.dinit)
+ .dinit         0x015d0e38       0x14 compile\core\core.o
+                0x015d0e4c                __dinit_end = .
+ *(.data_cygwin_nocopy)
+
+.minit          0x015d0e50      0x200
+                0x015d0e50                __minit_start = .
+ *(.minit)
+ .minit         0x015d0e50        0x4 compile\core\core.o
+ .minit         0x015d0e54        0x8 compile\shell\shell.obj
+                0x015d0e5c                __minit_end = .
+ *(.data_cygwin_nocopy)
+
+.driver_init    0x015d0e60      0x200
+                0x015d0e60                __driver_init_start = .
+ *(.driver_init)
+ .driver_init   0x015d0e60        0xc compile\driver\driver.o
+                0x015d0e6c                __driver_init_end = .
+ *(.data_cygwin_nocopy)
+
+.dev_para       0x015d0e70      0x200
+                0x015d0e70                __dev_para_start = .
+ *(.dev_para)
+ .dev_para      0x015d0e70        0x4 compile\driver\driver.o
+                0x015d0e74                __dev_para_end = .
+ *(.data_cygwin_nocopy)
+
+.end_section    0x015d0e78      0x200
+ *(.end_section)
+ .end_section   0x015d0e78        0x4 compile\boot\boot.obj
+                0x015d0e7c                __file_end__ = .
+OUTPUT(os4.exe pei-i386)

@@ -1,0 +1,216 @@
+.text
+	.align 2
+.globl _divide_error,_debug,_nmi,_int3,_overflow,_bounds,_invalid_op
+.globl _double_fault,_coprocessor_segment_overrun
+.globl _invalid_tss,_segment_not_present,_stack_segment
+.globl __Z8time_intv,__Z6kb_intv,__Z9mouse_intv
+.globl __Z7RTC_intv
+	.def	__Z8time_intv;	.scl	2;	.type	32;	.endef
+_divide_error:
+   push $0
+no_error_code:
+   xchgl %eax,(%esp)
+   pushl %ebx
+   pushl %ecx
+   pushl %edx
+   pushl %edi
+   pushl %esi
+   pushl %ebp
+   push %ds
+   push %es
+   push %fs
+   push $0
+   lea 44(%esp),%edx
+   pushl %edx
+   movl $0x10,%edx
+   mov %dx,%ds
+   mov %dx,%es
+   mov %dx,%fs
+   call *%eax
+   addl $8,%esp
+   pop %fs
+   pop %es
+   pop %ds
+   popl %ebp
+   popl %esi
+   popl %edi
+   popl %edx
+   popl %ecx
+   popl %ebx
+   popl %eax
+   iret
+_debug:#int 1
+   pushl $1
+   jmp no_error_code
+_nmi:#int 2
+   pushl $2
+   jmp no_error_code
+_int3:#int 3
+   pushl $3
+   jmp no_error_code
+_overflow:#int 4
+   pushl $2
+   jmp no_error_code
+_bounds:#int 5
+   pushl $5
+   jmp no_error_code
+_invalid_op:#int 6
+   pushl $6
+   jmp no_error_code
+_coprocessor_segment_overrun:#int 9
+   pushl $9
+   jmp no_error_code
+_reserved:#int 15
+   pushl $15
+   jmp no_error_code
+_irq13:#int 45
+   pushl %eax
+   xorb %al,%al
+   outb %al,$0xf0
+   movb $0x20,%al
+   jmp 1f
+  1:jmp 1f
+  1:outb %al,$0xa0
+   popl %eax
+   jmp no_error_code##_coprocessor_error##
+double_fault:#int 8
+   pushl $8
+error_code:
+   xchgl %eax,4(%esp)
+   xchgl %ebx,(%esp)
+   pushl %ecx
+   pushl %edx
+   pushl %edi
+   pushl %esi
+   pushl %ebp
+   push %ds
+   push %es
+   push %fs
+   pushl %eax
+   lea 44(%esp),%edx
+   pushl %eax
+   movl $0x10,%eax
+   mov %ax,%ds
+   mov %ax,%es
+   mov %ax,%fs
+   call *%ebx
+   addl $8,%esp
+   pop %fs
+   pop %es
+   pop %ds
+   popl %ebp
+   popl %esi
+   popl %edi
+   popl %edx
+   popl %ecx
+   popl %ebx
+   popl %eax
+   iret
+_invalid_tss:#int 10
+   pushl $10
+   jmp error_code
+_segment_not_present:#int 11
+   pushl $11
+   jmp error_code
+_stack_segment:#int 12
+   pushl $12
+   jmp error_code
+_general_protection:#int 13
+   pushl $13
+   jmp error_code
+
+__Z8time_intv: #int 20
+   pushl %eax
+   pushl %ebx
+   pushl %ecx
+   pushl %edx
+   pushl %edi
+   pushl %esi
+   pushl %ebp
+   push %ds
+   push %es
+   push %fs
+   call  __Z10f_time_intv
+   pop %fs
+   pop %es
+   pop %ds
+   popl %ebp
+   popl %esi
+   popl %edi
+   popl %edx
+   popl %ecx
+   popl %ebx
+   popl %eax
+   iret
+
+__Z6kb_intv: #int 21,keyboard.
+   pushl %eax
+   pushl %ebx
+   pushl %ecx
+   pushl %edx
+   pushl %edi
+   pushl %esi
+   pushl %ebp
+   push %ds
+   push %es
+   push %fs
+   call __Z8f_kb_intv
+   pop %fs
+   pop %es
+   pop %ds
+   popl %ebp
+   popl %esi
+   popl %edi
+   popl %edx
+   popl %ecx
+   popl %ebx
+   popl %eax
+   iret
+
+__Z7RTC_intv:#int of RTC 20+8, irq 8
+   pushl %eax
+   pushl %ebx
+   pushl %ecx
+   pushl %edx
+   pushl %edi
+   pushl %esi
+   pushl %ebp
+   push %ds
+   push %es
+   push %fs
+   call __Z9f_RTC_intv
+   pop %fs
+   pop %es
+   pop %ds
+   popl %ebp
+   popl %esi
+   popl %edi
+   popl %edx
+   popl %ecx
+   popl %ebx
+   popl %eax
+   iret
+
+__Z9mouse_intv:#int of mouse 20+12
+   pushl %eax
+   pushl %ebx
+   pushl %ecx
+   pushl %edx
+   pushl %edi
+   pushl %esi
+   pushl %ebp
+   push %ds
+   push %es
+   push %fs
+   call __Z11f_mouse_intv
+   pop %fs
+   pop %es
+   pop %ds
+   popl %ebp
+   popl %esi
+   popl %edi
+   popl %edx
+   popl %ecx
+   popl %ebx
+   popl %eax
+   iret

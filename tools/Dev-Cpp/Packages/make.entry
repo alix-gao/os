@@ -1,0 +1,9 @@
+[Setup]
+AppName=GNU Make
+AppVersion=3.80.0-3
+Description=GNU Make version 3.80.0-3
+Url=http://www.gnu.org/software/make/
+
+[Files]
+bin\make.exe
+bin\mingw32-make.exe

@@ -1,0 +1,12 @@
+[Template]
+ver=1
+Name=Empty Project
+IconIndex=4
+Description=An empty project
+Catagory=Basic
+
+[Project]
+UnitCount=0
+Type=1
+Name=Empty app
+

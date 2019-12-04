@@ -1,0 +1,8 @@
+[Setup]
+AppName=Dev-C++ Map file
+AppVersion=4.9.9.2
+Description=this file is used to report important stack information when sending a bug report
+Url=
+
+[Files]
+devcpp.map

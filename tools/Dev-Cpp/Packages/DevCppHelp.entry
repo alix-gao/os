@@ -1,0 +1,9 @@
+[Setup]
+AppName=Dev-C++ Help file
+AppVersion=1.63
+Description=Main Dev-C++ Help file
+Url=
+
+[Files]
+Help\DevCpp.hlp
+Help\devcpp.CNT

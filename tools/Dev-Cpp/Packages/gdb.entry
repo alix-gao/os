@@ -1,0 +1,8 @@
+[Setup]
+AppName=GNU Debugger
+AppVersion=5.2.1-1
+Description=GDB: The GNU Project Debugger version 5.2.1-1
+Url=http://www.gnu.org/software/gdb/gdb.html
+
+[Files]
+bin\gdb.exe

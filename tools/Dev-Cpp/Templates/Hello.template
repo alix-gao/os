@@ -1,0 +1,15 @@
+[Template]
+ver=1
+Name=Hello World
+Icon=Hello.ico
+Description=A classic Hello World program.
+Catagory=Introduction
+
+[Unit0]
+C=Hello_c.txt
+Cpp=Hello_cpp.txt
+
+[Project]
+UnitCount=1
+Type=1
+Name=Hello World

@@ -3,7 +3,7 @@ operating system
 
 ## introduction
 this is a personal operating system, it looks like this:
-![](attachment/screenshot.png)
+![screenshot](attachment/screenshot.png)
 
 it supports:
 1. multiple tasks, semaphore, message-based communication, memory management;

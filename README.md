@@ -25,20 +25,20 @@ use "HP USB disk storage format tool" to format USB flash disk with bootable FAT
 #### a. install flashboot
 master/attachment/flashboot-2.3a-setup.exe
 #### b. run flashboot and choose "MiniOS"
-![](attachment/flashboot%20-%202.png)
+![step](attachment/flashboot%20-%202.png)
 #### c. choose "Minimal DOS (FreeDOS)"
-![](attachment/flashboot%20-%203.png)
+![step](attachment/flashboot%20-%203.png)
 #### d. choose target USB disk
-![](attachment/flashboot%20-%204.png)
+![step](attachment/flashboot%20-%204.png)
 #### e. choose Filesystem "FAT32"
-![](attachment/flashboot%20-%205.png)
+![step](attachment/flashboot%20-%205.png)
 
 #### restart your PC to make sure the USB flash disk works well.
 
 ### step 3. update file system
 run master/fs.exe. select "HDD" and then "start".
 
-![](attachment/fs%20-%201.png)
+![step](attachment/fs%20-%201.png)
 #### if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".
 
 ### step 4. boot PC from USB flash disk

@@ -21,7 +21,7 @@ enter BIOS setup menu, select USB driver as boot device.
 this is an example: https://www.asus.com/support/FAQ/1013017
 
 ### step 2. format bootable USB flash disk
-use "HP USB disk storage format tool" to format USB flash disk with bootable FAT32.
+use "flashboot" to format USB flash disk with bootable FAT32.
 #### a. install flashboot
 master/attachment/flashboot-2.3a-setup.exe
 #### b. run flashboot and choose "MiniOS"

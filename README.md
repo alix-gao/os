@@ -36,7 +36,7 @@ master/attachment/flashboot-2.3a-setup.exe
 #### restart your PC to make sure the USB flash disk works well.
 
 ### step 3. update file system
-run master/fs.exe as administrator. select "HDD" and then "start".
+run master/fs.exe **as administrator**. select "HDD" and then "start".
 
 ![step](attachment/fs%20-%201.png)
 #### if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".

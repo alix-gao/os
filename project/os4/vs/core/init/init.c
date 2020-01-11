@@ -177,6 +177,9 @@ os_void init_ukernel(os_void)
     /* brain: 初始化cpu */
     init_processor();
 
+    /* 文本模式打印 */
+    show_text("ucore...", 1);
+
     /* eye: 显卡设置为图形模式 */
     if (1) {
         open_graphics_mode(GRAPHICES_MODE_VGA);

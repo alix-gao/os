@@ -1,5 +1,9 @@
 echo delete object...
-del /f /q %obj_path%\*.o
+if exist %obj_path% (
+    del /f /q %obj_path%\*.o
+) else (
+    md %obj_path%
+)
 echo.
 
 set include=-I %project_path%\..\header -I %arch_path%

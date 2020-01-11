@@ -131,9 +131,10 @@ LOCALC os_void parse_usb_descriptor(struct usb_device *usb_dev, os_u32 index)
     len = usb_dev->config_info[index].config.wTotalLength;
     decode = &usb_dev->config_info[index];
 
+    flog("config desc\n");
     for (pos = 0; pos < len; pos++) {
         flog("%x ", addr[pos]);
-    } flog("config desc");
+    } flog("\n");
 
     interface_num = 0;
     decode->intf_info = kmalloc(decode->config.bNumInterfaces * sizeof(struct usb_itf_info));

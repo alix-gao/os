@@ -436,7 +436,7 @@ LOCALC os_ret OS_CALLBACK ehci_qtd_timer(os_u32 event_id)
 
     cassert(OS_NULL != (struct ehci_urb *) event_id);
     urb = (struct ehci_urb *) event_id;
-    usb_dbg(USB_ERROR, "qtd time out");
+    usb_dbg(USB_ERROR, "qtd timeout");
     urb->timeout = OS_TRUE;
     notify_event(urb->urb_sem, __LINE__);
     return OS_SUCC;
@@ -1972,8 +1972,8 @@ LOCALC os_ret enable_ehci_port_power(struct ehci *hc, os_u32 port)
         /* each port is hard-wired to power. */
     } else {
         ehci_out(&hc->regs.operation->PORTSC[port], EHCI_PORTSC_PP | ehci_in(&hc->regs.operation->PORTSC[port]));
+        delay_ms(20);
     }
-    delay_ms(20);
     return OS_SUCC;
 }
 
@@ -2200,13 +2200,15 @@ LOCALC os_ret ehci_interrupt_1(HDEVICE pci)
  * description :
  * history     :
  ***************************************************************/
-LOCALC os_void proc_ehci_sw_interrupt(struct ehci *hc)
+LOCALC os_ret proc_ehci_sw_interrupt(struct ehci *hc)
 {
     struct list_node *list, *_save;
     struct ehci_qtd *qtd;
     os_u32 token;
     os_bool need_sch;
+    os_ret ret;
 
+    ret = OS_FAIL;
     need_sch = OS_FALSE;
 
     spin_lock(&hc->ehci_lock);
@@ -2214,6 +2216,7 @@ LOCALC os_void proc_ehci_sw_interrupt(struct ehci *hc)
     do {
         if (1 == hc->done_flag) {
             hc->done_flag = 0;
+            ret = OS_SUCC;
 
             loop_del_list(list, _save, &hc->doing_list) {
                 qtd = list_addr(list, struct ehci_qtd, doing_list);
@@ -2252,6 +2255,7 @@ LOCALC os_void proc_ehci_sw_interrupt(struct ehci *hc)
     if (need_sch) {
         schedule();
     }
+    return ret;
 }
 
 /***************************************************************
@@ -2266,8 +2270,7 @@ LOCALC os_ret ehci_interrupt_2(HDEVICE pci)
 
     hc = get_pci_dedicated(pci);
     if (OS_NULL != hc) {
-        proc_ehci_sw_interrupt(hc);
-        return OS_SUCC;
+        return proc_ehci_sw_interrupt(hc);
     }
     return OS_FAIL;
 }

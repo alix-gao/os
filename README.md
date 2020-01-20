@@ -17,9 +17,9 @@ it supports:
 ## usage
 
 ### step 1. setup BIOS
-enter BIOS setup menu
-a. enable legacy boot and disable UEFI;
-b. select USB driver as boot device;
+enter BIOS setup menu:
+1. enable legacy boot and disable UEFI;
+2. select USB driver as boot device;
 this is an example: https://www.asus.com/support/FAQ/1013017
 
 ### step 2. format bootable USB flash disk

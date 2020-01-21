@@ -181,10 +181,9 @@ os_void init_ukernel(os_void)
     show_text("ucore...", 1);
 
     /* eye: 显卡设置为图形模式 */
-    if (1) {
-        open_graphics_mode(GRAPHICES_MODE_VGA);
-    } else {
-        open_graphics_mode(GRAPHICES_MODE_VESA);
+    open_graphics_mode(GRAPHICES_MODE_VGA);
+    if (0) {
+        open_graphics_mode(GRAPHICES_MODE_SVGA);
     }
 
     /* open_graphics_mode makes ram 0x10c changed */

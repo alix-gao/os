@@ -120,11 +120,7 @@ struct vesa_mode_info {
  ***************************************************************/
 os_void init_vesa_paint(struct ModeInfoBlock *vmib);
 
-enum {
-    VESA_STANDARD_MODE_1024_768,
-    BEST_VESA_MODE
-};
-struct vesa_mode_info *choose_vesa_mode(os_u32 choice);
+struct vesa_mode_info *choose_vesa_mode(enum graphics_mode mode);
 
 #pragma pack()
 

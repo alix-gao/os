@@ -43,7 +43,7 @@
 /***************************************************************
  extern function
  ***************************************************************/
-os_ret set_vesa_graphics_mode(struct graphics_mode_info *data);
+os_ret set_vesa_graphics_mode(struct graphics_mode_info *data, enum graphics_mode mode);
 
 #pragma pack()
 

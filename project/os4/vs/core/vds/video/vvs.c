@@ -43,8 +43,9 @@ os_ret OS_API open_graphics_mode(enum graphics_mode mode)
         ret = init_vga_graphics_mode(&info);
         break;
 
+    case GRAPHICES_MODE_SVGA:
     case GRAPHICES_MODE_VESA:
-        ret = set_vesa_graphics_mode(&info);
+        ret = set_vesa_graphics_mode(&info, mode);
         break;
 
     default:

@@ -435,10 +435,10 @@ struct ModeInfoBlock temp;
  * description :
  * history     :
  ***************************************************************/
-struct vesa_mode_info *choose_vesa_mode(os_u32 choice)
+struct vesa_mode_info *choose_vesa_mode(enum graphics_mode mode)
 {
     struct segment_offset start_addr;
-    os_u16 *mode;
+    os_u16 *pmode;
 
     mem_set(vmi, 0, sizeof(vmi));
     vmi[0].mode_number = vmi[1].mode_number = INVALID_MODE;
@@ -461,33 +461,49 @@ struct vesa_mode_info *choose_vesa_mode(os_u32 choice)
     flog("vbe info block addr: %x\n", &vbe_info_block);
 
     /* 绝对地址 */
-    mode = (os_u16 *) trans_20addr((os_u16)(vbe_info_block.VideoModePtr >> 16), (os_u16) vbe_info_block.VideoModePtr);
+    pmode = (os_u16 *) trans_20addr((os_u16)(vbe_info_block.VideoModePtr >> 16), (os_u16) vbe_info_block.VideoModePtr);
     move_func_to_rm((pointer) get_vesa_mode_info, (pointer) get_vesa_mode_info_end);
-    for (; INVALID_MODE != *mode; mode++) {
-        get_vesa_mode_info(*mode, &temp);
+    for (; INVALID_MODE != *pmode; pmode++) {
+        get_vesa_mode_info(*pmode, &temp);
         if (6 != temp.MemoryModel) {
             /* 只支持direct color模式 */
             continue;
         }
-        if (*mode == 0x118) {
-            mem_cpy(&vmi[0].mib, &temp, sizeof(struct ModeInfoBlock));
-            vmi[0].mode_number = *mode;
-            continue;
+
+        /* select for windows secure mode resolution */
+        if ((800 == temp.XResolution) && (600 == temp.YResolution)) {
+            if ((INVALID_MODE == vmi[0].mode_number)
+             || ((INVALID_MODE != vmi[0].mode_number) && (temp.BitsPerPixel > vmi[0].mib.BitsPerPixel))) {
+                mem_cpy(&vmi[0].mib, &temp, sizeof(struct ModeInfoBlock));
+                vmi[0].mode_number = *pmode;
+            }
         }
+
+        /* select for high resolution */
         if ((temp.XResolution > vmi[1].mib.XResolution)
+         || (temp.YResolution > vmi[1].mib.YResolution)
          || ((temp.XResolution == vmi[1].mib.XResolution)
+          && (temp.YResolution == vmi[1].mib.YResolution)
           && (temp.BitsPerPixel > vmi[1].mib.BitsPerPixel))) {
             mem_cpy(&vmi[1].mib, &temp, sizeof(struct ModeInfoBlock));
-            vmi[1].mode_number = *mode;
+            vmi[1].mode_number = *pmode;
         }
     }
 
-    flog("current choice %d\n", choice);
+    flog("current choice %d\n", mode);
     flog("standard vesa info: %x %d %d %d %d\n", vmi[0].mode_number, vmi[0].mib.XResolution, vmi[0].mib.YResolution, vmi[0].mib.BitsPerPixel, vmi[0].mib.MemoryModel);
     flog("%x %d\n", vmi[0].mib.PhysBasePtr, vmi[0].mib.LinBytesPerScanLine);
     flog("the best vesa info: %x %d %d\n", vmi[1].mode_number, vmi[1].mib.XResolution, vmi[1].mib.YResolution);
   end:
-    return &vmi[choice];
+    switch (mode) {
+    case GRAPHICES_MODE_SVGA:
+    default:
+        return &vmi[0];
+        break;
+    case GRAPHICES_MODE_VESA:
+        return &vmi[1];
+        break;
+    }
 }
 
 /***************************************************************

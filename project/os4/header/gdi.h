@@ -36,6 +36,7 @@
  ***************************************************************/
 enum graphics_mode {
     GRAPHICES_MODE_VGA,
+    GRAPHICES_MODE_SVGA,
     GRAPHICES_MODE_VESA,
     GRAPHICES_MODE_BUTT
 };

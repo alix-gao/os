@@ -133,18 +133,30 @@ LOCALC os_ret cmd_get_vesa(os_u32 argc, os_u8 *argv[])
 }
 
 /***************************************************************
- * description :
+ * description : svesa
+ *                  800x600
+ *               svesa h
+ *                  high resolution
  * history     :
  ***************************************************************/
 LOCALC os_ret cmd_set_vesa(os_u32 argc, os_u8 *argv[])
 {
     screen_csys p0,p1;
 
-    if (0 != argc) {
+    switch (argc) {
+    case 0:
+        set_desktop_resolution(GRAPHICES_MODE_SVGA);
+        break;
+    case 1:
+        if ('h' != *argv[0]) {
+            return OS_FAIL;
+        }
+        set_desktop_resolution(GRAPHICES_MODE_VESA);
+        break;
+    default:
         return OS_FAIL;
+        break;
     }
-
-    set_desktop_resolution(GRAPHICES_MODE_VESA);
 
     /* œ‘ æµ≠“ı”∞ */
     p0.x = 0;

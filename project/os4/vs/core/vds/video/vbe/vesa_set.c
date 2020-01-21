@@ -270,20 +270,13 @@ LOCALC os_void move_to_rm(os_void)
  * description : (8259a, bios)not correlative
  * history     :
  ***************************************************************/
-os_ret set_vesa_graphics_mode(struct graphics_mode_info *mode)
+os_ret set_vesa_graphics_mode(struct graphics_mode_info *data, enum graphics_mode mode)
 {
     struct vesa_mode_info *vmi;
     os_u8 ret;
 
-    if (OS_NULL != mode) {
-GLOBALDIF os_u32 choice = BEST_VESA_MODE;
-        if (BEST_VESA_MODE == choice) {
-            choice = VESA_STANDARD_MODE_1024_768;
-        } else {
-            /* 获取当前最佳分辨率模式 */
-            choice = BEST_VESA_MODE;
-        }
-        vmi = choose_vesa_mode(choice);
+    if (OS_NULL != data) {
+        vmi = choose_vesa_mode(mode);
         if (INVALID_MODE == vmi->mode_number) {
             return OS_FAIL;
         }
@@ -303,12 +296,12 @@ GLOBALDIF os_u32 choice = BEST_VESA_MODE;
 
         os_set_timer_channel0();
 
-        mode->bits_per_pixel = vmi->mib.BitsPerPixel;
-        mode->x_resolution = vmi->mib.XResolution;
-        mode->y_resolution = vmi->mib.YResolution;
-        mode->plane_count = vmi->mib.NumberOfPlanes;
-        mode->memory_model = vmi->mib.MemoryModel;
-        mode->PhysBasePtr = vmi->mib.PhysBasePtr;
+        data->bits_per_pixel = vmi->mib.BitsPerPixel;
+        data->x_resolution = vmi->mib.XResolution;
+        data->y_resolution = vmi->mib.YResolution;
+        data->plane_count = vmi->mib.NumberOfPlanes;
+        data->memory_model = vmi->mib.MemoryModel;
+        data->PhysBasePtr = vmi->mib.PhysBasePtr;
         return OS_SUCC;
     }
     cassert(OS_FALSE);

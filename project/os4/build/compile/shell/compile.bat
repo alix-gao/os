@@ -2,7 +2,9 @@
 @echo off
 @rem make file
 
-del /f /q *.obj
+if exist *.obj (
+    del /f /q *.obj
+)
 
 echo.
 call ..\common.bat

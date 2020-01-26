@@ -2,8 +2,12 @@
 @echo off
 @rem make file
 
-del /f /q *.o
-del /f /q *.obj
+if exist *.o (
+    del /f /q *.o
+)
+if exist *.obj (
+    del /f /q *.obj
+)
 
 set arch=x86
 

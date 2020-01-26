@@ -3,7 +3,9 @@
 @rem make file
 
 del cos16.bin
-del *.obj
+if exist *.obj (
+    del *.obj
+)
 del main.asm
 del rmho.asm
 del load.asm

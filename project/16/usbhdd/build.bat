@@ -2,8 +2,12 @@
 @echo off
 @rem make file
 
-del /f /q *.obj
-del /f /q *.bin
+if exist *.obj (
+    del /f /q *.obj
+)
+if exist *.bin (
+    del /f /q *.bin
+)
 
 ..\..\..\tools\masm\masm.exe mbr.asm;
 ..\..\..\tools\masm\link.exe mbr.obj;

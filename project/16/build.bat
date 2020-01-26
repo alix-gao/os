@@ -6,8 +6,8 @@ if exist log.txt (del /f /q log.txt)
 
 @echo on
 echo "build 16 bit binary for usbfdd" >> log.txt
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> log.txt
 @echo off
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> log.txt
 cd usbfdd
 call build.bat nopause >> ..\log.txt
 cd cos16
@@ -21,8 +21,8 @@ cd ../../
 @copy usbfdd\cos16\cos16.bin ..\..\usbfdd\cos16.bin >> log.txt
 
 echo "build 16 bit binary for usbhdd" >> log.txt
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> log.txt
 @echo off
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> log.txt
 cd usbhdd
 call build.bat nopause >> ..\log.txt
 cd cos16

@@ -57,5 +57,7 @@ desktop (use picture as background)
 if you want to rebuild system after making changes in source code.
 
 double click **project\os4\build\build - all.bat** if you updated code in project\os4
+
 double click project\32\build.bat if you updated code in project\32
+
 double click project\16\build.bat if you updated code in project\16

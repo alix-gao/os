@@ -54,7 +54,7 @@ svesa (change the resolution)
 desktop (use picture as background)
 
 ## rebuild OS (compile & link)
-<font color=#0099ff size=12>if you want to rebuild system after making changes in source code</font>
+\\    if you want to rebuild system after making changes in source code
 
 double click **project\os4\build\build - all.bat** if you updated code in project\os4
 

@@ -23,22 +23,7 @@ enter BIOS setup menu:
 
 this is an example: https://www.asus.com/support/FAQ/1013017
 
-### step 2. format bootable USB flash disk
-use "flashboot" to format USB flash disk with bootable FAT32.
-#### a. install flashboot
-master/attachment/flashboot-2.3a-setup.exe
-#### b. run flashboot and choose "MiniOS"
-![step](attachment/flashboot%20-%202.png)
-#### c. choose "Minimal DOS (FreeDOS)"
-![step](attachment/flashboot%20-%203.png)
-#### d. choose target USB disk
-![step](attachment/flashboot%20-%204.png)
-#### e. choose Filesystem "FAT32"
-![step](attachment/flashboot%20-%205.png)
-
-#### restart your PC to make sure the USB flash disk works well.
-
-### step 3. update file system
+### step 2. install OS on USB drive
 run (**as administrator**) master/fs.exe. select "HDD" and then "start".
 
 ![step](attachment/fs%20-%201.png)

@@ -27,7 +27,7 @@ this is an example: https://www.asus.com/support/FAQ/1013017
 run (**as administrator**) master/fs.exe. select "HDD" and then "start".
 
 ![step](attachment/fs%20-%201.png)
-##### if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".
+<font color=blue> if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".</font>
 
 #### step 3. boot PC from USB flash disk
 

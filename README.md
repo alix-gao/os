@@ -12,26 +12,26 @@ it supports:
 4. FAT32 file system;
 5. BMP image file;
 6. graphical user interface (GUI), SVGA;
-7. wifi dongle (tp-link WN725N);
+7. WiFi dongle (tp-link WN725N);
 
 ## usage
 
-### step 1. setup BIOS
+#### step 1. setup BIOS
 enter BIOS setup menu:
 1. enable legacy boot and disable UEFI;
 2. select USB driver as boot device;
 
 this is an example: https://www.asus.com/support/FAQ/1013017
 
-### step 2. install OS on USB drive
+#### step 2. install OS on USB drive
 run (**as administrator**) master/fs.exe. select "HDD" and then "start".
 
 ![step](attachment/fs%20-%201.png)
-#### if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".
+###### if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".
 
-### step 3. boot PC from USB flash disk
+#### step 3. boot PC from USB flash disk
 
-### step 4. some shell commands
+#### step 4. some shell commands
 help (list commands)
 
 svesa (change the resolution)

@@ -28,7 +28,7 @@ run (**as administrator**) master/fs.exe. select "HDD" and then "start".
 
 ![step](attachment/fs%20-%201.png)
 
-    **if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".**
+    if the USB flash disk CANNOT boot, run fs.exe again and select "FDD".
 
 #### step 3. boot PC from USB flash disk
 

@@ -25,6 +25,7 @@ this is an example: https://www.asus.com/support/FAQ/1013017
 
 #### step 2. install OS on USB drive
 run (**as administrator**) master/fs.exe. select "HDD" and then "start".
+
 !!!IT WILL CLEAN USB DRIVE
 
 ![step](attachment/fs%20-%201.png)

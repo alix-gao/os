@@ -49,3 +49,6 @@ double click **project\os4\build\build - all.bat** if you updated code in projec
 double click project\32\build.bat if you updated code in project\32
 
 double click project\16\build.bat if you updated code in project\16
+
+## PASS TEST
+HP PAVILION 14-AL028TX

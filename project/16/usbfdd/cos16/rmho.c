@@ -39,6 +39,8 @@ WORD temp_reg_sp;
 WORD temp_reg_ss;
 WORD temp_reg;
 
+static WORD tick = 0;
+
 /* dword */
 BYTE *sche_context;
 
@@ -49,6 +51,8 @@ VOID time_int_func(VOID)
 {
     print_char(msg_info, 15, RMHO_MSG_POS, 0);
     msg_info++;
+
+    tick++;
 
     /* schel */
     no++;
@@ -91,32 +95,13 @@ static VOID open_time_int(VOID)
 
 static VOID time_delay(WORD time)
 {
-    BYTE t;
-    BYTE save;
-    WORD i,j;
+    WORD t;
+    WORD i;
 
-    for (i=0; i<100*time; i++)
-    for (j=0; j<10; j++) {
-        asm push ax
-        asm push dx
-        asm mov dx,0x61
-        asm in al,dx
-        asm mov t,al
-        asm pop dx
-        asm pop ax
-        t = t&0x10;
-        save = t;
-        while (1) {
-            asm push ax
-            asm push dx
-            asm mov dx,0x61
-            asm in al,dx
-            asm mov t,al
-            asm pop dx
-            asm pop ax
-            t = t&0x10;
-            if (save!=t)
-                break;
+    for (i = 0; i < time; i++) {
+        t = tick;
+        while (0x4 > (tick - t)) {
+            ;
         }
     }
 }
@@ -127,7 +112,7 @@ static VOID task1(VOID)
 
     for (i=0; i<80; i++) {
         print_char('c', 15, TASK1_MSG_POS, i);
-        time_delay(7);
+        time_delay(4);
         if (0 == task1_running) {
             break;
         }
@@ -144,7 +129,7 @@ static VOID task2(VOID)
 
     for (i=0; i<80; i++) {
         print_char('s', 15, TASK2_MSG_POS, i);
-        time_delay(7);
+        time_delay(4);
         if (0 == task2_running) {
             break;
         }

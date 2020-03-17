@@ -78,7 +78,7 @@ GLOBALREFC uint vprint_buffer(const u8 *format, va_list args);
  ***************************************************************/
 void STARTUP os_main(void)
 {
-    /* intergrate check */
+    /* intergration check */
     cassert(END_FLAG != cvs_end);
 
     /* ³õÊ¼»¯¿âº¯Êý */

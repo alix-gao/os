@@ -180,11 +180,10 @@ os_void init_ukernel(os_void)
     /* 文本模式打印 */
     show_text("ucore...", 1);
 
-    /* eye: 显卡设置为图形模式 */
-    open_graphics_mode(GRAPHICES_MODE_VGA);
-    if (0) {
-        open_graphics_mode(GRAPHICES_MODE_SVGA);
-    }
+    /* eye: 显卡设置为图形模式.
+     * some HP computers do not support VGA!
+     */
+    open_graphics_mode(GRAPHICES_MODE_SVGA);
 
     /* open_graphics_mode makes ram 0x10c changed */
     save_data(0);

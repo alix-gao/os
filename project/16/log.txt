@@ -49,7 +49,7 @@ main.c:
 Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
 rmho.c:
 
-        Available memory 394594
+        Available memory 395326
 Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
 load.c:
 
@@ -208,7 +208,7 @@ main.c:
 Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
 rmho.c:
 
-        Available memory 394594
+        Available memory 395326
 Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
 load.c:
 

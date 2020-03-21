@@ -53,6 +53,9 @@ double click project\16\build.bat if you updated code in project\16
 ## PASS TEST
 
 ThinkPad X220i
+
 ThinkPad E430c
+
 HP PAVILION 14-AL028TX
+
 ASUS A9RP

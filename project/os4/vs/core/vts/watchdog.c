@@ -51,7 +51,6 @@ os_void dog_event(os_void)
         print("watch dog!\n");
 
         lock_schedule();
-        debug_return;
 
         mem_set(&snap, 0, sizeof(struct task_snapshot));
         while (OS_SUCC == get_process32next(&usage_snapshot)) {

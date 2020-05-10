@@ -145,7 +145,7 @@ LOCALC os_ret cmd_set_vesa(os_u32 argc, os_u8 *argv[])
 
     switch (argc) {
     case 0:
-        set_desktop_resolution(GRAPHICES_MODE_SVGA);
+        set_desktop_resolution(GRAPHICES_MODE_SAFE);
         break;
     case 1:
         if ('h' != *argv[0]) {

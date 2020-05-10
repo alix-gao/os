@@ -427,7 +427,9 @@ LOCALC os_void move_func_to_rm(pointer base, pointer end)
  *               mib[1] is reserved for the best mode
  * history     :
  ***************************************************************/
-LOCALD struct vesa_mode_info vmi[2] = { 0 };
+LOCALD struct vesa_mode_info vmi = { 0 };
+
+LOCALD struct vesa_mode_info safe_mode = { 0 };
 
 struct ModeInfoBlock temp;
 
@@ -435,13 +437,12 @@ struct ModeInfoBlock temp;
  * description :
  * history     :
  ***************************************************************/
-struct vesa_mode_info *choose_vesa_mode(enum graphics_mode mode)
+struct vesa_mode_info *choose_vesa_mode(os_void)
 {
     struct segment_offset start_addr;
     os_u16 *pmode;
 
-    mem_set(vmi, 0, sizeof(vmi));
-    vmi[0].mode_number = vmi[1].mode_number = INVALID_MODE;
+    vmi.mode_number = INVALID_MODE;
 
     bios_rst_timer_channel0();
 
@@ -460,50 +461,84 @@ struct vesa_mode_info *choose_vesa_mode(enum graphics_mode mode)
 
     flog("vbe info block addr: %x\n", &vbe_info_block);
 
+    move_func_to_rm((pointer) get_vesa_mode_info, (pointer) get_vesa_mode_info_end);
+
     /* 绝对地址 */
     pmode = (os_u16 *) trans_20addr((os_u16)(vbe_info_block.VideoModePtr >> 16), (os_u16) vbe_info_block.VideoModePtr);
-    move_func_to_rm((pointer) get_vesa_mode_info, (pointer) get_vesa_mode_info_end);
     for (; INVALID_MODE != *pmode; pmode++) {
+        if (!(0x100 & (*pmode))) {
+            continue;
+        }
         get_vesa_mode_info(*pmode, &temp);
-        if (6 != temp.MemoryModel) {
-            /* 只支持direct color模式 */
+        if ((6 != temp.MemoryModel) && (4 != temp.MemoryModel)) {
+            /* only support direct color and packet */
             continue;
         }
 
-        /* select for windows secure mode resolution */
-        if ((800 == temp.XResolution) && (600 == temp.YResolution)) {
-            if ((INVALID_MODE == vmi[0].mode_number)
-             || ((INVALID_MODE != vmi[0].mode_number) && (temp.BitsPerPixel > vmi[0].mib.BitsPerPixel))) {
-                mem_cpy(&vmi[0].mib, &temp, sizeof(struct ModeInfoBlock));
-                vmi[0].mode_number = *pmode;
-            }
-        }
+        do { /* dump */
+            os_uint i;
+            os_u8 *d;
+            d = (os_u8 *) &temp;
+            flog("mode no: %x\n %d-%d-%d\n", *pmode, temp.XResolution, temp.YResolution, temp.BitsPerPixel);
+            for (i = 0; i < sizeof(struct ModeInfoBlock); i++) {
+                flog("%x", d[i]);
+            } flog("\n");
+        } while (0);
 
         /* select for high resolution */
-        if ((temp.XResolution > vmi[1].mib.XResolution)
-         || (temp.YResolution > vmi[1].mib.YResolution)
-         || ((temp.XResolution == vmi[1].mib.XResolution)
-          && (temp.YResolution == vmi[1].mib.YResolution)
-          && (temp.BitsPerPixel > vmi[1].mib.BitsPerPixel))) {
-            mem_cpy(&vmi[1].mib, &temp, sizeof(struct ModeInfoBlock));
-            vmi[1].mode_number = *pmode;
+        if ((temp.XResolution > vmi.mib.XResolution)
+         || (temp.YResolution > vmi.mib.YResolution)
+         || ((temp.XResolution == vmi.mib.XResolution)
+          && (temp.YResolution == vmi.mib.YResolution)
+          && (temp.BitsPerPixel > vmi.mib.BitsPerPixel))) {
+            mem_cpy(&vmi.mib, &temp, sizeof(struct ModeInfoBlock));
+            vmi.mode_number = *pmode;
         }
     }
 
-    flog("current choice %d\n", mode);
-    flog("standard vesa info: %x %d %d %d %d\n", vmi[0].mode_number, vmi[0].mib.XResolution, vmi[0].mib.YResolution, vmi[0].mib.BitsPerPixel, vmi[0].mib.MemoryModel);
-    flog("%x %d\n", vmi[0].mib.PhysBasePtr, vmi[0].mib.LinBytesPerScanLine);
-    flog("the best vesa info: %x %d %d\n", vmi[1].mode_number, vmi[1].mib.XResolution, vmi[1].mib.YResolution);
   end:
-    switch (mode) {
-    case GRAPHICES_MODE_SVGA:
-    default:
-        return &vmi[0];
-        break;
-    case GRAPHICES_MODE_VESA:
-        return &vmi[1];
-        break;
+    flog("standard vesa info: %x %d %d %d %d\n", vmi.mode_number, vmi.mib.XResolution, vmi.mib.YResolution, vmi.mib.BitsPerPixel, vmi.mib.MemoryModel);
+    flog("%x %d\n", vmi.mib.PhysBasePtr, vmi.mib.LinBytesPerScanLine);
+    flog("the best vesa info: %x %d %d\n", vmi.mode_number, vmi.mib.XResolution, vmi.mib.YResolution);
+    return &vmi;
+}
+
+/***************************************************************
+ * description :
+ * history     :
+ ***************************************************************/
+struct vesa_mode_info *get_safe_vesa_mode(os_void)
+{
+    struct segment_offset start_addr;
+
+    safe_mode.mode_number = INVALID_MODE;
+
+    bios_rst_timer_channel0();
+
+    move_func_to_rm((pointer) get_VbeInfoBlock, (pointer) get_VbeInfoBlock_end);
+
+    /* 获取所有模式信息 */
+    start_addr = get_VbeInfoBlock(&vbe_info_block);
+
+    if (('V' != vbe_info_block.VbeSignature[0])
+     || ('E' != vbe_info_block.VbeSignature[1])
+     || ('S' != vbe_info_block.VbeSignature[2])
+     || ('A' != vbe_info_block.VbeSignature[3])) {
+        flog("get vbe info block fail\n");
+        goto end;
     }
+
+    flog("vbe info block addr: %x\n", &vbe_info_block);
+
+    move_func_to_rm((pointer) get_vesa_mode_info, (pointer) get_vesa_mode_info_end);
+
+#define WIN7_SAFE_MODE_VEDIO 0x115
+#define WIN10_SAFE_MODE_VEDIO 0x118
+    get_vesa_mode_info(WIN7_SAFE_MODE_VEDIO, &safe_mode.mib);
+    safe_mode.mode_number = WIN7_SAFE_MODE_VEDIO;
+
+  end:
+    return &safe_mode;
 }
 
 /***************************************************************
@@ -515,13 +550,12 @@ os_void show_vesa_mode_info(os_void)
     os_uint i;
     struct ModeInfoBlock *t;
 
-    for (i = 0; i < array_size(vmi); i++) {
-        t = &vmi[i].mib;
-        print("mode 0x%x\n", vmi[i].mode_number);
-        print("%d %d %d %d %d\n", t->XResolution, t->YResolution, t->NumberOfPlanes, t->BitsPerPixel, t->MemoryModel);
-        print("[%d,%d][%d,%d][%d,%d][%d,%d]\n", t->RedMaskSize, t->RedMaskPos, t->GreenMaskSize, t->GreenMaskPos, t->BlueMaskSize, t->BlueMaskPos, t->ReservedMaskSize, t->ReservedMaskPos);
-        print("%d\n", t->LinBytesPerScanLine);
-        print("%x\n", t->PhysBasePtr);
-    }
+    get_safe_vesa_mode();
+    print("windows saft mode vedio\n");
+    t = &safe_mode.mib;
+    print("%d %d %d %d %d\n", t->XResolution, t->YResolution, t->NumberOfPlanes, t->BitsPerPixel, t->MemoryModel);
+    print("[%d,%d][%d,%d][%d,%d][%d,%d]\n", t->RedMaskSize, t->RedMaskPos, t->GreenMaskSize, t->GreenMaskPos, t->BlueMaskSize, t->BlueMaskPos, t->ReservedMaskSize, t->ReservedMaskPos);
+    print("%d\n", t->LinBytesPerScanLine);
+    print("%x\n", t->PhysBasePtr);
 }
 

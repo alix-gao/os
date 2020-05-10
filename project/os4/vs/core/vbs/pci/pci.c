@@ -718,7 +718,7 @@ LOCALC os_void IRQ_FUNC handle_pci_int_1(os_u32 irq)
             while (node) {
                 if (node->device->driver->interrupt_1) {
                     if (OS_SUCC == node->device->driver->interrupt_1(node->device)) {
-                        return; /* 中断已经执行 */
+                        return;
                     }
                 }
                 node = node->next;
@@ -745,7 +745,7 @@ LOCALC os_void IRQ_FUNC handle_pci_int_2(os_u32 irq)
             while (node) {
                 if (node->device->driver->interrupt_2) {
                     if (OS_SUCC == node->device->driver->interrupt_2(node->device)) {
-                        return; /* 中断已经执行 */
+                        return;
                     }
                 }
                 node = node->next;

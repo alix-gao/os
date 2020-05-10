@@ -276,7 +276,15 @@ os_ret set_vesa_graphics_mode(struct graphics_mode_info *data, enum graphics_mod
     os_u8 ret;
 
     if (OS_NULL != data) {
-        vmi = choose_vesa_mode(mode);
+        switch (mode) {
+        case GRAPHICES_MODE_SAFE:
+        default:
+            vmi = get_safe_vesa_mode();
+            break;
+        case GRAPHICES_MODE_VESA:
+            vmi = choose_vesa_mode();
+            break;
+        }
         if (INVALID_MODE == vmi->mode_number) {
             return OS_FAIL;
         }

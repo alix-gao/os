@@ -819,7 +819,10 @@ os_ret enum_usb_device(struct usb_device *usb)
 
     usb_dbg(USB_INFO, "enum usb device %d", usb->usb_addr);
 
-    /* 默认地址获0取设备描述符 */
+    /* Before the USB device receives a unique address,
+       it’s default pipe is still accessible via the default address.
+       The host reads the device descriptor to determine what actual maximum data payload size this USB device’s default pipe can use. */
+    /* 默认管道获取设备描述符 */
     result = get_default_device_descriptor(usb);
     if (OS_SUCC != result) {
         usb_dbg(USB_ERROR, "get default device descriptor fail");

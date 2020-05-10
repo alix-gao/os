@@ -375,7 +375,7 @@ struct ehci {
     struct ehci_regs regs;
 
     /* pci信息 */
-    struct pci_dev *pci; // for common
+    HDEVICE pci; // for common
 
     /* 控制器上usb设备数量最大128 */
     os_u8 addr_bitmap[USB_DEVICE_COUNT/8];

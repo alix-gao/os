@@ -1466,16 +1466,20 @@ LOCALC os_ret clean_ehci_default_endpoint(struct usb_device *usb)
 
     /* addr 0 endpoint 0 is in async schedule */
     qh = &hc->endpoint[0][ehci_ed_index(0, USB_IN)];
-    enter_critical_section(qh->qh_lock);
-    ehci_remove_async_qh(hc, qh);
-    leave_critical_section(qh->qh_lock);
-    free_ehci_qh(hc, qh);
+    if (EHCI_ED_NEW != qh->state) {
+        enter_critical_section(qh->qh_lock);
+        ehci_remove_async_qh(hc, qh);
+        leave_critical_section(qh->qh_lock);
+        free_ehci_qh(hc, qh);
+    }
 
     qh = &hc->endpoint[0][ehci_ed_index(0, USB_OUT)];
-    enter_critical_section(qh->qh_lock);
-    ehci_remove_async_qh(hc, &hc->endpoint[0][ehci_ed_index(0, USB_OUT)]);
-    leave_critical_section(qh->qh_lock);
-    free_ehci_qh(hc, qh);
+    if (EHCI_ED_NEW != qh->state) {
+        enter_critical_section(qh->qh_lock);
+        ehci_remove_async_qh(hc, qh);
+        leave_critical_section(qh->qh_lock);
+        free_ehci_qh(hc, qh);
+    }
 
     /* reset control pipe status */
     init_ehci_endpoint(usb->host_controller, 0);
@@ -1720,7 +1724,7 @@ LOCALC os_void *free_ehci(struct ehci *hc)
  * description :
  * history     :
  ***************************************************************/
-LOCALC struct ehci *alloc_ehci(struct pci_dev *dev)
+LOCALC struct ehci *alloc_ehci(HDEVICE dev)
 {
     struct ehci *hc;
     os_ret result;

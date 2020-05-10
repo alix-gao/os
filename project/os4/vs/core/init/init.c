@@ -174,6 +174,8 @@ os_void check_data(os_u8 *addr)
  ***************************************************************/
 os_void init_ukernel(os_void)
 {
+    os_ret result;
+
     /* brain: 初始化cpu */
     init_processor();
 
@@ -183,7 +185,11 @@ os_void init_ukernel(os_void)
     /* eye: 显卡设置为图形模式.
      * some HP computers do not support VGA!
      */
-    open_graphics_mode(GRAPHICES_MODE_SVGA);
+    result = open_graphics_mode(GRAPHICES_MODE_SAFE);
+    if (OS_SUCC != result) {
+        show_text("safe graphics mode fail", 2);
+        dead();
+    }
 
     /* open_graphics_mode makes ram 0x10c changed */
     save_data(0);

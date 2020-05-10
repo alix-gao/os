@@ -40,7 +40,7 @@
 /***************************************************************
  extern function
  ***************************************************************/
-os_ret init_vga_graphics_mode(struct graphics_mode_info *mode);
+os_ret init_vga_graphics_mode(struct graphics_mode_info *data, enum graphics_mode mode);
 
 #pragma pack()
 

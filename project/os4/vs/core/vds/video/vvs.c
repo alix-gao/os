@@ -40,10 +40,10 @@ os_ret OS_API open_graphics_mode(enum graphics_mode mode)
 
     switch (mode) {
     case GRAPHICES_MODE_VGA:
-        ret = init_vga_graphics_mode(&info);
+        ret = init_vga_graphics_mode(&info, mode);
         break;
 
-    case GRAPHICES_MODE_SVGA:
+    case GRAPHICES_MODE_SAFE:
     case GRAPHICES_MODE_VESA:
         ret = set_vesa_graphics_mode(&info, mode);
         break;

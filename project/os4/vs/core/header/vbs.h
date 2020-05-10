@@ -40,7 +40,7 @@ enum bus_init_priority {
     BUS_P1, /* low */
     BUS_P2, /* middle */
     BUS_P3, /* high */
-    BUS_Px
+    BUS_Px /* invalid */
 };
 
 /***************************************************************

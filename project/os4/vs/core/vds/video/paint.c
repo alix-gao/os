@@ -6,14 +6,14 @@
  * version     : 1.0
  * description :
  *                 x0     x1
- *             O┏━━━━━━━━━━ X轴
- *              ┃
- *            y0┃(x0, y0)
- *              ┃
- *            y1┃       (x1, y1)
- *              ┃
- *              ┃
- *             Y轴
+ *             O??????????? X?
+ *              ?
+ *            y0?(x0, y0)
+ *              ?
+ *            y1?       (x1, y1)
+ *              ?
+ *              ?
+ *             Y?
  *
  * author      : gaocheng
  * date        : 2009-04-22
@@ -28,10 +28,10 @@
 /***************************************************************
  global variable declare
  ***************************************************************/
-/* x轴分辨率 */
+/* x???? */
 LOCALD volatile os_u32 paint_resolution_x _CPU_ALIGNED_ = 0;
 
-/* y轴分辨率 */
+/* y???? */
 LOCALD volatile os_u32 paint_resolution_y _CPU_ALIGNED_ = 0;
 
 /***************************************************************
@@ -46,19 +46,16 @@ LOCALC inline os_void write_pix(screen_csys *p, enum vga_color color)
     switch (current_bpp()) {
     case 32:
         vesa_32bpp_write_pix(p, color);
-        return;
         break;
     case 24:
         vesa_24bpp_write_pix(p, color);
-        return;
         break;
     case 16:
         vesa_16bpp_write_pix(p, color);
-        return;
         break;
     case 4:
-        vga_write_pix(p, color);
-        return;
+        //vga_write_pix(p, color);
+        vga_write_mode_2(p, color);
         break;
     default:
         break;
@@ -82,7 +79,8 @@ LOCALC inline enum vga_color read_pix(screen_csys *p)
         return vesa_16bpp_read_pix(p);
         break;
     case 4:
-        return vga_read_pix(p);
+        //return vga_read_pix(p);
+        return vga_read_mode_0(p);
         break;
     default:
         cassert(OS_FALSE);
@@ -99,7 +97,7 @@ os_void draw_rect(screen_csys p0, screen_csys p1, enum vga_color color)
 {
     screen_csys pos;
 
-    /* bug fix, 增加保护 */
+    /* bug fix, ???? */
     p0.x = (paint_resolution_x < p0.x) ? paint_resolution_x : p0.x;
     p0.y = (paint_resolution_y < p0.y) ? paint_resolution_y : p0.y;
 
@@ -122,7 +120,7 @@ os_void draw_line(screen_csys p0, screen_csys p1, enum vga_color color)
     os_u32 steep;
     os_u32 x, y;
     os_u32 deltax, deltay;
-    os_s32 error; // 误差
+    os_s32 error; // ??
     os_s32 ystep;
 
     steep = abs(p1.y - p0.y) > abs(p1.x - p0.x);
@@ -180,8 +178,8 @@ struct plane_csys midpoint(struct plane_csys p0, struct plane_csys p1)
 }
 
 /***************************************************************
- * description : 贝塞尔曲线
- *               该递归函数的复杂度是2^n.
+ * description : ?????
+ *               ??????????2^n.
  * history     :
  ***************************************************************/
 os_void draw_curve(screen_csys p0, screen_csys p1, screen_csys p2, os_u32 level, enum vga_color color)
@@ -190,10 +188,10 @@ os_void draw_curve(screen_csys p0, screen_csys p1, screen_csys p2, os_u32 level,
     screen_csys tmp_1;
     screen_csys tmp_2;
 
-    /* BEZIER_DEEPTH为2的倍数 */
+    /* BEZIER_DEEPTH?2??? */
     level = level & (BEZIER_DEEPTH - 1);
 
-    /* 递归完毕 */
+    /* ???? */
     if ((0 == level) || (BEZIER_DEEPTH < level)) {
         draw_line(p0, p2, color);
         return;
@@ -219,7 +217,7 @@ os_void draw_point(screen_csys *p, enum vga_color color)
 }
 
 /***************************************************************
- * description : 逻辑坐标转化为屏幕坐标
+ * description : ???????????
  * history     :
  ***************************************************************/
 LOCALC inline screen_csys logic_csys_2_screen_csys(screen_csys *wsc, logic_csys p)
@@ -239,7 +237,7 @@ os_void win_write_pix(HDEVICE hdc, logic_csys p, enum vga_color color)
 {
     screen_csys tmp;
 
-    /* 入参检查 */
+    /* ???? */
     cassert(OS_NULL != hdc);
 
     if ((get_window_width(hdc) > p.x) && (get_window_length(hdc) > p.y)) {
@@ -259,13 +257,13 @@ os_void win_draw_line(HDEVICE hdc, logic_csys p0, logic_csys p1)
     os_u32 steep;
     os_u32 x, y;
     os_u32 deltax, deltay;
-    os_s32 error; // 误差
+    os_s32 error; // ??
     os_s32 ystep;
     enum vga_color color;
 
     cassert(OS_NULL != hdc);
 
-    /* 取前景颜色 */
+    /* ????? */
     color = ((struct device_context *) hdc)->foreground_color;
 
     steep = abs(p1.y - p0.y) > abs(p1.x - p0.x);
@@ -320,14 +318,14 @@ os_void win_draw_rect(HDEVICE hdc, logic_csys p0, logic_csys p1)
     enum vga_color color;
     screen_csys tmp;
 
-    /* 入参检查 */
+    /* ???? */
     cassert(OS_NULL != hdc);
 
     device_handle = hdc;
 
     color = device_handle->foreground_color;
 
-    /* 入参检查 */
+    /* ???? */
     p0.x = (paint_resolution_x < p0.x) ? paint_resolution_x : p0.x;
     p0.y = (paint_resolution_y < p0.y) ? paint_resolution_y : p0.y;
 
@@ -343,7 +341,7 @@ os_void win_draw_rect(HDEVICE hdc, logic_csys p0, logic_csys p1)
 }
 
 /***************************************************************
- * description : 贝塞尔曲线, BEZIER
+ * description : ?????, BEZIER
  * history     :
  ***************************************************************/
 os_void win_draw_curve(HDEVICE hdc, logic_csys p0, logic_csys p1, logic_csys p2, os_u32 level)
@@ -354,10 +352,10 @@ os_void win_draw_curve(HDEVICE hdc, logic_csys p0, logic_csys p1, logic_csys p2,
 
     cassert(OS_NULL != hdc);
 
-    /* BEZIER_DEEPTH为2的倍数 */
+    /* BEZIER_DEEPTH?2??? */
     level = level & (BEZIER_DEEPTH - 1);
 
-    /* 递归未完毕 */
+    /* ????? */
     if ((0 != level) && ((1 < abs(p0.x - p2.x)) || (1 < abs(p0.y - p2.y)))) {
         tmp_1 = midpoint(p0, p1);
         tmp_2 = midpoint(p1, p2);
@@ -366,19 +364,19 @@ os_void win_draw_curve(HDEVICE hdc, logic_csys p0, logic_csys p1, logic_csys p2,
         win_draw_curve(hdc, mid, tmp_2, p2, level-1);
         return;
     }
-    /* 递归完毕 */
+    /* ???? */
     win_draw_line(hdc, p0, p2);
 }
 
 /***************************************************************
- * description : 橡皮擦
+ * description : ???
  * history     :
  ***************************************************************/
 os_ret OS_API win_eraser(IN HDEVICE hdc, logic_csys p0, logic_csys p1)
 {
     struct device_context *device_handle;
 
-    /* 入参检查 */
+    /* ???? */
     if (OS_NULL != hdc) {
         device_handle = hdc;
         p0.x += device_handle->csys.x;
@@ -388,12 +386,12 @@ os_ret OS_API win_eraser(IN HDEVICE hdc, logic_csys p0, logic_csys p1)
         draw_rect(p0, p1, device_handle->background_color);
         return OS_SUCC;
     }
-    /* 入参检查失败 */
+    /* ?????? */
     return OS_FAIL;
 }
 
 /***************************************************************
- * description : 清空窗口区域
+ * description : ??????
  * history     :
  ***************************************************************/
 os_ret OS_API win_clear_screen(IN HDEVICE hdc)
@@ -405,7 +403,7 @@ os_ret OS_API win_clear_screen(IN HDEVICE hdc)
     if (OS_NULL != hdc) {
         device_handle = hdc;
 
-        /* 初始化光标位置 */
+        /* ??????? */
         device_handle->cursor_pos.x = device_handle->cursor_pos.y = 0;
 
         csys0.x = device_handle->csys.x;
@@ -416,7 +414,7 @@ os_ret OS_API win_clear_screen(IN HDEVICE hdc)
         draw_rect(csys0, csys1, device_handle->background_color);
         return OS_SUCC;
     }
-    /* 入参检查失败 */
+    /* ?????? */
     return OS_FAIL;
 }
 
@@ -428,7 +426,7 @@ os_ret OS_API paint_icon(IN screen_csys *sp, IN struct os_icon *icon, IN icon_cs
 {
     screen_csys pos;
     const enum vga_color (*data)[16];
-    os_u32 i, j; /* data偏移 */
+    os_u32 i, j; /* data?? */
 
     data = icon->u.data_16_32_24;
 
@@ -445,13 +443,13 @@ os_ret OS_API paint_icon(IN screen_csys *sp, IN struct os_icon *icon, IN icon_cs
 }
 
 /***************************************************************
- * description : 读屏幕按照行来读
+ * description : ????????
  * history     :
  ***************************************************************/
 os_ret OS_API read_screen(IN screen_csys *sp, OUT enum vga_color (*data)[16], IN icon_csys *ips, IN icon_csys *ipe)
 {
     screen_csys pos;
-    os_u32 i, j; /* data偏移 */
+    os_u32 i, j; /* data?? */
 
     for (j = ips->y; j < ipe->y; j++) {
         for (i = ips->x; i < ipe->x; i++) {

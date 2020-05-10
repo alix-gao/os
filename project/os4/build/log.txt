@@ -275,68 +275,68 @@ sizeofrawdata: 200
 section .boot has been writen ...
 section: .text
 virtualaddress: 1001000
-sizeofrawdata: c1a00
+sizeofrawdata: c2600
 *pointertorawdata: c00
 section .text has been writen ...
 section: .data
-virtualaddress: 10c3000
+virtualaddress: 10c4000
 sizeofrawdata: 1be00
-*pointertorawdata: c2600
+*pointertorawdata: c3200
 section .data has been writen ...
 section: .rdata
-virtualaddress: 10df000
-sizeofrawdata: 2c400
-*pointertorawdata: de400
+virtualaddress: 10e0000
+sizeofrawdata: 2c600
+*pointertorawdata: df000
 section .rdata has been writen ...
 section: .bss
-virtualaddress: 110c000
+virtualaddress: 110d000
 sizeofrawdata: 0
 *pointertorawdata: 0
 section .bss has been writen ...
 section: .idata
-virtualaddress: 15c2000
+virtualaddress: 15c3000
 sizeofrawdata: 400
-*pointertorawdata: 10a800
+*pointertorawdata: 10b600
 section .idata has been writen ...
 section: .bios
 virtualaddress: 15d0000
 sizeofrawdata: 1000
-*pointertorawdata: 10ac00
+*pointertorawdata: 10ba00
 section .bios has been writen ...
 section: .ainit
-virtualaddress: 15d0e18
-sizeofrawdata: 200
-*pointertorawdata: 10bc18
-section .ainit has been writen ...
-section: .binit
-virtualaddress: 15d0e20
-sizeofrawdata: 200
-*pointertorawdata: 10be20
-section .binit has been writen ...
-section: .dinit
-virtualaddress: 15d0e38
-sizeofrawdata: 200
-*pointertorawdata: 10c038
-section .dinit has been writen ...
-section: .minit
-virtualaddress: 15d0e50
-sizeofrawdata: 200
-*pointertorawdata: 10c250
-section .minit has been writen ...
-section: /4
 virtualaddress: 15d0e60
 sizeofrawdata: 200
-*pointertorawdata: 10c460
-section /4 has been writen ...
-section: /17
-virtualaddress: 15d0e70
+*pointertorawdata: 10ca60
+section .ainit has been writen ...
+section: .binit
+virtualaddress: 15d0e68
 sizeofrawdata: 200
-*pointertorawdata: 10c670
-section /17 has been writen ...
-section: /27
+*pointertorawdata: 10cc68
+section .binit has been writen ...
+section: .dinit
 virtualaddress: 15d0e78
 sizeofrawdata: 200
-*pointertorawdata: 10c878
+*pointertorawdata: 10ce78
+section .dinit has been writen ...
+section: .minit
+virtualaddress: 15d0e90
+sizeofrawdata: 200
+*pointertorawdata: 10d090
+section .minit has been writen ...
+section: /4
+virtualaddress: 15d0ea0
+sizeofrawdata: 200
+*pointertorawdata: 10d2a0
+section /4 has been writen ...
+section: /17
+virtualaddress: 15d0eb0
+sizeofrawdata: 200
+*pointertorawdata: 10d4b0
+section /17 has been writen ...
+section: /27
+virtualaddress: 15d0eb8
+sizeofrawdata: 200
+*pointertorawdata: 10d6b8
 section /27 has been writen ...
 
 tool\symbol.exe

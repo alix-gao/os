@@ -14,6 +14,7 @@
  ***************************************************************/
 #include <core.h>
 #include "vga_bios.h"
+#include "vga_paint.h"
 
 /***************************************************************
  global variable declare
@@ -236,9 +237,9 @@ LOCALC os_void move_vga__1k(os_void)
  * description : (8259a, bios)not correlative
  * history     :
  ***************************************************************/
-os_ret init_vga_graphics_mode(struct graphics_mode_info *mode)
+os_ret init_vga_graphics_mode(struct graphics_mode_info *data, enum graphics_mode mode)
 {
-    if (mode) {
+    if (data) {
         bios_rst_timer_channel0();
 
         move_vga__1k();
@@ -246,9 +247,9 @@ os_ret init_vga_graphics_mode(struct graphics_mode_info *mode)
         vga_bios();
 
         os_set_timer_channel0();
-        mode->bits_per_pixel = 4;
-        mode->x_resolution = 640;
-        mode->y_resolution = 480;
+        data->bits_per_pixel = 4;
+        data->x_resolution = VGA_RESOLUTION_X;
+        data->y_resolution = VGA_RESOLUTION_Y;
         return OS_SUCC;
     }
     cassert(OS_FALSE);

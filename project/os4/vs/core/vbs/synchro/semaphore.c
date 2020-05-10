@@ -488,6 +488,7 @@ os_ret OS_API wait_event(IN HEVENT handle, os_u32 ms)
         }
         flog("take bsem(%x) crc fail\n", handle);
     }
+    cassert(OS_NULL != handle);
     /* »Î≤ŒºÏ≤È ß∞‹ */
     return OS_FAIL;
 }
@@ -621,6 +622,7 @@ os_ret OS_API wait_mevent(IN HEVENT handle, os_u32 ms)
         flog("take csem(%x) crc fail\n", handle);
         dump_stack(flog);
     }
+    cassert(OS_NULL != handle);
     return OS_FAIL;
 }
 

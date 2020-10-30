@@ -58,7 +58,6 @@ os_void init_window_handle_tab(os_void);
 os_void init_idle_window_rc(os_void);
 os_void init_semaphore(os_void);
 os_void init_pit_int(os_void);
-os_ret free_window_resource(struct task_handle *handle);
 os_ret free_task_station(struct task_handle *handle);
 os_u64 alloc_ksm(os_u32 len);
 

@@ -112,6 +112,12 @@ struct usb_hdevice {
     os_void *dedicated;
 };
 
+enum usb_direction {
+    USB_IN = 0,
+    USB_OUT = 1,
+    USB_DIR_CNT
+};
+
 /***************************************************************
  * description :
  ***************************************************************/
@@ -119,21 +125,24 @@ struct usb_device {
     /* uhci, ohci, ehci */
     os_void *host_controller;
     const struct usb_host_controller_operations {
-        os_ret (*usb_receive_control_transfer)(struct usb_device *usb, os_u32 addr, os_u8 ed_num, struct usb_setup_data *cmd, os_void *buffer, os_uint len);
-        os_ret (*usb_send_control_transfer)(struct usb_device *usb, os_u32 addr, os_u8 ed_num, struct usb_setup_data *cmd, os_void *buffer, os_uint len);
+        os_ret (*usb_receive_control_transfer)(struct usb_device *usb, os_u32 addr, os_u8 ep_num, struct usb_setup_data *cmd, os_void *buffer, os_uint len);
+        os_ret (*usb_send_control_transfer)(struct usb_device *usb, os_u32 addr, os_u8 ep_num, struct usb_setup_data *cmd, os_void *buffer, os_uint len);
         os_ret (*usb_receive_bulk_transfer)(struct usb_device *usb, os_u8 pipe, os_u8 *buffer, os_uint len);
         os_ret (*usb_send_bulk_transfer)(struct usb_device *usb, os_u8 pipe, os_u8 *buffer, os_uint len);
         os_ret (*usb_receive_interrupt_transfer)(struct usb_device *usb, os_u8 pipe, os_u8 *buffer, os_uint len, os_u8 bInterval, os_void (*recv)(os_u8 *data));
         os_ret (*usb_cancel_interrupt_transer)(struct usb_device *usb, os_u8 pipe);
 
         /* usb address */
-        os_u32 (*alloc_usb_device_addr)(struct usb_device *usb);
+        os_u8 (*alloc_usb_device_addr)(struct usb_device *usb);
         os_ret (*free_usb_device_addr)(struct usb_device *usb);
+        os_ret (*assign_usb_device_addr)(struct usb_device *usb);
         /* usb endpoints */
-        os_ret (*create_usb_endpoint)(struct usb_device *usb);
-        os_ret (*destroy_usb_endpoint)(struct usb_device *usb);
+        os_ret (*add_usb_endpoint)(struct usb_device *usb, struct usb_endpoint_descriptor *ep);
+        os_ret (*del_usb_endpoint)(struct usb_device *usb, struct usb_endpoint_descriptor *ep);
         /* control endpoint */
-        os_ret (*reset_usb_default_endpoint)(struct usb_device *usb);
+        os_ret (*add_usb_default_endpoint)(struct usb_device *usb);
+        os_ret (*del_usb_default_endpoint)(struct usb_device *usb);
+        os_ret (*update_usb_default_endpoint)(struct usb_device *usb);
     } *hc_operation;
 
     os_u8 usb_addr; /* device address */
@@ -156,17 +165,11 @@ struct usb_device {
  extern function
  ***************************************************************/
 struct usb_device *alloc_usb_device(const os_void *controller, const enum usb_speed_type speed, const struct usb_host_controller_operations *operation);
-os_void *free_usb_device(struct usb_device *device);
+os_void free_usb_device(struct usb_device *device);
 
 os_ret register_usb_driver(const struct usb_driver *driver);
 os_ret enum_usb_device(struct usb_device *usb);
 os_ret unenum_usb_device(struct usb_device *usb);
-
-enum usb_direction {
-    USB_IN = 0,
-    USB_OUT = 1,
-    USB_DIR_CNT
-};
 
 os_u16 usb_endpoint_mps(struct usb_device *usb, os_u8 ep_num, enum usb_direction dir);
 struct usb_device *find_usb_device(os_void *hc, os_u32 hub_addr, os_u32 port);

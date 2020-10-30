@@ -821,7 +821,7 @@ LOCALC os_ret ohci_del_interrupt_pipe(struct usb_device *usb, os_u8 pipe)
  * description :
  * history     :
  ***************************************************************/
-LOCALC os_u32 alloc_ohci_dev_addr(struct usb_device *usb)
+LOCALC os_u8 alloc_ohci_dev_addr(struct usb_device *usb)
 {
     struct ohci *hc;
 
@@ -1029,11 +1029,14 @@ LOCALD const struct usb_host_controller_operations ohci_operation = {
 
     alloc_ohci_dev_addr,
     free_ohci_dev_addr,
+    OS_NULL,
+
+    OS_NULL,
+    OS_NULL,
 
     create_ohci_device_endpoint,
     clear_ohci_device_endpoint,
-
-    reset_ohci_default_endpoint
+    OS_NULL
 };
 
 /***************************************************************
@@ -1605,6 +1608,8 @@ LOCALC os_void ohci_rh_status_change(struct ohci *hc)
                 }
                 ohci_dbg(USB_INFO, "usb device addr: %d", usb->usb_addr);
 
+                create_ohci_device_endpoint(usb);
+
                 /* 使用默认管道和地址0进行枚举 */
                 result = enum_usb_device(usb);
                 if (OS_SUCC != result) {
@@ -1620,6 +1625,7 @@ LOCALC os_void ohci_rh_status_change(struct ohci *hc)
 
                 if (hc->rh_dev[i]) {
                     unenum_usb_device(hc->rh_dev[i]);
+                    clear_ohci_device_endpoint(hc->rh_dev[i]);
                     free_usb_device(hc->rh_dev[i]);
                     hc->rh_dev[i] = OS_NULL;
                 }

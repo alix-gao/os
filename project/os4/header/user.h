@@ -202,6 +202,7 @@ os_ret OS_API modify_current_window_handle(IN HWINDOW handle);
 HWINDOW OS_API get_current_window_handle(os_void);
 MSG_PROC_PTR OS_API get_msgproc(IN HWINDOW handle);
 struct window_attr OS_API *get_window_attr(IN HWINDOW handle);
+os_void OS_API post_quit_msg(os_void);
 
 os_ret OS_API win_clear_screen(IN HDEVICE hdc);
 os_ret OS_API read_screen(IN screen_csys *sp, OUT enum vga_color (*data)[16], IN icon_csys *ips, IN icon_csys *ipe);
@@ -231,6 +232,7 @@ enum file_seek {
 os_ret OS_API seek_file(HFILE file_handle, os_s32 offset, enum file_seek pos);
 os_ret OS_API read_file(HFILE file_handle, os_u8 *buffer, os_u32 len);
 os_ret OS_API write_file(HFILE file_handle, os_u8 *buffer, os_u32 len);
+os_ret OS_API flush_file(HFILE file_handle);
 os_bool OS_API end_of_file(HFILE file_handle);
 os_u32 OS_API size_of_file(HFILE file_handle);
 os_ret OS_API close_file(HFILE handle);

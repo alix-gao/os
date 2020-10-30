@@ -141,6 +141,7 @@ os_void OS_API *alloc_coherent_mem(os_u32 size, os_u32 align, os_u32 line)
         }
         spin_unlock(&kpm_lock);
     }
+    cassert(OS_FALSE);
     return OS_NULL;
 }
 

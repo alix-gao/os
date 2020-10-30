@@ -481,6 +481,63 @@ os_ret OS_API suspend_task(HTASK handle, os_u32 line)
     return OS_FAIL;
 }
 
+
+/***************************************************************
+ * description :
+ * history     :
+ ***************************************************************/
+LOCALC os_ret free_task(HTASK handle)
+{
+    struct task_control_block *entity;
+    struct task_queue_head *iq, *q;
+    struct task_handle *id;
+    os_u32 core_id;
+    os_u32 cpu_id;
+
+    if (OS_NULL != handle) {
+        id = (struct task_handle *) handle;
+        core_id = id->core_id;
+        cpu_id = id->cpu_id;
+        cassert(id->check == HTASK_CHECK);
+        if ((CORE_NUM > id->core_id) && (CPU_NUM > id->cpu_id) && (OS_TASK_NUM > id->task_id)) {
+            entity = &tcb[core_id][cpu_id][id->task_id];
+            cassert(TCB_CHECK == entity->check);
+            spin_lock(&entity->flock);
+            /* delete task from suspend ONLY */
+            switch (entity->status) {
+            case TASK_STATUS_READY:
+                cassert(TASK_PRIORITY_CNT > entity->priority);
+                q = &ready_tcb[core_id][cpu_id][entity->priority];
+                break;
+            case TASK_STATUS_PEND:
+                q = &pend_tcb[core_id][cpu_id];
+                break;
+            case TASK_STATUS_DELAY:
+                q = &delay_tcb[core_id][cpu_id];
+                break;
+            case TASK_STATUS_SUSPEND:
+                q = &suspend_tcb[core_id][cpu_id];
+                break;
+            default:
+                cassert_word(OS_FALSE, "%s %d %d\n", entity->name, cpu_id, entity->status);
+                break;
+            }
+            iq = &idle_tcb[core_id][cpu_id];
+            spin_lock(&q->lock);
+            spin_lock(&iq->lock);
+            del_list(&entity->node);
+            entity->status = TASK_STATUS_BUTT;
+            entity->line = 0;
+            add_list_head(&iq->head, &entity->node);
+            spin_unlock(&iq->lock);
+            spin_unlock(&q->lock);
+            spin_unlock(&entity->flock);
+            return OS_SUCC;
+        }
+    }
+    return OS_FAIL;
+}
+
 /***************************************************************
  * description :
  * history     :
@@ -685,30 +742,6 @@ HTASK OS_API current_task_handle(os_void)
 }
 
 /***************************************************************
- * description : 删除任务资源
- *               要释放的资源包括:
- *               idle_tid;
- *               所有窗口属性内存;
- *               窗口id资源;
- *               删除消息队列;
- *               删除调度队列;
- * history     :
- ***************************************************************/
-LOCALC os_ret delete_task_resource(HTASK handle)
-{
-    /* 1.释放窗口资源 */
-    free_window_resource(handle);
-
-    /* 2.释放调度队列 */
-    suspend_task(handle, __LINE__);
-
-    /* 3.释放线程消息队列 */
-    free_task_station(handle);
-
-    return OS_SUCC;
-}
-
-/***************************************************************
  * description : 线程退出函数, 该函数不返回.
  * history     :
  ***************************************************************/
@@ -719,7 +752,9 @@ os_void OS_API exit_task(os_void)
     /* 当前任务句柄 */
     handle = current_task_handle();
 
-    delete_task_resource(handle);
+    free_task(handle);
+
+    free_task_station(handle);
 
     /* 此处开中断后可能发生中断.
        如果实体释放, 即实体内部的vtask->vcpu->ldt被清零.
@@ -730,7 +765,7 @@ os_void OS_API exit_task(os_void)
 }
 
 /***************************************************************
- * description : this function is not recommended
+ * description : this function is not recommended, use exit_task()
  * history     :
  ***************************************************************/
 os_void OS_API destroy_task(IN HTASK handle)
@@ -752,7 +787,8 @@ os_void OS_API destroy_task(IN HTASK handle)
             entity->del_flag = OS_TRUE;
             if (0 == atomic_read(&entity->ref)) {
                 /* delete right now */
-                delete_task_resource(handle);
+               free_task(handle);
+               free_task_station(handle);
             }
             spin_unlock(&entity->flock);
 
@@ -1221,7 +1257,7 @@ os_void init_task(os_void)
 
         tcb[i][j][k].priority = INVALID_TASK_PRIORITY;
         tcb[i][j][k].delay_tick = 0;
-        tcb[i][j][k].status = TASK_STATUS_READY | TASK_STATUS_SUSPEND;
+        tcb[i][j][k].status = TASK_STATUS_BUTT;
         tcb[i][j][k].line = __LINE__;
 
         tcb[i][j][k].station = OS_NULL;

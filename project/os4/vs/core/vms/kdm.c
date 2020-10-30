@@ -233,6 +233,7 @@ os_void OS_API *alloc_kdm(os_u32 size, os_u32 align, os_u32 line_no, IN os_u8 *f
     }
 
     spin_unlock(&kdmcb_lock);
+    cassert(OS_FALSE);
     return OS_NULL; /* 块大小尺寸不合法 */
 }
 

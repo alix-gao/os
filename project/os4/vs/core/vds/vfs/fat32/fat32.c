@@ -1495,7 +1495,7 @@ LOCALC os_ret check_fat32(os_u32 device_id)
     }
 
     /* 校验结束 */
-    fat_dbg("fat32 check ok %d\n", device_id);
+    fat_dbg("device:%d fat32 check ok\n", device_id);
 
     /* 初始化fat32信息 */
     // RootDirSector = ((BPB_RootEntCnt * 32) + (BPB_BytePerSec - 1)) / BPB_BytePerSec;

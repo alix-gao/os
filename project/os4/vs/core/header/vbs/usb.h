@@ -279,7 +279,8 @@ enum usb_speed_type {
     USB_LOW_SPEED,
     USB_FULL_SPEED,
     USB_HIGH_SPEED,
-    USB_SPEED_COUNT
+    USB_SUPER_SPEED,
+    USB_INVALID_SPEED
 };
 
 enum usb_speed_type usb_device_speed(HDEVICE usb);

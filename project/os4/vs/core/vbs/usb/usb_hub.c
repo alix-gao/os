@@ -335,11 +335,6 @@ LOCALC os_ret usb_ehci_hub_port_device(struct usb_device *usb, os_u32 port)
         goto exit;
     }
 
-    /* free endpoint of addr 0 */
-    if (usb->hc_operation->reset_usb_default_endpoint) {
-        usb->hc_operation->reset_usb_default_endpoint(device);
-    }
-
     return OS_SUCC;
   exit:
     clear_hub_port_feature(usb, port, USB_PORT_POWER);

@@ -164,9 +164,6 @@ LOCALC os_ret cmd_set_vesa(os_u32 argc, os_u8 *argv[])
     p1.x = 640;
     p1.y = 480;
     draw_rect(p0, p1, 0xf);
-    p0.y = 760;
-    p1.y = 760;
-    draw_rect(p0, p1, 0xf);
 
     redisplay_shell();
 

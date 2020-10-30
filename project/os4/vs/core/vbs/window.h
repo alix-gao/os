@@ -63,7 +63,6 @@ struct message {
 /***************************************************************
  extern function
  ***************************************************************/
-os_ret free_window_resource(struct task_handle *handle);
 
 #pragma pack()
 

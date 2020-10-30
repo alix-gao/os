@@ -369,14 +369,16 @@ struct usb_device *alloc_usb_device(const os_void *controller, const enum usb_sp
     usb->host_controller = (os_void *) controller;
     usb->speed = speed;
     usb->multiple_function = OS_NULL;
-    usb->usb_addr = operation->alloc_usb_device_addr(usb);
-    if (0 == usb->usb_addr) {
-        kfree(usb);
-        return OS_NULL;
+    if (operation->alloc_usb_device_addr) {
+        usb->usb_addr = operation->alloc_usb_device_addr(usb);
+        if (0 == usb->usb_addr) {
+            kfree(usb);
+            return OS_NULL;
+        }
     }
     /* alloc endpoint for this device addr */
-    if (usb->hc_operation->create_usb_endpoint) {
-        usb->hc_operation->create_usb_endpoint(usb);
+    if (usb->hc_operation->add_usb_default_endpoint) {
+        usb->hc_operation->add_usb_default_endpoint(usb);
     }
     return usb;
 }
@@ -385,14 +387,15 @@ struct usb_device *alloc_usb_device(const os_void *controller, const enum usb_sp
  * description :
  * history     :
  ***************************************************************/
-os_void *free_usb_device(struct usb_device *device)
+os_void free_usb_device(struct usb_device *device)
 {
-    if (device->hc_operation->destroy_usb_endpoint) {
-        device->hc_operation->destroy_usb_endpoint(device);
+    if (device->hc_operation->del_usb_default_endpoint) {
+        device->hc_operation->del_usb_default_endpoint(device);
     }
-    device->hc_operation->free_usb_device_addr(device);
+    if (device->hc_operation->free_usb_device_addr) {
+        device->hc_operation->free_usb_device_addr(device);
+    }
     kfree(device);
-    return OS_NULL;
 }
 
 /***************************************************************
@@ -807,6 +810,44 @@ LOCALC os_void update_usb_device_proportion(struct usb_hdevice *device)
 }
 
 /***************************************************************
+ * description :
+ * history     :
+ ***************************************************************/
+LOCALC os_void usb_config_endpoint(struct usb_device *dev)
+{
+    os_uint i, j;
+    struct usb_itf_info *intf;
+
+    for (i = 0; i < dev->config_info[dev->config_index].total_intf_count; i++) {
+        intf = &dev->config_info[dev->config_index].intf_info[i];
+        for (j = 0; j < intf->interface->bNumEndpoints; j++) {
+            if (dev->hc_operation->add_usb_endpoint) {
+                dev->hc_operation->add_usb_endpoint(dev, intf->endpoint[j]);
+            }
+        }
+    }
+}
+
+/***************************************************************
+ * description :
+ * history     :
+ ***************************************************************/
+LOCALC os_void usb_deconfig_endpoint(struct usb_device *dev)
+{
+    os_uint i, j;
+    struct usb_itf_info *intf;
+
+    for (i = 0; i < dev->config_info[dev->config_index].total_intf_count; i++) {
+        intf = &dev->config_info[dev->config_index].intf_info[i];
+        for (j = 0; j < intf->interface->bNumEndpoints; j++) {
+            if (dev->hc_operation->del_usb_endpoint) {
+                dev->hc_operation->del_usb_endpoint(dev, intf->endpoint[j]);
+            }
+        }
+    }
+}
+
+/***************************************************************
  * description : 逐个枚举所有的设备, usb_20.pdf 9.1.2
  * history     :
  ***************************************************************/
@@ -828,14 +869,22 @@ os_ret enum_usb_device(struct usb_device *usb)
         usb_dbg(USB_ERROR, "get default device descriptor fail");
         return OS_FAIL;
     }
-    /* 更新该设备的控制描述符传输最大字节数 */
-    usb_dbg(USB_INFO, "addr %d max packet size %d", usb->usb_addr, usb->descriptor.bMaxPacketSize0);
 
     /* 使用地址0和端点0, 分配设备地址, 方向输出 */
-    result = set_usb_dev_addr(usb);
-    if (OS_SUCC != result) {
-        usb_dbg(USB_ERROR, "set usb addr fail");
-        return OS_FAIL;
+    if (usb->hc_operation->assign_usb_device_addr) {
+        usb->hc_operation->assign_usb_device_addr(usb);
+    } else {
+        result = set_usb_dev_addr(usb);
+        if (OS_SUCC != result) {
+            usb_dbg(USB_ERROR, "set usb addr fail");
+            return OS_FAIL;
+        }
+    }
+
+    /* update mps & address of control pipe */
+    usb_dbg(USB_INFO, "addr %d max packet size %d", usb->usb_addr, usb->descriptor.bMaxPacketSize0);
+    if (usb->hc_operation->update_usb_default_endpoint) { // NOTE: after in & out are used
+        usb->hc_operation->update_usb_default_endpoint(usb);
     }
 
     /* 从新的设备地址和端点0获取设备描述符 */
@@ -855,6 +904,8 @@ os_ret enum_usb_device(struct usb_device *usb)
         usb_dbg(USB_ERROR, "get config descriptor fail");
         return OS_FAIL;
     }
+
+    usb_config_endpoint(usb);
 
     /* choose the proper index */
     usb->config_index = choose_usb_configuration(usb);
@@ -877,8 +928,8 @@ os_ret enum_usb_device(struct usb_device *usb)
         result = set_usb_interface(usb, usb->multiple_function[i].itf->interface);
         if (OS_SUCC != result) {
             usb_dbg(USB_ERROR, "set interface %d fail", usb->multiple_function[i].itf->interface->bInterfaceNumber);
-            /* some device will fail this message, ignore it */
-            //return OS_FAIL;
+            /* some devices will fail this message, ignore it */
+            // return OS_FAIL;
         }
         delay_ms(10);
 
@@ -900,6 +951,8 @@ os_ret unenum_usb_device(struct usb_device *usb)
     os_u8 i;
 
     cassert(OS_NULL != usb);
+
+    usb_deconfig_endpoint(usb);
 
     for (i = 0; i < usb->config_info[usb->config_index].config.bNumInterfaces; i++) {
         /* remove drivers that depends on special information */

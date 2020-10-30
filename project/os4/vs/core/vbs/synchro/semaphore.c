@@ -475,7 +475,7 @@ os_ret OS_API wait_event(IN HEVENT handle, os_u32 ms)
                         tick = system_tick();
                         schedule();
                         kill_timer(sem_timer);
-                        if (ms < (1000/OS_HZ)*(system_tick() - tick)) {
+                        if (divl_floor(ms, 1000/OS_HZ) <= (system_tick() - tick)) {
                             sem_entity->sem.count = EVENT_VALID;
                             return OS_TIMEOUT;
                         }

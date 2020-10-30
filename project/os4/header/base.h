@@ -40,7 +40,7 @@ typedef os_ret (*MAIN_FUNC_PTR)(os_u32 argc, os_u8 *argv[]);
 /* function */
 typedef os_void (*IRQ_FUNCPTR)(os_u32 irq);
 
-#define OS_MSG_VALUE UINT32_C(0x80000000)
+#define OS_MSG_VALUE UINT32_C(0x50000000)
 
 /***************************************************************
  enum define
@@ -293,6 +293,8 @@ os_ret OS_API create_toolhelp32snapshot(OUT struct task_snapshot **snapshot);
 os_ret OS_API get_process32next(INOUT struct task_snapshot **snapshot);
 HWINDOW OS_API get_desktop_window(os_void);
 
+#define debug_0 0
+#define debug_1 1
 #define debug_return return
 #define debug_continue continue
 

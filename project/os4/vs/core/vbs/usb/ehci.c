@@ -17,6 +17,11 @@
 #include "usb.h"
 #include "ehci.h"
 
+#ifdef usb_dbg
+//#undef usb_dbg
+//#define usb_dbg(level, fmt, arg...) do { if (USB_ERROR <= level) print(fmt"\n", ##arg); } while (0)
+#endif
+
 /***************************************************************
  global variable declare
  ***************************************************************/
@@ -204,7 +209,7 @@ LOCALC struct ehci_qh *alloc_ehci_qh(struct usb_device *usb, os_u32 addr, os_u8 
        pointer to the next schedule data structure. */
 
     hc = usb->host_controller;
-    ed = &hc->endpoint[addr][ehci_ed_index(pipe, dir)];
+    ed = &hc->endpoint[usb->usb_addr][ehci_ed_index(pipe, dir)];
     if (EHCI_ED_NEW != ed->state) {
         /* no modify */
         return ed;
@@ -354,6 +359,7 @@ LOCALC struct ehci_qh *alloc_ehci_qh(struct usb_device *usb, os_u32 addr, os_u8 
 
     return ed;
   error:
+    if (ed->qh_lock) destroy_critical_section(ed->qh_lock);
     free_ehci_qh(hc, ed);
     return OS_NULL;
 }
@@ -954,7 +960,7 @@ LOCALC os_ret ehci_recv_control_msg(struct usb_device *usb, os_u32 addr, os_u8 e
 
     if (OS_NULL != usb->host_controller) {
         hc = usb->host_controller;
-        if (OS_NULL != hc->endpoint[addr]) {
+        if (OS_NULL != hc->endpoint[usb->usb_addr]) {
             /* 4.10 Managing Control/Bulk/Interrupt Transfers via Queue Heads */
             result = OS_SUCC;
             ed = alloc_ehci_qh(usb, addr, ed_num, USB_CTRL_TRANSFER, USB_IN);
@@ -967,14 +973,14 @@ LOCALC os_ret ehci_recv_control_msg(struct usb_device *usb, os_u32 addr, os_u8 e
                 if (0 != len) {
                     /* data stage */
                     if (OS_SUCC != ehci_add_async_qtd(hc, ed, QTD_PID_IN, QTD_TOGGLE_1, buffer, len)) {
-                        usb_dbg(USB_ERROR, "ehci recv ctrl data fail");
+                        usb_dbg(USB_ERROR, "in ehci recv ctrl data fail");
                         result = OS_FAIL;
                         goto end;
                     }
                 }
                 /* status stage */
                 if (OS_SUCC != ehci_add_async_qtd(hc, ed, QTD_PID_OUT, QTD_TOGGLE_1, OS_NULL, 0)) {
-                    usb_dbg(USB_ERROR, "ehci recv ctrl status fail");
+                    usb_dbg(USB_ERROR, "in ehci recv ctrl status fail");
                     result = OS_FAIL;
                     goto end;
                 }
@@ -1004,7 +1010,7 @@ LOCALC os_ret ehci_send_control_msg(struct usb_device *usb, os_u32 addr, os_u8 e
 
     if (OS_NULL != usb->host_controller) {
         hc = usb->host_controller;
-        if (OS_NULL != hc->endpoint[addr]) {
+        if (OS_NULL != hc->endpoint[usb->usb_addr]) {
             /* 4.10 Managing Control/Bulk/Interrupt Transfers via Queue Heads */
             result = OS_SUCC;
             ed = alloc_ehci_qh(usb, addr, ed_num, USB_CTRL_TRANSFER, USB_OUT);
@@ -1017,18 +1023,19 @@ LOCALC os_ret ehci_send_control_msg(struct usb_device *usb, os_u32 addr, os_u8 e
                 if (0 != len) {
                     /* data stage */
                     if (OS_SUCC != ehci_add_async_qtd(hc, ed, QTD_PID_OUT, QTD_TOGGLE_1, buffer, len)) {
-                        usb_dbg(USB_ERROR, "ehci send ctrl data fail");
+                        usb_dbg(USB_ERROR, "out ehci send ctrl data fail");
                         result = OS_FAIL;
                         goto end;
                     }
                 }
                 /* status stage */
                 if (OS_SUCC != ehci_add_async_qtd(hc, ed, QTD_PID_IN, QTD_TOGGLE_1, OS_NULL, 0)) {
-                    usb_dbg(USB_ERROR, "ehci recv ctrl status fail");
+                    usb_dbg(USB_ERROR, "out ehci recv ctrl status fail");
                     result = OS_FAIL;
                     goto end;
                 }
             } else {
+                usb_dbg(USB_ERROR, "out ehci setup status fail");
                 result = OS_FAIL;
             }
           end:
@@ -1324,7 +1331,7 @@ LOCALC os_ret ehci_del_interrupt_trans(struct usb_device *usb, os_u8 pipe)
  * description :
  * history     :
  ***************************************************************/
-LOCALC os_u32 alloc_ehci_device_addr(struct usb_device *usb)
+LOCALC os_u8 alloc_ehci_device_addr(struct usb_device *usb)
 {
     struct ehci *hc;
 
@@ -1379,10 +1386,10 @@ LOCALC os_ret alloc_ehci_endpoint(struct ehci *hc, os_u32 addr)
         if (OS_NULL == hc->endpoint[addr]) {
             return OS_FAIL;
         }
+        mem_set(hc->endpoint[addr], 0, EP_NUM * USB_DIR_CNT * sizeof(struct ehci_qh));
+        /* init */
+        init_ehci_endpoint(hc, addr);
     }
-    mem_set(hc->endpoint[addr], 0, EP_NUM * USB_DIR_CNT * sizeof(struct ehci_qh));
-    /* init */
-    init_ehci_endpoint(hc, addr);
     return OS_SUCC;
 }
 
@@ -1452,10 +1459,34 @@ LOCALC os_ret clear_device_endpoint(struct usb_device *usb)
 }
 
 /***************************************************************
+ * description : update mps of control pipe
+ * history     :
+ ***************************************************************/
+LOCALC os_ret update_ehci_default_endpoint(struct usb_device *usb)
+{
+    struct ehci *hc;
+    struct ehci_qh *qh;
+
+    cassert(OS_NULL != usb);
+    hc = usb->host_controller;
+    cassert(OS_NULL != hc);
+
+    /* addr 0 endpoint 0 is in async schedule */
+    qh = &hc->endpoint[usb->usb_addr][ehci_ed_index(0, USB_IN)];
+    ep_mpl(qh->hwinfo.characteristics, usb->descriptor.bMaxPacketSize0);
+    ep_da(qh->hwinfo.characteristics, usb->usb_addr);
+
+    qh = &hc->endpoint[usb->usb_addr][ehci_ed_index(0, USB_OUT)];
+    ep_mpl(qh->hwinfo.characteristics, usb->descriptor.bMaxPacketSize0);
+    ep_da(qh->hwinfo.characteristics, usb->usb_addr);
+    return OS_SUCC;
+}
+
+/***************************************************************
  * description : addr 0
  * history     :
  ***************************************************************/
-LOCALC os_ret clean_ehci_default_endpoint(struct usb_device *usb)
+LOCALC os_ret reset_ehci_default_endpoint(struct usb_device *usb)
 {
     struct ehci *hc;
     struct ehci_qh *qh;
@@ -1496,9 +1527,14 @@ LOCALD const struct usb_host_controller_operations ehci_operation = {
 
     alloc_ehci_device_addr,
     free_ehci_device_addr,
+    OS_NULL,
+
+    OS_NULL, // endpoints are allocated in add_usb_default_endpoint()
+    OS_NULL, // endpoints are freed in del_usb_default_endpoint()
+
     create_device_endpoint,
     clear_device_endpoint,
-    clean_ehci_default_endpoint
+    update_ehci_default_endpoint
 };
 
 /***************************************************************
@@ -1738,13 +1774,6 @@ LOCALC struct ehci *alloc_ehci(HDEVICE dev)
     hc->pci = dev; /* 记录pci信息 */
 
     hc->done_flag = 0;
-
-    /* 分配设备端点0 */
-    result = alloc_ehci_endpoint(hc, 0);
-    if (OS_SUCC != result) {
-        usb_dbg(USB_ERROR, "alloc ehci endpoint 0 fail");
-        goto cleanup;
-    }
 
     init_spinlock(&hc->ehci_lock);
 
@@ -2424,9 +2453,6 @@ LOCALC os_void ehci_rh_status_change(struct ehci *hc)
                     usb_dbg(USB_ERROR, "enum device fail");
                 }
 
-                /* endpoints of addr 0 is shareable, cannot delete */
-                clean_ehci_default_endpoint(usb);
-
                 hc->rh_dev[i] = usb;
             } else {
                 /* note: owner is chcs */
@@ -2629,7 +2655,7 @@ LOCALC os_void init_ehci_driver(os_void)
     cassert(OS_SUCC == result);
 }
 
-//#define _DISABLE_EHCI_ // test 1.x only host controller
+//#define _DISABLE_EHCI_ // test 1.x host controller only
 #ifdef _DISABLE_EHCI_
 bus_init_func(BUS_Px, init_ehci_driver);
 #else

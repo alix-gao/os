@@ -200,9 +200,9 @@ os_ret OS_API show_window(IN HWINDOW hwnd)
             show_title_bar(window_attr, VGA_COLOR_BLUE);
             /* 显示标题 */
             show_title(window_attr, VGA_COLOR_SILVER);
-            /* 画窗口背景 */
-            win_draw_background(window_attr);
         }
+        /* 画窗口背景 */
+        win_draw_background(window_attr);
         return OS_SUCC;
     }
     /* 当前窗口句柄无效 */
@@ -493,6 +493,61 @@ LOCALC os_void free_window_rc(os_u32 window_id)
 
 /***************************************************************
  * description :
+ * history     :
+ ***************************************************************/
+os_ret OS_API destroy_window(HWINDOW handle)
+{
+    return OS_SUCC;
+}
+
+/***************************************************************
+ * description : 释放窗口资源
+ * history     :
+ ***************************************************************/
+LOCALC os_ret free_window_resource(struct task_handle *handle)
+{
+    os_u32 i;
+    struct window_handle *t;
+    os_u32 task_id;
+    os_u32 window_id;
+    os_void *window_class;
+
+    cassert(OS_NULL != handle);
+
+    task_id = handle->task_id;
+
+    /* task id合法 */
+    if ((INVALID_TASK_ID != task_id) && (OS_TASK_NUM > task_id)) {
+        /* 搜索整个窗口句柄表 */
+        for (i = 0, t = window_handle_tab; i < MAX_WINDOW_NUM; i++, t++) {
+            if (task_id == t->htask->task_id) {
+                window_id = t->window_id;
+
+                /* 释放注册窗口类资源 */
+                window_class = window_class_tab[window_id];
+
+                destroy_window(window_class);
+
+                kfree(window_class);
+
+                window_class_tab[window_id] = OS_NULL;
+
+                /* 释放窗口id资源 */
+                free_window_rc(window_id);
+
+                t->htask = OS_NULL;
+                t->window_id = INVALID_WINDOW_ID;
+
+                return OS_SUCC;
+            }
+        }
+    }
+    /* 入参检查失败(task_id)|没有搜索到句柄 */
+    return OS_FAIL;
+}
+
+/***************************************************************
+ * description :
  * history     : 取消结构体直接赋值, 在某些情况下内核崩溃
  ***************************************************************/
 os_ret OS_API register_window_class(IN struct window_class *window_class)
@@ -661,10 +716,15 @@ LOCALC os_ret OS_CALLBACK window_task_func(os_u32 arg1, os_u32 arg2, os_u32 arg3
 
     /* 消息循环 */
     while (OS_SUCC == get_message(&msg)) {
+        if (OS_MSG_EXIT == ((struct message *) msg)->msg_name) {
+            break;
+        }
         /* 消息处理 */
         dispatch_msg(msg);
     }
-    flog("task error %d!\n", __LINE__);
+    flog("window task end!\n");
+    free_window_resource(current_task_handle());
+    exit_task();
     return OS_SUCC;
 }
 
@@ -693,6 +753,26 @@ HTASK OS_API create_ui_task(IN os_u8 *name, IN struct window_class *window_class
     }
     /* 入参检查失败 */
     return OS_NULL;
+}
+
+/***************************************************************
+ * description : destroy ui task
+ * history     :
+ ***************************************************************/
+os_void OS_API post_quit_msg(os_void)
+{
+    struct message *msg;
+
+    msg = (struct message *) alloc_msg(sizeof(struct message));
+    if (OS_NULL == msg) {
+        /* 消息内存分配失败, 不发送 */
+        return;
+    }
+
+    msg->msg_name = OS_MSG_EXIT;
+    msg->msg_len = sizeof(struct message);
+
+    post_thread_msg(current_task_handle(), msg);
 }
 
 /***************************************************************
@@ -906,61 +986,6 @@ LOCALC os_ret destroy_menu(HWINDOW hwnd)
  ***************************************************************/
 LOCALC os_void get_window_rgn(HWINDOW hwnd)
 {
-}
-
-/***************************************************************
- * description :
- * history     :
- ***************************************************************/
-os_ret OS_API destroy_window(HWINDOW handle)
-{
-    return OS_SUCC;
-}
-
-/***************************************************************
- * description : 释放窗口资源
- * history     :
- ***************************************************************/
-os_ret free_window_resource(struct task_handle *handle)
-{
-    os_u32 i;
-    struct window_handle *t;
-    os_u32 task_id;
-    os_u32 window_id;
-    os_void *window_class;
-
-    cassert(OS_NULL != handle);
-
-    task_id = handle->task_id;
-
-    /* task id合法 */
-    if ((INVALID_TASK_ID != task_id) && (OS_TASK_NUM > task_id)) {
-        /* 搜索整个窗口句柄表 */
-        for (i = 0, t = window_handle_tab; i < MAX_WINDOW_NUM; i++, t++) {
-            if (task_id == t->htask->task_id) {
-                window_id = t->window_id;
-
-                /* 释放注册窗口类资源 */
-                window_class = window_class_tab[window_id];
-
-                destroy_window(window_class);
-
-                kfree(window_class);
-
-                window_class_tab[window_id] = OS_NULL;
-
-                /* 释放窗口id资源 */
-                free_window_rc(window_id);
-
-                t->htask = OS_NULL;
-                t->window_id = INVALID_WINDOW_ID;
-
-                return OS_SUCC;
-            }
-        }
-    }
-    /* 入参检查失败(task_id)|没有搜索到句柄 */
-    return OS_FAIL;
 }
 
 /***************************************************************

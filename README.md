@@ -23,7 +23,7 @@ enter BIOS setup menu:
 
 this is an example: https://www.asus.com/support/FAQ/1013017
 
-#### step 2. install OS on USB drive <Windows only>
+#### step 2. install OS on USB drive (Windows only)
 run (**as administrator**) master/fs.exe. select "USB-HDD" and then "start".
 
 !!! IT WILL CLEAN USB DRIVE
@@ -41,7 +41,7 @@ svesa (change the resolution)
 
 desktop (use picture as background)
 
-## rebuild OS (compile & link) <Windows only>
+## rebuild OS (compile & link) (Windows only)
     **if you want to rebuild system after making changes in source code**
 
 double click **project\os4\build\build - all.bat** if you updated code in project\os4

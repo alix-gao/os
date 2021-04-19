@@ -7,7 +7,7 @@ this is a personal operating system, it looks like this:
 
 it supports:
 1. multiple tasks, semaphore, message-based communication, memory management;
-2. PCI bus, USB host controller (OHCI, EHCI);
+2. PCI bus, USB host controller (OHCI, EHCI, xHCI);
 3. USB mice (HID), USB flash disk (mass storage);
 4. FAT32 file system;
 5. BMP image file;

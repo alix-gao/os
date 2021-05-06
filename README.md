@@ -13,6 +13,7 @@ it supports:
 5. BMP image file;
 6. graphical user interface (GUI), SVGA;
 7. WiFi dongle (tp-link WN725N);
+8. ARP, ICMP
 
 ## usage
 
